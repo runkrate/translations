@@ -1,0 +1,1910 @@
+lifecycle.error.invalid_action: "invalid action: {arg0}"
+lifecycle.error.invalid_branch: "Invalid release channel '{arg0}'. Use main or beta."
+lifecycle.error.missing_app_directory: Application directory not found for '{arg0}'.
+lifecycle.error.missing_app_script: "Application script not found: {arg0}"
+lifecycle.error.missing_handler: "missing handler: {arg0}"
+lifecycle.error.missing_manifest: "Manifest not found: {arg0}"
+lifecycle.error.missing_username: Missing username.
+lifecycle.error.usage: "usage: zen software <action> <user> <app>"
+lifecycle.error.zenfw_introspect: Unable to load zenfw wrappers.
+
+lifecycle.step.preparing_application: Preparing application.
+
+lifecycle.action.add: "Adding {arg0}"
+lifecycle.action.config: "Configuring {arg0}"
+lifecycle.action.secure: "Securing {arg0}"
+lifecycle.action.backup: "Sauvegarde de {arg0}"
+lifecycle.action.restore: "Restauration de {arg0}"
+lifecycle.action.remove: "Suppression de {arg0}"
+lifecycle.action.update: "Mise à jour de {arg0}"
+lifecycle.action.reset: "Réinitialisation de {arg0}"
+
+lifecycle.error.app_password_policy: "Application password does not meet {arg0} requirements (min {arg1} characters)."
+lifecycle.error.binary_slot_not_found: "{arg0}: no binary slot found in catalog (channel: {arg1})."
+lifecycle.error.requirement.unknown_user: "Unknown user '{arg0}'."
+lifecycle.error.requirement.software_required: "Veuillez installer {arg0} avant : zen software add {arg1} {arg0}"
+lifecycle.error.requirement.missing_services: "Veuillez installer {arg0} avant : zen software add {arg1} <app_id>"
+lifecycle.error.requirement.software_required_any: "Veuillez installer l'une de ces applications avant ({arg0}) : zen software add {arg1} <app_id>"
+lifecycle.error.sync_repos.failed: "Failed to sync repository '{arg0}': {arg1}"
+lifecycle.error.sync_repos.unknown: "Unknown sync_repos id '{arg0}'."
+lifecycle.error.provider.blocked: "Cannot install {arg0} on {arg1} servers (blocked by manifest policy)."
+lifecycle.info.release_beta_prerelease: "{arg0} : utilisation de la prerelease GitHub (aucun repli)."
+lifecycle.warning.release_fallback_no_prerelease: "{arg0} : le canal beta a été demandé, mais aucune prerelease GitHub ne correspond à « {arg1} »."
+lifecycle.warning.release_fallback_try_branch: "Tentative de clonage de la branche git « {arg0} » sur {arg1}."
+lifecycle.warning.release_fallback_branch_missing: "La branche git « {arg0} » n'est pas disponible sur {arg1}."
+lifecycle.warning.release_fallback_branch_failed: "Échec du clonage de la branche git « {arg0} » sur {arg1}."
+lifecycle.warning.release_fallback_try_default: "Tentative de clonage de la branche git par défaut « {arg0} » sur {arg1}."
+lifecycle.warning.release_fallback_try_stable: "Tentative de téléchargement de la dernière version GitHub stable."
+lifecycle.warning.release_fallback_using_branch: "Utilisation de la branche git « {arg0} » (repli beta)."
+lifecycle.warning.release_fallback_using_stable: "Utilisation de la dernière version GitHub stable (repli beta)."
+lifecycle.hint.quasarr.flaresolverr_url: "In the Quasarr setup UI, set FlareSolverr URL to: {arg0}"
+lifecycle.hint.quasarr.ui_url: "Quasarr web UI: {arg0}"
+lifecycle.hint.airsonic.delete_factory_admin: "{arg0} : le mot de passe du compte factory admin a été invalidé ; supprimez l'utilisateur « admin » dans Paramètres → Utilisateurs."
+lifecycle.hint.audiobookshelf.build_wait: "Compilation du client web Audiobookshelf pour {arg0}. Cette étape peut durer plusieurs minutes et sembler figée."
+lifecycle.hint.shelfmark.build_wait: "Compilation de l'environnement et du client web Shelfmark pour {arg0}. Cette étape peut durer plusieurs minutes et sembler figée."
+lifecycle.error.shelfmark.python_provision_failed: "{arg0} : échec de la préparation de l'environnement Python."
+lifecycle.error.shelfmark.frontend_build_failed: "{arg0} : échec de la compilation du client web."
+lifecycle.error.deluge.vendor_pythonpath: "Deluge: Python packages not found under {arg0}."
+lifecycle.error.deluge.vendor_libtorrent: "Deluge: libtorrent-rasterbar not found under {arg0}/usr/lib/x86_64-linux-gnu."
+lifecycle.error.deluge.vendor_boost: "Deluge: Boost Python runtime (libboost_python*.so) missing under {arg0}/usr/lib/x86_64-linux-gnu — rebuild the deluge vendor package with boost-builds bundled."
+lifecycle.error.deluge.libtorrent_import_failed: "Deluge: libtorrent Python module not importable from vendor tree {arg0}."
+lifecycle.error.deluge.deluge_import_failed: "Deluge: deluge package not importable with vendor tree {arg0} (check venv deps: rencode, twisted)."
+lifecycle.error.deluge.python313_missing: "Deluge: python3.13 is required (vendor libtorrent bindings are cp313)."
+lifecycle.error.deluge.venv_create_failed: "Deluge: venv setup failed under {arg0}."
+lifecycle.error.deluge.binaries_missing: "Deluge: deluged or deluge-web missing under {arg0}/usr/bin."
+lifecycle.error.deluge.venv_python_missing: "Deluge: venv python missing under {arg0}/.venv."
+lifecycle.error.deluge.twisted_import_failed: "Deluge: Twisted not importable in venv at {arg0}."
+lifecycle.error.deluge.venv_site_missing: "Deluge: venv site-packages missing under {arg0}/.venv."
+lifecycle.error.deluge.core_conf_not_created: "{arg0} : deluged n'a pas créé {arg1}/core.conf."
+lifecycle.error.jellyfin.admin_auth_failed: "{arg0}: admin authentication failed (playback api key)."
+lifecycle.error.jellyfin.admin_user_not_configured: "{arg0}: admin user {arg1} not configured before wizard complete (Startup/User)."
+lifecycle.error.jellyfin.api_not_ready: "{arg0}: Jellyfin API not ready on {arg1} within 120s."
+lifecycle.error.jellyfin.playback_api_key_failed: "{arg0}: failed to create playback api key ({arg1})."
+lifecycle.error.jellyfin.startup_wizard_flag_missing: "{arg0}: startup wizard flag not set in system.xml."
+lifecycle.error.jellyfin.wizard_request_failed: "{arg0}: startup wizard request failed."
+lifecycle.error.emby.admin_auth_failed: "{arg0}: admin authentication failed."
+lifecycle.error.emby.admin_user_not_configured: "{arg0}: admin user {arg1} not configured before wizard complete (Startup/User)."
+lifecycle.error.emby.api_not_ready: "{arg0}: Emby API not ready on {arg1} within 300s."
+lifecycle.error.emby.premiere_register_failed: "{arg0}: failed to register Emby Premiere key (HTTP {arg1})."
+lifecycle.error.emby.startup_wizard_flag_missing: "{arg0}: startup wizard flag not set in system.xml."
+lifecycle.error.emby.wizard_request_failed: "{arg0}: startup wizard request failed."
+lifecycle.error.plex.claim_failed: "{arg0}: échec de l’échange du claim token Plex (validité ~4 minutes après émission — obtenir un token frais sur https://plex.tv/claim)."
+lifecycle.error.plex.claim_required: "{arg0}: un claim token est requis. Sur un TTY l’install le demande au moment du claim ; sinon passer --plex-pass-key ou réessayer en update après connexion sur https://plex.tv/claim (le 2FA peut prendre du temps — coller le token seulement quand l’install le demande)."
+lifecycle.error.plex.missing_preferences: "{arg0}: Preferences.xml manquant ; impossible de claimer le serveur."
+lifecycle.error.plex.vpn_ensure_failed: "{arg0}: Hetzner exige une route VPN app fonctionnelle (ajouter un peer WireGuard/OpenVPN via vpn::peer add, ou définir des credentials NordVPN via vpn::nordvpn credentials set, puis réessayer)."
+lifecycle.info.plex.claim_prompt: "{arg0}: connectez-vous sur https://plex.tv/claim (2FA si besoin), puis collez le claim token ci-dessous. Il expire ~4 minutes après affichage — ne le récupérez pas avant cette invite."
+lifecycle.info.plex.claim_retry: "{arg0}: token refusé ou expiré. Obtenez-en un frais sur https://plex.tv/claim et collez-le à nouveau."
+lifecycle.hint.plex.claim_deferred: "{arg0}: installé sans claim (pas de terminal interactif). Claimer ensuite depuis HarmonyUI ou : zen software update <user> plex --plex-pass-key <token depuis https://plex.tv/claim>."
+lifecycle.success.plex.claimed: "{arg0}: serveur Plex claimé avec succès."
+lifecycle.success.plex.pass_detected: "{arg0}: Plex Pass détecté sur le compte claimé."
+messages.vpn.manifest_ensure: "Application de l’exigence VPN pour {arg0}@{arg1}…"
+errors.vpn.manifest_ensure_failed: "Échec de l’application des exigences VPN du manifeste {arg0}."
+lifecycle.hint.emby.premiere_not_configured: "{arg0}: no Emby Premiere key was provided (--emby-premiere-key); Premiere is not configured."
+lifecycle.success.emby.premiere_configured: "{arg0}: Emby Premiere key registered successfully."
+lifecycle.success.emby.premiere_already_configured: "{arg0}: Emby Premiere key already configured."
+lifecycle.error.proxy.bcrypt_hash_missing: "{arg0}: no bcrypt hash for user '{arg1}' (zenfw::proxy::user::password_hash; file {arg2})."
+lifecycle.error.generated_password_verify: Failed to generate a Linux-compatible application password (verify::alphanumeric).
+lifecycle.hint.app_password_vault: "Application password is stored in the vault (not shown here). Reveal with: zen vault reveal {arg0} application"
+
+# --- generated handler lifecycle messages ---
+lifecycle.error.airsonic.cannot_promote_wipe: "{arg0}: cannot promote {arg1} (wipe {arg2}): {arg3}."
+lifecycle.error.airsonic.is_not_admin: "{arg0}: {arg1} is not ADMIN: {arg2}."
+lifecycle.error.audiobookshelf.client_generate_failed_for_base: "{arg0}: client generate failed for base {arg1}."
+lifecycle.error.audiobookshelf.client_nuxt_config_js_is_missing: "{arg0}: client/nuxt.config.js is missing."
+lifecycle.error.audiobookshelf.failed_to_pin_the_nuxt_base_path_to: "{arg0}: failed to pin the Nuxt base path to {arg1}."
+lifecycle.error.audiobookshelf.failed_to_provision_the_pnpm_managed_node_js_runtime: "{arg0}: failed to provision the pnpm-managed Node.js runtime."
+lifecycle.error.audiobookshelf.generated_client_does_not_use_the_expected_base_path: "{arg0}: generated client does not use the expected base path {arg1}."
+lifecycle.error.audiobookshelf.server_npm_ci_omit_dev_failed: "{arg0}: server npm ci --omit=dev failed."
+lifecycle.error.autobrr.autobrr_autobrrctl_create_user_failed_for_set_the_54a1947d: "autobrr: autobrrctl create-user failed for {arg0} — set the password manually via the web UI."
+lifecycle.error.byparr.camoufox_fetch_failed: "{arg0}: camoufox fetch failed."
+lifecycle.error.byparr.invisible_playwright_fetch_failed: "{arg0} : échec de invisible-playwright fetch."
+lifecycle.error.byparr.playwright_firefox_install_failed: "{arg0}: playwright firefox install failed."
+lifecycle.error.byparr.probe_fastapi_did_not_become_ready_on_docs: "{arg0}: probe: FastAPI did not become ready on {arg1}/docs."
+lifecycle.error.byparr.probe_v1_did_not_return_ok_for_hetzner_com_check_c_09ff5aaa: "{arg0}: probe: /v1 did not return ok for hetzner.com (check Camoufox/Firefox)."
+lifecycle.error.calibre.calibre_server_missing_after_apt_install: "{arg0}: calibre-server missing after apt install."
+lifecycle.error.calibre.calibre_web_cps_missing_after_venv_create: "{arg0}: calibre-web cps missing after venv create."
+lifecycle.error.calibre.calibredb_failed_to_initialize_library_at: "{arg0}: calibredb failed to initialize library at {arg1}."
+lifecycle.error.calibre.failed_to_set_calibre_web_password_for: "{arg0}: failed to set Calibre-Web password for {arg1}."
+lifecycle.error.calibre.uv_venv_pip_install_calibreweb_failed: "{arg0}: uv venv / pip install calibreweb failed."
+lifecycle.error.cleanuparr.cleanuparr_binary_not_found_in_release_asset: "{arg0}: Cleanuparr binary not found in release asset."
+lifecycle.error.cross-seed.cross_seed_cli_missing_at: "{arg0}: cross-seed CLI missing at {arg1}."
+lifecycle.error.cross-seed.cross_seed_gen_config_failed: "{arg0}: cross-seed gen-config failed."
+lifecycle.error.cross-seed.node_js_runtime_missing_at: "{arg0}: Node.js runtime missing at {arg1}."
+lifecycle.error.deluge.uv_pip_install_pillow_failed_in: "{arg0}: uv pip install Pillow failed in {arg1}."
+lifecycle.error.deluge.uv_pip_install_requirements_txt_failed_in: "{arg0}: uv pip install requirements.txt failed in {arg1}."
+lifecycle.error.dispatcharr.create_superuser_in_the_web_ui_setup_wizard: "{arg0}: create superuser in the web UI (setup wizard)."
+lifecycle.error.dispatcharr.frontend_build_missing_in_index_html_vite_base: "{arg0}: frontend build missing {arg1} in index.html (VITE_BASE={arg2})."
+lifecycle.error.dispatcharr.subpath_patch_missing_in_vite_config_js: "{arg0}: subpath patch missing in vite.config.js."
+lifecycle.error.dispatcharr.url_base_must_be_a_subpath_got: "{arg0}: url_base must be a subpath (got {arg1})."
+lifecycle.error.duplicati.duplicati_server_missing_after_release_extract: "{arg0}: duplicati-server missing after release extract."
+lifecycle.error.filebrowser.users_add_failed_see_filebrowser_cli_output_with_stderr: "{arg0}: users add failed (see filebrowser CLI output with stderr)."
+lifecycle.error.flaresolverr.probe_api_did_not_become_ready_on: "{arg0}: probe: API did not become ready on {arg1}."
+lifecycle.error.flaresolverr.probe_request_get_hetzner_com_did_not_return_statu_c2a58737: "{arg0}: probe: request.get(hetzner.com) did not return status ok (check Chromium/Xvfb)."
+lifecycle.error.flexget.uv_pip_install_flexget_failed: "{arg0}: uv pip install flexget failed."
+lifecycle.error.jackett.jackett_missing_config_file_after_startup: "jackett: missing config file after startup: {arg0}."
+lifecycle.error.janitorr.bootjar_output_missing_under_build_libs: "{arg0}: bootJar output missing under build/libs."
+lifecycle.error.janitorr.gradlew_bootjar_failed: "{arg0}: ./gradlew bootJar failed."
+lifecycle.error.janitorr.neither_openjdk_25_jdk_headless_nor_openjdk_21_jdk_eb70ad23: "{arg0}: neither openjdk-25-jdk-headless nor openjdk-21-jdk-headless available."
+lifecycle.error.jdownloader.failed_to_download_jdownloader_jar_from: "{arg0}: failed to download JDownloader.jar from {arg1}."
+lifecycle.error.jdownloader.jdownloader_bootstrap_failed_see_bootstrap_log: "{arg0}: JDownloader bootstrap failed; see {arg1}/bootstrap.log."
+lifecycle.error.jdownloader.jdownloader_jar_missing_under: "{arg0}: JDownloader.jar missing under {arg1}."
+lifecycle.error.jellyfin.install_completed_without_playback_api_key_create_69ef77a3: "{arg0}: install completed without playback API key — create one in Dashboard if needed."
+lifecycle.error.kapowarr.venv_python_missing_after_uv_create_build: "{arg0}: venv python missing after uv create/build."
+lifecycle.error.kavita.kavita_binary_missing_after_extract: "{arg0}: Kavita binary missing after extract."
+lifecycle.error.kometa.no_requirements_txt_pyproject_toml_in: "{arg0}: no requirements.txt / pyproject.toml in {arg1}."
+lifecycle.error.lingarr.dotnet_publish_lingarr_server_failed: "{arg0}: dotnet publish Lingarr.Server failed."
+lifecycle.error.lingarr.lingarr_client_missing_after_clone: "{arg0}: Lingarr.Client missing after clone."
+lifecycle.error.lingarr.lingarr_server_publish_output_missing: "{arg0}: Lingarr.Server publish output missing."
+lifecycle.error.listenarr.listenarr_api_missing_after_release_extract: "{arg0}: Listenarr.Api missing after release extract."
+lifecycle.error.maintainerr.failed_to_stage_ui_into: "{arg0}: Failed to stage UI into {arg1}."
+lifecycle.error.maintainerr.server_dist_main_js_missing_after_turbo_build: "{arg0}: server dist/main.js missing after turbo build."
+lifecycle.error.medusa.uv_sync_failed_falling_back_to_requirements_txt: "{arg0}: uv sync failed; falling back to requirements.txt."
+lifecycle.error.midarr.ecto_migrate_failed_ensure_postgres_is_up_and_db_are_correct: "{arg0}: ecto.migrate failed — ensure Postgres is up and DB_* are correct."
+lifecycle.error.midarr.failed_to_configure_postgresql_role: "{arg0}: failed to configure PostgreSQL role {arg1}."
+lifecycle.error.midarr.mix_compile_failed: "{arg0}: mix compile failed."
+lifecycle.error.midarr.mix_deps_get_failed: "{arg0}: mix deps.get failed."
+lifecycle.error.midarr.mix_elixir_missing_after_apt_install_postgres_elix_594a7269: "{arg0}: mix (Elixir) missing after apt install — Postgres + Elixir are required."
+lifecycle.error.midarr.mix_local_hex_rebar_failed: "{arg0}: mix local.hex/rebar failed."
+lifecycle.error.midarr.postgres_system_user_missing_set_db_in_to_an_exist_b9933b4f: "{arg0}: postgres system user missing — set DB_* in {arg1} to an existing Postgres."
+lifecycle.error.midarr.radarr_port_or_api_key_is_unavailable: "{arg0}: Radarr port or API key is unavailable."
+lifecycle.error.midarr.sonarr_port_or_api_key_is_unavailable: "{arg0}: Sonarr port or API key is unavailable."
+lifecycle.error.muxarr.dotnet_publish_muxarr_web_failed: "{arg0}: dotnet publish Muxarr.Web failed."
+lifecycle.error.muxarr.muxarr_web_publish_output_missing: "{arg0}: Muxarr.Web publish output missing."
+lifecycle.error.nextcloud.extract_of_nextcloud_prerelease_failed: "{arg0}: extract of Nextcloud prerelease failed."
+lifecycle.error.nextcloud.failed_to_download: "{arg0}: failed to download {arg1}."
+lifecycle.error.nextcloud.failed_to_fetch_nextcloud_stable_release: "{arg0}: failed to fetch Nextcloud stable release ({arg1})."
+lifecycle.error.nextcloud.failed_to_list_nextcloud_prereleases: "{arg0}: failed to list Nextcloud prereleases."
+lifecycle.error.nextcloud.nextcloud_tree_occ_missing_after_extract: "{arg0}: Nextcloud tree (occ) missing after extract."
+lifecycle.error.nextcloud.no_nextcloud_prerelease_archive_found: "{arg0}: no Nextcloud prerelease archive found."
+lifecycle.error.nextcloud.occ_missing_cannot_run_maintenance_install: "{arg0}: occ missing; cannot run maintenance:install."
+lifecycle.error.nextcloud.php_binary_missing_after_apt_install: "{arg0}: php{arg1} binary missing after apt install."
+lifecycle.error.nextcloud.php_occ_maintenance_install_failed: "{arg0}: php occ maintenance:install failed."
+lifecycle.error.novnc.vnc_html_missing_after_install: "{arg0}: vnc.html missing after install."
+lifecycle.error.novnc.websockify_binary_missing_after_apt_install: "{arg0}: websockify binary missing after apt install."
+lifecycle.error.novnc.xvnc_binary_missing_after_apt_install: "{arg0}: Xvnc binary missing after apt install."
+lifecycle.error.nzbhydra2.nzbhydra2wrapperpy3_py_not_found_in_release_asset: "{arg0}: nzbhydra2wrapperPy3.py not found in release asset."
+lifecycle.error.ombi.ombi_binary_not_found_in_release_asset: "{arg0}: Ombi binary not found in release asset."
+lifecycle.error.plex.missing_template: "{arg0}: missing template {arg1}."
+lifecycle.error.prefetcharr.binary_missing_at_bin_prefetcharr: "{arg0}: binary missing at {arg1}/bin/prefetcharr."
+lifecycle.error.prefetcharr.cargo_build_release_failed: "{arg0}: cargo build --release failed."
+lifecycle.error.prefetcharr.cargo_rustup_ensure_failed: "{arg0}: cargo/rustup ensure failed."
+lifecycle.error.pyload.pyload_web_blueprint_not_found: "{arg0}: pyLoad web blueprint not found."
+lifecycle.error.pyload.unable_to_allow_login_page_assets: "{arg0}: unable to allow login page assets."
+lifecycle.error.pyload.uv_pip_install_pyload_ng_from_failed: "{arg0}: uv pip install pyload-ng from {arg1} failed."
+lifecycle.error.quasarr.console_script_missing_after_uv_sync: "{arg0} : .venv/bin/quasarr absent après uv sync."
+lifecycle.error.quasarr.routes_patch_missing_in_storage_setup_hostnames_py: "{arg0}: routes patch missing in storage/setup/hostnames.py."
+lifecycle.error.quasarr.subpath_patch_missing_import_json_in_html_templates_py: "{arg0}: subpath patch missing import json in html_templates.py."
+lifecycle.error.quasarr.subpath_patch_missing_in_html_templates_py: "{arg0}: subpath patch missing in html_templates.py."
+lifecycle.error.quasarr.subpath_patch_missing_krate_url_base_in_html_templates_py: "{arg0}: subpath patch missing krate_url_base in html_templates.py."
+lifecycle.error.quasarr.subpath_render_smoke_test_failed_check_html_templa_5d4b1b8a: "{arg0}: subpath render smoke test failed (check html_templates.py patch)."
+lifecycle.error.quasarr.subpath_route_rewrite_failed: "{arg0} : échec de la réécriture des routes pour la base d'URL KRATE."
+lifecycle.error.quassel.quasselcore_missing_at_bin_quasselcore: "{arg0}: quasselcore missing at {arg1}/bin/quasselcore."
+lifecycle.error.reiverr.unable_to_enable_node_web_api_types: "{arg0}: unable to enable Node web API types."
+lifecycle.error.requestrr.missing_extracted_release_layout: "{arg0}: missing {arg1} (extracted release layout)."
+lifecycle.error.resilio-sync.failed_to_obtain_rslsync_apt_cdn: "{arg0}: failed to obtain rslsync (apt + CDN)."
+lifecycle.error.resilio-sync.rslsync_missing_at_rslsync: "{arg0}: rslsync missing at {arg1}/rslsync."
+lifecycle.error.shared.cmake_install_failed: "{arg0}: cmake install failed."
+lifecycle.error.shared.dotnet_install_sh_failed_for_channel: "{arg0}: dotnet-install.sh failed for channel {arg1}."
+lifecycle.error.shared.dotnet_missing: "{arg0}: dotnet missing."
+lifecycle.error.shared.dotnet_still_missing_after_install_script: "{arg0}: dotnet still missing after install script."
+lifecycle.error.shared.failed_to_apply_patch: "{arg0}: failed to apply patch {arg1}."
+lifecycle.error.shared.install_release_base_asset_missing_in_manifest: "{arg0}: install.release.base/asset missing in manifest."
+lifecycle.error.shared.java_binary_missing_after_apt_install: "{arg0}: java binary missing after apt install."
+lifecycle.error.shared.probe_missing_listen_port_after_autogen: "{arg0}: probe: missing listen port after autogen."
+lifecycle.error.shared.requirements_txt_missing_in: "{arg0}: requirements.txt missing in {arg1}."
+lifecycle.error.shared.uv_pip_install_failed_in: "{arg0}: uv pip install failed in {arg1}."
+lifecycle.error.shared.uv_sync_failed_in: "{arg0}: uv sync failed in {arg1}."
+lifecycle.error.sickchill.no_installable_python_deps_in: "{arg0}: no installable Python deps in {arg1}."
+lifecycle.error.sickchill.pip_install_imdbpie_trans_failed: "{arg0}: pip install imdbpie/trans failed."
+lifecycle.error.sickchill.uv_pip_install_runtime_requirements_failed: "{arg0}: uv pip install runtime requirements failed."
+lifecycle.error.sickgear.uv_venv_pip_install_requirements_failed: "{arg0}: uv venv / pip install requirements failed."
+lifecycle.error.stremio.download_server_sh_missing_after_zenfw_release_extract: "{arg0}: download_server.sh missing after zenfw release extract."
+lifecycle.error.stremio.node_runtime_missing_at: "{arg0}: node runtime missing at {arg1}."
+lifecycle.error.stremio.server_js_missing_after_download_server_sh: "{arg0}: server.js missing after download_server.sh."
+lifecycle.error.subsonic.bundled_java_8_runtime_is_missing: "{arg0}: bundled Java 8 runtime is missing."
+lifecycle.error.subsonic.failed_to_download: "{arg0}: failed to download {arg1}/{arg2}."
+lifecycle.error.subsonic.failed_to_fetch_bundled_java_8_jre: "{arg0}: failed to fetch bundled Java 8 JRE."
+lifecycle.error.subsonic.install_release_java_repo_asset_missing_in_manifest: "{arg0}: install.release.java repo/asset missing in manifest."
+lifecycle.error.subsonic.failed_to_patch_open_sans_woff2: "{arg0}: failed to patch Open Sans woff2 font sources in subsonic.war."
+lifecycle.error.subsonic.required_subsonic_runtime_files_missing_after_extract: "{arg0}: required Subsonic runtime files missing after extract."
+lifecycle.error.subsonic.subsonic_sh_missing_after_extract: "{arg0}: subsonic.sh missing after extract."
+lifecycle.error.subsonic.subsonic_sh_not_found_at: "{arg0}: subsonic.sh not found at {arg1}."
+lifecycle.error.suggestarr.api_service_requirements_txt_not_found: "{arg0}: api_service/requirements.txt not found."
+lifecycle.error.suggestarr.uvicorn_missing_after_pip_install: "{arg0}: uvicorn missing after pip install."
+lifecycle.error.syncthing.config_xml_was_not_created: "{arg0}: config.xml was not created."
+lifecycle.error.tdarr.tdarr_server_binary_missing_after_github_release_extract: "{arg0}: Tdarr_Server binary missing after GitHub release extract."
+lifecycle.error.tdarr.extract_failed_exit: "{arg0}: archive extract failed (exit {arg1})."
+lifecycle.error.thelounge.thelounge_add_user_failed_create_the_account_via_cli: "{arg0}: thelounge add user failed — create the account via CLI."
+lifecycle.error.threadfin.foreground_probe_8s: "{arg0}: foreground probe (8s)."
+lifecycle.error.threadfin.settings_json_was_not_created: "{arg0}: settings.json was not created."
+lifecycle.error.threadfin.unit_is_not_active: "{arg0}: unit is not active."
+lifecycle.error.transmission.transmission_web_ui_not_found_under_usr_share_transmission: "transmission: web UI not found under {arg0}/usr/share/transmission."
+lifecycle.error.tunarr.tunarr_binary_missing_after_extract: "{arg0}: tunarr binary missing after extract."
+lifecycle.error.unmanic.pypi_wheel_failed_wrapping_cloned_source: "{arg0}: PyPI wheel failed; wrapping cloned source."
+lifecycle.error.unmanic.uv_venv_requirements_failed: "{arg0}: uv venv / requirements failed."
+lifecycle.error.wizarr.missing: "{arg0}: missing {arg1}."
+lifecycle.error.wizarr.uv_sync_failed: "{arg0}: uv sync failed."
+lifecycle.error.x2go.x2golistsessions_missing_after_apt_install: "{arg0}: x2golistsessions missing after apt install."
+lifecycle.error.znc.znc_missing_at_bin_znc: "{arg0}: znc missing at {arg1}/bin/znc."
+lifecycle.hint.decluttarr.no_arr_or_download_client_configured_edit_then_sys_04a344f8: "{arg0}: no *arr or download client configured — edit {arg1} then: systemctl start {arg2}."
+lifecycle.hint.labelarr.set_plex_token_and_tmdb_read_access_token_in_then_restart: "{arg0}: set PLEX_TOKEN and TMDB_READ_ACCESS_TOKEN in {arg1} then restart {arg2}."
+lifecycle.hint.notifiarr.no_api_key_provided_wrote_placeholder_set_api_key_7fba7bd5: "{arg0}: no API key provided — wrote placeholder; set api_key in {arg1}/notifiarr.conf (https://notifiarr.com)."
+lifecycle.hint.requestrr.api_auth_register_did_not_return_a_token_set_crede_ff712156: "{arg0}: /api/auth/register did not return a token — set credentials in the web UI."
+lifecycle.hint.scraparr.no_arr_targets_configured_edit_then_systemctl_start: "{arg0}: no *arr targets configured — edit {arg1} then: systemctl start {arg2}."
+lifecycle.hint.suggestarr.api_auth_setup_did_not_create_admin_configure_logi_fb33c132: "{arg0}: /api/auth/setup did not create admin — configure login in the web UI if needed."
+lifecycle.hint.wizarr.create_admin_account_in_the_web_ui_setup: "{arg0}: create admin account in the web UI (/setup)."
+lifecycle.error.airsonic.auth_failed: "{arg0} : authentification échouée pour {arg1} : {arg2}."
+lifecycle.error.airsonic.create_update_failed: "{arg0} : création/mise à jour de {arg1} échouée : {arg2}."
+lifecycle.error.airsonic.grant_admin_failed: "{arg0} : attribution ADMIN échouée : {arg1}."
+lifecycle.error.airsonic.scramble_admin_failed: "{arg0} : invalidation du mot de passe admin échouée : {arg1}."
+lifecycle.error.labelarr.not_elf_binary: "{arg0} : l'asset téléchargé n'est pas un binaire ELF."
+# --- end generated handler lifecycle messages ---
+errors.backup.create_backup: Create Failed.
+errors.backup.find_backup_files: No files or directories provided for backup.
+errors.binary_tool.check_configuration: Binary tool not configured.
+errors.binary_tool.find_binaries: No binaries found.
+errors.binary_tool.find_compatible_binaries: No compatible binaries found.
+errors.binary_tool.find_displayable_binaries: No displayable binaries found.
+errors.binary_tool.find_installed_binaries: No installed binaries found.
+errors.binary_tool.find_users: No users found.
+errors.common.change_directory: Failed to change directory to {arg0}.
+errors.common.check_command_availability: Command Not Available.
+errors.common.check_entry_existence: Entry '{arg0}' already exists.
+errors.common.check_permissions_for: "Permission denied for: {arg0}."
+errors.common.check_permissions: Permission denied.
+errors.common.create_resource_dir: Failed to create directory {arg0}.
+errors.common.find_command: "Command not found: {arg0}"
+errors.common.find_path: "Path not found: {arg0}."
+errors.common.find_zenfw_command: "zenfw command not found."
+errors.common.load_yaml_file: Failed To Load Yaml.
+errors.common.read_resource: Failed to read {arg0}.
+errors.common.remove_resource: Failed to remove {arg0}.
+errors.common.set_error_prefix: "Error"
+errors.common.show_help_commands: "Run 'zenfw help' for a list of available commands."
+errors.common.show_help_info: "Run 'zenfw help' for more information."
+errors.common.show_usage_help: "'Usage: zenfw <command> [arguments]'"
+errors.common.validation_action_param: "Invalid action: {arg0}."
+errors.common.validation_action_param_service: "Invalid action '{arg0}'. Valid actions are: start, stop, restart, enable, disable, status."
+errors.common.validation_arg_count: Too many arguments provided.
+errors.common.validation_argument_count: Insufficient arguments.
+errors.common.validation_argument: "Invalid argument '{arg0}': {arg1}."
+errors.common.validation_command: "Invalid command: {arg0}."
+errors.common.validation_infobox_type: "Invalid infobox type: {arg0}."
+errors.common.validation_input: "validation.failed for field '{arg0}'."
+errors.common.validation_json_payload: Invalid JSON payload.
+errors.common.validation_key_format: "Invalid key: {arg0}."
+errors.common.validation_option_param: Invalid Option.
+errors.common.validation_path: Invalid Path.
+errors.common.validation_path_param: "Path required"
+errors.common.validation_required_arg: Missing required argument.
+errors.common.validation_required_args: "Missing required arguments: {arg0}."
+errors.common.validation_required_argument: Missing Argument.
+errors.common.validate_action_param: "Invalid action: {arg0}."
+errors.common.write_resource: Failed to write to {arg0}.
+errors.common.root_privileges_required: Root privileges are required for this operation.
+errors.config.find_settings: No Settings Found.
+errors.config.index_out_of_range: "Config index out of range: {arg0}."
+errors.config.key_not_found: "Config key not found: {arg0}."
+errors.cli.enhanced_deps_failed: Failed to install enhanced CLI dependencies (fastfetch, jq).
+errors.cli.invalid_mode: "Invalid CLI mode: {arg0}. Use original or enhanced."
+errors.cli.mode_write_failed: Failed to write cli.mode in /etc/krate/environment.d/zenfw.conf.local.
+errors.cli.starship_install_failed: "Failed to install starship: {arg0}"
+errors.database.check_constraint_compliance: Database constraint violation.
+errors.database.check_lock_status: Database is locked. Another process may be using it.
+errors.database.check_permissions: Permission denied. Check file permissions.
+errors.database.detect_unsafe_sql: "Potentially dangerous SQL detected"
+errors.database.execute_query: Database query failed.
+errors.database.find_database_file: "Database file not found"
+errors.database.find_resource: Table, column, or record not found.
+errors.database.find_sqlite_command: sqlite3 command not found
+errors.database.handle_sqlite_error: SQLite error
+errors.database.validation_argument_count: "'Error: Insufficient arguments.'"
+errors.database.validation_column_count: "Error: Column count mismatch."
+errors.database.validation_identifier_index: "Error: Invalid identifier index: {arg0}."
+errors.database.validation_row_format: "Error: Invalid row format or column count mismatch."
+errors.dependency.check_curl_installation: curl is not installed. Please install curl to use this feature.
+errors.dependency.check_curl_requirement: "Requires Curl."
+errors.dependency.check_git_requirement: "'{arg0}: requires git.'"
+errors.dependency.check_missing_dependencies: "No dependencies found for {arg0}."
+errors.dependency.check_required_tools: Required tools not installed.
+errors.dependency.check_sqlite_installation: sqlite3 not found. Please install sqlite3.
+errors.dependency.check_uv_installation: uv is not installed.
+errors.dependency.configure_igpu_grub: "Failed to update GRUB configuration for Intel GPU."
+errors.dependency.configure_sendmail: Failed to configure sendmail.
+errors.dependency.execute_apt_remove: Failed to remove dependencies
+errors.dependency.execute_apt_update: Failed to update system.
+errors.dependency.execute_removal: Removal failed
+errors.dependency.execute_upgrade: Upgrade failed
+errors.dependency.extract_deb_package: "Failed to unpack {arg0}."
+errors.dependency.find_dependencies: "Dependencies not found for {arg0}."
+errors.dependency.find_dependencies_to_remove: No dependencies to remove
+errors.dependency.find_external_dependencies: No external dependencies found for {arg0}.
+errors.dependency.find_sources: No sources found in configuration.
+errors.dependency.failed_packages: "Échec : {arg0}"
+errors.dependency.handle_failed_packages: "', Failed: {arg1}'"
+errors.dependency.install_failed: "Failed to install APT dependencies."
+errors.dependency.not_found: "No APT dependencies defined for {arg0}."
+errors.dependency.install_package: Installation failed
+errors.dependency.remove_resource: Failed to remove dependencies.
+errors.dependency.update_failed: Update failed
+errors.dependency.write_apt_pin: Failed to write preference file
+errors.dependency.write_preferences: "Cannot write to preference file."
+errors.request.download_file: "Failed Download"
+errors.request.verify_checksum: "Failed Download Checksum"
+errors.request.wait_ping_timeout: "Request to {arg0} timed out after {arg1} seconds."
+errors.environment.find_variable: "'Variable not found: {arg0}.'"
+errors.environment.find_bashrc_file: "'.bashrc file not found: {arg0}.'"
+errors.environment.open_resource_bashrc: "Failed to open .bashrc file for writing: {arg0}."
+errors.environment.set_export_variable: "'Failed to export variable: {arg0}.'"
+errors.environment.validation_format: Invalid Format.
+errors.environment.validation_line_count: "At least one line required."
+errors.environment.validation_variable_assignment: "Variable Assignment Required."
+errors.environment.validation_variable_name: "Variable Name Required."
+errors.environment.write_resource_bash_profile: Failed to Write Bash Profile.
+errors.filesystem.change_destination_directory: "'Failed to change to destination folder: {arg0}.'"
+errors.filesystem.change_directory: Failed to change directory to {arg0}.
+errors.filesystem.change_local_path: "'Failed to change to local path: {arg0}.'"
+errors.filesystem.change_ownership: Failed to change ownership of {arg0}.
+errors.filesystem.change_permissions: Failed to change permissions of {arg0}.
+errors.filesystem.change_target_directory: "'Failed to change to target directory: {arg0}.'"
+errors.filesystem.check_write_permissions: "Cannot Write File."
+errors.filesystem.copy_failed: "Copy failed: {arg0}"
+errors.filesystem.copy_file: Failed to copy {arg0} to {arg1}.
+errors.filesystem.dir_not_found: Directory not found for backup source
+errors.filesystem.create_error: Impossible de créer le dossier {arg0}.
+errors.filesystem.write_error: Impossible d'écrire l'archive de sauvegarde {arg0}.
+errors.fs.copy.file_not_found: Source file or directory not found for copy
+errors.filesystem.create_backup: Failed Create Backup.
+errors.filesystem.create_directory: Failed to create directory {arg0}.
+errors.filesystem.create_output_directory: "Failed to create output directory: {arg0}"
+errors.filesystem.create_parent_directory: "Failed to create parent directory: {arg0}"
+errors.filesystem.create_symlink: Failed to create symlink.
+errors.filesystem.create_temp_file: Failed Create Temp.
+errors.filesystem.execute_sed_command: "Failed to replace {arg0} with {arg1} in {arg2}."
+errors.filesystem.find_file_path: "File not found: path={arg0}"
+errors.filesystem.find_key_file: "Key Not Found."
+errors.filesystem.move_failed: "Move failed: {arg0}"
+errors.filesystem.move_file: Failed to move {arg0} to {arg1}.
+errors.filesystem.open_pipe: "Failed to open pipe for command: {arg0}"
+errors.filesystem.open_read_file: Failed Open Read.
+errors.filesystem.update_content: "Replace Failed."
+errors.filesystem.validation_archive_format: "Unsupported Archive Format."
+errors.filesystem.validation_file_format: "'Unsupported archive format: {arg0}'"
+errors.filesystem.validation_regex_pattern: "Invalid regex pattern: {arg0}"
+errors.filesystem.write_failed: Write Failed.
+errors.git.add_remote: "Failed to add git remote."
+errors.git.api_error: "La requête API GitHub a échoué ({arg0})."
+errors.git.asset_not_found: "Aucun fichier de release GitHub correspondant n'a été trouvé."
+errors.git.download_failed: "Échec du téléchargement de la release GitHub."
+errors.git.find_curl_command: "La commande curl est introuvable."
+errors.git.flatten_destination_exists: "Impossible d'aplatir l'archive : la destination existe déjà : {arg0}"
+errors.git.folder_not_found: "Dossier distant introuvable."
+errors.git.invalid_repo_name: "Nom de dépôt GitHub invalide (attendu owner/repo)."
+errors.git.not_found: "Le dépôt ou la release GitHub est introuvable."
+errors.git.rate_limit: "GitHub est temporairement indisponible. Réessayez plus tard."
+errors.git.release_not_found: "Aucune release GitHub ne correspond à « {arg0} »."
+errors.git.configure_sparse_checkout: "Failed to configure sparse checkout."
+errors.git.create_resource_sparse_checkout_file: Failed to create sparse-checkout file.
+errors.git.download_folder: "'Failed to download folder: {arg0}.'"
+errors.git.download_release: "Failed to download release."
+errors.git.execute_clone_command: "'git:: Clone: Git clone failed'"
+errors.git.execute_pull: "Failed to pull from remote."
+errors.git.extract_check_command_availability: "fs::extract command not available."
+errors.git.extract_release: "Failed to extract release."
+errors.git.fetch_api_content: "Failed to fetch content from GitHub API."
+errors.git.fetch_releases: "Failed to fetch releases from GitHub API."
+errors.git.find_git_command: "git:: Clone: git command not found"
+errors.git.find_matching_asset: No matching asset found for {arg0}.
+errors.git.find_release_for_version: No release found for version {arg0}.
+errors.git.find_release: No release found for {arg0}.
+errors.git.find_release_url: No release URL found.
+errors.git.find_tag: No tag found for {arg0}.
+errors.git.handle_api_response: "'Failed to parse GitHub API response: {arg0}'"
+errors.git.handle_json_parse_error: Json Parse errors.
+errors.git.init_repository: "Failed to initialize git repository."
+errors.git.init_failed: "Failed to initialize git repository at {arg0}."
+errors.git.perform_clone: "Failed to clone {arg0} repository."
+errors.git.perform_pull: "Failed to pull from {arg0}."
+errors.git.sync_path_not_git: "Path {arg0} exists but is not a git repository."
+errors.git.read_resource_os_release: Failed to read /etc/os-release.
+errors.git.set_remote_failed: "Failed to set git remote for {arg0}."
+errors.git.stop_operation: "Switch to beta branch cancelled."
+errors.git.validation_api_response: Invalid API response from GitHub.
+errors.git.validation_asset_args: "'git:: Asset:: Get_matching: requires at least 1 argument (repo_name).'"
+errors.git.validation_branch_match: Cannot switch to main when beta branch is set.
+errors.git.validation_folder_args: "'git:: Folder:: Download: requires 4 arguments (local_path, repo_name, branch, remote_folder).'"
+errors.git.validation_prerelease_args: "'git:: Prerelease:: Check: requires 2 arguments (repo_name, current_version).'"
+errors.git.validation_prerelease_version: "Version {arg0} is not a prerelease."
+errors.git.validation_release_args: "'git:: Release:: Get: requires 4 arguments (target_dir, repo_name, is_prerelease, release_name).'"
+errors.git.validation_repo_name: Invalid Repo Name
+errors.git.validation_tree_args: "'git:: Tree:: List: requires at least 2 arguments (remote_path, repo_name).'"
+errors.system.detect_cpu_generation: "Failed to detect CPU generation."
+errors.system.detect_cpu_model: "Failed to detect CPU model."
+errors.system.find_gpu: No GPU detected.
+errors.system.find_intel_gpu: No Intel GPU detected.
+errors.intl.check_locale_file_status: No Locale File Currently Loaded.
+errors.intl.find_locale_file: "Locale File Not Found."
+errors.intl.load_translations: "'Failed to load translations for language: {arg0}.'"
+errors.intl.set_timezone: "Failed to Set Timezone To."
+errors.intl.validation_language_code: "Unknown Language Code."
+errors.json.build_project: "JSON build failed: {arg0}"
+errors.json.create_content: "'JSON escape failed: {arg0}'"
+errors.json.extract_data: "'JSON extraction failed: {arg0}'"
+errors.json.handle_data: "'JSON parsing failed: {arg0}'"
+errors.json.validation_argument_pairs: "Arguments must be in key-value pairs"
+errors.json.validation_data: JSON validation.failed - invalid format
+errors.json.validation_key_format: "'Key not found or not a string: {arg0}'"
+errors.license.add_save_failed: "Failed to save license information: {arg0}"
+errors.license.add_success: Add Success.
+errors.license.add_table_creation_failed: Failed to create license table
+errors.license.add_usage: "Usage: zenfw license:: Add <license_key>"
+errors.license.add_validation_key_format: Invalid or inactive license key
+errors.license.add_vault_path_failed: Failed to get vault database path. Please initialize the vault first.
+errors.license.add_verification_failed: "License verification failed: {arg0}"
+errors.license.action_denied_by_features: "App action '{arg0}' is not allowed by your license features."
+errors.license.feature_required: "This action requires the '{arg0}' license feature."
+errors.license.app_tier_pro_required: "Application '{arg0}' requires a Pro license."
+errors.license.app_type_not_allowed: "Application '{arg0}' has type '{arg1}', which is not allowed by your license."
+errors.license.app_unknown_in_catalog: "Application '{arg0}' is not listed in the catalog."
+errors.license.catalog_missing: "Application catalog unavailable: {arg0}"
+errors.license.check_token_found: Check Token Found.
+errors.license.check_premium_required: "Premium app requires a valid license key.\n\nGet a license at: https://mediaease.com/pricing\n\nSet your license key with: zen vault add license.key YOUR_KEY system"
+errors.license.complete_revoke: "Revoke Success."
+errors.license.execute_revoke: "'License revocation failed: {arg0}'"
+errors.license.find_license_key: "License Key Not Found."
+errors.license.find_machine_id: "Machine Id Not Found."
+errors.license.find_revoke_key: "License key not found in vault. License may not be activated."
+errors.license.find_revoke_machine: "Machine ID not found in vault. License may not be activated."
+errors.license.handle_revoke_response: "'License revocation failed: {arg0}'"
+errors.license.max_apps_reached: "Application limit reached ({arg0}/{arg1}). Upgrade your license to install more apps."
+errors.license.validation_api_url: "MediaEase API URL is not configured.\nPlease set it using one of the following methods:\n  1. Environment variable: export MEDIAEASE_API_URL=\"https://api.mediaease.com\"\n  2. Vault storage: zen vault add system.api_url \"https://api.mediaease.com\" system"
+errors.license.validation_revoke_key: "License key is empty. License may not be activated."
+errors.license.validation_revoke_machine: "Machine ID is empty. License may not be activated."
+errors.license.verify_token_invalid: Invalid or revoked installation token
+errors.license.verify_token_network_error: "Token verification failed: network error"
+errors.license.verify_token_usage: "Usage: zenfw license:: Verify_token <token> <app_name>"
+errors.license.verify_token_valid: Verify Token Valid.
+errors.log.create_file: Failed to create log file
+errors.log.create_log_file: "Unable to create log file: {arg0}."
+errors.log.generate_stack_trace: Failed to generate stack trace
+errors.log.init_system: "Failed to initialize logging system: {arg0}"
+errors.log.open_dashboard: Unable To Open Dashboard.
+errors.log.open_file: Failed to open log file
+errors.log.open_log_file: "Unable to open log file: {arg0}."
+errors.request.detect_address: Failed to get IPv4 address.
+errors.request.check_curl_availability: curl command not available
+errors.request.check_port_usage: Port {arg0} is unavailable.
+errors.request.download_completed_file_find_resource: Download completed but file not found
+errors.request.execute_curl_command: curl failed with exit code {arg0}
+errors.request.http_error_with_body: "HTTP {arg0}: {arg1}"
+errors.request.http_error_status: "HTTP error status {arg0}"
+errors.request.invalid_http_status_response: Invalid HTTP status in response
+errors.request.execute_operation: Network operation failed after all retries
+errors.request.validation_api_response: Invalid API response (HTTP {arg0}).
+errors.request.validation_configuration: "Invalid network configuration: {arg0}."
+errors.crypto.create_key: Failed to generate OpenSSL key.
+errors.permission.apply_file_permissions: Échec de l’application des permissions fichier.
+errors.permission.apply_permissions: Échec de l’application des permissions.
+errors.permission.change_ownership: Échec du changement de propriétaire.
+errors.permission.chmod_failed: Échec du changement des permissions.
+errors.permission.chown_failed: "Échec du changement de propriétaire : {arg0}"
+errors.permission.find_group: Groupe introuvable.
+errors.permission.find_user: Utilisateur introuvable.
+errors.permission.group_not_found: "Groupe introuvable : {arg0}"
+errors.permission.insufficient_arguments: Arguments insuffisants pour la commande de permissions
+errors.permission.invalid_dir_permission: Format de permission de répertoire invalide
+errors.permission.invalid_file_permission: Format de permission de fichier invalide
+errors.permission.invalid_group: Format de nom de groupe invalide
+errors.permission.invalid_path: Chemin invalide
+errors.permission.invalid_username: Format de nom d’utilisateur invalide
+errors.permission.user_not_found: Utilisateur introuvable
+errors.permission.setfacl_missing: "setfacl introuvable ; installer le paquet acl"
+errors.permission.harden_parents_failed: "Échec du durcissement des permissions parents /home ou /opt"
+errors.permission.harden_tree_failed: "Échec du durcissement de l’arbre utilisateur : {arg0}"
+errors.permission.harden_acl_failed: "Échec de l’application des ACL POSIX sur {arg0}"
+errors.permission.harden_no_roots: "Aucun arbre /home|/opt trouvé pour l’utilisateur {arg0}"
+errors.permission.validation_directory_format: Format de répertoire invalide.
+errors.permission.validation_file_format: Format de fichier invalide.
+errors.prompt.choose_requires_arguments: Choose requires Arguments.
+errors.prompt.validation_choice: Invalid Choice.
+errors.prompt.validation_default_option: Default Must Be Option.
+errors.prompt.validation_default_yn: Default Must Be Yn.
+errors.prompt.validation_multi_select_args: Multi Select requires Arguments.
+errors.prompt.validation_raid_argument: Raid requires Argument.
+errors.prompt.validation_raid_level: Invalid Raid Level.
+errors.prompt.validation_selection: No Selection Made.
+errors.prompt.validation_selections: No Valid Selections.
+errors.provider.detect_failed: "Unable to detect cloud provider"
+errors.provider.install_kernel: "Failed to install official kernel"
+errors.proxy.check_caddy_installation: caddy is not installed.
+errors.proxy.create_directory: Failed to create directory
+errors.proxy.create_resource_auth_dir: Failed to create directory /etc/caddy/auth/local.
+errors.proxy.create_resource: Failed to create {arg0}.
+errors.proxy.read_file: Failed to read file
+errors.proxy.secure_password: Failed to hash password.
+errors.proxy.update_users: Failed to update users file.
+errors.proxy.validation_port: Port must be a valid number.
+errors.proxy.write_file: Failed to write file
+errors.quota.insufficient_arguments: "Arguments invalides pour la commande quota"
+errors.quota.invalid_username: "Nom d’utilisateur invalide"
+errors.quota.invalid_limit: "Limite de quota invalide (ex. 500MB, 10GB, 1TB)"
+errors.quota.install_failed: "Échec de l’installation ou de l’activation des quotas kernel"
+errors.quota.set_failed: "Échec de la définition du quota disque"
+errors.quota.status_failed: "Échec de la lecture du statut de quota : {arg0}"
+errors.quota.over_limit: "Quota disque dépassé pour {arg0} : utilisé {arg1}, limite {arg2}. Libérez de l’espace ou augmentez le quota avant d’installer un logiciel."
+errors.regex.build_pattern: 'Failed to compile regex pattern "{arg0}": {arg1}'
+errors.request.check_app_get_curl: "request:: App:: Get: requires curl."
+errors.request.check_app_save_curl: "request:: App:: Save: requires curl."
+errors.request.execute_app_get_curl: "request:: App:: Get: curl command failed."
+errors.request.execute_app_save_curl: "request:: App:: Save: curl command failed."
+errors.request.find_curl_command: curl command not found
+errors.request.handle_network_error: "Network error: {arg0}"
+errors.request.validation_api_put_args: "Error: endpoint, payload, api_url and api_key arguments required."
+errors.request.validation_app_get_args: "request:: App:: Get: too many arguments."
+errors.request.validation_app_get_endpoint: "request:: App:: Get: requires at least 1 argument (endpoint)."
+errors.request.validation_app_get_response: "request:: App:: Get: empty response from endpoint."
+errors.request.validation_app_save_args: "request:: App:: Save: too many arguments."
+errors.request.validation_app_save_endpoint: "request:: App:: Save: requires at least 1 argument (endpoint)."
+errors.request.validation_app_save_method: "request:: App:: Save: Invalid HTTP method. Use POST, PUT, PATCH, or DELETE."
+errors.request.validation_curl_args: "request:: Curl:: Get_flag: too many arguments."
+errors.request.validation_curl_verbosity: "request:: Curl:: Get_flag: Invalid verbosity level. Use 'debug', 'verbose', or 'normal'."
+errors.system.configure_ssh: Failed to secure SSH.
+errors.system.detect_encoded_traversal: Encoded path traversal attempt detected
+errors.service.create_service_file: Failed to create service file
+errors.service.usage: "Usage: zen service <start|stop|status|enable|disable|reload|restart|list|log> ..."
+errors.service.list_usage: "Usage: zen service list <username>"
+errors.service.list_unavailable: "Could not list services (database unavailable)."
+errors.service.lifecycle_usage: "Usage: zen service {arg0} <unit>"
+errors.service.manage_unavailable: "Service management command is not available."
+errors.service.disable_service: Failed to disable {arg0} service.
+errors.service.enable_service: Failed to enable {arg0} service.
+errors.service.enable_failed: "Failed to enable {arg0} service."
+errors.service.disable_failed: "Failed to disable {arg0} service."
+errors.service.execute_action: Failed to {arg0} {arg1} service.
+errors.service.find_resource: Service {arg0} not found.
+errors.service.find_systemctl_command: systemctl not found. This command requires systemd.
+errors.service.generate_config: Service generation failed
+errors.service.multi_user_missing_zen_soft_user: "Cannot generate multi-user service for {arg0}: install username (ZEN_SOFT_USER) is not set."
+errors.service.start_service: Failed to start {arg0} service.
+errors.service.stop_service: Failed to stop {arg0} service.
+errors.service.validation_api_put_not_available: "service:: validation: request:: Api:: Put command not available"
+errors.service.validation_argument_count: Insufficient arguments
+errors.service.validation_env_vars_required: "service:: validation: API_URL and API_KEY environment variables required"
+errors.service.validation_failed_build_config_json: "service:: validation: failed to build JSON for configuration"
+errors.service.validation_failed_build_json: "service:: validation: failed to build JSON result"
+errors.service.validation_failed_build_ports_json: "service:: validation: failed to build JSON for ports"
+errors.service.validation_failed_store: "service:: validation: failed to store service in database: {arg0}"
+errors.service.validation_no_entries: "service:: validation: no service configuration entries found. Call service:: Build:: Add_entry first."
+errors.service.validation_requires_arguments: "service:: validation: requires at least 2 arguments (service_name, is_child)"
+errors.set.cli_apply_failed: "CLI mode saved but host apply failed: {arg0}"
+errors.set.command_unavailable: Set command database backend is unavailable.
+errors.set.invalid_cli_mode: "Invalid CLI mode: {arg0}. Use original or enhanced."
+errors.set.invalid_account_creation: "Invalid account creation mode: {arg0}. Use admin_activation, email_activation, or disabled."
+errors.set.invalid_locale_region: "Invalid locale region: {arg0}. Use en_gb, en, or fr."
+errors.set.invalid_timezone: "Invalid timezone: {arg0}. Use an IANA zone like Europe/Paris or UTC."
+errors.set.timezone_set_failed: "Failed to set system timezone to {arg0}."
+errors.set.invalid_update_channel: "Canal de mise à jour invalide : {arg0}. Utilisez main ou beta."
+errors.set.invalid_apt_auto_upgrade: "Valeur apt-auto-upgrade invalide : {arg0}. Utilisez true ou false."
+errors.set.update_channel_not_licensed: "Le canal beta nécessite une licence beta ou développeur."
+errors.set.missing_value: "Missing value for setting: {arg0}"
+errors.set.update_failed: "Failed to update setting {arg0}: {arg1}"
+errors.domain.empty_apex: Apex domain cannot be empty.
+errors.domain.invalid_apex: "Invalid apex domain: {arg0}"
+errors.domain.invalid_subdomain_label: "Invalid subdomain label: {arg0}"
+errors.domain.caddy_env_write_failed: Failed to update Caddy environment file.
+errors.domain.caddyfile_update_failed: Failed to update Caddyfile apex host.
+errors.domain.db_update_failed: Failed to update Harmony database domain settings.
+errors.domain.cookie_sync_failed: Failed to synchronize portal cookie domain.
+errors.domain.user_site_write_failed: "Failed to write Caddy site block for user {arg0}"
+errors.domain.user_subdomain_persist_failed: "Failed to persist subdomain for user {arg0}"
+errors.domain.proxy_regenerate_failed: "Failed to regenerate proxy snippets for user {arg0}"
+errors.domain.apex_not_configured: Configure the apex domain before assigning user subdomains.
+errors.domain.caddy_reload_failed: Caddy reload failed after domain update.
+errors.domain.vsftpd_openssl_missing: OpenSSL is required to regenerate the VSFTPD TLS certificate.
+errors.domain.vsftpd_cert_generate_failed: Failed to regenerate the VSFTPD TLS certificate.
+errors.domain.vsftpd_restart_failed: VSFTPD TLS certificate was updated but the service restart failed.
+errors.domain.use_domain_flags: "Use zen set domain <value> [--user <username>] [--clear]"
+errors.domain.clear_requires_user: "--clear requires --user <username>"
+errors.software.user_subdomain_not_configured: "User {arg0} has no subdomain configured and the username cannot be used as a DNS label (zen set domain <label> --user {arg0})"
+errors.setup.check_root_privileges: Root Required
+errors.setup.find_caddy_template: Caddy Tpl Not Found
+errors.setup.validation_command: validation.Cmd Not Found
+errors.setup.validation_required_field: Required Field Empty
+errors.shell.validation_arg_count_capitalize: "shell:: Capitalize_first: too many arguments."
+errors.shell.validation_arg_count_lowercase: "shell:: Lowercase: too many arguments."
+errors.shell.validation_arg_count: Too many arguments.
+errors.shell.validation_background_color: "Invalid background color: {arg0}."
+errors.shell.validation_message_count: At least one message is required.
+errors.software.check_autogen_key: "Invalid autogen key: {arg0}."
+errors.software.check_config_syntax: "Invalid configuration expression: {arg0}."
+errors.software.check_installation_by_others: "{arg0} is already installed for other users."
+errors.software.check_installation_status: "{arg0} is already installed."
+errors.software.check_proxy_command: Proxy Command Not Available
+errors.software.check_software_name: Software name not found.
+errors.software.download_bundle: Bundle Download Failed.
+errors.software.download_bundle_file: Bundle File Download Failed.
+errors.software.execute_bundle: Bundle Execution Failed.
+errors.software.find_bundle_id: Bundle Id Not Found.
+errors.software.find_bundle_token: Bundle Token Not Found.
+errors.software.find_config_file: Configuration file not found.
+errors.software.find_script: Script Not Found.
+errors.software.generate_autogen_values: Failed to Generate Autogen Values.
+errors.software.generate_proxy_file: Failed to Generate Proxy File.
+errors.software.generate_service_file: Failed to Generate Service File.
+errors.software.handle_options: Failed to Process Options.
+errors.software.recover_data: Échec de la restauration depuis la sauvegarde.
+errors.software.invalid_backup_context: "Contexte de sauvegarde invalide : {arg0}. Utilisez manual, scheduled ou base."
+errors.software.backup_none_found: "Aucune archive de sauvegarde pour {arg0} (utilisateur {arg1})."
+errors.software.backup_archive_not_found: "Archive de sauvegarde introuvable : {arg0}."
+errors.software.backup_archive_unreadable: "Archive de sauvegarde illisible : {arg0}."
+errors.software.backup_archive_outside_root: "L'archive de sauvegarde est hors du dossier de l'application : {arg0}."
+errors.software.backup_delete_failed: "Échec de la suppression de l'archive de sauvegarde : {arg0}."
+errors.software.backup_delete_base_forbidden: "Les clichés d'installation (*_base.tar.gz) ne peuvent pas être supprimés : {arg0}."
+errors.software.backup_source_missing: "Aucun dossier source à sauvegarder pour {arg0}."
+errors.software.backup_failed: "Échec de la sauvegarde de {arg0}."
+errors.software.backup_stop_failed: "Impossible d'arrêter le service avant de sauvegarder {arg0}."
+errors.software.backup_start_failed: "Impossible de redémarrer le service après la sauvegarde de {arg0}."
+errors.software.restore_wipe_failed: "Impossible de vider la cible de restauration : {arg0}."
+errors.software.restore_stop_failed: "Impossible d'arrêter le service avant de restaurer {arg0}."
+errors.software.restore_start_failed: "Impossible de redémarrer le service après la restauration de {arg0}."
+errors.software.reset_failed: "Échec de la réinitialisation de {arg0} ({arg1})."
+errors.software.reset_unavailable: La réinitialisation n'est pas disponible.
+errors.software.reset_stop_failed: "Impossible d'arrêter le service avant de réinitialiser {arg0}."
+errors.software.reset_start_failed: "Impossible de redémarrer le service après la réinitialisation de {arg0}."
+errors.software.plex_entitlement_required: "{arg0} : le claim Plex Pass nécessite la fonctionnalité licence plex."
+errors.software.username_required: "Un nom d'utilisateur est requis pour {arg0} {arg1}."
+errors.software.unknown_app: "Application inconnue : {arg0}."
+errors.software.validation_port_type: Invalid port type specified for {arg0}.
+errors.software.validation_request_command: Request Command Not Available.
+errors.software.version_probe_failed: "Could not determine the runtime version of {arg0}."
+errors.software.validation_service_command: Service Command Not Available
+errors.software.verify_bundle: Bundle Verification Failed.
+errors.software.verify_user_installation: Software Is Not Installed For User.
+errors.software.write_bundle_file: Bundle File Write Failed.
+errors.support.not_enabled: Remote support is not enabled.
+errors.support.code_write_failed: Failed to write the support session code.
+errors.support.entitlement_required: Remote support requires the priority_support entitlement (or support.allow_without_priority for alpha).
+errors.support.expired: Remote support session has expired and was disabled.
+errors.support.service_start_failed: "Failed to start the support session: {arg0}"
+errors.support.session_timeout: Timed out waiting for the auditable support session to become ready.
+errors.support.session_write_failed: Failed to write the support session state.
+errors.support.sshx_install_failed: "Failed to install sshx: {arg0}"
+errors.support.supportd_missing: "Auditable support daemon not found: {arg0}"
+errors.support.unit_install_failed: "Échec d’installation de l’unité systemd de support à {arg0} : {arg1}"
+errors.support.unit_template_missing: "Support systemd unit template not found: {arg0}"
+errors.support.url_timeout: Timed out waiting for the sshx session URL.
+errors.support.url_unavailable: Support session URL is not available yet.
+errors.support.wrapper_missing: "Support wrapper script not found: {arg0}"
+errors.support.wrapper_not_executable: "Support wrapper script is not executable: {arg0}"
+errors.support.write_enable_file: "Failed to write support flag file: {arg0}"
+errors.audit.missing_flag: "Specify one of: --list, --show <id>, --latest (zen support audit)."
+errors.audit.missing_id: "Session id is required (zen support audit --show <id>)."
+errors.audit.no_reports: No support audit reports are available yet.
+errors.audit.not_found: "Support audit report not found: {arg0}"
+errors.system.check_disk_health: Disk health check failed
+errors.system.check_system_distribution: Distribution check failed
+errors.system.create_report: System report generation failed
+errors.system.detect_disk_issues: Disk health issues detected
+errors.system.detect_os_codename: "Failed to determine OS and codename."
+errors.system.detect_system_codename: Codename detection failed
+errors.system.detect_v4_address: Local IPv4 detection failed
+errors.system.detect_v6_address: Local IPv4 detection failed
+errors.system.detect_version: Version detection failed
+errors.system.execute_smart_check: Smart Failed.
+errors.system.find_codename: Unable to determine system codename from /etc/os-release
+errors.system.find_distribution_id: Unable to determine distribution ID from /etc/os-release
+errors.system.find_version: Unable to determine system version from /etc/os-release
+errors.system.handle_v4_address: Failed to resolve IPv4 address using dig
+errors.system.handle_v6_address: Failed to resolve IPv4 address using dig
+errors.system.resolve_v4_address: Failed to get local IPv4 address
+errors.system.resolve_v6_address: Failed to get local IPv4 address
+errors.transcode.execute_apt_update: "apt-get update failed: {arg0}"
+errors.transcode.update_grub: "GRUB update failed: {arg0}"
+errors.user.apply_ban: "Failed to ban user: {arg0}."
+errors.user.check_admin_privileges: User '{arg0}' is not an administrator
+errors.user.check_creation_privileges: User creation requires root privileges
+errors.user.check_group_privileges: Group modification requires root privileges
+errors.user.check_length_numeric: Length must be a valid number
+errors.user.check_password_length: Password length must be between 8 and 128 characters
+errors.user.check_user_duplicate: User '{arg0}' already exists
+errors.user.check_user_existence: User '{arg0}' does not exist
+errors.user.check_user_id: "User ID not found: {arg0}."
+errors.user.check_username_format: Username '{arg0}' does not meet format requirements
+errors.user.check_username_required: Username required.
+errors.user.create_resource: "Failed to create user: {arg0}."
+errors.user.harmony_provision_failed: "Unix user {arg0} was created but the HarmonyUI account could not be provisioned."
+errors.user.harmony_runtime_user_missing: "HarmonyUI runtime user {arg0} is missing — cannot provision dashboard account."
+errors.user.fetch_user_info: Failed to Get User Info.
+errors.user.find_user: "User not found: {arg0}."
+errors.user.generate_password: Failed to generate password.
+errors.user.remove_resource: "Failed to remove user: {arg0}."
+errors.user.set_password: "Failed to set password for user: {arg0}."
+errors.user.tree_harden_failed: "Échec du durcissement des arbres /home|/opt pour l’utilisateur {arg0}"
+errors.user.validation_username: Invalid Username.
+errors.utils.check_completion: Failed to wait for child process
+errors.utils.configure_environment_variable: Failed to set environment variable
+errors.utils.create_command_pipes: Failed to create pipes
+errors.utils.create_command_process: Failed to fork process
+errors.utils.find_yaml_file: YAML file not found
+errors.utils.handle_timeout_event: Command timed out
+errors.utils.handle_yaml_array: YAML read error
+errors.utils.handle_yaml_content: YAML parse error
+errors.utils.read_yaml_file: YAML read error
+errors.utils.validation_yaml_data: YAML validation.error
+errors.utils.validation_yaml_format: YAML validation.failed
+errors.validation.check_ascii_only: "Non-ASCII character detected: {arg0}. Only ASCII characters are allowed"
+errors.validation.check_character: "Invalid character: {arg0}"
+errors.validation.check_database_name: Invalid database name format
+errors.validation.check_docs_ending: Documentation URL must end with /docs
+errors.validation.check_domain_dot: Domain must contain at least one dot
+errors.validation.check_email_at_symbol: Email address must contain @ symbol
+errors.validation.check_email_format: Invalid email format
+errors.validation.check_email_length: Email address exceeds maximum length (254)
+errors.validation.check_filter_and_value: Filter And Value Required.
+errors.validation.check_fqdn_dots: FQDN contains consecutive dots
+errors.validation.check_fqdn_format: FQDN must contain at least one dot
+errors.validation.check_fqdn_length: FQDN exceeds maximum length (253)
+errors.validation.check_github_format: Invalid GitHub URL or path format
+errors.validation.check_group: "Invalid group: {arg0}"
+errors.validation.check_hostname_format: Invalid hostname format
+errors.validation.check_hostname_length: Hostname exceeds maximum length (253)
+errors.validation.check_http_response: Invalid HTTP response.
+errors.validation.check_http_status: "HTTP status error: {arg0}"
+errors.validation.check_input: Invalid.
+errors.validation.check_mac_format: Invalid MAC address format
+errors.validation.check_max_length: Value length ({arg0}) exceeds maximum allowed length ({arg1})
+errors.validation.check_null_byte: Path contains null byte
+errors.validation.check_numeric_format: Invalid numeric format
+errors.validation.check_numeric_only: Value contains non-numeric characters
+errors.validation.check_password_format: Password must contain only alphanumeric characters
+errors.validation.check_path_not_empty: Path cannot be empty
+errors.validation.check_port_range_format: "Invalid port range format (expected: PORT1-PORT2)"
+errors.validation.check_port_range_order: Port range start must be less than or equal to end
+errors.validation.check_protocol_format: "URL must start with http:// or https://"
+errors.validation.check_quota_format: "Invalid quota format (expected: NUMBER + UNIT)"
+errors.validation.check_quota_positive: Quota value must be positive
+errors.validation.check_quota_unit: "Invalid quota unit: {arg0} (must be MB, GB, or TB)"
+errors.validation.check_range_bounds: Value {arg0} is out of range [{arg1}, {arg2}]
+errors.validation.check_ssh_key_data: Invalid SSH key data. Key data must be valid base64 encoded
+errors.validation.check_ssh_key_format: "Invalid SSH public key format. Expected format: <key-type> <base64-data> [comment]"
+errors.validation.check_ssh_key_length: SSH key data is too short. Key data must be at least 50 characters
+errors.validation.check_ssh_key_type: "Invalid SSH key type: {arg0}. Supported types: ssh-rsa, ssh-ed25519, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, ecdsa-sha2-nistp521, ssh-dss"
+errors.validation.check_url_beginning: URL base must start with /
+errors.validation.check_url_characters: URL base contains invalid characters
+errors.validation.check_url_format: Invalid URL format
+errors.validation.check_url: Invalid URL format.
+errors.validation.check_username_prefix: Username must start with a letter
+errors.validation.check_username_size: Username length ({arg0}) exceeds maximum (32)
+errors.validation.check_username_suffix: Username cannot end with a hyphen
+errors.validation.check_value_not_empty: Value cannot be empty
+errors.validation.check_version_pattern: "Invalid version format (expected: X.Y.Z or X.Y.Z-pre.ident)"
+errors.validation.check_whitespace_content: Value contains only whitespace
+errors.validation.detect_consecutive_hyphens: Consecutive hyphens are not allowed
+errors.validation.detect_control_character: "Control character detected: {arg0}. Control characters are not allowed"
+errors.validation.detect_dangerous_character: "Dangerous character detected: {arg0}"
+errors.validation.detect_encoded_traversal: Path contains encoded path traversal sequence (URL encoded ../)
+errors.validation.detect_path_traversal: Path traversal detected (../ or ..\)
+errors.validation.detect_suspicious_slashes: Path contains suspicious multiple consecutive slashes
+errors.validation.detect_windows_traversal: Path contains Windows-style path traversal sequence (..)
+errors.validation.perform_http_request: "HTTP request failed with exit code: {arg0}"
+errors.validation.validation_paths: Absolute paths are not allowed
+errors.validation.validation_v4_address: Invalid IPv4 address format
+errors.validation.validation_v6_address: Invalid IPv6 address format
+errors.vault.check_chpass_args: "vault:: Chpass: too many arguments"
+errors.vault.check_chpass_records: Record count verification failed. New database not created.
+errors.vault.check_encode_args: Encode Too Many Arguments.
+errors.vault.check_encode_string: Encode Missing String Argument.
+errors.vault.check_remove_args: "vault:: Remove: requires at least scope argument"
+errors.vault.check_reveal_arguments: "vault:: Reveal: requires at least scope argument"
+errors.vault.check_salt_existence: Vault salt already exists. Cannot create a new salt. The vault has already been initialized.
+errors.vault.check_save_args: "vault:: Save: requires at least scope and value arguments"
+errors.vault.check_update_args: "vault:: Update: requires at least scope and value arguments"
+errors.vault.complete_database_transaction: Failed to commit database transaction.
+errors.vault.create_chpass_database: Failed to create new database
+errors.vault.create_resource_database: Failed To Create Database
+errors.vault.create_sql_statement: Failed to prepare SQL statement.
+errors.vault.create_validation_arg_count: "vault:: Create: too many arguments"
+errors.vault.create_value: Failed to Encrypt Value.
+errors.vault.destroy_validation_arg_count: "vault:: Destroy: too many arguments"
+errors.vault.execute_operation: Vault operation failed
+errors.vault.fetch_location: Failed to get database path.
+errors.vault.find_record: Record not found in database.
+errors.vault.generate_salt: Failed to Generate Random Salt.
+errors.vault.init_database: Failed to initialize vault database schema.
+errors.vault.open_chpass_database: Failed to open old database
+errors.vault.open_resource_database: Failed to open vault database.
+errors.vault.read_resource_records: Failed to read records from database.
+errors.vault.read_resource_salt_from_config: Failed to Read Salt From Configuration File.
+errors.vault.read_value: Failed to Decrypt Value.
+errors.vault.remove_resource_record: Failed to remove record from database.
+errors.vault.remove_validation_arg_count: "vault:: Remove: too many arguments"
+errors.vault.save_record: Failed to save record to database.
+errors.vault.save_validation_arg_count: "vault:: Save: too many arguments"
+errors.vault.start_transaction: Failed to begin database transaction.
+errors.vault.update_chpass_encryption: Failed to re-encrypt record(s). New database not created.
+errors.vault.update_record: Failed to update record in database.
+errors.vault.update_validation_arg_count: "vault:: Update: too many arguments"
+errors.vault.validation_decode_arguments: "vault:: Decode: requires key and vault_file arguments"
+errors.vault.validation_decode_parameters: "vault:: Decode: too many arguments"
+errors.vault.validation_rate_limit: Rate limit exceeded
+errors.vault.validation_reveal_parameters: "vault:: Reveal: too many arguments"
+errors.vault.write_resource_salt_file: Failed to Write Salt File.
+errors.validation.check_alphabetic_content: String Contains Non Alphabetic Characters.
+errors.validation.check_alphanumeric_content: String Contains Non Alphanumeric Characters.
+errors.validation.check_email_structure: Invalid Email Format.
+errors.validation.check_numeric_content: String Contains Non Numeric Characters.
+errors.validation.check_root_privileges: Not Running As Root Or With Sudo.
+errors.validation.find_command_in_path: Command Not Found In Path.
+errors.validation.validation_alpha_dash_parameter: Alpha Dash Missing String Argument.
+errors.validation.validation_alphanumeric_parameter: Alphanumeric Missing String Argument.
+errors.validation.validation_alpha_parameter: Alpha Missing String Argument.
+errors.validation.validation_characters: String Contains Invalid Characters.
+errors.validation.validation_command_parameter: Command Missing Command Argument.
+errors.validation.validation_email: Email Missing Email Argument.
+errors.validation.validation_numeric_parameter: Numeric Missing String Argument.
+errors.validation.validation_octet: Invalid Ipv4 Octet Value.
+errors.validation.validation_version: Version requires 2 Arguments Version1 Version2.
+errors.verify.check_alphabetic_content: String Contains Non Alphabetic Characters.
+errors.verify.check_alphanumeric_content: String Contains Non Alphanumeric Characters.
+errors.verify.check_email_structure: Invalid Email Format.
+errors.verify.check_numeric_content: String Contains Non Numeric Characters.
+errors.verify.check_root_privileges: Not Running As Root Or With Sudo.
+errors.verify.find_command_in_path: Command Not Found In Path.
+# New specific error messages for improved validation
+errors.verify.email_argument_required: Email argument is required.
+errors.verify.email_format_invalid: Invalid email format.
+errors.verify.ipv4_argument_required: IPv4 address argument is required.
+errors.verify.ipv4_format_invalid: Invalid IPv4 address format.
+errors.verify.ipv4_parse_failed: Failed to parse IPv4 address.
+errors.verify.ipv4_octet_out_of_range: IPv4 octet value must be between 0 and 255.
+errors.verify.ipv6_argument_required: IPv6 address argument is required.
+errors.verify.ipv6_format_invalid: Invalid IPv6 address format.
+errors.verify.alpha_argument_required: Alphabetic string argument is required.
+errors.verify.alpha_contains_non_alphabetic: String contains non-alphabetic characters.
+errors.verify.alphanumeric_argument_required: Alphanumeric string argument is required.
+errors.verify.alphanumeric_contains_invalid_chars: String contains non-alphanumeric characters.
+errors.verify.numeric_argument_required: Numeric string argument is required.
+errors.verify.numeric_contains_non_digits: String contains non-numeric characters.
+errors.verify.alphadash_argument_required: Alpha-dash string argument is required.
+errors.verify.alphadash_contains_invalid_chars: String contains invalid characters (only letters, hyphens, and underscores allowed).
+errors.verify.version_two_arguments_required: Version comparison requires two version arguments.
+errors.verify.root_privileges_required: Root privileges are required for this operation.
+errors.verify.command_argument_required: Command name argument is required.
+errors.verify.command_not_found: Command not found in system PATH.
+errors.verify.sudo_no_arguments_expected: The sudo check command does not accept any arguments.
+errors.verify.validation_alpha_dash_parameter: Alpha Dash Missing String Argument.
+errors.verify.validation_alpha_parameter: Alpha Missing String Argument.
+errors.verify.validation_alphanumeric_parameter: Alphanumeric Missing String Argument.
+errors.verify.validation_characters: String Contains Invalid Characters.
+errors.verify.validation_command_parameter: Command Missing Command Argument.
+errors.verify.validation_email: Email Missing Email Argument.
+errors.verify.validation_numeric_parameter: Numeric Missing String Argument.
+errors.verify.validation_octet: Invalid Ipv4 Octet Value.
+errors.verify.validation_v4_address: Invalid Ipv4 Format.
+errors.verify.validation_v6_address: Invalid Ipv6 Format.
+errors.verify.validation_version: Version requires 2 Arguments Version1 Version2.
+errors.workspace.add_uv_profile: Failed to add UV profile to {arg0}.
+errors.workspace.build_make_project: make build failed in {arg0}.
+errors.workspace.build_venv_project: Venv created but build failed
+errors.workspace.venv_created_but_build_failed: "Environnement virtuel créé mais l'installation des dépendances a échoué : {arg0}"
+errors.workspace.dependencies_failed_to_install: "Certaines dépendances n'ont pas pu être installées : {arg0}"
+errors.workspace.dependencies_install_failed_with_details: "Certaines dépendances n'ont pas pu être installées : {arg0}"
+errors.workspace.cargo_rustup_failed: "Échec de l'installation rustup : {arg0}"
+errors.workspace.cmake_build_failed: "Échec du build cmake : {arg0}"
+errors.workspace.cmake_configure_failed: "Échec de la configuration cmake : {arg0}"
+errors.workspace.cmake_install_failed: "Échec de l'installation cmake : {arg0}"
+errors.workspace.create_resource_venv: Failed to create virtual environment
+errors.workspace.create_virtual_environment: Failed Create Venvironment.
+errors.workspace.execute_updates: Some updates failed
+errors.workspace.find_cargo_command: cargo introuvable. Cette commande nécessite cargo ou rustup.
+errors.workspace.find_cmake_command: cmake introuvable. Cette commande nécessite cmake.
+errors.workspace.find_dotnet_command: dotnet introuvable. Cette commande nécessite le SDK .NET.
+errors.workspace.find_make_command: make not found. This command requires make.
+errors.workspace.find_ninja_command: ninja introuvable. Cette commande nécessite ninja-build.
+errors.workspace.find_uv_command: uv command not found
+errors.workspace.find_pnpm_command: pnpm command not found (install Krate dependencies or /usr/local/bin/pnpm)
+errors.workspace.pnpm_command_failed: "pnpm {arg0} failed: {arg1}"
+errors.workspace.user_run_failed: "Command failed as user ({arg0}, exit {arg1}): {arg2}"
+errors.workspace.node_upgrade_version_failed: "Global Node runtime upgrade failed: {arg0}"
+errors.workspace.platform_pip_install_failed: "Platform pip install failed: {arg0}"
+errors.workspace.platform_pip_parse_failed: "Failed to parse platform pip dependencies: {arg0}"
+errors.workspace.node_package_json_missing: "package.json not found in {arg0}"
+errors.workspace.uv_command_failed: "uv {arg0} failed: {arg1}"
+errors.workspace.install_binary: Failed to install {arg0} with --only-binary {arg1}.
+errors.workspace.install_dependencies: Some dependencies failed to install
+errors.workspace.install_make_project: make install failed in {arg0}.
+errors.workspace.install_uv: Failed to install uv
+errors.workspace.remove_resource_venv: Failed to remove virtual environment
+errors.workspace.update_environment: Failed to sync virtual environment
+errors.yaml.read_data: "YAML parse error in file: {0}"
+errors.yaml.validation_key_format_path: Invalid Key Path.
+success.yaml.key_updated: "Updated key in {arg0}."
+footers.software.add_package: Installation finished. {arg0} is now installed on your system.
+footers.software.create_backup: Sauvegarde terminée. {arg0} a été sauvegardé.
+footers.software.restore_backup: Restauration terminée. {arg0} a été restauré.
+footers.software.remove_resource: "{arg0} a été retiré de votre système."
+footers.software.reset_configuration: Reset complete. {arg0} has been reset to its default settings.
+footers.software.update_package: Update complete. {arg0} is now up to date.
+headers.backup.create_resource: Creating backup...
+headers.binary_tool.fetch_binaries: Fetching binaries...
+headers.binary_tool.preload_data: Preloading binaires...
+headers.binary_tool.purge_data: Purging old binaries...
+headers.binary_tool.select_application: Select an application
+headers.binary_tool.select_binary: Select a binary to install
+headers.binary_tool.select_user: Select a user
+headers.binary_tool.select_version: Select a version
+headers.binary_tool.show_primary_menu: Binary Tool
+headers.dependency.build_metapackage: Building metapackage...
+headers.dependency.configure_apt_sources: Adding sources...
+headers.dependency.configure_intel_gpu: Configuring Intel GPU...
+headers.dependency.configure_sendmail: Configuring sendmail...
+headers.dependency.generate_metapackage: Generating metapackage...
+headers.dependency.install_metapackage: Installing metapackage...
+headers.dependency.remove_unnecessary_packages: Removing unnecessary packages...
+headers.environment.create_database: Populating database...
+headers.environment.add_apps: Adding apps...
+headers.environment.build_harmonyui: Configuring HarmonyUI...
+headers.environment.generate_env_file: Generating environment file...
+headers.environment.install_harmonyui_dependencies: Installing HarmonyUI dependencies...
+headers.system.configure_ssh: Securing SSH...
+headers.software.add_package: Just relax, let us handle the installation and setup of {arg0}.
+headers.software.create_backup: Sauvegarde de {arg0} en cours...
+headers.software.restore_backup: Restauration de {arg0} depuis une archive...
+headers.software.create_entry: Creating a new software entry...
+headers.software.install_application: Hang tight, we're going to reinstall {arg0} for you.
+headers.software.remove_resource: Removing {arg0} from your system...
+headers.software.reset_configuration: Stay calm, we're proceeding to reset {arg0} to its default settings.
+headers.software.update_package: Sit back, we're updating {arg0} to the latest version for you.
+headers.workspace.check_version: Checking Python version...
+software.infobox.label_access_url: URL d'accès
+software.infobox.label_url_base: URL de base
+software.infobox.label_api_key: Clé API
+software.infobox.label_application: Application
+software.infobox.label_backup_file: Fichier de sauvegarde
+software.infobox.label_channel: Canal
+software.infobox.label_date: Date
+software.infobox.label_password: Mot de passe
+software.infobox.label_service: Service
+software.infobox.label_username: Nom d'utilisateur
+software.infobox.label_websocket: WebSocket
+software.infobox.remove_caption: "{arg0} a été retiré de votre système."
+software.infobox.title.app_backup: Sauvegarde
+software.infobox.title.app_restore: Restauration
+software.infobox.title.app_installer: App Installer
+software.infobox.title.app_manager: App Manager
+software.infobox.title.app_remover: App Remover
+software.infobox.title.app_reset: App Reset
+software.infobox.title.app_updater: App Updater
+links.software.show_application_url: "Access URL: {arg0}"
+messages.binary_tool.show_installed_versions: "Versions installed: {arg0}."
+messages.binary_tool.show_rejected_files: "Rejected files: {arg0}."
+messages.binary_tool.show_user_info: "User: {arg0}."
+messages.common.check_download_status: "{arg0} already downloaded."
+messages.common.download_files: Downloading {arg0}...
+messages.common.install_package: Install
+messages.common.remove_resource: Remove
+messages.common.set_value: Set
+messages.common.show_execution_time: "Total execution time: {arg0}h {arg1}min {arg2}sec."
+messages.common.show_exit_message: Exit
+messages.common.show_reboot_countdown: Rebooting in {arg0} seconds...
+messages.common.show_view: View
+messages.zen.harmonyui_env_skipped: "Note: HarmonyUI env file not found ({arg0}); continuing without it (defaults / host paths)."
+errors.zen.usage: "Usage: zen <command> [arguments]. Run 'zen help' for available commands."
+messages.database.handle_limit: Rate limit exceeded for database operation
+messages.database.show_warning_update: Potentially dangerous SQL detected in UPDATE clause
+messages.database.show_warning_where: Potentially dangerous SQL detected in WHERE clause
+messages.dependency.configure_intel_gpu: Intel GPU configuration in progress...
+messages.dependency.handle_package: Dependency locking is disabled. The metapackage will not be created.
+messages.dependency.show_installed_packages: "Installed: {arg0} packages"
+messages.dependency.validation_sources: Added {arg0} out of {arg1} sources
+messages.request.show_actual_hash: Actual Hash
+messages.request.show_expected_hash: Expected Hash
+messages.environment.configure_bashrc: Configuring bashrc...
+messages.environment.configure_mediaease_environment: Configuring MediaEase environment...
+messages.environment.show_credentials: You can use the following credentials to log in.
+messages.filesystem.backup_created: Backup Created
+messages.filesystem.copy_files: Copie de {arg0} vers {arg1}…
+messages.filesystem.extract_files: Extracting
+messages.filesystem.inflate_archive: Inflating
+messages.filesystem.move_files: Déplacement de {arg0} vers {arg1}…
+messages.filesystem.update_file_content: Replacing
+messages.system.detect_intel_gpu: "Intel GPU detected: {arg0}"
+messages.json.show_hit: Cache Hit
+messages.json.show_miss: Cache Miss
+messages.log.show_dashboard_message: Dashboard log message
+messages.log.show_execution: Executing log command
+messages.log.show_stack_trace: "Stack trace: "
+messages.request.retry_operation: Retrying network operation
+messages.request.generate_content: Generating proxy...
+messages.prompt.show_input_error: Invalid input. Please try again.
+messages.prompt.show_reboot_prompt: System reboot required. Reboot now?
+messages.provider.configure_ovh_started: OVH configuration started
+messages.provider.configure_started: Provider configuration started
+messages.provider.detect_started: "Starting provider detection"
+messages.system.check_dotdot_path: Path starting with ".." detected
+messages.system.check_path_traversal: Path traversal attempt detected
+messages.system.create_user_salt: User salt.
+messages.system.detect_suspicious_slashes: Suspicious multiple slashes in path detected
+messages.system.detect_windows_traversal: Windows path traversal attempt detected
+messages.system.show_last_warning: This is the last time you will see the user salt. Please save it somewhere secure.
+messages.service.disable_service: Disabling.
+messages.service.enable_service: Enabling.
+messages.service.show_stop_wait: Waiting To Stop.
+messages.service.start_service: Starting.
+messages.service.stop_service: Stopping.
+messages.setup.complete_proxy_setup: Proxy Complete
+messages.setup.configure_environment: Configuring Env
+messages.setup.configure_harmonyui: Setting Up Harmonyui
+messages.setup.configure_igpu: Setting Up Igpu
+messages.setup.configure_raid_storage: Setting Up Raid
+messages.setup.configure_sendmail: Configuring Sendmail
+messages.setup.detect_hosting_provider: Detecting Provider
+messages.setup.detect_ip_address: Ip Detected
+messages.setup.detect_provider: Provider Detected
+messages.setup.download_files: Downloading
+messages.setup.fetch_package_sources: Fetching Sources
+messages.setup.generate_metapackage: Generating Metapackage
+messages.setup.generate_proxy_config: Generating Proxy
+messages.setup.generate_system_config: Generating System Config
+messages.setup.init_environment: Initializing Env
+messages.setup.install_base_packages: Installing Base Packages
+messages.setup.install_global_dependencies: Installing Global Deps
+messages.setup.install_igpu_drivers: Igpu Detected Installing
+messages.setup.load_locale_files: Loading locales
+messages.setup.optimize_php_config: Fine Tuning Php
+messages.setup.perform_system_backup: Performing Backups
+messages.setup.remove_unused_packages: Removing Useless Packages
+messages.setup.secure_ssh_ftp: Securing Ssh Ftp
+messages.setup.select_generic_provider: Generic Provider
+messages.setup.show_status: Igpu Not Found
+messages.setup.validation_configuration: Validating configuration
+messages.setup.verify_binaries: Binaries Verified
+messages.setup.verify_configuration: Config Verified
+messages.software.configure_service: Configuring {arg0}...
+messages.software.detect_version: unknown
+messages.software.find_autogen_keys: No autogen keys found.
+messages.software.show_notifiarr_password: We are unable to securely change the default password for Notifiarr. Your password have been stored in the {arg0} file. Please, login to the Notifiarr UI and change it manually.
+messages.user.check_admin_status: Checking admin status
+messages.user.check_user_existence: Checking user existence
+messages.user.create_default_groups: Creating default system groups
+messages.user.create_success: "User created: {arg0}"
+messages.user.create_user_account: "Failed to create user with useradd: {arg0}"
+messages.user.create_user_options: Creating user with specified options
+messages.user.fetch_info: "Failed to get user info for username: {arg0}"
+messages.user.show_group_addition: Adding user to group
+messages.user.show_password: Password.
+messages.user.show_rate_limit: Rate limit exceeded for user creation
+messages.user.show_username: Username.
+messages.user.start_ban_process: User ban process started
+messages.user.validation_sudo: Added {arg0} to sudo group
+prompts.common.choose_default_option: "Choisir (défaut : {arg0}) : "
+prompts.common.default_label: "(défaut : {arg0}) : "
+prompts.common.input_default_parenthetical: " ({arg0})"
+prompts.common.select_multiple_comma_separated: "Sélectionner plusieurs options (numéros séparés par des virgules) : "
+prompts.common.show_continue_prompt: Continuer ?
+prompts.common.validation_action: "Êtes-vous sûr ? (Y/n) : "
+prompts.common.yes_no_prompt_suffix: " ({arg0}/{arg1}) : "
+prompts.filesystem.select_raid: "Choose RAID level: "
+prompts.filesystem.show_options: "  Available RAID levels: 0, 1, 5, 6, 10"
+prompts.git.validation_switch: Switch branch
+prompts.user.check_domain: Domain Invalid
+success.backup.create_resource: Backup created {arg0}.
+success.binary_tool.complete_removal: "{arg0} removed successfully."
+success.binary_tool.preload_complete: Preloading complete.
+success.binary_tool.purge_complete: Purge complete.
+success.binary_tool.update_version: La version de {arg0} a été mise à jour.
+success.common.add_entry: Entry Added.
+success.common.complete_installation: "{arg0} installed."
+success.cli.mode_applied: "CLI mode applied: {arg0}"
+success.set.value_updated: "Setting updated: {arg0}"
+success.domain.apex_applied: "Apex domain updated: {arg0}"
+success.domain.user_subdomain_applied: "User {arg0} subdomain active at {arg1}"
+success.domain.user_subdomain_cleared: "User {arg0} subdomain removed"
+success.proxy.regenerated_user: "Regenerated {arg1} proxy snippet(s) for user {arg0}"
+success.common.create_request: Request Sent Success.
+success.database.add_record: Record inserted successfully.
+success.database.remove_records: Record(s) deleted successfully.
+success.database.update_records: Record(s) updated successfully.
+success.dependency.build_metapackage: Metapackage built.
+success.dependency.configure_intel_gpu: Intel GPU configured successfully.
+success.dependency.configure_sendmail: Sendmail configured.
+success.dependency.extract_deb_package: "{arg0} unpacked."
+success.dependency.generate_metapackage: Metapackage generated.
+success.dependency.install_external_dependencies: External dependencies installed successfully
+success.dependency.install_metapackage: Metapackage installed.
+success.dependency.inline_install: "{arg0} paquet(s) installé(s) sur {arg1}."
+success.dependency.remove_dependencies: Dependencies removed successfully
+success.dependency.remove_package_pin: "Package unpinned: {arg0}"
+success.dependency.remove_source: "Source removed: {arg0}"
+success.dependency.remove_unnecessary_packages: Unnecessary packages removed.
+success.dependency.update_cache: System updated.
+success.dependency.verify_apt_status: Check completed
+success.request.verify_checksum: Checksum Verified
+success.environment.init_store: Database ready.
+success.environment.add_apps: Apps added.
+success.environment.add_lines: Added {arg0} line(s) to {arg1}.
+success.environment.build_harmonyui: HarmonyUI ready.
+success.environment.check_variable_existence: Variable Already Exists.
+success.environment.configure_bashrc: Bashrc configured.
+success.environment.generate_env_file: Environment file generated.
+success.environment.install_harmonyui_dependencies: HarmonyUI dependencies installed.
+success.environment.verify_all_lines: All Lines Exist.
+success.environment.save_variable: Variable Persisted.
+success.filesystem.complete_replace: Text replacement completed successfully
+success.filesystem.copy_success: Copié {arg0} vers {arg1}.
+success.filesystem.init_disk: Disk {arg0} is ready to be mounted.
+success.filesystem.move_success: Déplacé {arg0} vers {arg1}.
+success.git.copy_repository: Repository {arg0} cloned.
+success.git.clone_complete: "Repository {arg0} cloned successfully."
+success.git.sync_pulled: "Repository {arg0} updated successfully."
+success.git.download_extract_release: Release {arg0} downloaded and extracted to {arg1}.
+success.git.download_folder: Folder {arg0} downloaded to {arg1}.
+success.git.release_downloaded: Release {arg0} downloaded successfully.
+success.git.verify_prerelease_version: Version {arg0} is a prerelease.
+success.intl.load_locale: "Locale file loaded for language: {arg0}."
+success.intl.set_timezone: Timezone Set.
+success.json.validation_valid: Valid JSON
+success.log.init_system: Logging system initialized.
+success.request.complete_operation: Network operation succeeded after retry
+success.request.app_config_saved: Application configuration saved successfully.
+success.request.generate_content: Proxy generated.
+success.permission.apply_permissions: Permissions {arg1}, {arg2} applied successfully to {arg0}.
+success.permission.user_tree_hardened: "Arbres /home|/opt durcis pour {arg0} (propriétaire seul + ACL POSIX)"
+success.provider.detect_hetzner: "Detected Hetzner"
+success.provider.detect_ovh: "Detected OVH"
+success.provider.detect_ovh_kernel: Detected OVH via kernel files'
+success.provider.fix_grub: "OVH kernel script renamed and grub updated"
+success.provider.install_kernel: "Official kernel installed successfully"
+success.proxy.add_user: "User added successfully: {arg0}."
+success.proxy.generated: "Caddy proxy fragment generated: {arg0}."
+success.quota.install_quota: Quota installé sur {arg0}
+success.quota.install_soft_only: "Pas de quotas kernel pour le système de fichiers {arg0} ; limites soft uniquement"
+success.quota.set_value: Quota défini à {arg1} pour {arg0}
+success.quota.cleared: Quota disque effacé pour {arg0}
+success.quota.set_exempt_skipped: "Quota enregistré pour {arg0} mais kernel ignoré (utilisateur exempté)"
+success.quota.exempt_on: "{arg0} est maintenant exempté des quotas disque"
+success.quota.exempt_off: "{arg0} n’est plus exempté des quotas disque"
+success.system.configure_ssh: SSH secured.
+success.service.check_running_status: Already Running.
+success.service.complete_action: Action Completed.
+success.service.disable_service: Service {arg0} disabled.
+success.service.enable_service: Service {arg0} enabled.
+success.service.generate_file_created: "Service file created: {arg0} (service: {arg1})"
+success.service.validation_input: Service {arg0} validationd.
+success.service.verify_stopped_status: Not Running.
+success.software.backup_created: "Sauvegarde créée : {arg0}."
+success.software.restored: "Sauvegarde restaurée : {arg0}."
+success.software.configure_service: "{arg0} configured."
+success.software.handle_options: Options processed and environment variables set
+success.system.check_disk_usage: "Disk usage: {arg0}"
+success.system.complete_smart_check: SMART health check passed
+success.system.init_startup: System startup completed successfully
+success.user.add_user_to_groups: User {arg0} added to group {arg1} successfully
+success.user.check_existence: "User exists: {arg0}."
+success.user.check_success: User {arg0} exists and is valid
+success.user.create_resource: User {arg0} created successfully.
+success.user.harmony_provisioned: "HarmonyUI account for {arg0} is ready."
+success.user.create_system_groups: System groups created successfully
+success.user.generate_password: Password generated {arg0}
+success.user.remove_resource: User {arg0} removed successfully.
+success.user.set_password: "Password set successfully for user: {arg0}."
+success.user.set_permanent_ban: User {arg0} permanently banned
+success.user.set_temporary_ban: User {arg0} banned for {arg1} days
+success.user.verify_admin_status: User {arg0} is an administrator
+success.validation.check_http_reachability: "HTTP endpoint reachable (Status: {arg0})"
+success.validation.validation_input: Valid.
+success.validation.passed: "{arg0} is valid"
+# Success messages for verify module
+success.verify.email_valid: Email format is valid.
+success.verify.ipv4_valid: IPv4 address is valid.
+success.verify.ipv6_valid: IPv6 address is valid.
+success.verify.alpha_valid: String contains only alphabetic characters.
+success.verify.alphanumeric_valid: String contains only alphanumeric characters.
+success.verify.numeric_valid: String contains only numeric characters.
+success.verify.alphadash_valid: String contains only valid alpha-dash characters.
+success.verify.version_equal: Versions are equal.
+success.verify.version_greater: First version is greater than second version.
+success.verify.version_lesser: First version is less than second version.
+success.verify.root_privileges_confirmed: Root privileges confirmed.
+success.verify.command_found: Command found in system PATH.
+success.vault.complete_chpass: Successfully re-encrypted {count} record(s) with new salt.
+success.vault.create_vault: Vault created successfully at {arg0}.
+success.vault.destroy_vault: Vault connection destroyed.
+success.vault.handle_chpass: Successfully re-encrypted 0 record(s) with new salt.
+success.vault.remove_vault: Record removed successfully.
+success.vault.save_data: Record saved successfully.
+success.vault.save_salt: Salt unchanged, no migration needed.
+success.vault.update_vault: Record updated successfully.
+success.workspace.build_completed: Build Completed.
+success.workspace.build_successful: Build Successful.
+success.workspace.built_successfully: Built successfully.
+success.workspace.check_venv_removal: Venv Already Removed
+success.workspace.check_version: Python version checked.
+success.workspace.complete_build: Built Successfully.
+success.workspace.complete_configuration: Configuration Successful.
+success.workspace.complete_installation: Installation Successful.
+success.workspace.create_virtual_environment: Venv Created.
+success.workspace.find_binary_packages: No Binary Packages Found.
+success.workspace.install_binary_packages: Binary Packages Installed.
+success.workspace.remove_virtual_environment: Venv Removed.
+success.workspace.update_completed: Update Completed.
+success.workspace.update_env: Venv Synced.
+success.workspace.node_convert_skipped: pnpm lockfile already present
+success.workspace.node_convert_completed: "Node project prepared for pnpm in {arg0}"
+success.workspace.node_build_completed: "pnpm build completed in {arg0} (script: {arg1})"
+success.workspace.node_upgrade_version_completed: "Global Node runtime upgraded ({arg0})"
+success.workspace.platform_pip_installed: Platform pip packages installed system-wide.
+success.workspace.platform_pip_none: No platform pip packages configured.
+wizard.software.add_application: Install Wizard
+wizard.software.backup_application: Backup Wizard
+wizard.software.remove_application: Uninstall Wizard
+wizard.software.reset_application: Reset Wizard
+wizard.software.update_application: Update Wizard
+
+# Setup installer and vault keys (post-refactor)
+errors.setup.caddy_hash_password_failed: Failed to hash Caddy user password.
+errors.setup.dashboard_install_failed: "HarmonyUI install failed (exit {arg0}): {arg1}"
+errors.setup.dashboard_install_failed_no_detail: "HarmonyUI install failed (exit {arg0})."
+errors.dashboard.command_failed: "{arg0} failed (exit {arg1}): {arg2}"
+errors.dashboard.cli_missing: "Required CLI not found on PATH (with PNPM_HOME): {arg0} — run zenfw workspace::node::upgrade_version for node"
+errors.dashboard.chown_failed: "Failed to chown HarmonyUI tree at {arg0}"
+errors.dashboard.harmony_path_not_found: "HarmonyUI path not found: {arg0}"
+errors.dashboard.runtime_dir_create_failed: "Failed to create dashboard runtime dir {arg0}: {arg1}"
+errors.dashboard.required_env_files_missing: "Missing .env or .env.local under {arg0}"
+errors.dashboard.required_env_files_missing_update: "Missing .env or .env.local under {arg0} (update)"
+errors.dashboard.set_app_env_dev_failed: Failed to set APP_ENV=dev for HarmonyUI install.
+errors.dashboard.symfony_cache_clear_failed: "Failed to clear Symfony cache at {arg0}: {arg1}"
+errors.dashboard.var_perms_restore_failed: "Failed to restore HarmonyUI var/ shared ownership at {arg0}: {arg1}"
+errors.setup.dependency_step_failed: "Dependency step failed ({arg0}): {arg1}"
+errors.setup.dependency_step_hint: "Dependency command unavailable: {arg0}"
+errors.setup.disk_health_warning: Disk health check reported warnings.
+errors.setup.fs_replace_failed: "File replace failed in {arg0}: could not replace '{arg1}' ({arg2})"
+errors.setup.hostnamectl_fallback: hostnamectl failed; falling back to /etc/hostname.
+errors.setup.install_lock_in_use: Another setup instance is already running.
+errors.setup.apt_lock_timeout: Timed out waiting for apt/dpkg lock; retry setup once unattended-upgrades or other package jobs finish.
+errors.setup.installation_failed: Setup installation failed.
+errors.setup.journald_install_failed: "Failed to install journald configuration: {arg0}"
+errors.setup.journald_template_missing: "Journald template not found: {arg0}"
+errors.setup.limited_shell_binary_missing: limited-shell (lshell) binary not found after install.
+errors.setup.limited_shell_install_failed: "Failed to install lshell configuration: {arg0}"
+errors.setup.limited_shell_setup_system_failed: lshell setup-system failed (group, log dir, or /etc/shells).
+errors.setup.limited_shell_permissions_failed: Could not set root:www-data permissions on /etc/lshell.conf (HarmonyUI shell editor may be read-only).
+errors.setup.limited_shell_dropin_permissions_failed: Could not set root:www-data permissions on /etc/lshell.d (HarmonyUI per-user shell overrides may be read-only).
+errors.setup.limited_shell_template_missing: "lshell template not found: {arg0}"
+errors.setup.kernel_mitigations_install_failed: "Failed to install kernel mitigation blacklist: {arg0}"
+errors.setup.kernel_mitigations_template_missing: "Kernel mitigation template not found: {arg0}"
+errors.setup.krate_conf_missing: "/root/krate.conf est absent ou illisible. Copiez krate.conf.example ou lancez setup --prompt."
+errors.setup.license_activate_bad_signature: La signature de la réponse d’activation de licence est invalide.
+errors.setup.license_activate_malformed: La réponse d’activation de licence est malformée.
+errors.setup.license_activate_parse: "Échec d’analyse de la réponse d’activation de licence : {arg0}"
+errors.setup.license_activate_pro_rejected: "Clé de licence pro rejetée : {arg0}"
+errors.setup.license_activate_unreachable: "API d’activation de licence injoignable ou en échec : {arg0}"
+errors.setup.license_default_failed: "Échec d’application de la licence par défaut : {arg0}"
+errors.setup.license_local_free_failed: "Échec de création de la licence free locale : {arg0}"
+errors.setup.license_persist_failed: "Échec de persistance de la licence : {arg0}"
+errors.setup.license_revoke_failed: "Échec de révocation de la machine licence sur l’API : {arg0}"
+errors.setup.license_vault_required: "Échec d’initialisation du coffre : {arg0}"
+errors.setup.license_vault_secret_failed: "Échec de stockage du secret d’installation dans le coffre : {arg0}"
+errors.setup.missing_path: "Required path not found: {arg0}"
+messages.setup.firewall_init: "Initializing nftables firewall (default-deny)..."
+messages.setup.firewall_port_open: "Opening port {arg0}/{arg1} ({arg2}) in firewall..."
+errors.setup.firewall_init_failed: "Failed to initialize nftables firewall (non-fatal, continuing)."
+errors.setup.firewall_port_open_failed: "Failed to open port {arg0}/{arg1} in firewall (non-fatal, continuing)."
+errors.setup.openssh_install_failed: Failed to install OpenSSH server.
+errors.setup.path_create_failed: "Failed to create path: {arg0}"
+errors.setup.postinstall_failed: "Post-install step failed: {arg0}"
+errors.setup.proxy_failed: "Proxy configuration failed: {arg0}"
+errors.setup.confirm_need_tty: "La confirmation nécessite un terminal interactif. Utilisez setup --yes pour une install non interactive."
+errors.setup.prompt_need_tty: Le mode interactif (--prompt) nécessite un terminal.
+errors.setup.raid_builtin_need_tty: RAID setup requires an interactive terminal.
+errors.setup.raid_builtin_no_prompt: Could not prompt for RAID defaults.
+errors.setup.raid_create_need_tty: RAID creation requires an interactive terminal.
+errors.setup.raid_create_no_prompt: Could not prompt for RAID confirmation.
+errors.setup.raid_no_devices: No suitable disks found for RAID.
+errors.setup.raid_packages_empty: "No RAID packages defined for filesystem: {arg0}"
+errors.setup.raid_packages_yaml_failed: "Failed to load RAID package list: {arg0}"
+errors.setup.snapshot_dpkg_failed: Failed to snapshot installed packages.
+errors.setup.snapshot_json_failed: "Failed to write APT snapshot manifest: {arg0}"
+errors.setup.rollback_snapshot_missing: "No pre-setup APT snapshot under {arg0}."
+errors.setup.rollback_failed: Setup rollback did not complete cleanly.
+errors.setup.sshd_config_invalid: OpenSSH configuration validation failed.
+errors.setup.sshd_dropin_write_failed: Failed to write OpenSSH drop-in configuration.
+errors.setup.ssh_authorized_keys_write_failed: "Failed to write authorized_keys: {arg0}"
+errors.setup.ssh_chown_failed: "Failed to set ownership on: {arg0}"
+errors.setup.ssh_import_dir_failed: "Failed to create SSH key import directory: {arg0}"
+errors.setup.ssh_key_chmod_failed: "Failed to set permissions on SSH key: {arg0}"
+errors.setup.ssh_key_import_failed: "Failed to import SSH key to {arg0}: {arg1}"
+errors.setup.ssh_mkdir_failed: "Failed to create SSH directory {arg0}: {arg1}"
+errors.setup.ssh_no_home: "No home directory for user {arg0}: {arg1}"
+errors.setup.ssh_public_key_import_path: "ssh_public_key_path ne doit pas pointer sous {arg0} (ce chemin est créé par setup après l'import)."
+errors.setup.ssh_public_key_invalid: "Fichier de clé publique SSH invalide : {arg0}"
+errors.setup.ssh_public_key_not_absolute: "Le chemin de la clé publique SSH doit être absolu : {arg0}"
+errors.setup.ssh_public_key_not_file: "Le chemin de la clé publique SSH n'est pas un fichier : {arg0}"
+errors.setup.ssh_public_key_open_failed: "Impossible d'ouvrir la clé publique SSH : {arg0}"
+errors.setup.ssh_public_key_private_detected: Une clé privée a été fournie à la place d'une clé publique.
+errors.setup.sync_apt_sources_missing_source: APT sources template is missing.
+errors.setup.userdel_failed: "Failed to remove existing user: {arg0}"
+errors.setup.validate_command: Validation command is not available.
+errors.setup.validate_required_field: "Champ de configuration requis vide : {arg0}."
+errors.setup.validation_hint_sources: Vérifiez /root/krate.conf, ou lancez setup --prompt.
+errors.setup.validation_missing_list: "Missing required configuration keys: {arg0}"
+errors.setup.vault_create_failed: "Vault creation failed: {arg0}"
+errors.setup.vault_save_failed: Failed to save credentials to vault.
+errors.setup.web_path_not_found: "Web application path not found: {arg0}"
+errors.setup.zenfw_command_missing: "zenfw command not registered: {arg0}"
+errors.setup.zenfw_conf_command_timeout_failed: zenfw.conf command timed out.
+errors.vault.already_exists: Vault is already initialized.
+errors.vault.chpass_partial_failure: "Vault password change partially failed: {arg0}"
+errors.vault.db_open_failed: "Failed to open vault database: {arg0}"
+errors.vault.decryption_failed: Failed to decrypt vault value.
+errors.vault.encryption_failed: Failed to encrypt vault value.
+errors.vault.entry_not_found: "Vault entry not found (scope={arg0}, context={arg1})"
+errors.vault.init_failed: Failed to initialize vault database.
+errors.vault.not_initialized: Vault is not initialized.
+errors.vault.query_failed: Vault database query failed.
+errors.vault.remove_failed: Failed to remove vault record.
+errors.vault.save_failed: Failed to save vault record.
+errors.vault.salt_write_failed: Failed to write vault salt to configuration.
+errors.vault.schema_init_failed: "Failed to initialize vault schema: {arg0}"
+errors.vault.update_failed: Failed to update vault record.
+info.vault.created: Vault created successfully.
+info.vault.stored: "Vault record stored (scope={arg0})"
+info.vault.updated: "Vault record updated (scope={arg0})"
+info.vault.removed: "Vault record removed (scope={arg0})"
+info.vault.chpass_success: "Vault password change completed ({arg0} records)"
+info.vault.destroyed: Vault destroyed.
+info.software.action_starting: "Démarrage de {arg0} pour {arg1} (utilisateur : {arg2})..."
+info.software.backup_skipped_license: "Cliché d'installation ignoré pour {arg0} : la sauvegarde d'application n'est pas incluse dans cette licence."
+info.set.cli_reconnect: Reconnect your SSH session to apply the new CLI mode.
+info.service.list_empty: "No services installed for {arg0}."
+info.service.list_header: "Services for {arg0}:"
+info.service.list_columns: "name\tapp_id\tports"
+info.support.already_disabled: Remote support is already disabled.
+info.support.already_enabled: Remote support is already enabled.
+info.support.audit_active: Command audit recorder is active.
+info.support.audit_inactive: Command audit recorder is not running.
+info.support.audit_recording: All commands are recorded locally for audit (No Audit = No Support).
+info.support.audit_report_hint: "View the session audit report with: zen support audit --latest"
+info.support.code_label: "Support session code: {arg0}"
+info.support.disable_hint: "Disable support at any time with: zen support disable"
+info.support.disabled: Le support à distance a été désactivé.
+info.support.sessions_purged: "Les fichiers de session éphémères ont été supprimés ; les rapports d’audit restent dans /var/lib/krate/support/reports/."
+info.support.enabled: Le support à distance a été activé.
+info.support.expires_at: "Valid until: {arg0}"
+info.support.installing_sshx: Téléchargement de sshx pour le support à distance...
+info.support.installing_unit: Installation de l’unité systemd de support...
+info.support.unit_runtime_fallback: "/etc n’est pas accessible en écriture ; krate-support.service a été installé sous /run/systemd/system (runtime, effacé au redémarrage)."
+info.support.service_inactive: Support session service is not running.
+info.support.starting_session: Démarrage de la session de support à distance...
+info.support.status_disabled: Remote support is disabled.
+info.support.status_enabled: Remote support is enabled.
+info.support.waiting_session: "Waiting for support session ({arg0}s)..."
+info.audit.no_reports: No completed support audit reports yet.
+info.audit.list_header: "id\tended\tduration\taudit\tcloud"
+info.audit.session_id: "Session: {arg0}"
+info.audit.support_code: "Support code: {arg0}"
+info.audit.started_at: "Started: {arg0}"
+info.audit.ended_at: "Ended: {arg0}"
+info.audit.duration: "Duration: {arg0}"
+info.audit.status: "Audit status: {arg0}"
+info.audit.cloud_sync: "Cloud sync: {arg0}"
+info.audit.commands_header: "Commands:"
+warnings.support.cloud_unavailable: "Avertissement : api.runkrate.com est injoignable ; l’audit local continue, la synchro cloud reste best-effort."
+warnings.support.session_slow_ready: "Le support à distance est actif ; le lien de partage peut mettre un peu plus de temps à apparaître dans le portail staff."
+warnings.set.php_timezone_sync_failed: "Warning: failed to sync PHP date.timezone (continuing)."
+messages.setup.apt_platform_installing: Installing platform packages.
+messages.setup.apt_platform_upgrade: Upgrading platform packages.
+messages.setup.banner_separator: "============================================================"
+messages.setup.banner_title: "Krate Setup {arg0}"
+messages.setup.intro.effective_state: Effective install state
+messages.setup.intro.section.identity: "  Identity"
+messages.setup.intro.section.network: "  Network"
+messages.setup.intro.section.storage: "  Storage"
+messages.setup.intro.section.features: "  Features"
+messages.setup.intro.section.advanced: "  Advanced"
+messages.setup.outro.title: Install summary
+messages.setup.outro.section.access: "  Access"
+messages.setup.outro.section.platform: "  Platform"
+messages.setup.locale_timezone_failed: "Failed to set system timezone for locale region {arg0}"
+messages.setup.zenfw_language_persist_failed: "Failed to persist zenfw.language={arg0}"
+messages.setup.locale_region_persist_failed: "Failed to persist locale.region={arg0}"
+messages.setup.caddy_jwt_fallback: Using fallback JWT secret for Caddy.
+messages.setup.caddy_using_tls_internal: "Using internal TLS for domain: {arg0}"
+messages.setup.caddy_using_tls_public: "Using public TLS for domain: {arg0}"
+messages.setup.cli_starting: Starting Krate setup.
+messages.setup.install_declined: Installation annulée.
+messages.setup.prompt_mode: Installation interactive ; /root/krate.conf est ignoré.
+messages.setup.dashboard_reachable: Dashboard is reachable.
+messages.setup.dashboard_unreachable: "Dashboard unreachable at {arg0} (curl exit {arg1})"
+messages.setup.dashboard_user_create_failed: "Failed to ensure dashboard user: {arg0}"
+messages.setup.dashboard_user_ensuring: "Ensuring dashboard runtime user: {arg0}"
+messages.setup.debug_config_keys_defaulted: "Config keys using defaults: {arg0}"
+messages.setup.debug_config_keys_set: "Config keys overridden: {arg0}"
+messages.setup.debug_effective_install_state: "Effective install state: {arg0}"
+messages.setup.disk_health_ok: Disk health check passed.
+messages.setup.external_dependencies_installing: Installing external dependencies.
+messages.setup.finalizing: Finalizing setup.
+messages.setup.harmonyui_app_env_prod: Setting HarmonyUI APP_ENV to production.
+messages.setup.harmonyui_cache_clear: Clearing HarmonyUI cache.
+messages.setup.harmonyui_cache_clear_prod: Clearing HarmonyUI cache for production.
+messages.setup.harmonyui_db_settings: Applying HarmonyUI database settings.
+messages.setup.harmonyui_first_user: Creating first HarmonyUI user.
+messages.setup.harmonyui_fixtures: Loading HarmonyUI fixtures.
+messages.setup.harmonyui_groups: Configuring HarmonyUI groups.
+messages.setup.harmonyui_migrate: Running HarmonyUI migrations.
+messages.setup.harmonyui_permission_set: Setting HarmonyUI file permissions.
+messages.setup.health_check_start: Running post-install health checks.
+messages.setup.system_update_check_start: Refreshing KRATE update status for the dashboard.
+messages.setup.system_update_check_nonfatal: System update check failed (non-fatal); the dashboard will retry later.
+messages.setup.journald_restart_failed: Failed to restart systemd-journald.
+messages.setup.limited_shell_configuring: Configuring limited-shell for non-admin users.
+messages.setup.kernel_mitigations_initramfs: Updating initramfs for kernel mitigations.
+messages.setup.kernel_mitigations_initramfs_failed: Initramfs update for kernel mitigations failed.
+messages.setup.kernel_mitigations_modules_ok: Kernel mitigation modules are not loaded.
+messages.setup.kernel_mitigations_modules_loaded: Some kernel mitigation modules are still loaded.
+messages.setup.license_activate_pending: Activation pro différée ; tentative free API puis repli local.
+messages.setup.license_activate_start: Activation de la licence.
+messages.setup.license_activate_try_free_api: Clé pro non activable ; demande d’une licence free à l’API.
+messages.setup.license_activated: Licence activée avec succès.
+messages.setup.license_activated_free_api: Licence free activée via l’API.
+messages.setup.license_deactivate_on_failure: Échec du setup après activation ; libération de la licence.
+messages.setup.license_default_applied: "Licence par défaut appliquée depuis {arg0}"
+messages.setup.license_default_missing: "Fichier de licence par défaut introuvable : {arg0}"
+messages.setup.license_local_free_applied: Licence free locale appliquée (API injoignable).
+messages.setup.license_revoked_remote: Machine licence révoquée sur l’API.
+messages.setup.license_refresh_timer_enabled: License refresh timer enabled.
+messages.setup.license_refresh_timer_enable_failed: Failed to enable license refresh timer.
+messages.setup.license_fallback_timer_enabled: Local-free API retry timer enabled.
+messages.setup.license_fallback_timer_enable_failed: Failed to enable local-free API retry timer.
+messages.setup.modernize_apt_sources: Modernizing APT sources.
+messages.setup.modernize_apt_sources_done: APT sources modernized.
+messages.setup.openssh_hold_failed: Failed to hold OpenSSH packages during platform upgrade.
+messages.setup.openssh_hold_for_platform_apt: Holding OpenSSH packages during platform upgrade.
+messages.setup.openssh_noninteractive_install: Installing OpenSSH in non-interactive mode.
+messages.setup.phase_configure_env: Configuring environment files.
+messages.setup.phase_configure_hostname: Configuring hostname.
+messages.setup.phase_configure_journald: Configuring systemd-journald.
+messages.setup.phase_configure_php: Configuring PHP.
+messages.setup.php_alternatives_skipped: Could not switch default PHP via update-alternatives (single version or group not registered).
+messages.setup.phase_configure_sendmail: Configuring sendmail.
+messages.setup.phase_detect_provider: Detecting hosting provider.
+messages.setup.phase_generate_proxy: Generating reverse proxy configuration.
+messages.setup.phase_generate_system_config: Generating system configuration.
+messages.setup.phase_init_environment: Initializing install environment.
+messages.setup.phase_install_base_packages: Installing base system packages.
+messages.setup.wait_apt_lock: Waiting for apt/dpkg lock (another package manager may be running).
+messages.setup.phase_install_harmonyui: Installing HarmonyUI.
+messages.setup.phase_kernel_lpe_mitigations: Applying kernel LPE mitigations.
+messages.setup.phase_secure_ssh: Securing SSH and FTP.
+messages.setup.phase_setup_igpu: Setting up Intel GPU.
+messages.setup.postinstall_user_nonfatal: "Post-install user step failed (non-fatal): {arg0}"
+messages.setup.provider_unknown: Hosting provider could not be determined; using generic profile.
+messages.setup.proxy_user_seed_nonfatal: "Proxy user seed failed (non-fatal): {arg0}"
+messages.setup.raid_builtin_declined: Built-in RAID defaults declined.
+messages.setup.raid_builtin_skipped_unattended: "RAID ignoré : set_raid est actif mais le détail du volume manque (mode --yes)"
+messages.setup.raid_create_declined: RAID creation declined.
+messages.setup.raid_recap_array: "RAID array: {arg0}"
+messages.setup.raid_recap_disks: "Disks: {arg0}"
+messages.setup.raid_recap_fs_mount: "Filesystem/mount: {arg0} on {arg1}"
+messages.setup.raid_recap_header: RAID configuration summary.
+messages.setup.raid_recap_level: "RAID level: {arg0}"
+messages.setup.raid_recap_packages: "Packages: {arg0}"
+messages.setup.raid_skipped_free_tier: RAID setup skipped on free tier.
+messages.setup.reboot_no_tty: Reboot prompt skipped (no TTY).
+messages.setup.reboot_prompt_missing: Reboot prompt command unavailable.
+messages.setup.reboot_recommended: A reboot is recommended to apply all changes.
+messages.setup.service_not_active: "Service is not active: {arg0}"
+messages.setup.service_start_deferred: "Service start deferred: {arg0}"
+messages.setup.snapshot_installed_packages: Snapshotting installed packages.
+messages.setup.snapshot_installed_packages_done: "Package snapshot saved under {arg0}"
+messages.setup.rollback_starting: Setup failed — rolling back partial changes.
+messages.setup.rollback_dry_run_starting: Dry-run rollback — listing actions only.
+messages.setup.rollback_done: Setup rollback completed; you can re-run setup.
+messages.setup.rollback_manual_hint: "Rollback incomplete — retry as root: setup --rollback"
+messages.setup.rollback_dry_run_step: "Would run: {arg0}"
+messages.setup.rollback_step_stop_services: Stopping Krate-related services.
+messages.setup.rollback_step_wait_apt_lock: Waiting for apt/dpkg lock before rollback package steps.
+messages.setup.rollback_step_openssh_holds: Releasing OpenSSH apt holds.
+messages.setup.rollback_step_purge_krate: Purging krate package.
+messages.setup.rollback_step_purge_new_packages: Purging packages installed after snapshot.
+messages.setup.rollback_step_restore_selections: Restoring dpkg selections from snapshot.
+messages.setup.rollback_step_restore_manual_marks: Restoring apt-mark manual packages.
+messages.setup.rollback_step_remove_apt_sources: Removing third-party APT sources added by setup.
+messages.setup.rollback_step_remove_dropins: Removing Krate configuration drop-ins.
+messages.setup.rollback_step_remove_dashboard_user: Removing dashboard runtime user krate.
+messages.setup.rollback_step_remove_admin_user: "Removing admin user {arg0}."
+messages.setup.rollback_step_cleanup_state: Removing partial Krate state directories.
+messages.setup.ssh_finalize_intro: Finalizing SSH configuration.
+messages.setup.ssh_finalize_key_none: No SSH public key will be installed.
+messages.setup.ssh_finalize_key_path: "SSH public key will be installed from {arg0}"
+messages.setup.ssh_finalize_port_custom: "SSH will listen on port {arg0}"
+messages.setup.ssh_finalize_port_vm: SSH will listen on the default port (VM install).
+messages.setup.ssh_finalize_restart_failed: Failed to restart SSH service.
+messages.setup.ssh_keep_default_port: Keeping default SSH port.
+messages.setup.ssh_key_already_present: "SSH key already present for user {arg0}"
+messages.setup.ssh_key_installed: "SSH key installed for {arg0} at {arg1}"
+messages.setup.sync_apt_sources: Synchronizing APT sources.
+messages.setup.user_bypass_recreating: "Recreating user {arg0} (bypass mode)."
+messages.setup.user_declined_delete: User deletion declined; setup may fail.
+messages.setup.user_home_missing_no_tty: User home missing and no TTY to confirm deletion.
+messages.setup.validation_configuration_done: Configuration validation complete.
+messages.setup.vault_create_unavailable: Vault create command unavailable during post-install.
+messages.setup.vault_save_unavailable: Vault save command unavailable during post-install.
+messages.setup.vm_cleanup_removed: "Removed VM artifact: {arg0}"
+messages.setup.vm_cleanup_warn: "VM cleanup warning for {arg0}: {arg1}"
+messages.setup.vm_reboot_disabled: VM reboot step disabled.
+messages.setup.vm_reload_shell_hint: Reload your shell or log out to refresh environment variables.
+messages.setup.widget_telemetry_timer_enabled: Widget telemetry timer enabled.
+messages.setup.widget_telemetry_timer_enable_failed: Failed to enable widget telemetry timer.
+messages.setup.zenfw_log_level_persist_failed: "Failed to persist zenfw log level: {arg0}"
+messages.setup.update_channel_persist_failed: "Failed to persist update channel: {arg0}"
+prompts.setup.confirm_install: Continuer avec cette configuration ?
+prompts.setup.enable_raid: "Configurer le RAID pendant l'installation ?"
+prompts.setup.enable_webdav: Activer WebDAV ?
+prompts.setup.field_domain: Nom de domaine
+prompts.setup.field_email: E-mail administrateur
+prompts.setup.field_hostname: "Nom d'hôte"
+prompts.setup.field_lang: Langue
+prompts.setup.field_license_key: Clé de licence
+prompts.setup.field_password: Mot de passe administrateur
+prompts.setup.field_reboot: "Redémarrer après l'installation"
+prompts.setup.field_username: "Nom d'utilisateur administrateur"
+prompts.setup.raid_builtin_defaults_question: Apply built-in RAID defaults for this provider?
+prompts.setup.raid_create_confirm_question: Create RAID array with the settings above?
+prompts.setup.set_domain: Définir un domaine maintenant ?
+prompts.setup.set_license_key: Saisir une clé de licence ?
+prompts.setup.virtual_machine: Installation dans une machine virtuelle ?
+success.setup.cli_completed: Setup completed successfully.
+success.validate.database_valid: Database name is valid.
+success.validate.email_valid: Email address is valid.
+success.validate.hostname_valid: Hostname is valid.
+success.validate.http_check_passed: HTTP check passed.
+success.validate.input_valid: Input is valid.
+success.validate.password_valid: Password is valid.
+success.validate.username_valid: Username is valid.
+success.vault.chpass_no_change: Vault salt unchanged; no re-encryption needed.
+success.vault.chpass_success: "Successfully re-encrypted {arg0} vault record(s)."
+success.vault.created: Vault created successfully.
+success.vault.destroyed: Vault connection destroyed.
+success.vault.removed: "Vault record removed: {arg0}"
+success.vault.stored: "Vault record stored: {arg0}"
+success.vault.updated: "Vault record updated: {arg0}"
+
+# Dependency module keys (setup global deps phase)
+errors.dependency.apt_lock_error_detailed: "APT lock error running '{arg0}': {arg1}"
+errors.dependency.apt_update.exception: APT update failed
+errors.dependency.check_failed: APT integrity check failed
+errors.dependency.pin_failed: "Failed to pin package: {arg0}"
+errors.dependency.source_not_found: "APT source not found: {arg0}"
+info.dependency.recovering_locks: Recovering incomplete dpkg configuration.
+info.dependency.updating: Updating APT package lists.
+success.dependency.pinned: "Package pinned: {arg0}"
+success.dependency.sources_added: "Added {arg0} of {arg1} APT source(s)."
+success.dependency.update_complete: APT package lists updated.
+warnings.dependency.apt_lock_wait_timeout: "Timed out waiting for dpkg/apt lock after {arg0}s"
+
+# Service + dependency keys (setup)
+errors.service.restart_failed: Failed to restart service.
+errors.service.restart_timeout: Service did not become active after restart.
+errors.service.start_failed: Failed to start service.
+errors.service.start_timeout: Service did not become active after start.
+errors.service.stop_failed: Failed to stop service.
+errors.service.stop_timeout: Service did not stop within the expected time.
+messages.dependency.apt_platform_grouped_header: Installing platform packages by phase.
+messages.dependency.apt_platform_phase_done: "Phase {arg0} completed in {arg1} ms"
+messages.service.manage_started: "{arg0} service {arg1}"
+success.dependency.no_apt_packages: "No APT packages required for {arg0}."
+success.dependency.installed: "{arg0} dependencies installed."
+success.dependency.upgraded: System packages upgraded.
+
+# Logging + module info keys
+messages.common.redacted_note: "(obfuscated)"
+messages.common.temporary_password_note: "(temporaire — enregistrez-le maintenant)"
+messages.common.redacted_value: "<redacted>"
+messages.common.empty_value: "(empty)"
+info.user.creating: "Creating user ({arg0})"
+info.user.creating_group: Creating default system groups
+info.user.harmony_provision_skipped: "HarmonyUI not provisioned at {arg0} — Unix account created without dashboard user."
+info.quota.first_user_exempt: "Le premier utilisateur {arg0} est exempté des quotas disque par défaut"
+info.quota.installing: "Installation des quotas kernel ({arg0} sur {arg1})"
+info.quota.multi_mount_warning: "L’utilisateur {arg0} a home/opt sur des montages séparés ({arg1}, {arg2}) ; le soft-gate utilise la somme du"
+info.quota.btrfs_no_store: "Pas de store btrfs pour {arg0} ; limite qgroup ignorée"
+info.quota.user_row_missing: "Ligne utilisateur Harmony absente pour {arg0} ; la limite kernel peut quand même s’appliquer"
+info.quota.kernel_set_skipped: "Quota kernel non appliqué pour {arg0} sur {arg1} ; soft-gate toujours actif"
+success.user.created: "User {arg0} created successfully."
+info.dashboard.install.start: "Installing dashboard at {arg0}"
+info.dashboard.install.completed: "Dashboard install completed (APP_ENV {arg0} / {arg1})"
+info.dashboard.update.completed: "Dashboard update completed (APP_ENV {arg0} / {arg1})"
+info.dashboard.update.cache_cleared: "Cleared Symfony prod/dev cache before dashboard update at {arg0}"
+info.dashboard.step_start: "Dashboard: {arg0}…"
+info.dashboard.step_done: "Dashboard: {arg0} done"
+info.dashboard.step_skipped: "Dashboard: {arg0} skipped (unchanged)"
+info.dashboard.update.fast_path: "Dashboard update: locks and frontend sources unchanged — skipping composer/pnpm reinstall and Encore build"
+info.dashboard.php_fpm_reloaded: "Reloaded PHP-FPM service {arg0}"
+warnings.dashboard.php_fpm_reload_failed: "Échec du reload PHP-FPM {arg0} (poursuite sans restart)."
+info.dashboard.caddy_reloaded: "Caddy rechargé après PHP-FPM ({arg0})"
+warnings.dashboard.caddy_reload_failed: "Échec du reload Caddy après PHP-FPM ({arg0}) ; HarmonyUI peut renvoyer 502 jusqu’au reload de Caddy."
+warnings.dashboard.system_update_check_failed: "Dashboard system update check failed (non-fatal): {arg0}"
+warnings.software.backup_files_changed: "Archive de sauvegarde conservée malgré des fichiers modifiés pendant le tar : {arg0}"
+warnings.software.restore_chown_failed: "Restauration de {arg0} réussie mais impossible de rétablir le propriétaire : {arg1}"
+success.proxy.user_added: "Proxy user {arg0} added."
+info.system.disk_health.usage_info: "{arg0}"
+info.system.disk_health.smart_passed: SMART check passed
+
+# Added missing keys
+waiting_translation: This translation is pending and needs to be completed.
+info.intl.loading_locale: "Chargement de la locale {arg0}"
+info.intl.setting_timezone: "Configuration du fuseau horaire pour la langue {arg0}"
+info.system.disk_usage: Disk usage information
+success.dependency.add_package_pin: "Package pinned successfully: {arg0}"
+
+# Success messages
+success.intl.locale_file_loaded: "Locale file loaded for language: {arg0}"
+success.intl.timezone_set: "Timezone set to {arg0} for language {arg1}"
+success.operation.completed: "Operation completed successfully"
+
+# System messages
+messages.system.startup: "System startup: {arg0}"
+messages.system.verbose_mode: "Verbose mode enabled"
+messages.system.debug_mode: "Debug mode enabled"
+
+# Additional error codes for new system
+errors.filesystem.file.not.found: "File not found"
+errors.filesystem.directory.not.found: "Directory not found"
+errors.filesystem.permission.denied: "Permission denied"
+errors.filesystem.read.error: "Error reading file"
+errors.filesystem.write.error: "Error writing file"
+errors.filesystem.create.error: "Error creating file or directory"
+errors.filesystem.delete.error: "Error deleting file or directory"
+errors.filesystem.path.invalid: "Invalid file or directory path"
+
+errors.validation.empty: "Empty value provided where a non-empty value is required"
+errors.validation.too.long: "Value exceeds maximum allowed length"
+errors.validation.invalid.char: "Invalid character found in value"
+errors.validation.invalid.format: "Value does not match required format"
+errors.validation.out.of.range: "Value is outside allowed range"
+errors.validation.path.traversal: "Path traversal attempt detected"
+errors.validation.dangerous.chars: "Dangerous characters detected"
+errors.validation.invalid.username: "Username does not meet format requirements"
+errors.validation.invalid.port: "Port number is invalid"
+errors.validation.invalid.email: "Email address format is invalid"
+errors.validation.invalid.url: "URL format is invalid"
+errors.validation.invalid.ipv4: "IPv4 address format is invalid"
+errors.validation.invalid.ipv6: "IPv6 address format is invalid"
+errors.validation.invalid.version: "Version string format is invalid"
+
+errors.network.connection.failed: "Échec de la connexion réseau"
+errors.network.connection_failed: "Échec de la connexion réseau"
+errors.network.timeout: "Délai d’attente réseau dépassé"
+errors.network.invalid.url: "Format d’URL invalide"
+errors.network.http.error: "Réponse d’erreur HTTP reçue"
+errors.network.http_error: "Réponse d’erreur HTTP reçue"
+errors.network.host_not_found: "Impossible de résoudre l’hôte"
+errors.network.curl_error: "Erreur réseau ({arg0})"
+errors.network.dns.error: "Échec de la résolution DNS"
+errors.network.ssl.error: "Erreur SSL/TLS"
+
+errors.module.not.found: "Module not found"
+errors.module.init.failed: "Module initialization failed"
+errors.module.command.not.found: "Command not found in module"
+errors.module.invalid.arguments: "Invalid arguments for module command"
+
+errors.internal.error: "Internal error (unexpected state)"
+errors.internal.null.pointer: "Null pointer dereference"
+errors.internal.invalid.state: "Invalid internal state"
+errors.internal.assertion.failed: "Internal assertion failed"
+
+# Cryptographic errors
+errors.crypto.hash_failed.description: "Cryptographic hash operation failed"
+errors.crypto.hash_failed.suggestion: "Check input data and ensure OpenSSL is available"
+errors.crypto.encrypt_failed.description: "Data encryption operation failed"
+errors.crypto.encrypt_failed.suggestion: "Verify encryption key and input data format"
+errors.crypto.decrypt_failed.description: "Data decryption operation failed"
+errors.crypto.decrypt_failed.suggestion: "Verify decryption key and encrypted data integrity"
+errors.crypto.key_derivation_failed.description: "Key derivation operation failed"
+errors.crypto.key_derivation_failed.suggestion: "Check password and salt values, ensure sufficient iterations"
+errors.crypto.random_failed.description: "Secure random generation failed"
+errors.crypto.random_failed.suggestion: "Ensure system entropy source is available"
+errors.crypto.invalid_input.description: "Invalid input for cryptographic operation"
+errors.crypto.invalid_input.suggestion: "Validate input parameters and data format"
+errors.crypto.cert_invalid.description: "Certificate is invalid or corrupted"
+errors.crypto.cert_invalid.suggestion: "Verify certificate file format and integrity"
+errors.crypto.cert_expired.description: "Certificate has expired"
+errors.crypto.cert_expired.suggestion: "Renew or replace the expired certificate"
+errors.crypto.openssl_not_found.description: "OpenSSL is not available on this system"
+errors.crypto.openssl_not_found.suggestion: "Install OpenSSL development package"
+
+# Firewall module (zenfw::firewall)
+errors.firewall.ports_dir_create_failed: "Failed to create port declarations directory: {arg0}"
+errors.firewall.nft_dir_create_failed: "Failed to create nftables directory {arg0}: {arg1}"
+errors.firewall.nft_write_failed: "Failed to write nftables config: {arg0}"
+errors.firewall.nft_apply_failed: "Failed to apply nftables rules: {arg0}"
+errors.firewall.invalid_port: "Invalid port number: {arg0} (must be 1–65535)"
+errors.firewall.invalid_proto: "Invalid protocol: {arg0} (must be tcp or udp)"
+errors.firewall.invalid_instance: "Invalid instance ID: {arg0} (alphanumeric, hyphens, underscores only)"
+errors.firewall.declaration_write_failed: "Failed to write port declaration file: {arg0}"
+errors.firewall.invalid_port_range: "Invalid port range: {arg0} (expected start-end, 1–65535)"
+errors.firewall.port_not_declared: "Port {arg0} is not declared for instance '{arg1}'"
+errors.proxy.php_pool_failed: "Échec de la préparation du pool PHP-FPM pour {arg0}."
+errors.fix.php.caddy_env_failed: "Échec de la mise à jour de PHP_FPM_SOCKET dans l'environnement Caddy."
+errors.fix.php.configure_failed: "Échec de la configuration du PHP géré {arg0}."
+errors.fix.php.ensure_packages_failed: "Échec de l'installation des paquets PHP pour {arg0}."
+errors.fix.php.no_runtime: "Aucun runtime PHP-FPM détecté sur cet hôte."
+errors.fix.php.pin_mismatch: "Le runtime PHP {arg0} ne correspond pas au pin catalogue {arg1}."
+errors.fix.php.probe_client_missing: "cgi-fcgi est absent ou non exécutable (installez libfcgi-bin)."
+errors.fix.php.probe_failed: "Sonde PHP-FPM échouée pour le socket {arg0}."
+messages.fix.php.cutover: "Basculement PHP de {arg0} vers le pin catalogue {arg1}…"
+messages.fix.php.repairing: "Réparation de la stack PHP gérée ({arg0})…"
+messages.fix.php.retire_skipped: "PHP {arg0} conservé ; la simulation de purge a refusé ou le major est encore référencé."
+messages.fix.php.rollback: "Retour de PHP vers {arg0}…"
+messages.fix.php.usage: "Usage : zen fix php [--check]"
+success.fix.php.check_ok: "La stack PHP correspond au pin catalogue {arg0} et la sonde FPM a réussi."
+success.fix.php.cutover: "Basculement vers le PHP géré {arg0} effectué."
+success.fix.php.repaired: "PHP géré {arg0} réparé."
+success.fix.php.retired: "PHP inutilisé {arg0} retiré."
+success.firewall.port_range_open: "Port range {arg0} opened for instance '{arg1}'."
+errors.firewall.usage: "Usage: zen firewall status | apply"
+errors.firewall.unavailable: "Firewall module is not available on this host."
+success.firewall.init: "Firewall initialized — default-deny policy active."
+success.firewall.port_open: "Port {arg0} opened for instance '{arg1}'."
+success.firewall.port_close: "Port {arg0} closed for instance '{arg1}'."
+success.firewall.instance_clear: "All port declarations removed for instance '{arg0}'."
+success.firewall.apply: "Firewall rules applied ({arg0} port declarations loaded)."
+success.firewall.reset: "Firewall reset to default-deny — all port declarations removed."
+
+# zen pull (KRATE self-update from the releases .deb)
+info.pull.checking: "Recherche de mises à jour KRATE (canal {arg0})..."
+info.pull.checking_tag: "Recherche de la release KRATE {arg0}..."
+info.pull.found_release: "Dernière release {arg0} : {arg1} ({arg2})"
+info.pull.found_tag: "Release sélectionnée : {arg0} ({arg1})"
+info.pull.up_to_date: "KRATE est déjà à jour ({arg0})."
+info.pull.refreshing_license: "Rafraîchissement de la licence avant téléchargement..."
+info.pull.downloading: "Téléchargement de {arg0}..."
+info.pull.verifying: "Vérification de la somme de contrôle..."
+info.pull.installing: "Installation de {arg0}..."
+info.pull.check_summary: "Release {arg0} | paquet {arg1} | sha256 {arg2}"
+info.pull.update_available: "Mise à jour disponible : {arg0} ({arg1}) — paquet {arg2}"
+info.pull.update_delayed: "Une release plus récente existe ({arg0}) mais votre licence impose un délai de {arg1} jour(s). Disponible le {arg2}."
+info.pull.prerelease_fallback: "Le canal pré-release n'est pas autorisé par la licence ; utilisation des mises à jour stables."
+info.pull.dashboard_updating: "Mise à jour du tableau de bord HarmonyUI dans {arg0} (build, migrations, scan)..."
+info.pull.dashboard_update_skipped: "Mise à jour HarmonyUI ignorée (non provisionné dans {arg0})."
+info.pull.caddy_updating: "Mise à jour de Caddy depuis la dernière release caddy-builds..."
+info.pull.caddy_fragments_updating: "Synchronisation des fragments Caddy empaquetés vers /etc/caddy..."
+info.pull.php_fix: "Le runtime PHP {arg0} diffère du pin catalogue {arg1} ; exécution de zen fix php…"
+info.pull.forcing_install: "Réinstallation forcée de {arg0} (--force)."
+info.pull.backing_up: "Sauvegarde de l'état système KRATE vers {arg0}..."
+info.pull.backup_created: "Sauvegarde système écrite : {arg0}"
+info.pull.restoring: "Restauration de l'état système KRATE depuis {arg0}..."
+info.pull.restore_reload: "Rechargez Caddy et PHP-FPM s'ils servaient HarmonyUI pendant la restauration."
+success.pull.completed: "KRATE mis à jour vers {arg0}."
+success.pull.restored: "État système KRATE restauré depuis {arg0}."
+prompts.pull.confirm_beta: "Passer sur le canal pré-release (beta) ? [y/N] : "
+errors.pull.unknown_action: "Action pull inconnue : {arg0}"
+errors.pull.unsupported_os: "Cet OS n’est pas une cible KRATE supportée ({arg0}) ; mise à jour depuis le paquet impossible."
+errors.pull.os_incompatible: "La dernière release exige {arg0} {arg1} ou plus récent ; cet hôte est {arg2} {arg3}."
+errors.pull.no_release: "Aucune release {arg0} trouvée dans le dépôt de releases."
+errors.pull.tag_not_found: "Aucune release GitHub pour le tag {arg0}."
+errors.pull.tag_missing_value: "--tag exige un tag de release (ex. v0.9.5-beta.1)."
+errors.pull.tag_and_channel: "Impossible de combiner --tag avec --beta/--main/--stable."
+errors.pull.manifest_missing: "La release {arg0} n’a pas d’asset manifeste krate-release.json."
+errors.pull.manifest_parse: "Failed to parse the release manifest: {arg0}"
+errors.pull.platform_not_found: "The release manifest has no asset for this platform ({arg0})."
+errors.pull.asset_url_missing: "Release asset {arg0} not found on the GitHub release."
+errors.pull.download_failed: "Failed to download the package: {arg0}"
+errors.pull.checksum_mismatch: "Checksum mismatch for {arg0} (expected {arg1})."
+errors.pull.install_failed: "Package installation failed: {arg0}"
+errors.pull.dashboard_command_unavailable: "Required zenfw command is unavailable: {arg0}"
+errors.pull.dashboard_update_failed: "HarmonyUI dashboard update failed (exit {arg0}). The .deb was installed; run: sudo zenfw dashboard::update krate /opt/Krate/share/web"
+errors.pull.caddy_update_failed: "Mise à jour Caddy depuis caddy-builds échouée (exit {arg0}). Le .deb KRATE est installé ; réessayer : sudo zenfw dependency::external::install caddy"
+errors.pull.caddy_fragments_failed: "Sync/reload des fragments Caddy échoué (exit {arg0}). Réessayer : sudo zenfw domain::caddy::sync_templates && sudo zenfw domain::caddy::reload"
+errors.pull.beta_cancelled: "Pre-release update cancelled."
+errors.pull.update_delayed: "La mise à jour {arg0} n'est pas encore disponible pour votre licence (délai de {arg1} jour(s)). Réessayez après le {arg2}."
+errors.pull.prerelease_not_licensed: "Les versions préliminaires KRATE nécessitent une licence beta ou développeur."
+errors.pull.backup_failed: "Impossible d'écrire la sauvegarde système KRATE : {arg0}"
+errors.pull.backup_none_found: "Aucune sauvegarde système KRATE dans {arg0}."
+errors.pull.backup_archive_not_found: "Sauvegarde système KRATE introuvable : {arg0}."
+errors.pull.backup_archive_unreadable: "Sauvegarde système KRATE illisible : {arg0}."
+errors.pull.backup_archive_outside_root: "L'archive de sauvegarde est hors de {arg0} : {arg1}."
+errors.pull.backup_delete_failed: "Impossible de supprimer la sauvegarde système KRATE : {arg0}"
+errors.pull.backup_empty: "Rien à sauvegarder (aucun chemin système KRATE trouvé)."
+errors.pull.restore_failed: "Impossible de restaurer la sauvegarde système KRATE : {arg0}"
+errors.pull.backup_flag_conflict: "Impossible de combiner --list-backups/--restore avec une mise à jour (--check, --tag, --force, un canal ou --no-backup)."
+errors.pull.backup_list_restore_conflict: "Impossible de combiner --list-backups avec --restore."
+
+# Descriptions des applications (boutique / catalogue)
+
+app.airsonic.description: "Serveur de streaming musical auto-hébergé, compatible Subsonic (fork Airsonic-Advanced)."
+app.audiobookshelf.description: "Serveur de livres audio et podcasts auto-hébergé, avec applications et lecteur web."
+app.autobrr.description: 'Autobrr est un remplacement binaire unique moderne pour le plugin autodl-irssi+rutorrent. Autobrr surveille les canaux d''annonces IRC et les flux RSS torznab pour obtenir les sorties dès qu''elles sont disponibles, avec un bon filtrage et une prise en charge des expressions régulières.''"'
+app.autopulse.description: "Déclenche des scans de bibliothèque Plex/Jellyfin/Emby après les téléchargements (*arr)."
+app.bazarr.description: "Bazarr est une application complémentaire de Sonarr et Radarr. Elle gère et télécharge les sous-titres en fonction de vos besoins. Vous définissez vos préférences par émission de télévision ou film et Bazarr s'occupe de tout pour vous."
+app.bazarr4k.description: "Instance Bazarr dédiée aux profils 4K / UHD, séparée de votre Bazarr principal."
+app.byparr.description: "Successeur communautaire de FlareSolverr basé sur Camoufox / Playwright (FastAPI). KRATE clone le dépôt Git, gère le venv via uv et expose l'API /v1 derrière systemd — sans Docker."
+app.calibre.description: "Bibliothèque Calibre avec serveur de contenu (calibre-server) et interface Calibre-Web ; conversion ebook incluse."
+app.checkrr.description: "Analyse les fichiers multimédias de la bibliothèque pour détecter la corruption ; peut les remplacer via Sonarr/Radarr."
+app.cleanuparr.description: "Nettoie et maintient les files *arr et les clients de téléchargement pour éviter les blocages."
+app.cross-seed.description: "Cherche et ajoute des cross-seeds pour maximiser le ratio sur vos torrents existants."
+app.decluttarr.description: "Worker en arrière-plan (sans interface web) : nettoie les files d'attente *arr et les clients de téléchargement."
+app.deluge.description: "Client BitTorrent Deluge (deluged + Deluge-Web). Branche main ou develop."
+app.dispatcharr.description: "Gestion IPTV et EPG auto-hébergée avec proxy pour Plex, Jellyfin et Emby."
+app.duplicati.description: "Sauvegardes chiffrées vers le cloud ou un stockage distant, avec planification et restauration."
+app.emby.description: "Emby Server est un progiciel client-serveur qui permet aux consommateurs d'héberger leurs copies personnelles légales de fichiers multimédias : fichiers musicaux, vidéo et image. ... Le logiciel client Emby est une application que vous devez installer sur les appareils mobiles et certains décodeurs pour téléviseurs, comme Android TV."
+app.episeerr.description: "Envoie et retire les épisodes/saisons Sonarr un par un selon les règles de profondeur de bibliothèque."
+app.fetcharr.description: "Synchronise les enregistrements PVR Fetch TV vers Plex."
+app.filebrowser.description: "File Browser est un gestionnaire de fichiers léger qui vous permet de télécharger et de gérer des fichiers à partir de votre navigateur Web. Il permet la création de plusieurs utilisateurs et chaque utilisateur peut avoir son propre répertoire. Il peut être utilisé comme une application autonome ou comme un middleware."
+app.flaresolverr.description: "FlareSolverr est un serveur proxy qui résout les défis Cloudflare, reCAPTCHA, hCaptcha et FunCaptcha. Jackett et les apps *arr s’en servent souvent. Sous Krate : binaire Linux officiel, systemd, Chromium/Xvfb via APT — pas Docker."
+app.flexget.description: "Automatisation polyvalente de téléchargements (RSS, torrents, etc.) via des recettes YAML."
+app.flood.description: "Flood est une interface Web moderne pour rTorrent avec un backend Node.js et un frontend React. Il prend en charge l'intégration complète avec rTorrent et ruTorrent, y compris la gestion des répertoires de surveillance, l'ajout de torrents, etc."
+app.headphones.description: "Gestionnaire de collection musicale pour Usenet et BitTorrent (style *arr pour la musique)."
+app.jackett.description: "Jackett fonctionne comme un serveur proxy : il traduit les requêtes des applications (Sonarr, Radarr, SickRage, CouchPotato, Mylar, etc.) en requêtes http spécifiques au site de suivi, analyse la réponse HTML, puis renvoie les résultats au logiciel demandeur."
+app.janitorr.description: "Nettoie Radarr, Sonarr, Jellyseerr et Jellyfin avant que vous ne manquiez d'espace disque."
+app.jdownloader.description: "Gestionnaire de téléchargements multi-hôtes (JDownloader 2) avec interface web MyJDownloader."
+app.jellyfin.description: "Jellyfin est un serveur multimédia libre et open source pour vos films, séries, musique et photos. Diffusez sur tous vos appareils depuis votre bibliothèque, sans abonnement."
+app.kapowarr.description: "Constructeur et gestionnaire de bibliothèque de bandes dessinées."
+app.kavita.description: "Lecteur et serveur de bandes dessinées, mangas et livres numériques, orienté bibliothèque."
+app.kometa.description: "Métadonnées, collections et playlists pour Plex/Jellyfin/Emby."
+app.komga.description: "Serveur de médiathèque pour comics et mangas, avec API et lecteur web."
+app.labelarr.description: "Ajoute les mots-clés TMDB comme labels/genres Plex."
+app.lidarr.description: "Lidarr est un gestionnaire de collection de musique pour les utilisateurs Usenet et BitTorrent. Il peut surveiller plusieurs flux RSS pour les nouveaux morceaux de vos artistes préférés et les récupérera, les triera et les renommera."
+app.lingarr.description: "Traduction automatique de sous-titres pour Radarr et Sonarr."
+app.listenarr.description: "Gestion automatisée de collection de livres audio (approche Sonarr pour les audiobooks)."
+app.magazarr.description: "Suivi et téléchargement automatisé de magazines numériques."
+app.maintainerr.description: "Maintenance de bibliothèque pour Plex et Jellyfin."
+app.medusa.description: "PVR pour séries TV via Usenet et BitTorrent (fork SickRage / SickBeard)."
+app.midarr.description: "Serveur multimédia minimaliste et léger."
+app.muxarr.description: "Supprime les pistes audio/sous-titres redondantes avec intégration *arr."
+app.mylar3.description: "Gestionnaire de collection de comics pour Usenet et BitTorrent."
+app.navidrome.description: "Serveur de streaming musical compatible Subsonic, léger et moderne."
+app.nextcloud.description: "Suite de collaboration auto-hébergée (fichiers, agenda, contacts, etc.)."
+app.notifiarr.description: 'Il s''agit du client unifié pour <a href="https://nullrefer.ir/?https://notifiarr.com/"rel="noopener nofollow"target="_blank">Notifiarr.com</a>. Le client permet les demandes de contenu de Media Bot sur votre serveur Discord et fournit également des rapports sur l''utilisation de Plex et la santé du système parmi de nombreuses autres fonctionnalités..'
+app.novnc.description: "Bureau distant HTML5 (noVNC) pour accéder à une session graphique depuis le navigateur."
+app.nzbget.description: "NZBGet est un récupérateur de nouvelles binaires qui télécharge des fichiers depuis Usenet en fonction des informations fournies dans les fichiers nzb. NZBGet est écrit en C++ et est connu pour ses performances et son efficacité extraordinaires."
+app.nzbhydra2.description: "Méta-recherche Usenet : agrège les indexeurs et expose une API compatible *arr."
+app.ombi.description: "Ombi est une application Web auto-hébergée qui donne automatiquement à vos utilisateurs Plex ou Emby partagés la possibilité de demander eux-mêmes du contenu !"
+app.plex.description: "Plex est un système de lecteur multimédia client-serveur et une suite logicielle comprenant deux composants principaux. L'application de bureau Plex Media Server fonctionne sur les systèmes compatibles Windows, macOS et Linux, y compris certains types d'appareils NAS. L'application de bureau du serveur organise la vidéo, l'audio et les photos des collections d'un utilisateur et des services en ligne, permettant aux lecteurs d'accéder au contenu et de le diffuser en continu."
+app.posterr.description: "Affichage d'affiches numériques pour Plex, Sonarr et Radarr."
+app.prefetcharr.description: "Précharge la saison Sonarr suivante pendant que vous regardez sur Jellyfin."
+app.prowlarr.description: "Prowlarr est un fork de Sonarr qui fonctionne avec l'API Jackett. Il vous permet d'agréger tous vos indexeurs favoris et de rechercher facilement du contenu."
+app.pyload.description: "Gestionnaire de téléchargements libre avec interface web moderne (pyload-ng)."
+app.qbittorrent.description: "Binaire qBittorrent-nox à /{user}'/qbittorrent via Caddy."
+app.quasarr.description: "Connecte JDownloader à Radarr, Sonarr, Lidarr et LazyLibrarian."
+app.quassel.description: "Client IRC moderne avec cœur (core) persistant et interfaces graphiques."
+app.radarr.description: "Radarr est un fork indépendant de Sonarr retravaillé pour télécharger automatiquement des films via Usenet et BitTorrent.<br>Le projet a été inspiré par d'autres téléchargeurs de films Usenet/BitTorrent tels que CouchPotato."
+app.radarr4k.description: "Radarr4K est un clone autonome de Radarr pour les profils 4K UHD. Il s'agit d'un moyen de gérer plusieurs instances de Radarr, tout en séparant le contenu UHD du contenu général."
+app.rclone.description: "Stockage cloud avec OAuth/SA, montages FUSE, mergerfs media/vues, crypt, et move planifié cache→remote."
+app.recyclarr.description: "Synchronise les guides TRaSH vers Sonarr et Radarr."
+app.reiverr.description: "Interface combinée pour Jellyfin, TMDB, Radarr et Sonarr."
+app.requestrr.description: "Application Requestrr."
+app.resilio-sync.description: "Synchronisation de fichiers peer-to-peer (Resilio Sync) entre appareils."
+app.rtorrent.description: "rTorrent est un client BitTorrent rapide et efficace qui utilise, et est en cours de développement parallèlement à, la bibliothèque libTorrent (à ne pas confondre avec libtorrent-rasterbar). Il est écrit en C++ et utilise la bibliothèque de programmation ncurses, ce qui signifie qu'il utilise une interface utilisateur texte."
+app.rutorrent.description: "Interface web pour rTorrent (PHP). Nécessite rtorrent@<user> au préalable."
+app.sabnzbd.description: "SABnzbd est un lecteur de news binaire open source écrit en Python. Il simplifie considérablement le processus de téléchargement depuis Usenet, grâce à son interface utilisateur Web conviviale et à ses fonctionnalités d'automatisation avancées."
+app.scraparr.description: "Métriques Prometheus depuis les apps *arr et associées."
+app.seerr.description: "Demandes et découverte de médias pour Jellyfin, Plex et Emby."
+app.shelfmark.description: "Gestion et suivi de lecture pour livres et bibliothèques personnelles."
+app.sickchill.description: "PVR pour séries TV (fork SickRage) via Usenet et BitTorrent."
+app.sickgear.description: "PVR pour séries TV, fork stable de SickBeard / SickRage."
+app.sonarr.description: "Sonarr est un PVR pour les utilisateurs Usenet et BitTorrent. Il peut surveiller plusieurs flux RSS pour les nouveaux épisodes de vos émissions préférées et les récupérera, les triera et les renommera. Il peut également être configuré pour mettre à niveau automatiquement la qualité des fichiers déjà téléchargés lorsqu'un format de meilleure qualité devient disponible."
+app.sonarr-naacky.description: "Fork de Sonarr v4 develop orienté anime pour les médias CJK."
+app.sonarr4k.description: "Sonarr4K est un clone autonome de Sonarr pour les profils 4K UHD. Il s'agit d'un moyen de gérer plusieurs instances de Sonarr, tout en séparant le contenu UHD du contenu général."
+app.sportarr.description: "PVR sportif pour Usenet et torrents — comme Sonarr/Radarr, pour les événements sportifs."
+app.stremio.description: "Serveur de streaming Stremio (server.js) pour clients distants — transcodage ffmpeg en loopback derrière Caddy."
+app.subsonic.description: "Serveur de streaming musical et média avec API Subsonic et clients tiers."
+app.suggestarr.description: "Recommandations et demandes de téléchargement à partir de l'activité du serveur multimédia."
+app.syncthing.description: "Synchronisation de fichiers continue, décentralisée et chiffrée entre appareils."
+app.tautulli.description: "Tautulli est une application tierce que vous pouvez exécuter avec votre serveur multimédia Plex pour surveiller l'activité et suivre diverses statistiques."
+app.tdarr.description: "Automatisation de transcodage distribuée avec FFmpeg/HandBrake."
+app.thelounge.description: "Client IRC web persistant, accessible depuis le navigateur."
+app.threadfin.description: "Proxy IPTV / xTeVe-like pour exposer des chaînes aux clients Plex/Jellyfin/Emby."
+app.tracearr.description: "Surveillance et analytique des flux pour Plex, Jellyfin et Emby."
+app.trailarr.description: "Télécharge et gère les bandes-annonces pour les bibliothèques Radarr et Sonarr."
+app.transmission.description: "Démon Transmission à /{user}'/transmission via Caddy."
+app.tunarr.description: "Génération de chaînes IPTV à partir de bibliothèques Plex/Jellyfin/Emby."
+app.unmanic.description: "Optimisation et conversion automatique de bibliothèques média (plugins, files d'attente)."
+app.unpackerr.description: "Unpackerr est un remplacement moderne du plugin Unpack pour rTorrent. Il surveille votre répertoire de téléchargement pour les nouveaux torrents et les extrait automatiquement."
+app.whisparr.description: "Whisparr est un fork indépendant de Radarr retravaillé pour télécharger automatiquement des films pour adultes via Usenet et BitTorrent."
+app.whisparr-eros.description: "Application Whisparr-Eros."
+app.wizarr.description: "Système d'invitation utilisateur pour Plex, Jellyfin, Emby et applications associées."
+app.x2go.description: "Bureau distant Linux (X2Go) pour sessions graphiques persistantes."
+app.ytdl-sub.description: "Automatise les téléchargements yt-dlp et les métadonnées pour les médiathèques (CLI, sans UI web)."
+app.znc.description: "Bouncer IRC avancé pour rester connecté et historiser les salons."

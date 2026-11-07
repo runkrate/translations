@@ -1,0 +1,3095 @@
+(optional): (optional)
+access_groups.infobox_body: "Create reusable groups that control which installed applications members may open. Assign users to a group to apply the same app access rules without editing each account individually."
+access_groups.infobox_title: "Application access groups"
+access_groups.purpose: "Define which apps a group may use, then assign users to that group."
+actions.add_mount_path: "Add Mount Path"
+actions.add_service: "Add Service"
+actions.auto_refresh: "Auto Refresh"
+actions.backup: backup
+actions.cancel: Cancel
+actions.close: Close
+actions.confirm_install: "Confirm Install"
+actions.create: Create
+actions.create_new: "Create new"
+actions.create_new_app: "Create New Application"
+actions.create_new_group: "Create new Group"
+actions.create_user: "Create User"
+actions.delete: Delete
+actions.delete_group: "Delete Group"
+actions.download: Download
+actions.edit: Edit
+actions.edit_group: "Edit Group"
+actions.export_data: "Export Data"
+actions.go_to_documentation: "Go to documentation"
+actions.install: install
+actions.open: Open
+actions.open_new_tab: "Open in a new tab"
+actions.open_sidebar: "Open Sidebar"
+actions.refresh: Refresh
+actions.reinstall: reinstall
+actions.remove: remove
+actions.reset: reset
+actions.reset_avatar: "Reset Avatar"
+actions.reset_backdrop: "Reset Backdrop"
+actions.save: Save
+actions.search: Search
+actions.unban: Unban
+actions.unpin: Unpin
+actions.update: update
+actions.upload: Upload
+actions.verify: Verify
+app.applications: Applications
+app.apps: Apps
+app.cards.compact: "Compact cards"
+app.cards.detailed: "Detailed cards"
+app.cards.table: "App list"
+app.cards.show_details: "Show details"
+app.cards.hide_details: "Hide details"
+app.autobrr.description: "Autobrr is a modern single binary replacement for the autodl-irssi+rutorrent plugin. Autobrr monitors IRC announce channels and torznab RSS feeds to get releases as soon as they are available, with good filtering, and regex support.'"
+app.available_media_centers: "Your Available Media Centers"
+app.backup_path: "Backup Path"
+app.bazarr.description: "Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you."
+app.branch: Branch
+app.branch_beta: Beta
+app.byparr.description: "Community successor to FlareSolverr based on Camoufox / Playwright (FastAPI). KRATE clones the Git repository, manages the venv via uv and exposes the /v1 API behind systemd — no Docker."
+app.caddyfile_path: "Caddyfile Path"
+app.categories: Categories
+app.category: Category
+app.checkrr.description: "Scans library files for corrupt media; can replace via Sonarr/Radarr."
+app.clients: Clients
+app.config_path: "Config Path"
+app.configuration: Configuration
+app.data_path: "Data Path"
+app.decluttarr.description: "Background worker (no web UI): cleans *arr queues and download clients. Configure config.yaml (*arr API keys and/or qBittorrent); logs via journalctl. Useless without at least one configured target."
+app.deluge.description: "Deluge BitTorrent client (deluged + Deluge-Web). Branch main (default) installs vendor slot 2.1.1; beta installs 2.2.0."
+app.details: "Application Details"
+app.discover: Discover
+app.dispatcharr.description: "Self-hosted IPTV and EPG management with proxying for Plex, Jellyfin and Emby."
+app.emby.description: "Emby Server is a client-server software package that lets consumers host their legal personal copies of multimedia — music, video and picture files. ... The Emby client software is an app you need to install on mobile devices and certain settop boxes for televisions, like Android TV."
+app.episeerr.description: "Sends and removes Sonarr episodes/seasons one at a time as played."
+app.fetcharr.description: "Syncs Fetch TV PVR recordings into Plex."
+app.filebrowser.description: "File Browser is a lightweight file manager that allows you to upload, download, and manage files from your web browser. It allows the creation of multiple users and each user can have its own directory. It can be used as a standalone app or as a middleware."
+app.flaresolverr.description: "FlareSolverr is a proxy server that solves Cloudflare challenges, reCAPTCHA, hCaptcha, and FunCaptcha. Jackett and *arr apps often use it to bypass Cloudflare. On Krate it runs as the official Linux binary with systemd (Chromium/Xvfb via APT), not Docker."
+app.flood.description: "Flood is a modern web interface for rTorrent with a Node.js backend and React frontend. It supports full integration with rTorrent and ruTorrent, including managing watch directories, adding torrents, and more."
+app.grafana.description: "Metrics dashboards and observability platform."
+app.jackett.description: "Jackett works as a proxy server: it translates queries from apps (Sonarr, Radarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software."
+app.janitorr.description: "Cleans Radarr, Sonarr, Jellyseerr and Jellyfin before you run out of space."
+app.jellyfin.description: "Jellyfin is a free and open-source media server for your movies, TV shows, music, and photos. Stream to any device from your own library with no subscription fees."
+app.kapowarr.description: "Comic book library builder and manager."
+app.kometa.description: "Metadata, collections and playlists for Plex/Jellyfin/Emby."
+app.labelarr.description: "Adds TMDB keywords as Plex labels/genres."
+app.libtorrent: libtorrent
+app.lidarr.description: "Lidarr is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort, and rename them."
+app.lingarr.description: "Automated subtitle translation for Radarr and Sonarr."
+app.link.documentation: "Official Documentation"
+app.link.homepage: Homepage
+app.link.krate_documentation: "Krate Documentation"
+app.link.source_code: "Source Code"
+app.maintainerr.description: "Library maintenance for Plex and Jellyfin."
+app.midarr.description: "Minimal lightweight media server."
+app.muxarr.description: "Strips redundant audio/subtitle tracks with *arr integration."
+app.name: "App Name"
+app.no_applications: "It looks like you don't have any applications yet."
+app.no_applications_button: "button to add applications."
+app.notifiarr.description: 'This is the unified client for <a href="https://nullrefer.ir/?https://notifiarr.com/" rel="noopener nofollow" target="_blank">Notifiarr.com</a>. The client enables content requests from Media Bot in your Discord Server and also provides reports for Plex usage and system health among many other features..'
+app.nzbget.description: "NZBGet is a binary newsgrabber that downloads files from Usenet based on information given in nzb-files. NZBGet is written in C++ and is known for its extraordinary performance and efficiency."
+app.ombi.description: "Ombi is a self-hosted web application that automatically gives your shared Plex or Emby users the ability to request content by themselves!"
+app.paths: Paths
+app.permissions.denied: "You do not have the required permissions to access this app."
+app.plex.description: "Plex is a client-server media player system and software suite comprising two main components. The Plex Media Server desktop application runs on Windows, macOS, and Linux-compatibles including some types of NAS devices. The server desktop application organizes video, audio, and photos from a user's collections and from online services, enabling the players to access and stream the contents."
+app.ports: Ports
+app.posterr.description: "Digital poster display for Plex, Sonarr and Radarr."
+app.prefetcharr.description: "Prefetches the next Sonarr season while you watch on Jellyfin/Plex/Emby."
+app.premiere_key: "Emby Premiere key (optional)"
+app.emby_premiere_key: "Emby Premiere key (optional)"
+app.plex_email: "Plex account email (optional)"
+app.plex_password: "Plex account password (optional)"
+app.plex_pass_key: "Plex claim token"
+app.plex.claim_after_install: "Claim is a second step after install. When the job finishes, open plex.tv/claim (2FA if needed), paste the token there — it expires in about 4 minutes."
+app.plex.claim_title: "Claim Plex server"
+app.plex.claim_body: "Sign in at plex.tv/claim (complete 2FA if prompted), copy the token that appears, and paste it below. Do this only when ready — the token expires about 4 minutes after it is shown."
+app.plex.claim_open_link: "Open plex.tv/claim"
+app.plex.claim_confirm: "Claim server"
+app.plex.claim_skip: "Claim later"
+app.plex.claim_action: "Claim server"
+app.plex.claim_menu_hint: "Paste a fresh token from plex.tv/claim (expires in ~4 minutes)"
+app.plex.hetzner.vpn.infobox_title: "Hetzner — VPN required."
+app.plex.hetzner.vpn.infobox_body: "Plex install is blocked on Hetzner without a VPN route. Add a peer and stage plex@your-user under VPN Control before installing."
+app.plex.cli_only.infobox_title: "CLI install only (admin)."
+app.plex.cli_only.infobox_body: "Plex setup is multi-step (install then claim). Use the admin CLI instead of the App Store. UI URL is https://plex-'{'user'}'.'{'domain'}'/ when a DNS domain is set, otherwise http://IP:'{'wan_port'}'/web/ (not /user/plex)."
+app.plex.cli_only.command_hint: "zen software add {user} plex …"
+app.plex.access_url.hint: "Plex UI: https://plex-'{'user'}'.'{'domain'}'/ (DNS) or http://IP:'{'wan_port'}'/web/ (no domain). Path /user/plex is not supported."
+app.plex_update_channel: "Update channel"
+app.plex_update_channel.public: "Public"
+app.plex_update_channel.plex_pass: "Plex Pass"
+app.pro_subscription.required_admin: "This app requires a Pro subscription. Please contact your system administrator."
+app.pro_subscription.required_api: "This app requires a Pro subscription. Please refer to the /settings/api page to enable your Pro license."
+app.prowlarr.description: "Prowlarr is a fork of Sonarr to work with the Jackett API. It allows you to aggregate all your favorite Indexers and easily search for content."
+app.qbittorrent.description: "qBittorrent-nox vendor binary at /'{'user'}'/qbittorrent via Caddy. Branch main/beta selects qBittorrent version (stable=min, beta=max); libtorrent v2 (default) or v1 via -lt."
+app.quasarr.description: "Connects JDownloader with Radarr, Sonarr, Lidarr and LazyLibrarian. Requires FlareSolverr installed for the same user before install; configure its /v1 URL in the Quasarr setup UI. Subpath via QUASARR_URL_BASE patch + Caddy strip_prefix; subdomain recommended."
+app.radarr.description: "Radarr is an independent fork of Sonarr reworked for automatically downloading movies via Usenet and BitTorrent.<br>The project was inspired by other Usenet/BitTorrent movie downloaders such as CouchPotato."
+app.radarr4k.description: "Radarr4K is a standalone Radarr clone for the 4K UHD profiles. It is a means to handle multiple Radarr instances, while keeping UHD content separate from general content."
+app.readarr.description: "Readarr is an ebook collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort, and rename them."
+app.readarr4k.description: "Readarr4K is your second instance of Readarr. This instance is specifically to separate normal ebooks and comics from your library."
+app.recyclarr.description: "Syncs TRaSH guides to Sonarr and Radarr."
+app.reiverr.description: "Combined UI for Jellyfin, TMDB, Radarr and Sonarr."
+app.remove.confirm: "Remove {name}? This uninstalls the application and its data paths for your account."
+app.requestrr.description: "Requestrr application."
+app.root_url: "Root URL"
+app.rtorrent.description: "rTorrent is a quick and efficient BitTorrent client that uses, and is in development alongside, the libTorrent (not to be confused with libtorrent-rasterbar) library. It is written in C++ and uses the ncurses programming library, which means it uses a text user interface."
+app.rutorrent.description: "Web UI for rTorrent (PHP). Requires rtorrent@<user> first. SCGI unix:///run/krate/user/'{'user'}'.rtorrent.sock. URL /'{'user'}'/rutorrent. App: /srv/rutorrent/app; state: /var/lib/krate/rutorrent/'{'user'}'. Optional plugins may need apt packages (ffmpeg, mediainfo, sox) — not installed by default."
+app.sabnzbd.description: "SABnzbd is an open-source binary newsreader written in Python. It simplifies the process of downloading from Usenet dramatically, thanks to its friendly web-based user interface and advanced automation features."
+app.scraparr.description: "Prometheus metrics from *arr and related apps."
+app.search: "Search an app..."
+app.search.shortcut_tooltip: "Ctrl+K (⌘+K on macOS)"
+app.service.control.error: "{action, select, start {Could not start the service.} stop {Could not stop the service.} restart {Could not restart the service.} other {Could not update the service.}}"
+app.service.control.success: "{action, select, start {The service has been started.} stop {The service has been stopped.} restart {The service has been restarted.} other {The service has been updated.}}"
+app.seerr.description: "Media request and discovery for Jellyfin, Plex and Emby."
+app.server_port: "Server Port"
+app.settings.file.config: "Application config"
+app.settings.file.env: "Environment (.env)"
+app.settings.file.proxy: "Reverse proxy (Caddy)"
+app.settings.file.systemd_override: "Systemd drop-in (override.conf)"
+app.settings.file.systemd_unit: "Systemd unit file"
+app.settings.load_failed: "Could not load the file."
+app.settings.loading: Loading…
+app.settings.no_targets: "No editable files for this service."
+app.socket_path: "Socket Path"
+app.sonarr-naacky.description: "Anime-focused fork of Sonarr v4 develop for CJK media."
+app.sonarr.description: "Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort, and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
+app.sonarr4k.description: "Sonarr4K is a standalone Sonarr clone for the 4K UHD profiles. It is a means to handle multiple Sonarr instances, while keeping UHD content separate from general content."
+app.sportarr.description: "Sports PVR for Usenet and torrents — like Sonarr/Radarr, for sports events."
+app.source: Source
+app.source.community-apps: Community
+app.source.custom-apps: Custom
+app.source.official-apps: Official
+app.ssl_port: "SSL Port"
+app.subdomain: Subdomain
+app.store: "App Store"
+app.store.catalog_refresh: "Refresh catalog"
+app.store.catalog_refresh_busy: "Refreshing…"
+app.store.catalog_refresh_failed: "Could not refresh the application catalog."
+app.store.access.action_blocked: "Action not allowed for your access group."
+app.store.access.category_denied: "Not available for your access group."
+app.store.access.no_group: "No access group assigned to your account."
+app.store.actions_menu_aria: "More actions"
+app.store.banner: "Appstore Banner"
+app.store.community.infobox_body: "This app is published in the community catalog, not the official Krate set. Bugs may still be present, and some platform features may be missing or unsupported."
+app.store.community.infobox_title: "Community catalog"
+app.store.entitlement.action_blocked: "Action not included in your license"
+app.store.entitlement.install_blocked: "Installation requires {feature}"
+app.store.entitlement.license_expired: "License has expired"
+app.store.entitlement.license_unavailable: "License file is unavailable"
+app.store.entitlement.quota_full: "App limit reached ({current}/{max})"
+app.store.entitlement.tier_pro_required: "This app requires a Pro license"
+app.store.tier.pro_badge: "Pro catalog app"
+app.store.filter.all: All
+app.store.filter.available: Available
+app.store.filter.license_blocked: "License required"
+app.store.job.done: "App operation finished successfully."
+app.store.job.reconnected: "✓ Job status connection restored."
+app.store.job.reconnecting: "⏳ Reconnecting to job status…"
+app.store.job.timeout: "Timed out waiting for the operation. Ensure the async worker is running."
+app.store.job.waiting: "Starting operation…"
+app.store.job.worker_timeout: "The operation did not start. Ensure /opt/Krate/bin/krate-zen-job-launch is installed and NOPASSWD is granted (`harmony:sudoers add`), or inspect zen-job-launch-*.log under var/log or /run/krate/web."
+app.store.license_banner.quota: "{current} of {max} apps installed"
+app.store.license_banner.title: "License limits apply"
+app.store.license_banner.upgrade_link: "View license"
+app.store.nav.sources: Sources
+app.store.quota.apps_label: "apps installed"
+app.store.quota.installed: "Installed apps"
+app.store.settings.hide_restricted: "Hide license-restricted apps"
+app.store.settings.hide_restricted_hint: "Hide apps your license cannot install (official/community × free/pro)"
+app.store.settings.menu_aria: "App Store display settings"
+app.store.show_all_catalog.off: "Show apps your license cannot install (official/community × free/pro)"
+app.store.show_all_catalog.on: "Showing all apps, including those blocked by the license matrix"
+app.stremio.description: "Stremio streaming server (server.js) for remote clients — ffmpeg transcoding on loopback behind Caddy."
+app.suggestarr.description: "Recommendations and download requests from media server activity."
+app.tautulli.description: "Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics."
+app.tdarr.description: "Distributed transcode automation with FFmpeg/HandBrake."
+app.tracearr.description: "Stream monitoring and analytics for Plex, Jellyfin and Emby."
+app.trailarr.description: "Downloads and manages trailers for Radarr and Sonarr libraries."
+app.transmission.description: "Transmission daemon vendor binary at /'{'user'}'/transmission via Caddy. Branch main (default) → slot 4.0.6; beta → 4.1.3 (krate-apps/transmission-builds)."
+app.type: Type
+app.unpackerr.description: "Unpackerr is a modern replacement for the Unpack plugin for rTorrent. It monitors your download directory for new torrents and extracts them automatically."
+app.update_available: "Update available"
+app.update_notification.body: "A newer version of {app} is ready. Update from the dashboard or launch it here."
+app.update_notification.title: "Update available for {app}"
+app.update_now: "Update now"
+app.use_socket: "Use socket"
+app.version: Version
+app.versions: Versions
+app.web_port: "Web Port"
+app.whisparr-eros.description: "Whisparr-Eros application."
+app.whisparr.description: "Whisparr is an independent fork of Radarr reworked for automatically downloading adult movies via Usenet and BitTorrent."
+app.wizarr.description: "User invitation system for Plex, Jellyfin, Emby and related apps."
+app.airsonic.description: "Airsonic-Advanced — self-hosted music streamer (Subsonic-compatible API)."
+app.audiobookshelf.description: "Self-hosted audiobook and podcast server with multi-user progress sync."
+app.autopulse.description: "Near real-time Plex/Emby/Jellyfin/Audiobookshelf updates from *arr webhooks (autoscan successor)."
+app.bazarr4k.description: "Bazarr instance dedicated to 4K libraries (separate port and data)."
+app.calibre.description: "Calibre library with content server (calibre-server) and Calibre-Web UI; shared library, ebook-convert included."
+app.cleanuparr.description: "Advanced download cleanup for the Servarr ecosystem."
+app.cross-seed.description: "Fully-automatic cross-seeding with Torznab; daemon with web UI and HTTP API."
+app.duplicati.description: "Encrypted backup client with a web UI for local and cloud storage."
+app.flexget.description: "Multipurpose automation for torrents, NZBs, and feeds; daemon with optional web UI."
+app.headphones.description: "Automated music downloader for NZB and torrents (legacy; rembo10/headphones)."
+app.jdownloader.description: "JDownloader 2 with a self-hosted local web interface."
+app.kavita.description: "Self-hosted digital library for comics, manga and books."
+app.komga.description: "Media server for comics, manga, and magazines (Spring Boot JAR)."
+app.listenarr.description: "Automated audiobook collection management (Sonarr-style for audiobooks)."
+app.magazarr.description: "Magazine companion for Quasarr with OPDS library output."
+app.medusa.description: "Automatic TV show library manager for NZB and torrents (PyMedusa)."
+app.mylar3.description: "Automated comic book (CBR/CBZ) downloader for NZB and torrents."
+app.navidrome.description: "Self-hosted music server and streamer compatible with Subsonic/Airsonic clients."
+app.nextcloud.description: "Self-hosted file sync and collaboration (official zip + PHP built-in server; SQLite)."
+app.novnc.description: "Browser VNC client (GitHub noVNC + TigerVNC + websockify; localhost-only VNC with SecurityTypes None)."
+app.nzbhydra2.description: "Meta search aggregator for NZB indexers."
+app.pyload.description: "Free and open-source download manager with a modern web UI (pyload-ng)."
+app.quassel.description: "Distributed IRC client core with a browser-based web interface."
+app.rclone.description: "Cloud storage with guided OAuth/SA, FUSE mounts, mergerfs media/views, crypt, and scheduled cache→remote move."
+app.rclone.drive_root: "Google Drive root"
+app.rclone.mode: "Onboarding"
+app.rclone.preset: "Cloud profile"
+app.rclone.provider: "Cloud provider"
+app.rclone.remote: "rclone remote name"
+app.rclone.team_drive: "Shared drive / Team Drive ID"
+app.rclone.team_drive_placeholder: "Shared drive ID (optional)"
+app.rclone.wizard.intro: "Choose how to connect cloud storage. You can finish OAuth later from Manage cloud."
+app.rclone.wizard.setup_method: "Setup method"
+app.rclone.wizard.setup_import: "Import an existing rclone.conf"
+app.rclone.wizard.setup_import_hint: "Paste a working config from another machine. Mounts start after install."
+app.rclone.wizard.setup_provider: "Connect a cloud provider"
+app.rclone.wizard.setup_provider_hint: "Pick Drive, Dropbox, kDrive, etc. Complete OAuth from Manage cloud after install."
+app.rclone.wizard.conf_label: "rclone.conf contents"
+app.rclone.wizard.conf_hint: "Optional now — you can also import later from Manage cloud. If filled, it is applied right after install."
+app.rclone.wizard.provider_note: "After install, open Manage cloud to finish OAuth / service account / kDrive credentials."
+app.rclone.manage.title: "rclone cloud"
+app.rclone.manage.menu: "Manage cloud…"
+app.rclone.manage.loading: "Loading…"
+app.rclone.manage.apply: "Apply profile"
+app.rclone.manage.apply_failed: "Could not apply rclone profile"
+app.rclone.manage.load_failed: "Could not load rclone status"
+app.rclone.manage.health: "Health"
+app.rclone.manage.oauth: "OAuth"
+app.rclone.manage.oauth_intro: "Start OAuth on the server, authorize on a browser machine, paste the token."
+app.rclone.manage.oauth_begin: "Begin OAuth"
+app.rclone.manage.oauth_complete: "Complete OAuth"
+app.rclone.manage.oauth_paste_hint: "On a browser machine run:"
+app.rclone.manage.oauth_paste_hint2: "then paste the token below."
+app.rclone.manage.oauth_ready: "Remote authenticated"
+app.rclone.manage.oauth_needed: "OAuth / service account required — complete a flow below."
+app.rclone.manage.token: "Authorize token"
+app.rclone.manage.token_required: "Token required"
+app.rclone.manage.list_drives: "List"
+app.rclone.manage.pick_drive: "Select Shared Drive…"
+app.rclone.manage.move: "Move pipeline"
+app.rclone.manage.move_enabled: "Enable cache → remote move"
+app.rclone.manage.move_dest: "Move destination"
+app.rclone.manage.move_min_age: "Min age"
+app.rclone.manage.bwlimit: "Bandwidth limit"
+app.rclone.manage.crypt: "Crypt (optional)"
+app.rclone.manage.crypt_name: "Crypt remote name"
+app.rclone.manage.crypt_remote: "Underlying remote"
+app.rclone.manage.crypt_password: "Password"
+app.rclone.manage.crypt_password2: "Salt password"
+app.rclone.manage.crypt_set_primary: "Use crypt as primary mount / move dest"
+app.rclone.manage.crypt_create: "Create crypt remote"
+app.rclone.manage.branches: "Cloud remotes"
+app.rclone.manage.branches_hint: "Each remote mounts under ~/mounts/remote/<id>. Mark one as primary for ~/mounts/media (and move). Leave “merge into media” unchecked for backups."
+app.rclone.manage.no_branches: "No extra remotes"
+app.rclone.manage.add_branch: "Add remote"
+app.rclone.manage.primary_branch: "Primary for media"
+app.rclone.manage.primary_badge: primary
+app.rclone.manage.set_primary: "Set primary"
+app.rclone.manage.branch_union: "Also merge into media (union)"
+app.rclone.manage.move_log: "Move log"
+app.rclone.manage.log_empty: "(empty)"
+app.rclone.manage.manage_hint: "Use this panel or: zen rclone …"
+app.rclone.manage.kdrive_create: "Create kDrive remote"
+app.rclone.manage.kdrive_pass: "App password"
+app.rclone.manage.kdrive_user: "Email"
+app.rclone.manage.kdrive_url: "kDrive ID or WebDAV URL"
+app.rclone.manage.kdrive_hint: "WebDAV: drive ID or full URL, Infomaniak email, application password. Mount/move flags live in ~/.krate/applications/rclone-cloud/*.env"
+app.rclone.manage.kdrive: "Infomaniak kDrive"
+app.rclone.manage.on_calendar: "OnCalendar (optional)"
+app.rclone.manage.on_unit_active: OnUnitActiveSec
+app.rclone.manage.on_boot: OnBootSec
+app.rclone.manage.import_conf: "Import rclone.conf"
+app.rclone.manage.import_apply: "Import conf"
+app.rclone.manage.import_hint: "Import sets the primary remote automatically (crypt preferred). Remote name must match a section in the conf — not the default “Media”."
+app.rclone.manage.import_required: "Paste rclone.conf content"
+app.rclone.manage.service_account: "Google service account"
+app.rclone.manage.sa_apply: "Apply service account"
+app.rclone.manage.sa_required: "Paste service account JSON"
+app.rclone.manage.sa_set_primary: "Use as primary remote"
+app.rclone.manage.views: "Media views (*arr)"
+app.rclone.manage.no_views: "No named views — default ~/mounts/media only"
+app.rclone.manage.add_view: "Add media view"
+app.resilio-sync.description: "Peer-to-peer file sync with a web UI."
+app.shelfmark.description: "Self-hosted ebook and audiobook search, request and download hub."
+app.sickchill.description: "Automatic TV show library manager for NZB and torrents."
+app.sickgear.description: "Stable TV show PVR for Usenet and BitTorrent (SickBeard descendant)."
+app.subsonic.description: "Proprietary Subsonic music streamer (standalone 6.1.6). Prefer Airsonic/Navidrome for new installs."
+app.syncthing.description: "Continuous file synchronization between devices (GUI on loopback via Caddy)."
+app.thelounge.description: "Self-hosted web IRC client (pnpm install; private mode on loopback)."
+app.threadfin.description: "IPTV proxy and EPG toolkit (xTeVe successor)."
+app.tunarr.description: "Create live TV channels from your Plex/Jellyfin libraries."
+app.unmanic.description: "Library optimiser — schedule scans and process media with plugins (FFmpeg and custom commands)."
+app.x2go.description: "Remote desktop via X2Go (apt x2goserver; no web UI — connect with an X2Go client over SSH)."
+app.ytdl-sub.description: "Automate yt-dlp downloads and metadata for media libraries (CLI; no web UI)."
+app.znc.description: "Advanced IRC bouncer with optional webadmin (git master; per-user datadir)."
+backups.apps.empty: "No application backup archives were found for your account."
+backups.apps.heading: Applications
+backups.apps.help: "Archives under ~/.krate/backups (manual, scheduled, and install snapshots marked base)."
+backups.apps.base_protected: Protected
+backups.column.app: Application
+backups.column.context: Context
+backups.column.date: Date
+backups.column.name: Archive
+backups.column.size: Size
+backups.delete.confirm_app: "Delete this application backup archive? This cannot be undone."
+backups.delete.confirm_system: "Delete this system backup archive? This cannot be undone."
+backups.delete.done: "Backup archive deleted."
+backups.error.delete_failed: "Failed to delete the backup archive."
+backups.error.generic: "Failed to load backup archives."
+backups.error.heading: "Backups unavailable"
+backups.heading: Backups
+backups.loading: "Loading backups…"
+backups.nav: Backups
+backups.open: "Backups"
+backups.page_title: Backups
+backups.purpose: "List and delete zen backup archives for your applications. Administrators also see system snapshots from zen pull."
+backups.schedule.apps: Applications to back up
+backups.schedule.apps_empty: "No installed applications to select."
+backups.schedule.enabled: Enable scheduled backups
+backups.schedule.frequency: Frequency
+backups.schedule.frequency_biweekly: Every two weeks
+backups.schedule.frequency_daily: Daily
+backups.schedule.frequency_weekly: Weekly (Monday)
+backups.schedule.heading: Schedule
+backups.schedule.help: "Pick apps, how often to archive them into scheduled/, and how many timed archives to keep. Install snapshots (*_base) are never pruned."
+backups.schedule.keep: Keep last N scheduled archives
+backups.schedule.load_failed: "Could not load schedule."
+backups.schedule.save: Save schedule
+backups.schedule.save_failed: "Failed to save the backup schedule."
+backups.schedule.saved: Schedule saved.
+backups.schedule.saving: Saving…
+backups.schedule.time: Time
+backups.system.empty: "No system backup archives were found."
+backups.system.heading: System
+backups.system.help: "KRATE system snapshots under /var/lib/krate/backups/system (zen pull)."
+playback.bulk.broadcast: Broadcast
+playback.bulk.broadcast_done: "Message sent to {succeeded, plural, =0 {no viewers} one {# viewer} other {# viewers}} ({failed, plural, =0 {} one {# failed} other {# failed}})."
+playback.bulk.broadcast_prompt: "Message to send to all Emby/Jellyfin viewers"
+playback.bulk.broadcast_message: Message
+playback.bulk.broadcast_timeout: "Display duration (seconds)"
+playback.bulk.broadcast_send: Send
+playback.bulk.broadcast_preflight: "{count, plural, =0 {No eligible Emby/Jellyfin viewers right now} one {# eligible Emby/Jellyfin viewer} other {# eligible Emby/Jellyfin viewers}}"
+playback.bulk.broadcast_errors: "Failures: {detail}"
+playback.bulk.stop_all: Stop all
+playback.bulk.stop_all_confirm: "Stop playback for every eligible session on Plex, Emby, and Jellyfin?"
+playback.bulk.stop_all_done: "Stopped {succeeded, plural, =0 {no sessions} one {# session} other {# sessions}} ({failed, plural, =0 {} one {# failed} other {# failed}})."
+playback.action.kill: Kill
+playback.action.kill_confirm: "Force-disconnect this viewer and end their session? This is stronger than Stop."
+playback.action.message: Message
+playback.action.message_prompt: "Message to send to this viewer"
+playback.action.mirror: Mirror
+playback.action.activity: Activity
+playback.action.pause: Pause
+playback.action.stop: Stop
+playback.action.unpause: Resume
+playback.mirror.title: Mirror
+playback.mirror.close: Close mirror
+playback.mirror.close_short: "×"
+playback.mirror.mute: Mute
+playback.mirror.unmute: Unmute
+playback.mirror.fullscreen: Fullscreen
+playback.mirror.theater: Theater
+playback.mirror.pip: PiP
+playback.mirror.collapse: Collapse mirror dock
+playback.mirror.expand: Expand mirror dock
+playback.mirror.collapse_short: "–"
+playback.mirror.expand_short: "+"
+playback.mirror.loading: Loading stream…
+playback.mirror.nerd_show: Stats
+playback.mirror.nerd_hide: Hide stats
+playback.mirror.error_start: "Could not start mirror."
+playback.mirror.error_play: "Mirror playback failed."
+playback.mirror.error_play_detail: "Mirror playback failed ({detail})."
+playback.mirror.error_unsupported: "HLS playback is not supported in this browser."
+playback.mirror.expired: "Mirror session expired."
+playback.mirror.cap_replaced: "Oldest mirror closed — max {max} concurrent."
+playback.mirror.max_concurrent_chip: "max {max}"
+playback.column.actions: Actions
+playback.column.decision: Decision
+playback.column.server: Server
+playback.column.title: Title
+playback.decision.directplay: Direct Play
+playback.decision.directstream: Direct Stream
+playback.decision.transcode: Transcode
+playback.decision.unknown: Unknown
+playback.empty.no_servers: "No Plex, Emby, or Jellyfin installs were found. Install a media server from the App Store to use Playback."
+playback.empty.no_sessions: "No active streams right now."
+playback.empty.no_sessions_hint: "When someone starts watching on Plex, Emby, or Jellyfin, sessions appear here with controls."
+playback.error.action_failed: "Could not control this session."
+playback.error.generic: "Failed to load live sessions."
+playback.error.heading: "Playback unavailable"
+playback.error.plex_pause_unsupported: "Pause is not available for Plex sessions from Playback."
+playback.error.plex_unpause_unsupported: "Resume is not available for Plex sessions from Playback."
+playback.error.plex_message_unsupported: "Messages are not available for Plex sessions from Playback."
+playback.error.plex_kill_unsupported: "Force-disconnect is not available for Plex sessions from Playback."
+playback.error.dispatcharr_missing: "Dispatcharr is not installed on this host."
+playback.error.invalid_json: "Invalid request body."
+playback.error.settings_missing: "Site settings are not initialized."
+playback.error.request_unavailable: "That request service is not available."
+playback.error.request_action_failed: "The approve/deny action failed upstream."
+playback.error.portal_unsupported: "This server type does not support the media portal."
+playback.error.item_not_found: "Title not found."
+playback.error.unknown_server: "Unknown playback server."
+playback.session.restricted: "Restricted content"
+playback.session.plex_controls_limited: "Plex only supports Stop from Playback (pause, message and force-disconnect stay in the Plex client)."
+playback.carousel.previous: Previous
+playback.carousel.next: Next
+playback.heading: Playback
+playback.live.help: "Who is watching, Continuity tips, throttle status, and one-click session levers."
+playback.live.sessions_banner: "Session cockpit"
+playback.live.sessions_continuity: "Open a Continuity copy when Insight suggests a better server."
+playback.live.sessions_protect: "Protect streams"
+playback.live.sessions_throttle_toast: "Streaming throttle on — {sessions} sessions · upload budget {reservedMbps} Mbps"
+playback.live.who_watching: "{count, plural, one {# watching now} other {# watching now}}"
+playback.live.who_watching_none: "Nobody watching"
+playback.live.summary: "{count, plural, =0 {No active streams right now.} one {Real-time monitoring of # active stream.} other {Real-time monitoring of # active streams.}}"
+playback.live.polling: Polling
+playback.live.sse: Live
+playback.meta.bandwidth: Bandwidth
+playback.meta.device: Device
+playback.meta.player: Player
+playback.meta.progress: Progress
+playback.meta.quality: Quality
+playback.meta.user: User
+playback.nav: Playback
+playback.nav_section: Media
+playback.page_title: Playback
+playback.purpose: "See who is watching what across your media servers, and pause, stop, or message viewers when the server allows it."
+playback.server.connected: Connected
+playback.server.disconnected: Disconnected
+playback.state.paused: Paused
+playback.state.playing: Playing
+playback.stats.bandwidth: Bandwidth
+playback.stats.direct_play: Direct Play
+playback.stats.direct_stream: Direct Stream
+playback.stats.paused: Paused
+playback.stats.sessions: Active streams
+playback.stats.transcode: Transcoding
+playback.stats.hw_transcode: GPU
+playback.view.aria: Session view mode
+playback.view.cards: Cards
+playback.view.categorical: Grouped
+playback.view.table: Table
+playback.settings.heading: Automation
+playback.settings.help: "Automate idle pause handling, purge stale transcoder temps, and keep activity history tidy."
+playback.settings.open: Settings
+playback.settings.close: Close settings
+playback.settings.load_failed: "Could not load automation settings."
+playback.settings.save_failed: "Could not save automation settings."
+playback.settings.saved: "Automation settings saved."
+playback.settings.pause_rules.enabled: "Pause rules"
+playback.settings.pause_rules.warn_after: "Warn after (minutes paused)"
+playback.settings.pause_rules.stop_after: "Stop after (minutes paused)"
+playback.settings.pause_rules.bypass: "Bypass usernames"
+playback.settings.pause_rules.bypass_placeholder: "alice, bob"
+playback.settings.cleanup.enabled: "Transcode cleanup"
+playback.settings.cleanup.min_age: "Minimum file age (hours)"
+playback.settings.activity.retention: "Activity retention (days)"
+playback.settings.mirror.enabled: "Playback Mirror"
+playback.settings.mirror.help: "Admin PiP preview of a live VOD or Live TV session. Uses a separate HLS transcode on the media server."
+playback.settings.mirror.ttl: "Mirror token TTL (seconds)"
+playback.settings.mirror.ttl_hint: "Use 0 to keep the mirror open until you close it (no automatic expiry)."
+playback.settings.mirror.max_concurrent: "Max concurrent mirrors per admin"
+playback.settings.mirror.max_concurrent_hint: "Starting a new mirror above this cap closes your oldest mirror first."
+playback.mirror.ttl_remaining: TTL
+playback.mirror.ttl_off: off
+playback.settings.portal.heading: "Media portal"
+playback.settings.portal.help: "User profile fuses only the signed-in person’s instances. Global profile fuses every discovered server."
+playback.settings.portal.profile: "Fusion profile"
+playback.settings.portal.profile.user: "User profile"
+playback.settings.portal.profile.global: "Global profile"
+playback.settings.genres.heading: "Genre dictionary"
+playback.settings.genres.help: "Merge multilingual genre labels into one chip (e.g. Adventure + Aventure)."
+playback.settings.genres.yaml: "Aliases (YAML)"
+playback.settings.genres.save: "Save genres"
+playback.settings.genres.reset: "Reset to defaults"
+playback.settings.genres.status_default: "Using shipped defaults"
+playback.settings.genres.status_custom: "Using admin override"
+playback.settings.genres.saved: "Genre dictionary saved"
+playback.settings.genres.reset_done: "Genre dictionary reset to defaults"
+playback.settings.genres.save_failed: "Could not save genre dictionary"
+playback.settings.genres.reset_failed: "Could not reset genre dictionary"
+playback.settings.genres.reset_confirm: "Reset genre aliases to the shipped defaults? Your admin override will be removed."
+playback.settings.continuity.heading: "Continuity"
+playback.settings.continuity.help: "Influences recommended copy ranking (history plus remux / HW-friendly codec hints)."
+playback.settings.continuity.prefer_remux: "Prefer remux / Blu-ray copies when detectable"
+playback.settings.continuity.prefer_hw: "Prefer codecs friendly to hardware acceleration"
+playback.settings.geoip.heading: "Session GeoIP"
+playback.settings.geoip.help: "Optional offline lookup for Live session location badges. Off by default; never shown on the public portal."
+playback.settings.geoip.enabled: "Show city badge on Live sessions"
+playback.settings.geoip.level.unavailable: "Location lookup unavailable on this host"
+playback.settings.geoip.level.country: "Country only — city data not installed"
+playback.settings.geoip.level.city_isp: "City and network data available"
+playback.settings.geoip.packages_hint: "{packages}"
+playback.settings.geoip.packages_ok: "City and network databases are available."
+playback.settings.geoip.packages_country: "Only country-level lookup is available."
+playback.settings.geoip.packages_unavailable: "Install GeoIP packages on the host to enable location badges."
+playback.settings.geoip.attribution: "IP Geolocation by DB-IP"
+playback.live.geoip_attribution: "IP Geolocation by DB-IP"
+playback.settings.cache.heading: "Playback cache"
+playback.settings.cache.help: "Keep poster lookups and Trakt watched/collected sync on disk to avoid hammering APIs. Disable for live test refreshes."
+playback.settings.cache.enabled: "Enable cache"
+playback.settings.cache.sync_minutes: "Sync watched/collected every (minutes)"
+playback.settings.cache.sync_minutes_hint: "Applies while the cache is enabled. Manual refresh still forces a full pull."
+playback.settings.cover_art.heading: "Cover art"
+playback.settings.cover_art.help: "Control TMDB/TVDB/Fanart poster lookups for the media portal when the server has no local artwork."
+playback.settings.cover_art.fallback_order: "Fallback order: primary provider → secondary → Fanart (if enabled) → server-native artwork."
+playback.settings.cover_art.tmdb_enabled: "Enable TMDB posters"
+playback.settings.cover_art.tvdb_enabled: "Enable TVDB posters"
+playback.settings.cover_art.fanart_enabled: "Enable Fanart.tv posters"
+playback.settings.cover_art.movie_provider: "Movies"
+playback.settings.cover_art.series_provider: "Series"
+playback.settings.cover_art.provider.tmdb: "TMDB first"
+playback.settings.cover_art.provider.tvdb: "TVDB first"
+playback.settings.cover_art.provider.fanart: "Fanart.tv first"
+playback.settings.cover_art.provider.native: "Server artwork only"
+playback.settings.cover_art.clear_cache: "Clear cover art cache"
+playback.settings.cover_art.clear_cache_done: "Cleared {count} cached poster(s)."
+playback.settings.cover_art.clear_cache_error: "Could not clear cover art cache."
+playback.settings.cover_art.preview_type: Type
+playback.settings.cover_art.preview_movie: Movie
+playback.settings.cover_art.preview_series: Series
+playback.settings.cover_art.preview_id: "TMDB or TVDB id"
+playback.settings.cover_art.preview_run: Preview
+playback.settings.cover_art.preview_provider: "Winning provider: {provider}"
+playback.settings.cover_art.preview_empty: "No poster resolved for this id."
+playback.settings.cover_art.preview_error: "Preview failed."
+playback.stremio.unsupported: "Stremio: not supported"
+playback.stremio.unsupported_help: "Stremio does not expose a usable sessions/libraries API for Playback."
+playback.control_center.heading: "Server status"
+playback.control_center.help: "Health and load for discovered media servers."
+playback.control_center.link_users: Users
+playback.control_center.link_devices: Devices
+playback.control_center.link_live_capacity: Live capacity
+playback.control_center.refresh: Refresh
+playback.control_center.loading: Loading…
+playback.control_center.empty: "No media servers discovered."
+playback.control_center.load_failed: "Could not load Control Center."
+playback.control_center.playing: Playing
+playback.control_center.paused: Paused
+playback.control_center.libraries: Libraries
+playback.control_center.libraries_list: "Media libraries"
+playback.control_center.libraries_empty: "No libraries on this server."
+playback.control_center.libraries_load_failed: "Could not load libraries."
+playback.control_center.library_scan: Scan
+playback.control_center.library_scan_started: "Scan requested"
+playback.control_center.library_scan_failed: "Scan could not be started."
+playback.control_center.version: Version
+playback.nerd.heading: Nerd stats
+playback.insight.heading: Why this stream
+playback.insight.summary.direct: Direct play — no server-side convert.
+playback.insight.summary.directstream: Remux/direct stream — container converted, codecs untouched.
+playback.insight.summary.hw_transcode: Hardware transcode on the media server.
+playback.insight.summary.hw_transcode_gpu_hot: Hardware transcode while host GPU is under load.
+playback.insight.summary.sw_transcode: Software transcode — expensive on CPU.
+playback.insight.summary.paused: Session is paused.
+playback.insight.lever.resume_or_stop: Resume or stop the idle session.
+playback.insight.lever.reduce_quality_or_kill: Lower quality or stop the stream to free GPU.
+playback.insight.lever.prefer_direct_copy: Open another fused copy that can direct-play.
+playback.insight.lever.kill_heavy_client: Disconnect this client if it cannot direct-play.
+playback.insight.lever.remote_client_cap: Ask the remote viewer to lower quality.
+playback.insight.lever.enable_throttle_streaming: Enable streaming download throttle
+playback.insight.lever.enable_playbook_gpu_hot: Enable GPU-hot playbook
+playback.insight.lever.enable_playbook_livetv_torrents: Enable Live TV + torrents playbook
+playback.insight.lever.open_throttle_settings: Open throttle settings
+playback.insight.lever.throttle_active_while_heavy: Downloads are already limited for active streams.
+playback.insight.effect.enable_throttle_streaming: Expected effect — apply the Streaming throttle preset to protect streams.
+playback.insight.effect.enable_playbook_gpu_hot: Expected effect — writes Activity alerts only when GPU is critical during transcodes (no auto-stop).
+playback.insight.effect.enable_playbook_livetv_torrents: Expected effect — writes Activity alerts only when Live TV coincides with busy downloads (no auto-stop).
+playback.insight.effect.open_throttle_settings: Expected effect — jump to throttle controls to tune limits.
+playback.insight.toast.throttle_enabled: Streaming throttle enabled.
+playback.insight.toast.playbook_gpuHotTranscodes: GPU-hot playbook enabled — check Activity for alerts.
+playback.insight.toast.playbook_liveTvPlusTorrents: Live TV + torrents playbook enabled — check Activity for alerts.
+playback.insight.lever.container_remux: Prefer a remux-friendly copy if available.
+playback.insight.effect.generic: Expected effect depends on stream and host state.
+playback.insight.effect.switch_recommended_copy: Expected effect — switch to a copy that already played successfully (less transcode).
+playback.insight.effect.prefer_direct_copy: Expected effect — look for a direct-play copy in the portal.
+playback.insight.effect.reduce_quality_or_kill: Expected effect — immediate drop in GPU / CPU load.
+playback.insight.effect.kill_heavy_client: Expected effect — frees the transcoder used by this client.
+playback.insight.effect.remote_client_cap: Expected effect — the viewer may lower remote bitrate.
+playback.insight.effect.container_remux: Expected effect — avoid an unnecessary server remux.
+playback.insight.effect.throttle_active_while_heavy: Expected effect — downloads stay capped to protect streams.
+playback.insight.effect.resume_or_stop: Expected effect — resume playback or free the session.
+playback.insight.effect.stop_idle: Expected effect — stops an idle session holding resources.
+playback.insight.fact.decision: Decision
+playback.insight.fact.play_method: Play method
+playback.insight.fact.video_codec: Video codec
+playback.insight.fact.audio_codec: Audio codec
+playback.insight.fact.resolution: Resolution
+playback.insight.fact.container: Container
+playback.insight.fact.bandwidth_bps: Bandwidth
+playback.insight.fact.hw_accel: Hardware accel
+playback.insight.fact.hw_type: HW type
+playback.insight.fact.transcode_speed: Transcode speed
+playback.insight.fact.is_local: Local network
+playback.insight.fact.geo: Location
+playback.insight.fact.host_gpu_percent: Host GPU
+playback.insight.fact.client: Client
+playback.insight.fact.throttle_state: Throttle
+playback.capacity.heading: Host capacity
+playback.capacity.downloads_limited: "Downloads limited — {streams} active stream(s), {managed} client(s) managed, ~{reserved} Mbps reserved."
+playback.capacity.gpu_saturated: "Host GPU at {percent}% with {hw} hardware transcode(s)."
+playback.capacity.software_transcode: "{count} software transcode(s) running — high CPU cost."
+playback.capacity.slow_api: "{count} media server API(s) responding slowly (>500 ms)."
+playback.capacity.headroom_ok: "{streams} stream(s) with headroom on GPU and downloads."
+playback.capacity.idle: No active streams — host capacity free.
+playback.continuity.recommended: Best observed copy
+playback.continuity.plays: "{plays} play(s) · score {score}"
+playback.continuity.none: No play history for this copy yet.
+playback.continuity.live_cta: Open Continuity copy
+playback.continuity.score_only: "score {score}"
+playback.continuity.play_best: "Play best copy · {server} · score {score}"
+playback.continuity.reason.high_success_rate: "High finish rate on this copy"
+playback.continuity.reason.strong_watch_time: "Strong watch time on this copy"
+playback.continuity.reason.prefer_remux: "Prefers remux copies"
+playback.continuity.reason.prefer_hw_codec: "Prefers HW-friendly codecs"
+playback.continuity.reason.strong_catalog_match: "Strong TMDB/TVDB match"
+playback.continuity.reason.weak_title_match: "Title/year match only"
+playback.portal.play_cost.direct: "Direct play likely"
+playback.portal.play_cost.transcode_probable: "Transcode likely"
+playback.portal.play_cost.weak_match: "Weak catalog match"
+playback.portal.match.strong: "Strong match"
+playback.portal.match.weak: "Weak match"
+playback.portal.play_router.cta: "Watch on {app}"
+playback.portal.request_status: "Request ({app}): {status}"
+playback.portal.request_open: "Open request"
+playback.portal.request_app: "via {app}"
+playback.host_status.badge: "{playing} playing · {transcoding} transcode · {throttle}"
+playback.host_status.title: "Open Studio Live or Settings"
+playback.host_status.throttle_on: "throttle on"
+playback.host_status.throttle_off: "throttle off"
+playback.settings.household.heading: "Household"
+playback.settings.household.help: "Soft alerts when one viewer dominates GPU-heavy playback."
+playback.settings.household.gpu_monopoly: "Notify when a user exceeds the GPU share threshold"
+playback.settings.household.gpu_percent: "GPU transcode share threshold (%)"
+playback.settings.playbooks.heading: "Playbooks"
+playback.settings.playbooks.help: "Background checks write Activity alerts only — they never stop or kill sessions automatically."
+playback.settings.playbooks.gpu_hot: "GPU hot while transcoding (alert only)"
+playback.settings.playbooks.livetv_torrents: "Live TV while throttle is active (alert only)"
+playback.settings.playbooks.paused_too_long: "Paused too long (pause rules)"
+playback.history.gpu_share: "Recent GPU share estimate: {percent}% transcode ({transcode} of {total})"
+playback.history.estimation_help: "Estimated watch time sums credited intervals in the selected period."
+playback.history.estimated_help: "Estimated watch time from history intervals in the filter window."
+playback.users.restricted_active: "Restricted now"
+playback.control_center.domain.playbooks: "Playbooks"
+playback.control_center.worker_last: "Last worker run {time} · {reason}"
+playback.automation.playbooks: "Playbooks"
+playback.automation.reason.policy_triggered: "Playbook triggered"
+playback.requests.status.pending: "Pending"
+playback.requests.status.partial: "Partial"
+playback.requests.status.approved: "Approved"
+playback.tuners.health.ok: "Tuners healthy · {live}/{capacity} viewers"
+playback.tuners.health.degraded: "Tuner capacity exceeded · {live}/{capacity} viewers"
+playback.tuners.health.offline: "Dispatcharr offline"
+playback.tuners.conflict: "{viewers} viewers exceed {capacity} tuners (+{overflow})"
+playback.tuners.tuner_health.ok: "Tuners OK"
+playback.tuners.tuner_health.saturated: "All tuners busy"
+playback.tuners.tuner_health.offline: "Offline"
+playback.tuners.channel_watchers: "{channel}: {count} watching ({users})"
+playback.requests.heading: Media requests
+playback.requests.help: Pending Seerr / Ombi requests discovered on this host.
+playback.requests.empty: No request managers installed, or no open requests.
+playback.requests.instance_errors: "Could not load requests — {detail}"
+playback.requests.load_failed: Could not load media requests.
+playback.requests.nav: Requests
+playback.requests.empty_pending: No open requests for the selected scope.
+playback.requests.scope.label: Request scope
+playback.requests.scope.mine: Mine
+playback.requests.scope.everyone: Everyone
+playback.requests.previously_heading: Previously requested
+playback.requests.previously_help: Titles you approved or denied recently on this dashboard.
+playback.requests.previously_empty: No recent decisions yet.
+settings.access_groups.playback_requests.heading: Playback media requests
+settings.access_groups.playback_requests.help: Grant group members access to the Playback requests section (Seerr / Ombi on their services).
+settings.access_groups.playback_requests.view: View pending requests
+settings.access_groups.playback_requests.approve: Approve or deny requests
+users.playback_roles.heading: Playback requests
+users.playback_roles.view: View requests
+users.playback_roles.approve: Approve / deny
+users.playback_roles.saved: Playback request roles updated.
+users.playback_roles.admin_implied: Admins already have full Playback access.
+users.permission_roles.heading: Feature permissions
+users.permission_roles.users_manage: Manage users
+users.permission_roles.settings_system: System settings
+users.permission_roles.firewall_view: View firewall
+users.permission_roles.terminal_use: Use terminal
+users.permission_roles.certificates_manage: Manage certificates
+users.permission_roles.saved: Feature permissions updated.
+users.permission_roles.admin_implied: Admins already have all feature permissions.
+users.force_logout.action: Force logout
+users.force_logout.success: User session and API key revoked.
+playback.users.disable: Disable
+playback.users.enable: Enable
+playback.users.disabled: Disabled
+playback.users.disable_confirm: Disable this media-server user?
+playback.devices.revoke: Revoke
+playback.devices.revoke_confirm: Revoke this device from the media server?
+playback.devices.search: "Find a device"
+playback.devices.filter_source: Source
+playback.devices.filter_platform: Platform
+playback.devices.filter_revocable: Revocable
+playback.devices.filter_presence: Presence
+playback.devices.filter_all: All
+playback.devices.filter_source_session: Live session
+playback.devices.filter_revocable_yes: Revocable only
+playback.devices.filter_revocable_no: Not revocable
+playback.devices.badge_online: Online
+playback.devices.badge_stale: Stale
+playback.devices.badge_offline: Offline
+playback.devices.export: Export CSV
+playback.devices.no_matches: "No devices match these filters."
+playback.devices.manage_user: Manage user
+playback.devices.bulk_selected: "{count, plural, one {# selected} other {# selected}}"
+playback.devices.bulk_revoke: "Revoke selected"
+playback.devices.bulk_revoke_confirm: "Revoke {count, plural, one {# selected device} other {# selected devices}}?"
+playback.devices.bulk_done: "Revoked {ok} of {total}"
+playback.devices.whitelist_add: "Add to whitelist"
+playback.devices.whitelist_confirm: "Limit {user} to a device whitelist that includes this device? Other devices will be blocked until approved."
+playback.devices.whitelist_added: "Device added to user whitelist."
+playback.devices.whitelist_error: "Could not update device whitelist."
+playback.devices.lock: Lock
+playback.devices.lock_help: "Restrict this user to only this device (Emby/Jellyfin whitelist)."
+playback.devices.lock_confirm: "Lock {user} to this device only? Other devices will be blocked until approved."
+playback.devices.lock_done: "User locked to this device."
+playback.devices.lock_error: "Could not lock the user to this device."
+playback.devices.rename_label: Device display name
+playback.devices.rename_save: Save name
+playback.devices.rename_sync: Sync to media server
+playback.devices.rename_history: Previous names
+playback.devices.rename_saving: Saving…
+playback.devices.rename_saved: Device name saved.
+playback.devices.rename_saved_sync_failed: "Device name saved in Playback, but the media server sync failed: {error}"
+playback.devices.rename_error: Could not save the device name.
+playback.control_center.domains: Automation
+playback.control_center.domain.throttle: Throttle
+playback.control_center.domain.pauseRules: Pause rules
+playback.control_center.domain.transcodeCleanup: Transcode cleanup
+playback.control_center.domain.mirror: Mirror
+playback.control_center.domain.livetv: Live TV
+playback.control_center.domain.history: History
+playback.nerd.playMethod: Play method
+playback.nerd.videoCodec: Video codec
+playback.nerd.audioCodec: Audio codec
+playback.nerd.resolution: Resolution
+playback.nerd.container: Container
+playback.nerd.bitrate: Bitrate
+playback.nerd.hwAccel: Hardware acceleration
+playback.nerd.hwType: GPU encoder
+playback.nerd.transcodeSpeed: Transcode speed
+playback.nerd.hw_yes: Yes
+playback.nerd.hw_no: No
+playback.connection.heading: "Manual connection"
+playback.connection.help: "Override auto-discovered URL and API token when discovery is wrong."
+playback.connection.server: Server
+playback.connection.enabled: "Use manual override"
+playback.connection.base_url: "Base URL"
+playback.connection.token: "API key / token"
+playback.connection.token_placeholder: "Leave blank to keep the stored token"
+playback.connection.test: "Test connection"
+playback.connection.save: "Save override"
+playback.connection.saved: "Connection override saved."
+playback.connection.save_failed: "Could not save connection override."
+playback.connection.test_ok: "Connection OK."
+playback.connection.test_failed: "Connection failed."
+playback.connection.load_failed: "Could not load connection settings."
+playback.users.heading: "Server users"
+playback.users.help: "Users on the selected media server. Emby/Jellyfin accounts can be disabled from here."
+playback.users.refresh: Refresh
+playback.users.empty: "No users returned."
+playback.users.load_failed: "Could not load users."
+playback.users.pick_server: "Select a server above to list users."
+playback.users.admin: Admin
+playback.users.manage: Manage
+playback.users.manage_details: Details
+playback.users.detail_title: "User policy"
+playback.users.detail_read_only: "Policies are read-only on Plex."
+playback.users.section_overview: Operations
+playback.users.live_sessions: "{count, plural, =0 {No live sessions} one {# live session} other {# live sessions}}"
+playback.users.view_live: "View live"
+playback.users.watch_history: "Watch history"
+playback.users.devices_summary: "{count, plural, =0 {No observed devices} one {# observed device} other {# observed devices}}"
+playback.users.view_devices: "Open inventory"
+playback.users.section_controls: Controls
+playback.users.section_devices: Devices
+playback.users.section_templates: Templates
+playback.users.bypass_kill: "Bypass auto-stop (pause rules)"
+playback.users.bypass_kill_help: "Krate will not auto-stop this user when pause rules fire. Manual stop/kill still works."
+playback.users.all_devices: "Allow all devices"
+playback.users.whitelist_devices: "Device whitelist only"
+playback.users.whitelist_save: "Save device access"
+playback.users.policy_save: "Save policy"
+playback.users.template_apply: "Apply template"
+playback.users.template_pick: "Choose a template"
+playback.users.template_none: "No templates yet"
+playback.users.template_save_current: "Save current policy as template"
+playback.users.template_name: "Template name"
+playback.users.template_name_placeholder: "Kids · LAN only"
+playback.users.template_delete: "Delete template"
+playback.users.template_created: "Template saved"
+playback.users.template_deleted: "Template deleted"
+playback.users.template_edit: "Update template from current policy"
+playback.users.template_updated: "Template updated"
+playback.users.filter_disabled: "Disabled only"
+playback.users.filter_restricted: "Restricted only"
+playback.users.filter_has_activity: "With activity"
+playback.users.device_count: "{count, plural, one {# device} other {# devices}}"
+playback.users.bulk_selected: "{count, plural, one {# selected} other {# selected}}"
+playback.users.bulk_disable: "Disable selected"
+playback.users.bulk_enable: "Enable selected"
+playback.users.bulk_apply_template: "Apply template"
+playback.users.bulk_disable_confirm: "Disable {count, plural, one {# selected user} other {# selected users}}?"
+playback.users.bulk_apply_confirm: "Apply this template to {count, plural, one {# selected user} other {# selected users}}?"
+playback.users.bulk_done: "Updated {ok} of {total}"
+playback.users.policy_max_sessions: "Max active sessions (0 = unlimited)"
+playback.users.policy_stream_limit: "Simultaneous streams (0 = unlimited)"
+playback.users.policy_bitrate_limit: "Remote bitrate limit (bps, 0 = unlimited)"
+playback.users.policy_limits_help: "Numeric limits are enforced by Emby/Jellyfin. Use 0 for unlimited."
+playback.users.whitelist_pick: "Allowed devices"
+playback.users.whitelist_empty: "No server devices found yet. Connect a client, then refresh."
+playback.users.whitelist_hint: "Uncheck “Allow all devices” to limit this user to the selected devices."
+playback.users.policy_remote: "Remote access"
+playback.users.policy_livetv: "Live TV access"
+playback.users.policy_livetv_manage: "Live TV management"
+playback.users.policy_transcode_video: "Video transcoding"
+playback.users.policy_transcode_audio: "Audio transcoding"
+playback.users.policy_remux: Remuxing
+playback.users.policy_delete: "Allow deletion"
+playback.users.detail_load_failed: "Could not load user details."
+playback.users.detail_saved: "User policy saved."
+playback.portal.heading: "Media Portal"
+playback.portal.help: "Fused catalog of every server in the chosen profile. If a title exists in more than one place, playback asks which server to use."
+playback.stream.nav: "Playback navigation"
+playback.stream.back: "Back to Krate"
+playback.stream.home: "Home"
+playback.stream.films: "Movies"
+playback.stream.nav_foyer: "Home"
+playback.stream.nav_admin: "Admin"
+playback.stream.series: "Series"
+playback.stream.livetv: "Live TV"
+playback.stream.settings: "Settings"
+playback.stream.studio: "Studio"
+playback.stream.ticker: "Operations ticker"
+playback.portal.server: Server
+playback.portal.search: Search
+playback.portal.refresh: Refresh
+playback.portal.search_placeholder: "Title, actor, director…"
+playback.stream.brand: Playback
+playback.portal.detail.back: Back
+playback.portal.detail.seasons: Seasons
+playback.portal.detail.episodes: Episodes
+playback.portal.detail.season_n: "Season {n}"
+playback.portal.detail.episode_n: "Episode {n}"
+playback.portal.detail.pick_server: "Choose a server"
+playback.portal.detail.no_episodes: "No episodes for this season."
+playback.portal.detail.watch_on: "Watch on {app}"
+playback.portal.detail.watch_eyebrow: "Watch on"
+playback.portal.detail.trailer: "Trailer"
+playback.portal.detail.unmute: "Unmute"
+playback.portal.detail.mute: "Mute"
+playback.portal.detail.watch_tech: "{details}"
+playback.portal.empty: "No media found. Try another library or search."
+playback.portal.loading: Loading…
+playback.portal.load_failed: "Could not load portal data."
+playback.portal.no_servers: "No ready media server."
+playback.portal.lib_all: Library
+playback.portal.detail.close: Close
+playback.portal.detail.watching: "{count, plural, one {# viewer watching now} other {# viewers watching now}}"
+playback.portal.detail.watching_none: "Nobody watching right now."
+playback.portal.watched: Watched
+playback.portal.detail.open_failed: "Could not open item."
+playback.activity.heading: "Action log"
+playback.activity.help: "Commands and automation actions performed on playback sessions."
+playback.activity.empty: "No activity recorded yet."
+playback.activity.filter.action: Action
+playback.activity.filter.user: User
+playback.activity.filter.all: All
+playback.activity.filter.period: Period
+playback.activity.filter.period_all: All time
+playback.activity.filter.period_1d: Last 24 h
+playback.activity.filter.period_7d: Last 7 days
+playback.activity.filter.period_30d: Last 30 days
+playback.activity.filter.source: Source
+playback.activity.export: Export CSV
+playback.activity.column.links: Links
+playback.activity.link_live: Live
+playback.activity.link_history: History
+playback.activity.page: "Page {page} · {total}"
+playback.libraries.path_add: Add path
+playback.libraries.path_remove: Remove
+playback.libraries.path_remove_confirm: "Remove library path {path}?"
+playback.libraries.path_placeholder: "/media/movies"
+playback.libraries.path_failed: "Could not update library path."
+playback.activity.column.time: Time
+playback.activity.column.action: Action
+playback.activity.column.source: Source
+playback.activity.action.play: Play
+playback.activity.action.pause: Pause
+playback.activity.action.resume: Resume
+playback.activity.action.notify: Notify
+playback.activity.action.stop: Stop
+playback.activity.action.disconnect: Disconnect
+playback.activity.action.message: Message
+playback.activity.action.mirror_start: Mirror started
+playback.activity.action.mirror_stop: Mirror stopped
+playback.activity.action.throttle_apply: Throttle applied
+playback.activity.action.throttle_restore: Throttle restored
+playback.activity.action.device_rename: Device renamed
+playback.activity.action.user_disable: User disabled
+playback.activity.action.user_enable: User enabled
+playback.activity.action.user_policy: User policy updated
+playback.activity.action.device_delete: Device revoked
+playback.activity.source.user: User
+playback.activity.source.admin: Admin
+playback.activity.source.rule: Rule
+playback.activity.source.system: System
+certificates.badge.primary: Primary
+certificates.column.days_remaining: "Days left"
+certificates.column.expires: Expires
+certificates.column.host: "Host / service"
+certificates.column.issuer: Issuer
+certificates.column.role: Role
+certificates.column.status: Status
+certificates.days_suffix: days
+certificates.empty: "No certificates were found on this host."
+certificates.error.generic: "Failed to load certificate status."
+certificates.error.heading: "Certificate status unavailable"
+certificates.footer.auto_managed: "Caddy certificates renew automatically where applicable. The VSFTPD certificate is regenerated when the primary site host changes."
+certificates.purpose: "TLS certificates issued by Caddy and VSFTPD. Configure DNS-01 when HTTP-01 cannot reach this host."
+certificates.role.caddy_apex: "Primary site"
+certificates.role.caddy_user_subdomain: "User subdomain"
+certificates.role.unknown: Unknown
+certificates.role.vsftpd: VSFTPD
+certificates.status.expired: Expired
+certificates.status.expiring_soon: "Expiring soon"
+certificates.status.missing: Missing
+certificates.status.unreadable: Unreadable
+certificates.status.valid: Valid
+certificates.summary.apex: "Primary site host"
+certificates.summary.heading: "TLS overview"
+certificates.summary.internal_ca: "Internal CA"
+certificates.summary.internal_ca_hint: "Caddy uses a local CA (tls internal). Trust it on client devices if browsers warn about the certificate."
+certificates.summary.last_updated: "Last updated: %time%"
+certificates.summary.storage: "Caddy storage"
+certificates.summary.tls_mode: "TLS mode"
+certificates.table.heading: "TLS certificates"
+certificates.title: Certificates
+
+certificates.dns.heading: "DNS-01 (Let's Encrypt)"
+certificates.dns.help: "Use a Cloudflare API token when HTTP-01 is blocked (CGNAT, closed port 80). Token is stored in the Caddy environment and never shown again."
+certificates.dns.provider: Provider
+certificates.dns.token: "API token"
+certificates.dns.token_placeholder: "Paste Cloudflare API token"
+certificates.dns.save: "Save DNS-01"
+certificates.dns.clear: "Use HTTP-01"
+certificates.dns.reload: "Reload Caddy"
+certificates.dns.challenge: Challenge
+certificates.dns.status_configured: "DNS-01 active (%provider%)"
+certificates.dns.status_http: "HTTP-01 (default)"
+certificates.dns.saved: "DNS-01 configured"
+certificates.dns.cleared: "DNS-01 cleared"
+certificates.dns.reloaded: "Caddy reloaded"
+certificates.dns.error_save: "Could not configure DNS-01"
+certificates.dns.error_clear: "Could not clear DNS-01"
+certificates.dns.error_reload: "Caddy reload failed"
+certificates.tls_mode.internal: "Internal (Caddy local CA)"
+certificates.tls_mode.public: "Public (Let's Encrypt)"
+certificates.tls_mode.unknown: Unknown
+certificates.tls_mode.vsftpd: VSFTPD
+database.path: "Database Path"
+disk.mount: Mount
+documentation.access_groups: "Access Groups documentation"
+documentation.app_creation: "Application Creation documentation"
+documentation.general_settings: "General Settings documentation"
+documentation.php_settings: "PHP Settings documentation"
+documentation.smtp_settings: "Email settings documentation"
+documentation.users: "Users documentation"
+error.copy_to_clipboard: "Error copying to clipboard"
+error.generic: Something went wrong.
+error.script_execution: "Error executing the script."
+firewall.column.instance: Instance
+firewall.column.protocol: Protocol
+firewall.empty: "No ports are currently declared. The default-deny nftables policy blocks all inbound traffic except loopback and established connections."
+firewall.error.generic: "Failed to load firewall status."
+firewall.error.heading: "Firewall status unavailable"
+firewall.error.license_required: "This host license does not include the firewall feature. Enable features.firewall (or features.beta_features.firewall while it is in the beta catalogue) on the license tier, then run zen license::refresh."
+firewall.error.license_verify_failed: "Firewall is enabled in license.json, but zen could not verify the license on this host (HMAC, vault, or outdated zen). Run sudo zen license::refresh, then sudo zen firewall status for details, and reload this page."
+firewall.infobox.description: "Lists TCP/UDP ports opened in nftables by Krate when apps and services are installed or started. This page does not edit firewall rules; it helps you verify what the platform declared on this host."
+firewall.infobox.title: "Declared firewall openings (read-only)"
+firewall.purpose: "Read-only list of ports Krate opened in nftables (not editable here)."
+firewall.title: Firewall
+firewall.fail2ban.title: Fail2ban
+firewall.fail2ban.help: "Jails and currently banned IPs on this host. Unban when a legitimate client is blocked."
+firewall.fail2ban.banned_ips: Banned IPs
+firewall.fail2ban.unban: Unban
+firewall.fail2ban.unban_ok: IP unbanned.
+firewall.fail2ban.unban_failed: "Could not unban IP."
+vpn.title: VPN Control
+vpn.purpose: "Manage WireGuard system peers, gateway enrollment, and app-scoped routes."
+vpn.error.heading: "VPN status unavailable"
+vpn.error.generic: "Failed to load VPN status."
+vpn.error.zen_no_output: "zen vpn::* returned no output. Check that zen is installed, that the web service can run it (sudoers / PATH), then retry."
+vpn.error.license_required: "This host license does not include the VPN feature. Enable features.vpn (or features.beta_features.vpn while it is in the beta catalogue) on the license tier, then run zen license::refresh."
+vpn.error.license_verify_failed: "VPN is enabled in license.json, but zen could not verify the license on this host. Run sudo zen license::refresh, then reload this page."
+vpn.error.invalid_mode: "Install mode must be client or server."
+vpn.error.invalid_peer_name: "Invalid peer name (use A–Z, a–z, 0–9, ., _, -)."
+vpn.error.invalid_username: "Invalid username."
+vpn.error.invalid_gateway_mode: "Gateway mode must be split or full."
+vpn.error.invalid_country: "Invalid country code."
+vpn.error.invalid_app: "Invalid application name."
+vpn.error.conf_required: "Peer configuration is required."
+vpn.error.temp_file: "Could not create a temporary config file."
+vpn.error.policy_empty: "No policy fields to update."
+vpn.error.endpoint_required: "Endpoint or peer name is required."
+vpn.error.config_not_found: "WireGuard client config not found for this user."
+vpn.refreshed: "VPN status refreshed"
+vpn.hero.installed: Installed
+vpn.hero.system_peer: "System peer"
+vpn.hero.host_egress: "Host egress"
+vpn.hero.host_egress_uplink: "Uplink (SSH/FTP/HTTP)"
+vpn.hero.host_egress_vpn_warn: "WARNING: default via VPN"
+vpn.hero.gateway: Gateway
+vpn.hero.peers: Peers
+vpn.hero.yes: "Yes"
+vpn.hero.no: "No"
+vpn.hero.up: Up
+vpn.hero.down: Down
+vpn.hero.none: None
+vpn.connections.title: "Active connections"
+vpn.connections.empty: "No active system peer."
+vpn.install.title: "WireGuard tools missing"
+vpn.install.hint: "Install WireGuard tools and initialize the KRATE VPN stash on this host."
+vpn.install.action: "Install WireGuard"
+vpn.install.done: "WireGuard install finished"
+vpn.peers.title: Peers
+vpn.peers.hint: "Import a provider WireGuard wg-quick file (.conf from vpnjantit, Mullvad, etc.) for app-scoped routes. Never activated on the host."
+vpn.peers.host_egress_note: "SSH, FTP, and HTTP always stay on the server uplink — only selected apps use the VPN."
+vpn.peers.stash_only: "Stash (app routes)"
+vpn.error.host_activate_forbidden: "Host-wide peer activation is disabled so SSH/FTP/HTTP never go through the VPN. Use app-scoped routing instead."
+vpn.error.invalid_portforward_mode: "Port-forward mode must be manual, natpmp, or clear."
+vpn.error.invalid_job: "Invalid VPN job command."
+vpn.error.peer_name_required: "Enter a peer name (letters, digits, . _ -)."
+vpn.error.conf_read_failed: "Could not read the selected config file."
+vpn.strip.tools: Tools
+vpn.strip.routes: Routes
+vpn.aux.show: Show
+vpn.job.queued: "Queued…"
+vpn.job.done: "VPN job finished"
+vpn.job.failed: "VPN job failed"
+vpn.peers.col.traffic: Traffic
+vpn.routes.stage: "Stage only"
+vpn.routes.stage_hint: "Prepare the tunnel before the app is installed (useful for Plex)."
+vpn.routes.stage_candidate: "stage before install"
+vpn.routes.stage_only_hint: "No installed apps yet. You can still stage Plex now: pick plex@your-user, choose the peer, leave Stage only on, then Enable."
+vpn.routes.staged: Staged
+vpn.routes.portforward: "Port forward"
+vpn.routes.portforward_prompt: "Mode: manual | natpmp | clear"
+vpn.routes.portforward_port: "Port number"
+vpn.routes.portforward_done: "Port-forward updated"
+vpn.peers.name: Name
+vpn.peers.conf_file: "Config file (.conf)"
+vpn.peers.conf_paste: "Or paste the .conf contents"
+vpn.peers.conf_paste_hint: "Useful when the file picker hides .conf — paste the full [Interface] / [Peer] text instead."
+vpn.peers.upload: Upload
+vpn.peers.uploaded: "Peer uploaded"
+vpn.peers.empty: "No peers yet."
+vpn.peers.col.name: Name
+vpn.peers.col.status: Status
+vpn.peers.col.health: Health
+vpn.peers.col.endpoint: Endpoint
+vpn.peers.col.actions: Actions
+vpn.peers.active: Active
+vpn.peers.inactive: Inactive
+vpn.peers.activate: Activate
+vpn.peers.deactivate: Deactivate
+vpn.peers.probe: Probe
+vpn.peers.delete: Delete
+vpn.peers.delete_confirm: "Delete this peer?"
+vpn.keys.title: "Server keys"
+vpn.keys.hint: "Gateway public parameters. Private key requires confirmation."
+vpn.keys.reveal: "Reveal private key"
+vpn.keys.reveal_confirm: "Show the server private key on screen?"
+vpn.keys.public: "Public key"
+vpn.keys.private: "Private key"
+vpn.keys.port: Port
+vpn.keys.dns: DNS
+vpn.keys.cidr: CIDR
+vpn.gateway.title: Gateway
+vpn.gateway.hint: "Enroll linux users for remote access (client .conf download)."
+vpn.gateway.username: Username
+vpn.gateway.enroll: Enroll
+vpn.gateway.enrolled: "User enrolled"
+vpn.gateway.revoke: Revoke
+vpn.gateway.mode: Mode
+vpn.gateway.empty: "No enrolled users."
+vpn.routes.title: "App-scoped routing"
+vpn.routes.hint: "Bind any installed app instance to a VPN peer independently (e.g. rtorrent under VPN, jellyfin not). Uses a network namespace + optional kill switch. The active system peer cannot be reused for a route."
+vpn.routes.app: App
+vpn.routes.user: User
+vpn.routes.instance: "App instance"
+vpn.routes.instance_placeholder: "Select an app or Plex stage target…"
+vpn.routes.instance_required: "Select an app instance and a peer."
+vpn.routes.already_routed: routed
+vpn.routes.no_instances: "No installed apps yet — install apps from the App Store, then bind them here."
+vpn.routes.peer: Peer
+vpn.routes.peer_placeholder: "Select a peer…"
+vpn.routes.kill_switch: "Kill switch"
+vpn.routes.enable: Enable
+vpn.routes.disable: Disable
+vpn.routes.enabled: "Route enabled"
+vpn.routes.empty: "No app routes."
+vpn.error.invalid_unit: "Invalid systemd unit name."
+vpn.nordvpn.title: "NordVPN generator"
+vpn.nordvpn.hint: "Store a NordVPN service token, then generate a NordLynx peer with a real PrivateKey for app routes (required for Plex on Hetzner)."
+vpn.nordvpn.token: "Service token"
+vpn.nordvpn.token_save: "Save token"
+vpn.nordvpn.token_clear: Clear
+vpn.nordvpn.token_saved: "NordVPN token saved"
+vpn.nordvpn.token_cleared: "NordVPN token cleared"
+vpn.nordvpn.token_status: "Token: {status}"
+vpn.nordvpn.token_configured: configured
+vpn.nordvpn.token_missing: missing
+vpn.nordvpn.country: Country
+vpn.nordvpn.name: "Peer name"
+vpn.nordvpn.generate: Generate
+vpn.nordvpn.done: "Generated {name} @ {hostname}"
+vpn.nordvpn.done_short: "NordVPN peer generated"
+vpn.policy.title: "Config lifecycle policy"
+vpn.policy.hint: "Liveness probing and cleanup thresholds for the peer pool."
+vpn.policy.liveness_probing: "Liveness probing"
+vpn.policy.auto_cleanup: "Auto cleanup"
+vpn.policy.staleness_days: "Staleness days"
+vpn.policy.aging_warn_days: "Aging warn days"
+vpn.policy.min_healthy_pool: "Min healthy pool"
+vpn.policy.save: "Save policy"
+vpn.policy.saved: "Policy saved"
+vpn.geo.title: "Endpoint geo"
+vpn.geo.hint: "Lookup lat/lon for a peer name or endpoint (OpenStreetMap embed)."
+vpn.geo.endpoint: Endpoint
+vpn.geo.lookup: Lookup
+vpn.selfservice.title: "WireGuard VPN"
+vpn.selfservice.loading: "Loading…"
+vpn.selfservice.download: "Download .conf"
+vpn.selfservice.download_done: "Config downloaded"
+vpn.selfservice.load_failed: "Could not load VPN status"
+vpn.selfservice.config_failed: "Could not download config"
+vpn.selfservice.route_failed: "Could not toggle route"
+vpn.selfservice.status: Status
+vpn.selfservice.enrolled: Enrolled
+vpn.selfservice.not_enrolled: "Not enrolled"
+vpn.selfservice.gateway: Gateway
+vpn.selfservice.handshake: Handshake
+vpn.selfservice.handshake_never: Never
+vpn.selfservice.handshake_just_now: "Just now"
+vpn.selfservice.no_metrics: "No live peer metrics yet."
+vpn.selfservice.routes: "Routed apps"
+vpn.selfservice.routes_empty: "No app routes for your user."
+vpn.selfservice.ask_admin: "Ask an admin to enroll your user on Settings → VPN Control."
+app.wireguard.manage.menu: "Manage VPN…"
+app.wireguard.wizard.intro: "WireGuard VPN for this host. Choose server or client mode; port, CIDR, DNS and endpoint are optional. After install, use Manage VPN for peer configs."
+app.wireguard.wizard.download_hint: "Your admin must enroll your linux username before a .conf is available."
+app.wireguard.mode: "Mode"
+app.wireguard.port: "Listen port"
+app.wireguard.cidr: "Tunnel CIDR"
+app.wireguard.dns: "DNS"
+app.wireguard.endpoint: "Public endpoint"
+forms.all_fields_optional: "All these fields are optional."
+forms.app.help.app_name: "The name of the application."
+forms.app.help.ports: "Enter port numbers separated by commas."
+forms.app.submit.add_app: "Add Application"
+forms.choose_password: "Choose a password"
+forms.file_upload.instructions: "Drag and drop a file or click to browse"
+forms.general.help.netInterface: "The network interface to use for network requests."
+forms.general.help.rootUrl: "The URL of your Krate instance."
+forms.general.help.siteDescription: "A brief description of your Krate instance."
+forms.general.help.siteName: "The name of your Krate instance."
+forms.group.help.name: "The name of the new group."
+forms.group.label.name: "Group Name"
+forms.login.enter_details: "Enter Login Details"
+forms.logs.level_alert: Alert
+forms.logs.level_all: All
+forms.logs.level_critical: Critical
+forms.logs.level_debug: Debug
+forms.logs.level_emergency: Emergency
+forms.logs.level_error: Error
+forms.logs.level_info: Info
+forms.logs.level_notice: Notice
+forms.logs.level_warning: Warning
+forms.mail.choice.mail: "Local server (Sendmail)"
+forms.mail.choice.smtp: "SMTP (STARTTLS)"
+forms.mail.help.email_sender_address: "The From address shown on outgoing emails. Should match your SMTP account when possible."
+forms.mail.help.email_sender_name: "The display name shown alongside the sender address."
+forms.mail.help.mail_parameters: "Additional mail parameters to be used when sending an email."
+forms.mail.help.mail_protocol: "The local server sends account emails without an external provider. Use SMTP when a relay is needed."
+forms.mail.help.max_per_second: "Maximum number of messages PHP mail() may send per second."
+forms.mail.help.ping_threshold: "Minimum latency threshold (ms) before PHP mail() applies rate limiting."
+forms.mail.help.sendmail_path: "Sendmail (or compatible) command used for local delivery. Synced to php.ini and baked into MAILER_DSN."
+forms.mail.help.smtp_hostname: "The hostname of your SMTP server."
+forms.mail.help.smtp_password: "The password to use when connecting to the SMTP server."
+forms.mail.help.smtp_port: "The port to use when connecting to the SMTP server."
+forms.mail.help.smtp_timeout: "The timeout to use when connecting to the SMTP server."
+forms.mail.help.smtp_username: "The username to use when connecting to the SMTP server."
+forms.mail.label.email_sender_address: "Sender address"
+forms.mail.label.email_sender_name: "Sender name"
+forms.mail.label.mail_parameters: "Mail Parameters"
+forms.mail.label.mail_protocol: "Mail Protocol"
+forms.mail.label.max_per_second: "Max messages per second"
+forms.mail.label.ping_threshold: "Ping threshold (ms)"
+forms.mail.label.sendmail_path: "Sendmail path"
+forms.mail.label.smtp_hostname: "SMTP Hostname"
+forms.mail.label.smtp_password: "SMTP Password"
+forms.mail.label.smtp_port: "SMTP Port"
+forms.mail.label.smtp_timeout: "SMTP Timeout"
+forms.mail.label.smtp_username: "SMTP Username"
+forms.password.enter_for_user: "Enter a password for the user."
+forms.php.help.date_timezone: "The default timezone for date and time functions."
+forms.php.help.disable_functions: "A comma-separated list of functions that are disabled."
+forms.php.help.display_errors: "When enabled, PHP will display errors."
+forms.php.help.display_startup_errors: "When enabled, PHP will display startup errors."
+forms.php.help.error_log: "Path to the PHP error log file."
+forms.php.help.error_reporting: "The level of errors that PHP will report."
+forms.php.help.expose_php: "When enabled, PHP will send a header containing the PHP version."
+forms.php.help.file_uploads: "When enabled, file uploads are allowed."
+forms.php.help.log_errors: "When enabled, PHP writes errors to the configured error log."
+forms.php.help.mail_force_extra_parameters: "This setting should be changed through the Mail Parameters settings in the Email section."
+forms.php.help.mail_smtp_port: "TCP port used when PHP sends mail via SMTP."
+forms.php.help.max_execution_time: "The maximum time in seconds that a script is allowed to run before it is terminated."
+forms.php.help.max_file_uploads: "The maximum number of files that can be uploaded in a single request."
+forms.php.help.max_input_time: "The maximum time in seconds PHP spends parsing input data."
+forms.php.help.max_input_vars: "The maximum number of input variables that can be accepted."
+forms.php.help.memory_limit: "The maximum amount of memory that a script is allowed to allocate."
+forms.php.help.opcache_enable: "When enabled, OPcache will be used."
+forms.php.help.opcache_fast_shutdown: "When enabled, OPcache uses a faster shutdown sequence."
+forms.php.help.opcache_interned_strings_buffer: "The size of the interned strings buffer."
+forms.php.help.opcache_max_accelerated_files: "The maximum number of files that can be cached."
+forms.php.help.opcache_memory_consumption: "The amount of memory that OPcache will use, in megabytes."
+forms.php.help.opcache_revalidate_freq: "How often OPcache checks file timestamps for changes, in seconds. 0 checks on every request."
+forms.php.help.opcache_validate_timestamps: "When enabled, OPcache revalidates script timestamps based on revalidate frequency."
+forms.php.help.output_buffering: "When enabled, PHP will turn on output buffering."
+forms.php.help.pm: "PHP-FPM process manager mode: dynamic, static, or ondemand."
+forms.php.help.pm_max_children: "Maximum number of child processes that can be created."
+forms.php.help.pm_max_requests: "Number of requests each child process handles before respawning."
+forms.php.help.pm_max_spare_servers: "Maximum number of idle child processes (dynamic mode)."
+forms.php.help.pm_min_spare_servers: "Minimum number of idle child processes (dynamic mode)."
+forms.php.help.pm_start_servers: "Number of child processes created on startup (dynamic mode)."
+forms.php.help.post_max_size: "The maximum size of POST data that PHP will accept."
+forms.php.help.realpath_cache_size: "The size of the realpath cache."
+forms.php.help.realpath_cache_ttl: "The time-to-live of the realpath cache."
+forms.php.help.sendmail_from: "Default From address used by the PHP mail() function."
+forms.php.help.sendmail_path: "The path to the sendmail program. This setting is necessary for sending emails using the PHP mail() function."
+forms.php.help.session_cookie_httponly: "When enabled, the cookie will only be accessible through the HTTP protocol."
+forms.php.help.session_cookie_secure: "When enabled, the cookie will only be sent over secure connections."
+forms.php.help.session_gc_maxlifetime: "The number of seconds after which data will be seen as garbage and potentially cleaned up."
+forms.php.help.session_save_handler: "Defines how PHP stores session data (e.g. files, redis)."
+forms.php.help.session_save_path: "Filesystem path (or handler-specific location) where session data is stored."
+forms.php.help.session_use_strict_mode: "When enabled, PHP will use strict session mode."
+forms.php.help.upload_max_filesize: "The maximum size of an uploaded file."
+forms.php.label.date.timezone: "Date Timezone"
+forms.php.label.disable_functions: "Disable Functions"
+forms.php.label.display_errors: "Display Errors"
+forms.php.label.display_startup_errors: "Display Startup Errors"
+forms.php.label.error_log: "Error Log"
+forms.php.label.error_reporting: "Error Reporting"
+forms.php.label.expose_php: "Expose PHP"
+forms.php.label.file_uploads: "File Uploads"
+forms.php.label.log_errors: "Log Errors"
+forms.php.label.mail.force_extra_parameters: "Mail Force Extra Parameters"
+forms.php.label.mail.smtp_port: "SMTP Port"
+forms.php.label.max_execution_time: "Max Execution Time"
+forms.php.label.max_file_uploads: "Max File Uploads"
+forms.php.label.max_input_time: "Max Input Time"
+forms.php.label.max_input_vars: "Max Input Vars"
+forms.php.label.memory_limit: "Memory Limit"
+forms.php.label.opcache.enable: "OPcache Enable"
+forms.php.label.opcache.fast_shutdown: "OPcache Fast Shutdown"
+forms.php.label.opcache.interned_strings_buffer: "OPcache Interned Strings Buffer"
+forms.php.label.opcache.max_accelerated_files: "OPcache Max Accelerated Files"
+forms.php.label.opcache.memory_consumption: "OPcache Memory Consumption"
+forms.php.label.opcache.revalidate_freq: "Revalidate Frequency"
+forms.php.label.opcache.validate_timestamps: "OPcache Validate Timestamps"
+forms.php.label.output_buffering: "Output Buffering"
+forms.php.label.pm: "Process Manager (pm)"
+forms.php.label.pm.max_children: "PM Max Children"
+forms.php.label.pm.max_requests: "PM Max Requests"
+forms.php.label.pm.max_spare_servers: "PM Max Spare Servers"
+forms.php.label.pm.min_spare_servers: "PM Min Spare Servers"
+forms.php.label.pm.start_servers: "PM Start Servers"
+forms.php.label.post_max_size: "Post Max Size"
+forms.php.label.realpath_cache_size: "Realpath Cache Size"
+forms.php.label.realpath_cache_ttl: "Realpath Cache TTL"
+forms.php.label.sendmail_from: "Sendmail From"
+forms.php.label.sendmail_path: "Sendmail Path"
+forms.php.label.session.cookie_httponly: "Session Cookie HTTP Only"
+forms.php.label.session.cookie_secure: "Session Cookie Secure"
+forms.php.label.session.gc_maxlifetime: "Session GC Maxlifetime"
+forms.php.label.session.save_handler: "Session Save Handler"
+forms.php.label.session.save_path: "Session Save Path"
+forms.php.label.session.use_strict_mode: "Session Use Strict Mode"
+forms.php.label.session_cookie_httponly: "HTTPOnly cookie"
+forms.php.label.session_cookie_secure: "Secure cookie"
+forms.php.label.session_gc_maxlifetime: "Session max lifetime"
+forms.php.label.session_use_strict_mode: "Session Use Strict Mode"
+forms.php.label.upload_max_filesize: "Upload Max Filesize"
+comicvine_apikey: "ComicVine API key"
+forms.service.description_child: "This is an additional service that depends on the parent service."
+forms.service.description_main: "This form describes the main service linked to this application."
+forms.user.error.password: "Password should be at least 12 characters long."
+forms.user.error.password_confirm: "The password fields must match."
+forms.user.help.password_repeat: "Please repeat your password."
+forms.user.label.password_repeat: "Repeat Password"
+forms.mount.placeholder.path: "/home/user/mounts/media"
+forms.mount.label.path: "Path"
+forms.user.error.password_required: "Please enter a password"
+forms.user.error.current_password_required: "Please enter your current password"
+forms.user.help.current_password: "Enter your current password to make changes"
+forms.user.placeholder.password_repeat: "Confirm your new password"
+forms.user.placeholder.new_password: "Enter your new password"
+forms.user.placeholder.current_password: "Enter your current password"
+forms.user.label.new_password: "New password"
+forms.user.label.current_password: "Current password"
+general.actions: Actions
+general.adjustments_performance: "Adjustments here can significantly affect the performance and behavior of your applications."
+general.access_url: "Access URL"
+general.api_key: "Api Key"
+general.api_key.optional: "API Key is optional."
+general.api_key_or_socket: "API Key / URL"
+general.available: Available
+general.back_to_list: "Back to list"
+general.ban: Ban
+general.click_the: "Click the"
+general.confirm.delete_item: "Are you sure you want to delete this item?"
+general.dashboard: Dashboard
+general.error: Error
+general.success: Success
+general.free: Free
+general.link.section_extras: Extras
+general.link.section_logs: Logs
+general.link.section_logs.access_logs: "Access Logs"
+general.link.section_logs.app_logs: "App Logs"
+general.link.section_management: Management
+general.link.section_system: System
+general.link.section_system.general: General
+general.link.section_system.help: Help
+general.link.section_updates: Updates
+general.link.section_users: Users
+general.loading: Loading…
+general.log_level: "Log Level"
+general.name: Name
+general.navigation: Navigation
+general.no: "No"
+general.no_records_found: "No records found"
+general.not_available: N/A
+general.options: Options
+general.pin: Pin
+general.pro_only: "Pro Only"
+"general.reference.link %link%": "For further details, you may refer to %link%"
+general.refresh_interval: "Refresh Interval (seconds)"
+general.second: seconds
+general.seconds: seconds
+general.settings: Settings
+general.settings_warning: "Before making changes, ensure you understand the implications of each setting. Incorrect configurations may disrupt your service."
+general.smtp_warning: "Be cautious when modifying SMTP settings. Incorrect configurations can disrupt email delivery."
+general.speed: Speed
+general.status: Status
+general.table.content: Content
+general.time: Time
+general.timestamp: Timestamp
+general.total: Total
+general.used: Used
+general.view: View
+general.yes: "Yes"
+group.automation: Automation
+group.cloud: Cloud
+group.download: Download
+group.general: Group
+group.indexers: Indexers
+group.management: Management
+group.media: Media
+group.monitoring: Monitoring
+group.network: Network
+group.proxy: Proxy
+group.remote: Remote
+group.streaming: Streaming
+group.tools: Tools
+group.transcode: Transcode
+group.workflow: Workflow
+label.profile.avatar: Avatar
+label.profile.backdrop: Backdrop
+language.en: English
+language.fr: Français
+license.account_email_help: "Must match the email of the shop account that owns this license key."
+license.account_email_placeholder: "runkrate.com account email (required for paid keys)"
+license.allowed_app_actions: "Allowed App Actions"
+license.app_action.add: Add
+license.app_action.backup: Backup
+license.app_action.reinstall: Reinstall
+license.app_action.remove: Remove
+license.app_action.reset: Reset
+license.app_action.update: Update
+license.change: "Change license"
+license.change_placeholder: "Enter your license key..."
+license.custom_apps_limit: "Custom Apps Limit"
+license.error.feature_required: "This area requires the {feature} license feature."
+license.error.heading: "License file error"
+license.error.tier_required: "This page requires a {tiers} license (current: {tier})."
+license.expires_at: "Expires At"
+license.expires_in: "Expires in: {days} days"
+license.feature.announce: Announcements
+license.feature.apps.community.free: "Community free apps"
+license.feature.apps.community.pro: "Community Pro apps"
+license.feature.apps.official.free: "Official free apps"
+license.feature.apps.official.pro: "Official Pro apps"
+license.feature.beta_features: "Beta Features"
+license.feature.community_apps: "Community Apps"
+license.feature.custom_apps: "Custom Apps"
+license.feature.firewall: Firewall
+license.feature.vpn: "VPN Control"
+license.feature.multi_user_management: "Multi User Management"
+license.feature.official_apps: "Official Apps"
+license.feature.playback: Playback
+license.feature.priority_support: "Priority Support"
+license.feature.troubleshooting: Troubleshooting
+license.feature.terminal: Terminal
+license.feature.shell_control: Shell control
+license.feature.media_connections: Media connections
+license.feature.disk_quota: Disk quota
+license.feature.raid: RAID
+license.feature.plex: Plex
+license.feature.custom_access_groups: Custom access groups
+license.feature.backups: Backups
+license.feature.certificates: Certificates
+license.feature.advanced_metrics: Advanced metrics
+license.feature.mfa: "MFA (TOTP & passkeys)"
+license.features_heading: "Activated Features"
+license.flash.api_unreachable: "The license API is unreachable from this host. Check outbound HTTPS to api.runkrate.com, then retry."
+license.flash.change_failed: "License change failed."
+license.flash.change_requested: "License change request saved."
+license.flash.deferred_local_free: "The license service is unreachable. Your free license is unchanged; automatic retries will continue."
+license.flash.deferred_pending: "License activation is still pending because the license service is unreachable. Your current license was kept."
+license.flash.email_mismatch: "The account email does not match this license key."
+license.flash.email_required: "An account email is required to activate this license key."
+license.flash.empty_key: "License key is empty."
+license.flash.expired: "This license has expired."
+license.flash.invalid_secret: "Invalid installation secret. Re-run setup or contact support."
+license.flash.machine_limit: "This license has reached its maximum number of machines."
+license.flash.machine_not_registered: "The license service does not recognize the machine identity sent by the web process. Refresh from the CLI and verify the web execution environment."
+license.flash.missing: "No license to refresh. Run setup to activate one."
+license.flash.refresh_failed: "Could not refresh the license. Try refreshing it from the CLI."
+license.flash.refreshed: "License refreshed."
+license.flash.revoked: "This license has been revoked."
+license.flash.upgraded: "License registered with the API successfully."
+license.flash.write_failed: "Could not write the license file. Ensure krate-harmony-worker is running (systemctl status krate-harmony-worker)."
+license.friendly_name: "Device name"
+license.info_heading: "License Information"
+license.infobox: "This page shows your current license status, enabled capabilities, and allowed application actions."
+license.infobox_body: "View the active license tier, enabled product features, application limits, and expiry. Use Refresh to verify with the license service, or paste a new key to replace the current license."
+license.infobox_title: "License and entitlements"
+license.issued_at: "Issued At"
+license.last_refresh: "Last refresh"
+license.license_id: "License ID"
+license.management: Management
+license.management_heading: "License Management"
+license.max_apps: "Max Number of Apps"
+license.no_expiration: "No expiration"
+license.purpose: "View tier, features, limits, and expiry. Refresh online or paste a new key."
+license.refresh: "Refresh license"
+license.tier: Tier
+license.tier.beta: Beta
+license.tier.dev: Dev
+license.tier.free: Free
+license.tier.pro: Pro
+license.tier.reseller: Reseller
+license.title: License
+license.unlimited: Unlimited
+license.validity: Validity
+logs.access.infobox_body: "Search sign-in events stored locally: successful and failed web logins and failed API-key authentication. For raw service log files (sshd, Caddy, apps), use Application Logs instead."
+logs.access.infobox_title: "HarmonyUI access audit log"
+logs.access.purpose: "HarmonyUI sign-in audit trail (web login and API key failures)."
+logs.application.infobox_body: "Tail a log file path or a systemd journal unit with live refresh and line filtering. Use this to diagnose runtime errors outside the HarmonyUI audit database."
+logs.application.infobox_title: "Service and application logs"
+logs.application.purpose: "Tail log files or systemd journals for apps and services."
+monitoring.alerts: Alerts
+monitoring.alerts.backup_stale: "Backup stale: {name}"
+monitoring.alerts.backups_probe_failed: "Could not check backups."
+monitoring.alerts.datacap_exceeded: "Data cap exceeded"
+monitoring.alerts.datacap_high: "Data cap nearly exhausted"
+monitoring.alerts.datacap_probe_failed: "Could not read data-cap counter."
+monitoring.alerts.fail2ban_down: "Fail2ban is not running"
+monitoring.alerts.smart_failed: "SMART failed on {name}"
+monitoring.alerts.smart_unknown: "SMART unknown on {name}"
+monitoring.alerts.storage_btrfs: "Btrfs issue on {name}"
+monitoring.alerts.storage_raid: "RAID issue on {name}"
+monitoring.alerts.storage_zfs: "ZFS pool issue on {name}"
+monitoring.alerts.vpn_down: "VPN down: {name}"
+monitoring.alerts.vpn_peer_stale: "VPN peer stale: {name}"
+monitoring.alerts.vpn_peer_quarantined: "VPN peer quarantined: {name}"
+monitoring.alerts.vpn_route_down: "VPN route down: {app}@{user}"
+monitoring.alerts.rclone_cache_full: "rclone cache nearly full"
+monitoring.alerts.rclone_cache_high: "rclone cache usage high"
+monitoring.alerts.rclone_move_failures: "rclone move errors ({count})"
+monitoring.alerts.rclone_probe_failed: "Could not check rclone cloud status."
+monitoring.alerts_fetch_failed: "Could not load alerts."
+monitoring.alerts_ok: "All clear — no active alerts."
+monitoring.backups: Backups
+monitoring.backups.configure_hint: "Add jobs under Profile → Widgets (engine|label|path)."
+monitoring.backups.fetch_failed: "Could not check backup status."
+monitoring.backups.not_configured: "No backup jobs configured."
+monitoring.backups_engine: Engine
+monitoring.backups_label: Job
+monitoring.backups_last: "Last success"
+monitoring.backups_status: Status
+monitoring.backups_status_missing: Missing
+monitoring.backups_status_ok: OK
+monitoring.backups_status_warning: Stale
+monitoring.calendar: Calendar
+monitoring.calendar.today: Today
+monitoring.clients_active_short: active
+monitoring.clients_col_active: Active
+monitoring.clients_col_client: Client
+monitoring.clients_col_download: Download
+monitoring.clients_col_status: Status
+monitoring.clients_col_upload: Upload
+monitoring.clients_empty: "No download clients to show."
+monitoring.clients_more: others
+monitoring.clients_status_active: Active
+monitoring.clients_status_error: Error
+monitoring.clients_status_idle: Idle
+monitoring.clients_total_active: "Total active"
+monitoring.clock: Clock
+monitoring.clock_timezone: "Time zone"
+monitoring.cpu_load_5m_caption: "Load average (5 min)"
+monitoring.cpu_usage: CPU
+monitoring.datacap: "Data cap"
+monitoring.disk_quota: "Disk quota"
+monitoring.disk_quota.not_configured: "No disk quota limit is set for your account."
+monitoring.disk_quota.configure_hint: "Ask an administrator to set a quota, or check Settings → General for the site default."
+monitoring.disk_quota.exempt: "Your account is exempt from disk quotas."
+monitoring.disk_quota.fetch_failed: "Could not read disk quota status."
+monitoring.datacap.configure_hint: "Ask an administrator to set a monthly limit under Settings → General."
+monitoring.datacap.fetch_failed: "Could not read data-cap counter."
+monitoring.datacap.not_configured: "Data cap is not configured."
+monitoring.disk_usage: Disk
+monitoring.fail2ban: Fail2ban
+monitoring.fail2ban.fetch_failed: "Could not read fail2ban status."
+monitoring.fail2ban.not_configured: "Fail2ban is not available on this host."
+monitoring.fail2ban_banned_count: banned
+monitoring.fail2ban_current: Current
+monitoring.fail2ban_jail: Jail
+monitoring.fail2ban_total: Total
+monitoring.gpu: GPU
+monitoring.gpu_absent: "No GPU detected."
+monitoring.gpu_devices: Devices
+monitoring.gpu_memory: VRAM
+monitoring.gpu_metrics_unavailable: "GPU metrics are unavailable on this system."
+monitoring.gpu_temp: Temperature
+monitoring.gpu_usage: GPU
+monitoring.last_reboot: "Last reboot"
+monitoring.load_average: "Load average"
+monitoring.mounts: Mounts
+monitoring.mounts_bar: Bar
+monitoring.mounts_size: Size
+monitoring.mounts_used: Used
+monitoring.mounts_free: Free
+monitoring.mounts_resource: Path
+monitoring.mounts_usage: Usage
+monitoring.mounts_details: Size
+monitoring.mounts_kind_physical: "Physical disk"
+monitoring.mounts_kind_virtual: "Virtual disk"
+monitoring.mounts_kind_remote: "Remote mount"
+monitoring.processes: Processes
+monitoring.processes_cpu: CPU%
+monitoring.processes_empty: "No process data."
+monitoring.processes_mem: MEM%
+monitoring.processes_name: Name
+monitoring.processes_user: User
+monitoring.processor: Processor
+monitoring.ram_usage: RAM
+monitoring.rss: RSS
+monitoring.rss.add: Add
+monitoring.rss.configure_hint: "Open settings to add a feed URL."
+monitoring.rss.empty: "No articles from your feeds."
+monitoring.rss.fetch_failed: "Could not fetch RSS feeds."
+monitoring.rss.not_configured: "No RSS feeds yet."
+monitoring.rss.remove: Remove
+monitoring.rss.save_failed: "Could not save RSS feeds."
+monitoring.rss.settings: Settings
+monitoring.rss.settings_title: "RSS feeds"
+monitoring.rss.sources: "RSS sources"
+monitoring.rss.url_placeholder: "https://example.com/feed.xml"
+monitoring.smartdisks: "SMART disks"
+monitoring.smartdisks_empty: "No SMART disks (smartctl missing or no drives)."
+monitoring.smartdisks_health: Health
+monitoring.smartdisks_name: Disk
+monitoring.smartdisks_serial: Serial
+monitoring.smartdisks_temp: Temp
+monitoring.stocks: Stocks
+monitoring.stocks.change: Change
+monitoring.stocks.configure_hint: "Add tickers under Profile → Widgets."
+monitoring.stocks.details: Details
+monitoring.stocks.fetch_failed: "Could not fetch stock quotes."
+monitoring.stocks.not_configured: "No stock symbols configured."
+monitoring.stocks.price: Price
+monitoring.stocks.symbol: Symbol
+monitoring.storagehealth: "Storage health"
+monitoring.storagehealth_detail: Detail
+monitoring.storagehealth_empty: "No RAID / ZFS / Btrfs status."
+monitoring.storagehealth_kind: Kind
+monitoring.storagehealth_name: Name
+monitoring.storagehealth_status: Status
+monitoring.thermals: Thermals
+monitoring.thermals_empty: "No thermal sensors."
+monitoring.thermals_kind: Kind
+monitoring.thermals_sensor: Sensor
+monitoring.thermals_temp: Temp
+monitoring.uptime: Uptime
+monitoring.uptime_availability_30d: "Availability (30 days)"
+monitoring.uptime_bar_now: now
+monitoring.uptime_bar_start: 0s
+monitoring.uptime_reboots_30d: "Reboots (30 days)"
+monitoring.uptime_timeline_30d: "30 days"
+monitoring.uptime_timeline_today: today
+monitoring.vpn: VPN
+monitoring.vpn.fetch_failed: "Could not read VPN status."
+monitoring.vpn.not_configured: "No WireGuard or Tailscale status available."
+monitoring.vpn_detail: Detail
+monitoring.vpn_down: Down
+monitoring.vpn_provider: Provider
+monitoring.vpn_status: Status
+monitoring.vpn_up: Up
+monitoring.weather: Weather
+monitoring.weather.code.clear: Clear
+monitoring.weather.code.drizzle: Drizzle
+monitoring.weather.code.fog: Fog
+monitoring.weather.code.overcast: Overcast
+monitoring.weather.code.partly_cloudy: "Partly cloudy"
+monitoring.weather.code.rain: Rain
+monitoring.weather.code.snow: Snow
+monitoring.weather.code.thunder: Thunderstorm
+monitoring.weather.code.unknown: —
+monitoring.weather.configure_hint: "Set a city under Profile → Widgets."
+monitoring.weather.fetch_failed: "Could not fetch weather data."
+monitoring.weather.high: High
+monitoring.weather.humidity: Humidity
+monitoring.weather.low: Low
+monitoring.weather.not_configured: "Weather location is not configured."
+monitoring.weather.wind: Wind
+monitoring.widget_flip_hint: "Hover the card for details"
+network.download_speed: "Download Speed"
+network.general: Network
+network.interface: Interface
+network.ip_address: "IP Address"
+network.port: Port
+network.subdomain: Subdomain
+network.subdomain_install: "Install on my subdomain"
+network.subdomain_url_hint: "Your app will be available at:"
+network.subdomains: Subdomains
+network.upload_speed: "Upload Speed"
+notification.center.empty: "No new notifications."
+notification.center.title: "Notification Center"
+registration.confirm_email_subject: "Please confirm your email address"
+service.child: "Child Service"
+service.name: "Service Name"
+service.parent: "Parent Service"
+settings.access_groups: "Access Groups"
+settings.access_groups.all_catalog: "Entire catalog"
+settings.access_groups.all_except_monitoring: "Full catalog except monitoring apps"
+settings.access_groups.app_count: "{count, plural, one {# app} other {# apps}}"
+settings.access_groups.apps_heading: "Included apps"
+settings.access_groups.categories: "Catalog categories"
+settings.access_groups.no_apps: "No catalog apps match the selected categories."
+settings.access_groups.no_categories: "No categories"
+settings.access_groups.official_badge: "Official group"
+settings.access_groups.official_readonly: "This official group is managed in configuration and cannot be edited from this page."
+settings.access_groups.scope_categories: "Selected catalog categories"
+settings.access_groups.scope_curated: "Curated app selection from the catalog"
+settings.access_groups.scope_label: "Access scope"
+settings.account_creation.admin: "Admin activation (admin approves each account)"
+settings.account_creation.disabled: "Disabled (CLI only)"
+settings.account_creation.email: "Email activation (user confirms via email link)"
+settings.account_creation.help: "Control how new accounts can be created from the dashboard."
+settings.account_creation.label: "Account creation policy"
+settings.api_key.none: "No API Key"
+settings.app_listing.enable: "Show apps outside my access group (preview)"
+settings.app_listing.enable_hint: "When enabled, unauthorized categories appear blurred. When disabled, they are hidden."
+settings.available_mounts: "Available mounts"
+settings.backdrop.use_blur: "Use blur backdrop"
+settings.brand_identity: "Brand Identity"
+settings.datacap.cycle_day_label: "Billing day (1–28)"
+settings.datacap.direction_both: "Both (RX + TX)"
+settings.datacap.direction_label: Direction
+settings.datacap.direction_rx: "Download (RX)"
+settings.datacap.direction_tx: "Upload (TX)"
+settings.datacap.help: "Leave empty to disable the monthly quota."
+settings.datacap.interface_help: "Empty uses the network interface above, then the primary NIC from telemetry."
+settings.datacap.interface_label: "Interface (optional)"
+settings.datacap.interface_placeholder: "e.g. eth0"
+settings.datacap.intro: "Site-wide bandwidth budget for the dashboard data-cap widget. Leave the limit empty to disable."
+settings.datacap.limit_label: "Monthly limit (GB)"
+settings.datacap.limit_placeholder: "e.g. 1000"
+settings.datacap.title: "Monthly data cap"
+settings.disk_quota.title: "Default disk quota"
+settings.disk_quota.intro: "Applied to new users (except the first/owner, who is exempt by default). Usage is /home and /opt, excluding rclone mounts."
+settings.disk_quota.default_label: "Default quota"
+settings.disk_quota.default_help: "Format: 500MB, 10GB, or 1TB. Leave empty to disable defaults for new users."
+settings.default_backdrop: "Default Backdrop"
+settings.flash.admin_only: "Settings are restricted to administrators."
+settings.flash.saved: "The settings have been updated successfully."
+settings.flash.validation_error: "Some settings could not be saved. Please fix the errors below."
+settings.general: General
+settings.general.infobox_body: "Change the site name and description shown in HarmonyUI, upload logo assets, and set platform-wide options: zen CLI language, zenfw log verbosity, app package auto-upgrade, and server timezone (applied to PHP as well)."
+settings.general.infobox_title: "Instance branding and platform defaults"
+settings.general.purpose: "Site branding (name, logos), monthly data cap, and platform defaults (zen language, verbosity, apt auto-upgrade, timezone)."
+settings.gravatar.enable: "Enable Gravatar"
+settings.install_path: "Install Path"
+settings.logo: Logo
+settings.logs.absolute_path_hint: "Use an absolute path on this server (e.g. /var/log/nginx/error.log). File reads run via the zen CLI (same NOPASSWD as app installs); only .log and .log.N paths are accepted."
+settings.logs.empty_access_logs: "No access/audit events are stored yet in the Krate database."
+settings.logs.journal_hint: "Uses zen service log (journalctl) for this unit — same NOPASSWD zen rules as the App Store. Auto-refresh repeats the snapshot. Log level in Options still filters lines in the browser."
+settings.logs.journal_unit_toggle: "Systemd unit (journalctl)"
+settings.logs.placeholder_file: /var/log/nginx/error.log
+settings.logs.placeholder_journal: "radarr@trevor or radarr@trevor.service"
+settings.logs.type.app.manage.add: "App install requested"
+settings.logs.type.app.manage.remove: "App removal requested"
+settings.logs.type.auth.api.failure: "API key auth failure"
+settings.logs.type.auth.login.failure: "Web login failure"
+settings.logs.type.auth.login.success: "Web login success"
+settings.logs.type.http.404: "404 route miss"
+settings.other: "Other Settings"
+settings.php: "PHP Settings"
+settings.php.flash.reload_deferred: "PHP settings were saved. Restart PHP-FPM from Settings → Troubleshooting if changes do not apply."
+settings.php.flash.reset_error: "Could not restore default PHP settings."
+settings.php.flash.reset_success: "PHP settings were reset to install defaults."
+settings.php.flash.save_error: "Could not save PHP settings."
+settings.php.flash.save_success: "PHP settings were saved successfully."
+settings.php.infobox_body: "Edit managed php.ini-style settings on this host (core PHP, sessions, mail, opcache, FPM pool). Values are written to disk; restart PHP-FPM from Troubleshooting if a service misbehaves after saving."
+settings.php.infobox_title: "PHP and PHP-FPM configuration"
+settings.php.purpose: "Edit managed PHP and PHP-FPM settings on this host."
+settings.php.reset_defaults: "Reset Defaults"
+settings.php.section.core: "Core PHP Config"
+settings.php.section.fpm: "PHP-FPM Process Manager"
+settings.php.section.opcache: "Opcache Settings"
+settings.php.section.session: "Session Config"
+settings.php.section.session_mail: "Session Config"
+settings.php.mail_moved_to_smtp: "Outgoing email (sendmail / SMTP) is configured under Settings → Email."
+settings.php.timezone_managed: "PHP date.timezone is managed from Settings → General (Timezone), where it stays in sync with the machine."
+settings.pin.error.updating: "Error updating pinned apps."
+settings.pin.no_apps: "No pinned apps available."
+settings.platform.flash_apply_error: "Site settings were saved but platform options could not be applied. Ensure krate-harmony-worker is running and zen NOPASSWD is installed, then try again."
+settings.platform.apt_auto_upgrade: "Auto-upgrade app packages"
+settings.platform.apt_auto_upgrade_help: "When installing or updating apps, refresh APT indexes and upgrade the app’s already-installed packages (zenfw.apt.auto_upgrade in zenfw.conf.local)."
+settings.platform.intro: "Controls zenfw console verbosity, automatic app package upgrades, CLI language, and server timezone (also synced to PHP date.timezone)."
+settings.platform.locale_region: "Region / timezone"
+settings.platform.locale_region_help: "One setting syncs the machine timezone (timedatectl) and PHP date.timezone in 99-krate.ini."
+settings.platform.timezone: Timezone
+settings.platform.timezone_help: "One setting syncs the machine timezone (timedatectl) and PHP date.timezone in 99-krate.ini."
+settings.platform.title: "Platform (zen / system)"
+settings.platform.zen_language: "zenfw language"
+settings.platform.zen_language_help: "Language for zen and zenfw CLI messages. New languages appear when {lang}/cli/messages.yaml is installed under share/translations."
+settings.platform.zen_verbose_log: "Verbose zen logging"
+settings.platform.zen_verbose_log_help: "Writes detailed zen/zenfw output when enabled (zenfw.log.level=verbose in zenfw.conf.local)."
+settings.rclone.used: "Is Rclone Used ?"
+settings.security: "Security Settings"
+settings.shell: Shell
+settings.shell.content_label: "Global lshell configuration"
+settings.shell.error_load: "Unable to load the limited-shell configuration."
+settings.shell.error_save: "Unable to save the limited-shell configuration. Check file permissions on /etc/lshell.conf."
+settings.shell.field.aliases: Aliases
+settings.shell.field.allowed: "Allowed commands"
+settings.shell.field.forbidden: "Forbidden tokens"
+settings.shell.field.intro: "Welcome message"
+settings.shell.field.overssh: "Allowed over SSH"
+settings.shell.field.scp: "Allow SCP"
+settings.shell.field.sftp: "Allow SFTP"
+settings.shell.field.strict: "Strict mode"
+settings.shell.field.warning_counter: "Warning counter"
+settings.shell.help.aliases: "Shortcuts available inside the restricted shell."
+settings.shell.help.allowed: "Interactive whitelist. Shells and shell-escape editors (bash, vim…) are rejected."
+settings.shell.help.forbidden: "Tokens blocked everywhere (chaining, redirection, subshells). Critical tokens cannot be removed."
+settings.shell.help.overssh: "Non-interactive SSH commands (e.g. rsync). Must also appear in allowed commands."
+settings.shell.help.warning_counter: "Warnings before the session is terminated (1–10)."
+settings.shell.infobox_body: "Configure the limited-shell (lshell) policy for non-admin SSH users: commands, forbidden tokens, and transfers. Changes take effect on their next login."
+settings.shell.infobox_per_user: "Per-user overrides can be configured from each non-admin user card on the Users page. They are stored in /etc/lshell.d/ and take precedence over this global policy."
+settings.shell.infobox_title: "Global limited-shell policy"
+settings.shell.link_global: "Edit global shell policy"
+settings.shell.locked.allowed_cmd_path: allowed_cmd_path
+settings.shell.locked.env_path: env_path
+settings.shell.locked.logpath: logpath
+settings.shell.locked.path: path
+settings.shell.placeholder.alias: "ll=ls -l"
+settings.shell.placeholder.command: ls
+settings.shell.placeholder.token: ;
+settings.shell.purpose: "Configure the global restricted shell for additional users."
+settings.shell.section.aliases: Aliases
+settings.shell.section.aliases_help: "Use name=command (e.g. ll=ls -l)."
+settings.shell.section.commands: "Command policy"
+settings.shell.section.commands_help: "Add or remove items with Enter or a comma."
+settings.shell.section.intro: "Login banner"
+settings.shell.section.locked: "Locked fields"
+settings.shell.section.locked_help: "System paths managed by the installer — read-only."
+settings.shell.section.transfers: "Transfers & behaviour"
+settings.shell.success: "The limited-shell configuration has been saved."
+settings.shell.tag_add: Add
+settings.shell.user_action: "Shell policy"
+settings.shell.user_admin_skipped: "Admin users use bash, not lshell; no per-user shell policy applies."
+settings.shell.user_clear_override: "Remove per-user override (inherit global policy)"
+settings.shell.user_content_label: "Per-user lshell override"
+settings.shell.user_error_save: "Unable to save the per-user shell override. Check permissions on /etc/lshell.d/."
+settings.shell.user_help: "Optional. Check “Remove override” to fully inherit the global policy."
+settings.shell.user_infobox_body: "This override applies only to this user and replaces matching keys from the global policy. End users cannot view or edit these settings."
+settings.shell.user_infobox_title: "Per-user shell policy for {username}"
+settings.shell.user_override_active: "A custom override is active for this user."
+settings.shell.user_override_inherited: "No override — this user inherits the global policy."
+settings.shell.user_purpose: "Override the limited-shell policy for this user."
+settings.shell.user_success: "The per-user shell override has been saved."
+settings.shell.user_success_cleared: "The per-user shell override has been removed; the user now inherits the global policy."
+settings.shell.user_title: "Shell policy — {username}"
+settings.shell.user_warning_not_writable: "/etc/lshell.d/ is not writable by the web user. Re-run setup or set root:www-data mode 2775."
+settings.shell.warning_not_writable: "/etc/lshell.conf is not writable by the web user. Re-run setup or set root:www-data mode 660."
+settings.shell.warning_template_only: "/etc/lshell.conf is not readable by the web user. The editor shows the install template until permissions are fixed."
+settings.smtp: "Email"
+settings.smtp.flash.saved: "Email settings were saved successfully."
+settings.smtp.flash.save_failed: "Could not save email settings. Check that krate-harmony-worker is running, then retry."
+settings.smtp.flash.test_failed: "Could not send the test email. Check the transport settings and try again."
+settings.smtp.flash.test_sendmail_timeout: "Local sendmail timed out (often blocked outbound TCP/25). Switch to SMTP/SMTPS with a relay, or ensure the MTA can deliver."
+settings.smtp.flash.test_sent: "Test email sent successfully. Check the inbox for the signed-in account."
+settings.smtp.flash.test_sent_local: "Test message accepted by local sendmail (queued). Actual delivery still needs outbound port 25 or an SMTP relay."
+settings.smtp.infobox_body: "Configure the mailer HarmonyUI uses for account verification, password reset, and notifications. Save transport settings, then send a test email to confirm authentication and delivery."
+settings.smtp.infobox_title: "Outgoing email"
+settings.smtp.purpose: "Delivery of account emails and notifications."
+settings.smtp.section.advanced_connection: "Advanced connection"
+settings.smtp.section.advanced_connection_help: "Rate limiting and latency thresholds applied when sending through PHP mail()."
+settings.smtp.section.mail_parameters: "Mail parameters"
+settings.smtp.section.mail_parameters_help: "Transport protocol and connection timeout for outbound mail."
+settings.smtp.section.sender: Sender
+settings.smtp.section.server: "SMTP Server"
+settings.smtp.test_connection: "Test connection"
+settings.smtp.toggle_password: "Show or hide password"
+settings.splashscreen: Splashscreen
+settings.system_representation: "The below settings helps to define how your system is represented and monitored by your Krate instance."
+settings.system_representation.note: "While these settings do not directly impact the core functionality of your system, it's good to ensure they accurately represent your setup."
+settings.theme.dark_switch: "Switch to dark mode"
+settings.theme.light_switch: "Switch to light mode"
+settings.ui_language: "Interface language"
+settings.ui_refresh: "Dashboard refresh"
+settings.ui_refresh.2s: "Live (2 seconds)"
+settings.ui_refresh.5s: "Fast (5 seconds)"
+settings.ui_refresh.15s: "15 seconds"
+settings.ui_refresh.30s: "30 seconds"
+settings.ui_refresh.60s: "1 minute"
+settings.ui_refresh.120s: "2 minutes"
+settings.user_identity: "User Identity"
+settings.users.page_description: "This page allows you to manage users. You can add, edit, and delete users. You can also manage user roles and permissions."
+settings.welcome_email.body: "Welcome email message"
+settings.welcome_email.body_help: "Placeholders: {username}, {email}, {site_name}, {root_url}. Leave empty for the default message."
+settings.welcome_email.body_placeholder: "Hello {username}, your account on {site_name} is ready."
+settings.welcome_email.default_body: |-
+    Hello {username},
+
+    Your account on {site_name} is now active. Sign in at {root_url}.
+
+    See you soon!
+settings.welcome_email.default_subject: "Welcome to {site_name}"
+settings.welcome_email.enabled: "Send welcome email after activation"
+settings.welcome_email.help: "Sent once the account is fully activated (admin approval, email link, or admin creation)."
+settings.welcome_email.subject: "Welcome email subject"
+settings.welcome_email.subject_help: "Leave empty to use the default subject."
+settings.welcome_email.subject_placeholder: "Welcome to {site_name}"
+status.executing_script: "Executing the script..."
+status.fetching: Fetching
+system.about.infobox_body: "Read-only snapshot of runtime versions on this server (Krate, PHP, Caddy, Node, …) with shortcuts to the Krate and APT update pages."
+system.about.infobox_title: "Installed component versions"
+system.about.license_heading: License
+system.about.purpose: "Core system overview, component versions, and update paths."
+system.about.status.device: Device
+system.about.status.expired: Expired
+system.about.status.valid: Valid
+system.about.status.validity: Status
+system.about.title: About
+system.about.updates_apt_cta: "Open APT updates"
+system.about.updates_apt_hint: "Open the APT update page to refresh indexes and upgrade packages."
+system.about.updates_heading: "Update center"
+system.about.updates_krate_cta: "Open Krate updates"
+system.about.updates_krate_current: "Current version: {version}"
+system.about.updates_krate_hint: "Open the Krate update page to check and apply platform updates."
+system.about.version.composer: Composer
+system.about.version.krate: Krate
+system.about.version.php: PHP
+system.about.version.pnpm: pnpm
+system.about.version.symfony: Symfony
+system.about.versions_component: Component
+system.about.versions_heading: "Core component versions"
+system.about.versions_version: Version
+system.apt.audit_update: "APT package list refresh requested"
+system.apt.audit_upgrade: "APT system upgrade requested"
+system.apt.audit_upgrade_selected: "APT selective package upgrade requested"
+system.provider: Provider
+system.update.available_on: "Available on"
+system.update.changelog_empty: "No release notes are available for this version."
+system.update.changelog_error: "Could not load release notes from GitHub."
+system.update.changelog_heading: "Installed version changelog"
+system.update.changelog_modal_title: "Update changelog ({version})"
+system.update.changelog_subtitle: "Release notes for the version currently running on this host."
+system.update.changelog_view_next: "View update changelog ({version})"
+system.update.changelog_when_available: "Check for updates to see the changelog when a new version is available."
+system.update.channel: Channel
+system.update.check_error_title: "KRATE update check failed"
+system.update.checking: "Checking for updates…"
+system.update.confirm: "Update now"
+system.update.current_version: "Installed version"
+system.update.footer.available: "Update available: {version}"
+system.update.footer.error: "Update check failed"
+system.update.footer.manage: "Manage updates"
+system.update.footer.pending_delay: "Update pending: {version} (from {date})"
+system.update.footer.title: KRATE
+system.update.footer.unknown: "Update status unknown"
+system.update.footer.up_to_date: "Up to date"
+system.update.last_checked: "Last check"
+system.update.latest_version: "Available version"
+system.update.modal_title: "KRATE system update"
+system.update.notification_body: "Version {current} → {target} ({channel})"
+system.update.notification_title: "KRATE update available"
+system.update.package: Package
+system.update.page_check: "Check for updates"
+system.update.page_infobox_body: "Check whether a newer Krate .deb is available on your configured release channel, read installed and pending release notes, and start an in-place platform upgrade (via zen) from this page."
+system.update.page_infobox_title: "Krate package updates"
+system.update.page_purpose: "Check for updates, read release notes, run an in-place upgrade."
+system.update.page_status_heading: "Update status"
+system.update.page_title: "System updates"
+system.update.pending_version: "Pending version"
+system.update.release_notes: "Release notes"
+system.update.reload: "Reload page"
+system.update.reload_hint: "Update complete. Reload the page to use the new version."
+system.update.running: "Updating KRATE…"
+system.update.starting: "Starting update…"
+system.update.target_version: "Target version"
+system.update.testing_heading: "Pre-release testing checklist"
+system.update.testing_subtitle: "Beta/alpha builds ship a TESTING.md asset on GitHub; layout here may change."
+system.update.up_to_date: "KRATE is already up to date."
+system.update.view_details: "View details"
+system.update.warning: "This operation updates the KRATE stack. Services may restart briefly."
+terminal.banner.connect_failed: "Could not start the shell."
+terminal.banner.disconnected: "Session lost."
+terminal.banner.shell_exit: "Shell exited ({code})."
+terminal.status.connected: Connected
+terminal.status.connecting: Connecting
+terminal.status.disconnected: Disconnected
+terminal.status.error: Error
+terminal.status.locked: Locked
+terminal.title: Terminal
+terminal.unlock.cancel: Cancel
+terminal.unlock.error_password_required: "Password is required."
+terminal.unlock.help: "Enter your account password to open the terminal. Unlock lasts about 20 minutes of activity; closing or ending the session locks again."
+terminal.unlock.open: Unlock terminal
+terminal.unlock.connect: Connect
+terminal.unlock.password_label: "Account password"
+terminal.unlock.submit: Unlock and connect
+terminal.unlock.title: "Unlock terminal"
+terminal.unlock.unlocked_title: "Terminal unlocked"
+terminal.unlock.unlocked_help: "You can open a shell without entering your password again until the unlock expires or you end the session."
+terminal.unlock.wrong_password: "Incorrect account password."
+terminal.unlock.hint: "Your HarmonyUI password confirms it is you before starting a root-capable shell session."
+terminal.unlock.expires: "Unlocked · ~{minutes} min left"
+terminal.unlock.reconnect: Reconnect
+terminal.unlock.required: "Terminal is locked. Unlock with your password first."
+terminal.unlock.locked_idle: "Terminal locked after inactivity."
+
+terminal.kill: End session
+terminal.kill.done: "Terminal session ended."
+terminal.clipboard.toolbar: Clipboard
+terminal.clipboard.copy: Copy
+terminal.clipboard.cut: Cut
+terminal.clipboard.paste: Paste
+terminal.clipboard.cancel: Cancel
+terminal.clipboard.empty: "Nothing selected."
+terminal.clipboard.copied: "Copied to clipboard."
+terminal.clipboard.cut_done: "Cut to clipboard."
+terminal.clipboard.copy_failed: "Could not access the clipboard."
+terminal.clipboard.paste_prompt: "Paste text below, then confirm."
+terminal.open_from_users: Open terminal
+users.terminal.open: Open terminal
+troubleshooting.audit.close: Close
+troubleshooting.audit.col_cloud: "Cloud sync"
+troubleshooting.audit.col_duration: Duration
+troubleshooting.audit.col_ended: Ended
+troubleshooting.audit.col_session: Session
+troubleshooting.audit.col_status: Audit
+troubleshooting.audit.commands_heading: "Recorded commands"
+troubleshooting.audit.detail_heading: "Session detail"
+troubleshooting.audit.empty: "No support audit reports found yet."
+troubleshooting.audit.error: "Could not load support audit reports."
+troubleshooting.audit.export: "Export JSON"
+troubleshooting.audit.field_cloud: "Cloud sync"
+troubleshooting.audit.field_code: Code
+troubleshooting.audit.field_duration: Duration
+troubleshooting.audit.field_ended: Ended
+troubleshooting.audit.field_session: Session
+troubleshooting.audit.field_started: Started
+troubleshooting.audit.field_status: "Audit status"
+troubleshooting.audit.latest_heading: "Latest session report"
+troubleshooting.audit.loading: "Loading audit reports…"
+troubleshooting.audit.view: View
+troubleshooting.audit_dpkg_fix: "dpkg repair and APT refresh requested"
+troubleshooting.audit_restart_caddy: "Caddy restart requested"
+troubleshooting.audit_restart_php: "PHP-FPM restart requested"
+troubleshooting.audit_support_disable: "Remote support disable requested"
+troubleshooting.audit_support_enable: "Remote support enable requested"
+troubleshooting.audit_support_force_disable: "Forced remote support disable requested"
+troubleshooting.audit_unknown: "Unknown troubleshooting task requested"
+troubleshooting.confirm.dpkg_fix: "Repair interrupted dpkg configuration and refresh APT indexes?"
+troubleshooting.confirm.restart_caddy: "Restart Caddy? Active connections may drop briefly."
+troubleshooting.confirm.restart_php: "Restart PHP-FPM? Active requests may be interrupted."
+troubleshooting.confirm.support_disable: "Disable remote support on this host? Session work files will be removed; audit reports stay available below."
+troubleshooting.confirm.support_enable: "Enable remote support on this host?"
+troubleshooting.confirm.support_enable_final: "This grants auditable root access to remote support staff. Continue?"
+troubleshooting.confirm.support_force_disable: "Force-disable remote support and stop the session service?"
+troubleshooting.dpkg_fix: "Repair dpkg and refresh APT"
+troubleshooting.error.command_failed: "Command finished with a non-zero exit code."
+troubleshooting.error.generic: "The troubleshooting task could not be started."
+troubleshooting.infobox_body: "Privileged maintenance run as root through zen: enable auditable remote support (session code, local audit reports), repair interrupted dpkg/APT state, and restart PHP-FPM or Caddy. Confirm each action; service restarts may drop active connections."
+troubleshooting.infobox_title: "Operator tools for this host"
+troubleshooting.modal.confirm: Continue
+troubleshooting.modal.dpkg_fix_title: "Repair package manager"
+troubleshooting.modal.notice_title: Notice
+troubleshooting.modal.restart_caddy_title: "Restart Caddy"
+troubleshooting.modal.restart_php_title: "Restart PHP-FPM"
+troubleshooting.modal.support_disable_title: "Disable remote support"
+troubleshooting.modal.support_enable_title: "Enable remote support"
+troubleshooting.modal.support_force_disable_title: "Force-disable support"
+troubleshooting.purpose: "Remote support (audited), session reports, APT repair, service restarts."
+troubleshooting.restart_caddy: "Restart Caddy"
+troubleshooting.restart_php: "Restart {php_unit}"
+troubleshooting.running.dpkg_fix: "Repairing dpkg and refreshing APT indexes…"
+troubleshooting.running.generic: "Running troubleshooting task…"
+troubleshooting.running.restart_caddy: "Restarting Caddy…"
+troubleshooting.running.restart_php: "Restarting PHP-FPM…"
+troubleshooting.running.support_disable: "Disabling remote support…"
+troubleshooting.running.support_enable: "Enabling remote support…"
+troubleshooting.section.audit: "Support audit"
+troubleshooting.section.audit_help: "Review locally recorded support sessions. Reports are stored under /var/lib/krate/support/reports."
+troubleshooting.section.output: "Command output"
+troubleshooting.section.packages: "Package repair"
+troubleshooting.section.packages_help: "Runs dpkg --configure -a when needed, then refreshes APT package indexes."
+troubleshooting.section.services: Services
+troubleshooting.section.services_help: "Restart PHP-FPM ({php_unit}) or the Caddy reverse proxy. Active connections may drop briefly."
+troubleshooting.section.support: "Remote support"
+troubleshooting.section.support_help: "Enable or disable auditable remote support sessions. Status is read from zen support status."
+troubleshooting.status.empty: "No support status output."
+troubleshooting.status.error: "Could not load support status."
+troubleshooting.status.loading: "Loading support status…"
+troubleshooting.subtitle: "Run privileged maintenance tasks on this host. Each action is logged in the access audit trail."
+troubleshooting.support.cloud_unreachable: "api.runkrate.com is unreachable. Local audit continues; cloud sync is best-effort."
+troubleshooting.support.code_copied: "Support code copied to clipboard."
+troubleshooting.support.code_copy_failed: "Could not copy the support code."
+troubleshooting.support.code_label: "Session code"
+troubleshooting.support.code_unavailable: "Support code is not available."
+troubleshooting.support.copy_code: "Copy code"
+troubleshooting.support.disable: "Disable support"
+troubleshooting.support.enable: "Enable support"
+troubleshooting.support.entitlement_alpha: "Priority support is not active; alpha fallback may still allow enable."
+troubleshooting.support.entitlement_missing: "Priority support is not included in the current license. Enable may fail."
+troubleshooting.support.expires_label: "Expires at"
+troubleshooting.support.force_disable: "Force disable"
+troubleshooting.support.new_session: "New session"
+troubleshooting.support.recording: "Audit recording"
+troubleshooting.support.refresh: "Refresh status"
+troubleshooting.support.remaining_label: "Time remaining"
+troubleshooting.support.service_active: Running
+troubleshooting.support.service_inactive: "Not running"
+troubleshooting.support.service_label: "Support service"
+troubleshooting.support.state.disabled: Disabled
+troubleshooting.support.state.enabled: Active
+troubleshooting.support.state.expired: Expired
+troubleshooting.support.state.service_inactive: "Enabled (service stopped)"
+troubleshooting.title: Troubleshooting
+updates.apt.action_update: "Update package lists"
+updates.apt.action_upgrade_all: "Upgrade all packages"
+updates.apt.action_upgrade_selected: "Upgrade selected"
+updates.apt.action_upgrade_selected_count: "Upgrade selected ({count})"
+updates.apt.selection_required: "Select at least one package to upgrade."
+updates.apt.col_available: Available
+updates.apt.col_current: Installed
+updates.apt.col_name: Package
+updates.apt.history_action_install: Installed
+updates.apt.history_action_remove: Removed
+updates.apt.history_action_upgrade: Upgraded
+updates.apt.history_col_action: Action
+updates.apt.history_col_date: Date
+updates.apt.history_col_from: "Previous version"
+updates.apt.history_col_to: "New version"
+updates.apt.history_empty: "No recent install, upgrade, or remove operations were found in the APT history."
+updates.apt.history_error: "Could not load recent package changes."
+updates.apt.history_heading: "Recent package changes"
+updates.apt.history_loading: "Loading recent changes…"
+updates.apt.history_none: —
+updates.apt.infobox_body: "Refresh APT indexes, list packages with available upgrades, then run a full upgrade or upgrade only the packages you select. Commands run on the host through zen and may restart services — prefer a maintenance window."
+updates.apt.infobox_title: "Debian host package upgrades"
+updates.apt.intro: "Refresh APT package lists or upgrade installed system packages. These operations may restart services briefly."
+updates.apt.packages_empty: "No upgradable packages were found. Refresh APT indexes if you expect updates."
+updates.apt.packages_error: "Could not load upgradable packages."
+updates.apt.packages_heading: "Available upgrades"
+updates.apt.packages_loading: "Loading upgradable packages…"
+updates.apt.purpose: "Refresh APT indexes and upgrade Debian packages on this host (all or selected)."
+updates.apt.running_update: "Refreshing APT package lists…"
+updates.apt.running_upgrade: "Upgrading all system packages…"
+updates.apt.running_upgrade_selected: "Upgrading selected packages…"
+updates.apt.select_all: "Select all"
+updates.apt.sort_asc: "Sorted ascending — click to reverse"
+updates.apt.sort_by: "Click to sort by this column"
+updates.apt.sort_desc: "Sorted descending — click to reverse"
+updates.apt.title: Apt
+updates.krate.title: Krate
+user.access_groups.manage: "Manage groups"
+user.account.informations: "Account Informations"
+user.account.not_verified: "Account not verified"
+user.account.verified: "Account verified"
+user.activated_at: "Activated At"
+user.activations.pending: "Pending Activations"
+user.auth.back_to_login: "Back to login"
+user.auth.forgot_password: "Forgot Password ?"
+user.auth.login: Login
+user.auth.logout: Logout
+user.auth.no_account: "Don't have an account yet?"
+user.auth.register: "Create an account"
+user.auth.register_admin: "An administrator will approve the account before you can sign in."
+user.auth.register_email: "You will receive an email link to activate the account."
+user.auth.reset_password: "Reset your password"
+user.auth.reset_password_help: "Enter your email address. We will send you a link to choose a new password."
+user.auth.reset_password_sent: "Password reset email sent"
+user.auth.reset_password_sent_body: "If an account matches this email, a reset link was just sent. Check your spam folder if it does not arrive."
+user.auth.send_reset_link: "Send reset link"
+user.auth.terms_of_use: "Terms of use"
+user.email: "User Email"
+user.logged_in_as: "You are logged in as"
+user.password: "User Password"
+user.preferences: Preferences
+user.preferences.flash.saved: "Your preferences have been updated successfully."
+user.preferences.flash.validation_error: "Some preferences could not be saved. Please fix the errors below."
+user.profile.my: "My Profile"
+user.profile.change_password: "Change your password"
+user.registered_at: "Registered At"
+user.registration_ip: "Registration IP"
+user.routing.site_host_missing: "Set the site root URL in General settings or DOMAIN in Caddy (/etc/caddy/environment) before enabling subdomain routing."
+user.routing.subdomain_hint: "Route new app installs to user.domain.com/app instead of domain.com/user/app."
+user.routing.subdomain_mode: "Subdomain routing"
+user.routing.update_failed: "Failed to update routing mode."
+user.routing.enabled: "Subdomain routing enabled."
+user.routing.disabled: "Subdomain routing disabled."
+user.routing.url_pending: "Preview unavailable until the site host is configured."
+user.routing.view_certificates: "View certificates"
+user.media_connections.title: "Media connections"
+user.media_connections.page_title: "Media connections"
+user.media_connections.heading: "Media connections"
+user.media_connections.purpose: "Your API keys for metadata and Trakt."
+user.media_connections.open: "Media connections"
+user.media_connections.hint: "Keys stay on your account and are used by Playback for enrichment and cover art."
+user.media_connections.api_key: "API key"
+user.media_connections.client_id: "Client ID"
+user.media_connections.save: "Save key"
+user.media_connections.clear: Clear
+user.media_connections.saved: "API key saved."
+user.media_connections.cleared: "API key removed."
+user.media_connections.get_key: "Get a key"
+user.media_connections.error_generic: "Could not update this connection."
+user.media_connections.error_api_key: "API key is required."
+user.media_connections.error_vault: "Could not store the API key in the vault."
+user.media_connections.status.idle: "Not configured"
+user.media_connections.status.ready: Configured
+user.media_connections.tmdb.title: TMDB
+user.media_connections.tmdb.help: "Overviews, genres, and ratings for movies and series."
+user.media_connections.omdb.title: OMDb
+user.media_connections.omdb.help: "Plot and IMDb ratings."
+user.media_connections.tvdb.title: TVDB
+user.media_connections.tvdb.help: "Series metadata when TMDB is missing."
+user.media_connections.myanimelist.title: MyAnimeList
+user.media_connections.myanimelist.help: "Client ID for MyAnimeList."
+user.media_connections.anilist.title: AniList
+user.media_connections.anilist.help: "Client ID for AniList."
+user.media_connections.letterboxd.title: Letterboxd
+user.media_connections.letterboxd.help: "API key for Letterboxd."
+user.media_connections.fanart.title: Fanart.tv
+user.media_connections.fanart.help: "Posters when the server has no artwork."
+user.trakt.app_help: "Create an app on trakt.tv/oauth/applications and use the redirect URI above."
+user.trakt.client_id: "Trakt Client ID"
+user.trakt.client_secret: "Trakt Client Secret"
+user.trakt.pkce_help: "Only the Client ID is required."
+user.trakt.connect: "Connect Trakt"
+user.trakt.disconnect: Disconnect
+user.trakt.disconnected: "Trakt disconnected."
+user.trakt.error_client_id: "Client ID is required."
+user.trakt.error_generic: "Could not update Trakt."
+user.trakt.error_vault: "Could not store the Trakt Client ID in the vault."
+user.trakt.error_rate_limit: "Trakt rate limit reached. Wait a few minutes, then sync again."
+user.trakt.error_rate_limit_retry: "Trakt rate limit reached. Try again in {seconds} seconds."
+user.trakt.flash.connect_failed: "Trakt authorization failed."
+user.trakt.flash.connected: "Trakt connected."
+user.trakt.flash.denied: "Trakt authorization denied."
+user.trakt.flash.invalid_state: "Invalid Trakt session. Try again."
+user.trakt.flash.invalid_user: "Trakt session mismatch. Try again."
+user.trakt.hint: "Sync watched status between Trakt and your media servers."
+user.trakt.media_usernames: "Media usernames to sync"
+user.trakt.media_usernames_placeholder: "jellyfin/plex users, comma-separated"
+user.trakt.reconnect: "Reconnect Trakt"
+user.trakt.redirect_uri_label: "Redirect URI"
+user.trakt.root_url_missing: "Set the site root URL in General settings before connecting Trakt."
+user.trakt.save: "Save Client ID"
+user.trakt.saved: "Client ID saved."
+user.trakt.status.connected: "Connected as {username}"
+user.trakt.status.idle: "Not configured"
+user.trakt.status.ready: "Ready to connect"
+user.trakt.sync: "Sync with Trakt"
+user.trakt.sync_starting: "Syncing with Trakt…"
+user.trakt.sync_done: "Synced: {shows} shows, {movies} movies watched · collection {collectionMovies} movies / {collectionShows} shows · {pushed} plays sent · {existing} already on Trakt · {skipped} skipped"
+playback.collection.nav: "Collection"
+playback.collection.heading: "Trakt collection"
+playback.collection.help: "Owned collection plus watched history from Trakt — useful to rebuild a library in Seerr after migration. Watched-only titles are included when they are not marked as collected."
+playback.collection.refresh: "Sync"
+playback.collection.sync: "Sync"
+playback.collection.request_missing: "Request missing in Seerr"
+playback.collection.request_one: "Request"
+playback.collection.request_one_title: "Request “{title}”"
+playback.collection.request_mode: "Request scope"
+playback.collection.request_series_help: "Choose what to send to Seerr for “{title}”."
+playback.collection.request_episodes: "Request missing episodes"
+playback.collection.request_seasons: "Request missing seasons"
+playback.collection.request_all: "Request all"
+playback.collection.request_episodes_confirm: "Request incomplete seasons for “{title}” in Seerr?"
+playback.collection.request_seasons_confirm: "Request unwatched seasons for “{title}” in Seerr?"
+playback.collection.request_all_confirm: "Request the entire series “{title}” in Seerr?"
+playback.collection.request_one_done: "Requested “{title}” in Seerr"
+playback.collection.request_one_skipped: "“{title}” was skipped (already available or already requested)"
+playback.collection.empty: "No owned or watched titles on Trakt yet."
+playback.collection.disconnected: "Connect Trakt in your profile to import your collection and watched history."
+playback.collection.stats: "{total} titles · {available} available · {missing} missing"
+playback.collection.syncing: "Syncing Trakt collection in the background…"
+playback.collection.badge.available: "Available"
+playback.collection.badge.missing: "Missing"
+playback.collection.badge.collected: "Collected"
+playback.collection.badge.watched: "Watched"
+playback.collection.badge.in_progress: "In Progress"
+playback.collection.request_done: "Requested {requested} · skipped {skipped} · failed {failed}"
+playback.collection.request_confirm: "Send all missing titles to Seerr? This creates media requests (not auto-approved)."
+playback.collection.request_one_confirm: "Request “{title}” in Seerr?"
+playback.collection.filter.all: "All"
+playback.collection.filter.missing: "Missing"
+playback.collection.filter.available: "Available"
+playback.collection.filter.movies: "Movies"
+playback.collection.filter.shows: "Series"
+user.trakt.title: Trakt
+user.salt: "User Salt"
+user.username: Username
+user.vault.back_to_profile: "Back to profile"
+user.vault.cancel: Cancel
+user.vault.column.label: Label
+user.vault.column.password: Password
+user.vault.confirm_password: "Unlock vault"
+user.vault.confirm_password_help: "Enter your KRATE account password to reveal stored credentials on this page."
+user.vault.copied: Copied
+user.vault.copy: Copy
+user.vault.entry.master: "KRATE master password"
+user.vault.error_password_required: "Password is required."
+user.vault.heading: "Password vault"
+user.vault.infobox_body: "View passwords stored for your account and installed applications. Values stay hidden until you confirm with your HarmonyUI login password."
+user.vault.infobox_title: "Saved credentials"
+user.vault.intro: "View passwords stored for your account and installed applications. Values stay hidden until you confirm with your login password."
+user.vault.none_available: "No vault entries are linked to your account yet."
+user.vault.open: "Password Vault"
+user.vault.page_title: "Password vault"
+user.vault.password_label: "Account password"
+user.vault.password_placeholder: "Your password"
+user.vault.purpose: "View saved passwords after confirming your login password."
+user.vault.reveal: Unlock
+user.vault.show_passwords: "Reveal passwords"
+user.vault.show_passwords_help: "Turn on the switch and enter your account password to display vault values."
+user.vault.toggle_label: Show
+user.vault.unlocked: "Vault unlocked."
+user.vault.unavailable: "Not stored in vault"
+user.vault.wrong_password: "Incorrect account password."
+user.widgets.back_to_profile: "Back to profile"
+user.widgets.backups.intro: "Stamp paths for restic, borg or duplicati (one job per line, up to 4)."
+user.widgets.backups.jobs_help: "Format: engine|label|pathOrUrl — engines: restic, borg, duplicati."
+user.widgets.backups.jobs_label: Jobs
+user.widgets.backups.jobs_placeholder: restic|Home|/var/backups/home/.last_backup
+user.widgets.backups.title: "Backup jobs"
+user.widgets.backups.too_many: "You can configure at most {max} backup jobs."
+user.widgets.cancel: Cancel
+user.widgets.catalog_type.alerts: Alerts
+user.widgets.catalog_type.backups: Backups
+user.widgets.catalog_type.calendar: Calendar
+user.widgets.catalog_type.clients: Clients
+user.widgets.catalog_type.clock: Clock
+user.widgets.catalog_type.cpu: CPU
+user.widgets.catalog_type.datacap: "Data cap"
+user.widgets.catalog_type.diskquota: "Disk quota"
+user.widgets.catalog_type.disk: Disk
+user.widgets.catalog_type.fail2ban: Fail2ban
+user.widgets.catalog_type.gpu: GPU
+user.widgets.catalog_type.mem: RAM
+user.widgets.catalog_type.mounts: Mounts
+user.widgets.catalog_type.net: Network
+user.widgets.catalog_type.processes: Processes
+user.widgets.catalog_type.rss: RSS
+user.widgets.catalog_type.smartdisks: "SMART disks"
+user.widgets.catalog_type.stocks: Stocks
+user.widgets.catalog_type.storagehealth: "Storage health"
+user.widgets.catalog_type.thermals: Thermals
+user.widgets.catalog_type.unknown: Widget
+user.widgets.catalog_type.uptime: Uptime
+user.widgets.catalog_type.vpn: VPN
+user.widgets.catalog_type.weather: Weather
+user.widgets.column_width: "{count, plural, =1 {1 col.} other {# cols}}"
+user.widgets.columns_hint: "Width on one row of the dashboard grid (6 columns per row on large screens)"
+user.widgets.custom_widgets_heading: "Individual widgets"
+user.widgets.custom_widgets_intro: "When Custom is selected, tick the widgets to show on your home dashboard."
+user.widgets.dashboard_order.hint: "Move items up/down to change placement order on dashboard."
+user.widgets.dashboard_order.move_down: "Move down"
+user.widgets.dashboard_order.move_up: "Move up"
+user.widgets.dashboard_order.open_label: "Reorder dashboard widgets"
+user.widgets.dashboard_order.save: "Save order"
+user.widgets.dashboard_order.save_error: "Failed to save widget order."
+user.widgets.dashboard_order.save_error_generic: "Unable to save widget order"
+user.widgets.dashboard_order.save_error_network: "Network error while saving order. Rebuild front-end assets if you recently changed API_PATH; default is /api."
+user.widgets.dashboard_order.saved: "Order saved. Refreshing dashboard..."
+user.widgets.dashboard_order.saving: "Saving widget order..."
+user.widgets.dashboard_order.title: "Reorder dashboard widgets"
+user.widgets.dashboard_row2_summary: "More widgets"
+user.widgets.display_heading: "Dashboard display"
+user.widgets.flash_csrf: "Your session expired. Please try again."
+user.widgets.flash_grid_overflow: "This selection does not fit in at most two dashboard rows (6 columns per row on large screens). Remove widgets or pick narrower widths."
+user.widgets.flash_none_selected: "Select at least one widget."
+user.widgets.flash_saved: "Dashboard widgets updated."
+user.widgets.flash_status_navbar_purged: "Clock, weather and calendar card widgets were removed because the status bar is enabled."
+user.widgets.heading: "Dashboard widgets"
+user.widgets.hint_grid_overflow: "Use at most two rows of 6 columns (wide widgets count as 3). Adjust your selection."
+user.widgets.hint_none_selected: "Select at least one widget."
+user.widgets.grid_preview: "Dashboard preview"
+user.widgets.grid_preview_empty: "Select widgets to preview how they fit on the home grid."
+user.widgets.grid_preview_empty_slot: "Empty slot"
+user.widgets.grid_preview_holding: "{label} selected. Click a slot or another widget to place it."
+user.widgets.grid_preview_place: "Click a widget, then a slot to move it."
+user.widgets.grid_usage: "{used} / {max} columns"
+user.widgets.infobox_body: "Choose a style (Classic, Compact, or Gauge), then tick the widgets to show on your home dashboard."
+user.widgets.infobox_title: "Your home dashboard layout"
+user.widgets.intro: "Choose a style (Classic, Compact, or Gauge), then tick the widgets to show on your home dashboard."
+user.widgets.layout_custom: Custom
+user.widgets.layout_preview_placeholder: Preview
+user.widgets.layout_v1: "Layout V1 (Classic)"
+user.widgets.layout_v1_help: "Donut charts and full stats"
+user.widgets.layout_v1_short: Classic
+user.widgets.layout_v2: "Layout V2 (Compact)"
+user.widgets.layout_v2_help: "Large numbers and sparklines"
+user.widgets.layout_v2_short: Compact
+user.widgets.layout_v3: "Layout V3 (Gauge)"
+user.widgets.layout_v3_help: "Circular gauges"
+user.widgets.layout_v3_short: Gauge
+user.widgets.layouts_heading: "Home layout"
+user.widgets.layouts_intro: "This sets how every selected widget looks on the dashboard."
+user.widgets.none_available: "No widgets are available yet."
+user.widgets.open_selector: "Customize dashboard widgets"
+user.widgets.page_title: "Dashboard widgets"
+user.widgets.purpose: "Choose your home layout and visible dashboard widgets."
+user.widgets.row2_collapsible: "Collapse extra widgets into a dropdown"
+user.widgets.row2_collapsible_help: "When enabled, widgets beyond the first row are hidden behind a dropdown on the dashboard. When disabled, all widgets are always visible."
+user.widgets.save: "Save selection"
+user.widgets.selector_heading: "Widgets to show"
+user.widgets.selector_intro: "Tick the widgets to show. The home dashboard fits at most two rows of 6 columns (wide widgets use 3)."
+user.widgets.status_navbar: "Show weather, date and clock in the top bar"
+user.widgets.status_navbar.aria: "Weather, date and time"
+user.widgets.status_navbar.calendar_aria: Date
+user.widgets.status_navbar.clock_aria: Time
+user.widgets.status_navbar.weather_aria: Weather
+user.widgets.status_navbar_help: "When enabled, a compact weather, calendar and clock strip appears next to the dashboard controls. The matching card widgets are removed from your selection and cannot be added while this option is on."
+user.widgets.stocks.intro: "Yahoo Finance tickers for your stocks widget (comma-separated, up to 8)."
+user.widgets.stocks.symbols_help: "Examples: AAPL, MSFT, GOOGL, ^FCHI (CAC 40), BTC-USD."
+user.widgets.stocks.symbols_label: Symbols
+user.widgets.stocks.symbols_placeholder: "AAPL, MSFT, ^GSPC"
+user.widgets.stocks.title: "Stock symbols"
+user.widgets.stocks.too_many: "You can select at most {max} symbols."
+user.widgets.weather.city_label: City
+user.widgets.weather.city_placeholder: "e.g. Paris"
+user.widgets.weather.intro: "City used by your dashboard weather widget (Open-Meteo). Each user can choose their own place."
+user.widgets.weather.invalid_latitude: "Latitude must be between −90 and 90."
+user.widgets.weather.invalid_longitude: "Longitude must be between −180 and 180."
+user.widgets.weather.latitude: Latitude
+user.widgets.weather.longitude: Longitude
+user.widgets.weather.title: "Weather location"
+users.all_users: "All Users"
+users.list: "Users List"
+users.list.infobox_body: "Approve pending email verifications, browse registered users, and apply moderation actions (ban, unban, delete) according to your site policy."
+users.list.infobox_title: "HarmonyUI user accounts"
+users.list.purpose: "Approve registrations and moderate user accounts."
+users.not_verified: "Not Verified"
+users.verified: Verified
+users.disk_quota: "Disk quota"
+users.disk_quota.exempt: Exempt
+users.disk_quota.default: "Site default"
+users.disk_quota.exempt_toggle: Exempt
+users.disk_quota.saved: "Disk quota updated"
+users.disk_quota.error: "Could not update disk quota"
+
+forms.mail.choice.smtps: "SMTP (TLS)"
+settings.smtp.invalid_transport: "Configure a valid SMTP host and port (1–65535)."
+settings.smtp.local_help: "Local Sendmail queues mail on this host. Most VPS providers block outbound TCP/25, so messages may never leave the server — prefer SMTP/SMTPS with a relay (Brevo, Mailgun, SES, …) for reliable delivery. SPF and reverse DNS still matter for the From domain."
+
+announcements.heading: "Announcements"
+announcements.help: "Publish a message on everyone’s dashboard or address it to one user."
+announcements.new: "New announcement"
+announcements.title_label: "Title"
+announcements.title_placeholder: "Short headline"
+announcements.body_label: "Message"
+announcements.body_placeholder: "What should users see on their dashboard?"
+announcements.recipient_label: "Recipient"
+announcements.recipient_help: "Choose a user, or leave this field empty for a global announcement."
+announcements.everyone: "All users"
+announcements.publish: "Publish"
+announcements.published: "Announcement published."
+announcements.deleted: "Announcement removed."
+announcements.remove: "Remove"
+announcements.remove_confirm: "Remove this announcement from dashboards?"
+announcements.dismiss: "Dismiss announcement"
+announcements.mark_seen: "Mark as seen"
+announcements.active: "Published announcements"
+announcements.empty: "No announcements published."
+playback.throttle.enabled: "Intelligent throttle"
+playback.throttle.help: "Prioritize Plex, Emby and Jellyfin streams. Set usable upload and download budgets below your connection speed. Unused bandwidth is shared between selected installed clients; disabling restores their previous limits. Recovery is gradual after the hold delay."
+playback.throttle.uploadMbps: "Upload budget (Mbps)"
+playback.throttle.downloadMbps: "Download budget (Mbps)"
+playback.throttle.overheadPercent: "Stream safety margin (%)"
+playback.throttle.fallbackStreamMbps: "Unknown stream bitrate (Mbps)"
+playback.throttle.restoreDelaySeconds: "Hold after playback ends (seconds)"
+playback.throttle.include_lan: "Also reserve bandwidth for LAN streams"
+playback.throttle.clients: "Clients to manage"
+playback.throttle.status.disabled: Throttle off
+playback.throttle.status.disabled_help: Intelligent throttling is disabled.
+playback.throttle.status.active: Throttle active
+playback.throttle.status.active_help: The worker is managing download client limits.
+playback.throttle.status.waiting: Throttle waiting
+playback.throttle.status.waiting_help: Waiting for the worker or an available download client.
+playback.throttle.status.error: Throttle issue
+playback.throttle.status.error_help: The worker reported an error or media monitoring is unavailable.
+playback.throttle.preset: Throttle profile
+playback.throttle.preset.custom: Custom
+playback.throttle.preset.streaming: Streaming (low budgets, 120s hold)
+playback.throttle.preset.night: Night (wide budgets, lower overhead)
+playback.throttle.preset.lan_only: Include LAN (also reserve for local plays)
+playback.throttle.preset_help: "Quick profiles for protecting streams, overnight downloads, or LAN-inclusive reservation. Apply then Save, or use a one-click chip."
+playback.throttle.preset_applied: "{preset} applied · upload budget {reservedMbps} Mbps"
+playback.throttle.reserved_mbps: "Bandwidth reserved for viewers · {mbps} Mbps"
+playback.throttle.clients_managed: "{count} client(s) capped"
+playback.throttle.restore_pending: Gradual restore after the hold delay
+playback.throttle.reservation_idle: No active reservation — download clients are not capped.
+playback.throttle.reservation_bar: "Reserved {reserved} / {budget} Mbps upload budget"
+playback.throttle.forecast_mbps: "Forecast ~{mbps} Mbps for {minutes} min ({count} sessions)"
+license.current_heading: Current license
+license.refresh_help: Check the status and entitlements of your current license.
+license.replace_heading: Replace license
+license.replace_help: Enter the new license details, then apply the change.
+license.new_key_label: New license key
+license.account_email_label: Account email (required for paid keys)
+license.apply_new: Apply new license
+playback.portal.detail.versions: "Available versions"
+playback.portal.detail.credits: "Cast and crew"
+playback.portal.detail.copy_id: "Copy item ID"
+playback.portal.detail.copied: "Copied"
+playback.portal.detail.copy_failed: "Could not copy. Select the ID above."
+playback.portal.detail.duration: "{minutes} min"
+playback.portal.detail.rating: "Rating {rating}/10"
+playback.portal.detail.playing: "Playing"
+playback.portal.detail.paused: "Paused"
+playback.control_center.active_users: "Users in session"
+playback.control_center.transcoding: "Transcoding"
+playback.control_center.response_time: "API response time"
+playback.control_center.error: "Error"
+playback.control_center.checked: "Checked at {time}"
+playback.control_center.health_failed: "The server health check failed."
+playback.sections.label: "Playback views"
+playback.sections.sessions: "Sessions"
+playback.sections.media: "Media"
+playback.sections.servers: "Servers"
+playback.sections.activity: "Action log"
+playback.portal.density.label: "Poster size"
+playback.portal.view_all: "View all"
+playback.portal.library.back: "Back to home"
+playback.portal.letter.label: "Browse A–Z"
+playback.portal.letter.other: "Titles not starting with A–Z"
+playback.portal.filter.genre: "Genre"
+playback.portal.filter.resolution: "Resolution"
+playback.portal.resolution.4k: "4K"
+playback.portal.resolution.1080p: "1080p"
+playback.portal.resolution.720p: "720p"
+playback.portal.resolution.sd: "SD"
+playback.portal.sort.label: "Display"
+playback.portal.sort.recent: "Recently added"
+playback.portal.sort.title: "Library A–Z"
+playback.portal.more: "Show more"
+playback.portal.count: "{count} of {total} items"
+playback.portal.added: "Added on {date}"
+playback.portal.search_count: "{count} results (up to 50)"
+playback.control_center.details: "Details"
+playback.control_center.info_unavailable: "Server version information is unavailable. Playback sessions are connected."
+playback.control_center.updated: "Status updated at {time}"
+playback.filters.server: "Server"
+playback.filters.user: "User"
+playback.filters.decision: "Playback method"
+playback.filters.state: "State"
+playback.filters.geo: "Location"
+playback.filters.geo_local: "LAN / local"
+playback.filters.mediaKind: "Kind"
+playback.filters.mediaKind_livetv: "Live TV"
+playback.filters.mediaKind_vod: "On demand"
+playback.filters.source: "Live TV source"
+playback.filters.all_mediaKind: "All kinds"
+playback.filters.all_source: "All sources"
+playback.filters.query: "Search"
+playback.filters.query_placeholder: "Title, user or device…"
+playback.filters.all_server: "All servers"
+playback.filters.all_user: "All users"
+playback.filters.all_decision: "All methods"
+playback.filters.all_state: "All states"
+playback.filters.all_geo: "All locations"
+playback.filters.reset: "Clear filters"
+playback.filters.count: "{count} of {total} sessions shown"
+playback.filters.empty: "No sessions match these filters."
+playback.users.search: "Find a user"
+playback.users.admin_only: "Administrators only"
+playback.users.no_matches: "No users match these filters."
+playback.users.last_activity: "Last activity: {date}"
+playback.users.live: "{count, plural, one {# live session} other {# live sessions}}"
+playback.devices.heading: "Devices currently playing"
+playback.devices.help: "Sessions on the selected server, updated with Live."
+playback.devices.waiting: "Waiting for live sessions."
+playback.devices.empty: "No devices currently playing on this server."
+playback.devices.unknown: "Unknown device"
+playback.automation.pauseRules: "Pause rules"
+playback.automation.transcodeCleanup: "Transcode cleanup"
+playback.automation.throttle: "Throttling"
+playback.automation.never: "Not yet"
+playback.automation.state.disabled: "Disabled"
+playback.automation.state.stale: "Waiting"
+playback.automation.state.running: "Active"
+playback.automation.state.error: "Failed"
+playback.automation.reason.pending: "Waiting for the first execution"
+playback.automation.reason.no_intervention: "No intervention needed"
+playback.automation.reason.pause_threshold: "Pause threshold reached"
+playback.automation.reason.expired_files: "Expired temporary files"
+playback.automation.reason.stream_priority: "Bandwidth reserved for streams"
+playback.automation.reason.limits_restored: "Download limits restored"
+playback.automation.reason.error: "An operation failed"
+playback.automation.result.warned: "Warnings"
+playback.automation.result.stopped: "Stopped"
+playback.automation.result.deletedFiles: "Deleted files"
+playback.automation.result.deletedBytes: "Deleted bytes"
+playback.automation.result.managed: "Managed clients"
+playback.automation.result.restored: "Restored clients"
+playback.automation.result.reservedMbps: "Reserved Mbps"
+playback.automation.result.errors: "Errors"
+playback.history.enabled: "Collect playback history"
+playback.history.help: "Estimated watched time from live observation and optional server backfill. Pauses and seeks are excluded."
+playback.history.settings_help: "Disabled by default. While Playback is open, Sessions polls credit watched time automatically. A host timer is still recommended for collection without the browser. Disabling preserves existing history. Watched time is estimated; pauses and seeks are excluded."
+playback.analytics.intelligence: "Intelligence"
+playback.analytics.refresh: "Refresh analytics"
+playback.analytics.export_csv: "Export CSV"
+playback.analytics.trending: "Trending"
+playback.analytics.abandoned: "Abandoned"
+playback.analytics.items: "Items"
+playback.analytics.libraries: "Libraries"
+playback.analytics.column.title: "Title"
+playback.analytics.column.plays: "Plays"
+playback.analytics.column.completion: "Avg completion"
+playback.analytics.column.health: "Health"
+playback.analytics.settings.heading: "Watch analytics"
+playback.analytics.settings.help: "Thresholds apply to Intelligence, trending, and CSV export. Excluded users stay in raw history but leave analytics views."
+playback.analytics.time_range: "Analytics time range (days)"
+playback.analytics.time_range.all: "All time"
+playback.analytics.completion_threshold: "Completion threshold (%)"
+playback.analytics.abandonment_threshold: "Abandonment threshold (%)"
+playback.analytics.min_watch: "Minimum watch (seconds)"
+playback.analytics.excluded_users: "Excluded users"
+playback.analytics.excluded_users_placeholder: "admin, test"
+playback.analytics.capture_livetv: "Capture Live TV programme analytics"
+playback.analytics.loading: "Loading analytics…"
+playback.analytics.error: "Analytics unavailable"
+playback.analytics.empty: "No analytics data yet"
+playback.analytics.empty_hint: "Enable history collection and watch something, or widen the analytics window in Settings."
+playback.analytics.thresholds_line: "Thresholds — complete ≥ {completion}% · abandon ≤ {abandon}% · min watch {min}s · window {days}d"
+playback.analytics.tooltip.plays: "Plays after the minimum watch filter ({min}s)."
+playback.analytics.tooltip.completion: "Share of plays reaching the completion threshold ({pct}%)."
+playback.analytics.tooltip.users: "Distinct media users in the analytics window."
+playback.analytics.export_hint: "CSV ranks titles by health score then plays (same as the Items table)."
+playback.analytics.rank_score: "trend {score}"
+playback.analytics.rank_abandon: "{pct}% abandoned"
+playback.analytics.rank_health: "health {grade} ({score})"
+playback.analytics.stat.watch: "Watch time"
+playback.analytics.stat.plays: "Plays"
+playback.analytics.stat.completion: "Completion"
+playback.analytics.stat.users: "Users"
+playback.analytics.timeseries: "Watch time by day"
+playback.analytics.heatmap: "Plays by hour and decision"
+playback.analytics.top_titles: "Top titles"
+playback.analytics.top_users: "Top viewers"
+playback.analytics.hw_sw: "HW transcodes {hw} · SW transcodes {sw} · unknown {unknown}"
+playback.analytics.fleet_health: "Fleet health {grade} ({score})"
+playback.analytics.watch_external: "Open in app"
+playback.analytics.item.heading: "Title intelligence"
+playback.analytics.item.plays: "{count} plays"
+playback.analytics.item.viewers: "{count} viewers"
+playback.analytics.item.completion: "{pct}% avg completion"
+playback.analytics.item.abandoned: "{pct}% abandoned"
+playback.analytics.item.health: "Health {score} · {grade}"
+playback.analytics.item.empty: "No watch history for this title yet."
+playback.analytics.rank_plays: "{count} plays"
+playback.history.retention: "History retention (7–365 days)"
+playback.history.last_success: "Last successful observation"
+playback.history.server_errors: "Servers unavailable"
+playback.sections.history: "History"
+playback.history.period: "Period"
+playback.history.days: "days"
+playback.history.server: "Server"
+playback.history.all_servers: "All servers"
+playback.history.all: "All"
+playback.history.filter.user: "User"
+playback.history.filter.user_placeholder: "Name or user id"
+playback.history.filter.media: "Media"
+playback.history.filter.device: "Device"
+playback.history.filter.device_placeholder: "Device or client"
+playback.history.filter.since: "From (optional)"
+playback.history.filter.until: "Until (optional)"
+playback.history.method: "Playback method"
+playback.history.collection: "Collection state"
+playback.history.apply: "Apply filters"
+playback.history.reset: "Reset"
+playback.history.refresh: "Refresh / retry"
+playback.history.import: "Backfill from server history"
+playback.history.import_help: "Optional repair only. Live collection observes sessions while you watch. Backfill pulls closed Emby/Jellyfin plays (and Playback Reporting when installed); it cannot replace live method/device for in-progress sessions."
+playback.history.import_running: "Importing play history…"
+playback.history.import_done: "{imported} imported · {skipped} skipped"
+playback.history.import_error: "Play history import failed."
+playback.history.collector_dashboard: "Observation continues from the dashboard while Playback is open"
+playback.history.collector_kick: "Starting a background observation tick…"
+playback.history.loading: "Loading history…"
+playback.history.error: "History could not be loaded. Refresh to retry."
+playback.history.empty: "No observed plays for these filters."
+playback.history.checked: "Last checked"
+playback.history.plays: "observed plays"
+playback.history.summary.estimated: "Estimated watched time"
+playback.history.summary.closed: "Closed plays"
+playback.history.summary.users: "Distinct viewers"
+playback.history.top: "Most watched"
+playback.history.top_media: "Media by estimated watched time"
+playback.history.top_users: "Users by estimated watched time"
+playback.history.previous: "Previous"
+playback.history.next: "Next"
+playback.history.recent: "Recent plays · 30 days"
+playback.history.incomplete: "Incomplete observations"
+playback.history.state.open: "Ongoing"
+playback.history.state.closed: "Closed"
+playback.history.state.disappeared: "No longer observed"
+playback.history.state.interrupted: "Collection interrupted"
+playback.history.state.changed: "Media or user changed"
+playback.history.state.disabled: "Collection disabled"
+playback.history.state.imported: "Imported (server history)"
+playback.history.watch_unknown: "Unknown"
+playback.analytics.unreliable_hint: "Trending / Abandoned only use plays with a known runtime and watch length. Re-run History import to pull Jellyfin/Emby played items (not bare activity starts), and keep live collection on for trustworthy stats."
+playback.history.column.date: "Date"
+playback.history.column.user: "User"
+playback.history.column.media: "Media / server"
+playback.history.column.device: "Device / client"
+playback.history.column.estimated: "Estimated watched time"
+playback.history.column.method: "Method"
+playback.history.column.collection: "Collection state"
+playback.history.user_profile: "User details"
+playback.history.observed_devices: "Observed devices"
+playback.history.indicative: "Indicative grouping by name and client"
+playback.inventory.heading: "Observed device inventory"
+playback.inventory.help: "Devices registered on Emby/Jellyfin, merged with history observations. Rename keeps a local label and optional server sync; revoke removes the server registration."
+playback.inventory.empty: "No devices registered on this server yet."
+playback.inventory.native: "Registered on media server"
+playback.inventory.history: "Seen in playback history"
+playback.inventory.error: "Device inventory unavailable. Refresh to retry."
+playback.automation.reason.monitoring_unavailable: "Media monitoring unavailable; limits held conservatively"
+playback.history.advanced_filters: "Advanced filters"
+playback.portal.path: "Library navigation"
+playback.portal.library: "Library"
+playback.sections.tuners: "Live TV"
+playback.tuners.heading: "Live TV tuners"
+playback.tuners.help: "Dispatcharr is the source of truth for tuners. Live TV sessions on media servers are shown as watchers, not a second tuner inventory."
+playback.tuners.loading: "Loading tuners…"
+playback.tuners.updated: "Updated at {time} · {live} live TV sessions"
+playback.tuners.unavailable: "Live TV tuners are available only when Dispatcharr is installed."
+playback.tuners.empty: "No tuners were reported."
+playback.tuners.error: "Tuner status could not be loaded. Refresh to retry."
+playback.tuners.dispatcharr: "Dispatcharr"
+playback.tuners.servers: "Media servers"
+playback.tuners.watchers: "Watching via media servers"
+playback.tuners.watching: "{count} live TV plays"
+playback.tuners.count: "{used}/{count} tuners in use"
+playback.tuners.channels: "{count} channels"
+playback.tuners.in_use: "In use"
+playback.tuners.idle: "Idle"
+playback.portal.copies.heading: "Copies on other servers"
+playback.portal.copies.help: "Matched by TMDB or TVDB when available. Title and year matches are indicative only."
+playback.portal.copies.external: "Same external id"
+playback.portal.copies.indicative: "Indicative match"
+playback.portal.copies.count: "{count} servers"
+playback.portal.picker.heading: "Choose a server for {title}"
+playback.portal.picker.help: "This title exists on more than one server in the current profile."
+playback.portal.picker.cancel: "Cancel"
+playback.portal.profile.user: "User profile · signed-in person’s instances"
+playback.portal.profile.global: "Global profile · every server"
+playback.portal.rail.continue: "In progress"
+playback.portal.rail.trakt_continue: "Continue from Trakt"
+playback.portal.rail.trakt_recommended: "Recommended on Trakt"
+playback.portal.rail.trakt_trending: "Trending on Trakt"
+playback.portal.rail.trakt_popular: "Popular on Trakt"
+playback.portal.rail.person_collection: "{name} — collection"
+playback.portal.person_collection_empty: "No titles featuring {name} in your Trakt collection."
+playback.portal.rail_request_none: "This title has no TMDB id — cannot request it in Seerr."
+playback.portal.rail.recent: "Recently added"
+playback.portal.rail.movies: "Movies"
+playback.portal.rail.series: "Series"
+playback.portal.hero.open: "Open details"
+playback.health.empty: "No media servers to score."
+playback.health.global: "Overall health {score}/100 ({grade}) · {connected}/{total} servers connected"
+playback.health.observed: "{connected}/{total} servers connected · {grade}"
+playback.health.indicative: "Index {score}/100, derived only from the measurements above"
+playback.health.score: "{score}/100 · {grade}"
+playback.health.grade.ok: "Good"
+playback.health.grade.warn: "Fair"
+playback.health.grade.critical: "Poor"
+playback.health.grade.down: "Down"
+playback.health.grade.empty: "None"
+playback.health.reason.disconnected: "Not connected"
+playback.health.reason.info: "Version metadata unavailable"
+playback.health.reason.latency: "Slow API response"
+playback.health.reason.latency_unknown: "API response time unknown"
+playback.health.reason.transcode: "Active transcodes"
+playback.health.reason.gpu: "Host GPU under load"
+playback.health.reason.libraries: "Library inventory unavailable"
+playback.health.fact.connected: "Connected"
+playback.health.fact.latency_ms: "API latency {value} ms"
+playback.health.fact.transcoding: "{value} transcodes"
+playback.health.fact.hw_transcode: "{value} GPU transcodes"
+playback.health.fact.gpu_percent: "Host GPU {value}%"
+playback.health.fact.libraries: "{value} libraries"
+playback.gpu.absent: "No host GPU metrics."
+playback.gpu.summary: "{model} · GPU {percent}% · {temp}°C · VRAM {memory}%"
+playback.gpu.summary_estimated: "{model} · GPU ~{percent}% (estimated) · {temp}°C · VRAM {memory}%"
+playback.gpu.usage_estimated: "GPU usage is estimated from host telemetry."
+playback.badge.hw: HW
+playback.badge.hw_type: "HW {type}"
+playback.badge.sw: SW
+playback.gpu_overlay.toggle: "Host GPU telemetry"
+playback.gpu_overlay.panel: "Host GPU telemetry"
+playback.gpu_overlay.heading_host: "Host GPU"
+playback.gpu_overlay.heading_intel: "Intel iGPU"
+playback.gpu_overlay.heading_nvidia: "NVIDIA GPU"
+playback.gpu_overlay.heading_amd: "AMD GPU"
+playback.gpu_overlay.model: "{model}"
+playback.gpu_overlay.nvenc: "NVENC {encoder}% · GPU {gpu}%"
+playback.gpu_overlay.nvidia_temp_mem: "{temp}°C · VRAM {memory}% ({foot})"
+playback.gpu_overlay.amd_util: "GPU {gpu}% · {temp}°C"
+playback.gpu_overlay.spark_label: "GPU utilization history"
+playback.intel_gpu.toggle: "Intel GPU telemetry"
+playback.intel_gpu.panel: "Intel GPU telemetry"
+playback.intel_gpu.heading: "Intel iGPU"
+playback.intel_gpu.frequency: "Frequency {current} MHz (max {max} MHz)"
+playback.intel_gpu.temperature: "Temperature {temp}°C"
+playback.intel_gpu.engine: "{name}: {percent}% busy"
+playback.intel_gpu.history_hint: "GPU load — last {count} samples"
+playback.intel_gpu.spark_label: "GPU utilization history"
+playback.control_center.hw_transcode: "GPU transcodes"
+playback.insight.lever.stop_idle: "Stop the idle session"
+playback.insight.lever.switch_recommended_copy: "Open the Continuity-recommended copy"
+playback.portal.continue_filter: "Continue Watching user"
+playback.portal.continue_all_users: "All users"
+playback.portal.continue_empty: "Nothing in progress right now."
+playback.portal.home_empty: "No catalog titles yet. Check server connections or library scan."
+playback.portal.remote_play: "Play on device"
+playback.portal.remote_play_empty: "No connected client available for remote play."
+playback.requests.open: "Open app"
+playback.requests.approve: "Approve"
+playback.requests.deny: "Deny"
+playback.tuners.open_dispatcharr: "Open Dispatcharr"
+playback.capacity.history_hint: "Last hour · {count} samples"
+playback.capacity.chart_label: "GPU load over the last hour"
+playback.capacity.sample_title: "{gpu}% GPU · {playing} stream(s) · {transcoding} transcoder(s) · {time}"
+playback.capacity.sample_title_hw: "{gpu}% GPU · {playing} stream(s) · {hw} HW / {sw} SW · slots {slotsUsed}/{slotsMax} · {time}"
+playback.capacity.slots_counter: "HW transcoder slots {used}/{max}"
+playback.capacity.slots_saturated: "Hardware transcoder slots full ({used}/{max}) — new HW transcodes may queue or fall back to software."
+playback.capacity.legend_hw: "Hardware transcode"
+playback.capacity.legend_sw: "Software transcode"
+playback.capacity.legend_mixed: Mixed
+playback.capacity.legend_idle: "No transcode"
+playback.capacity.hw_sw_counts: "{hw} hardware · {sw} software transcode(s)"
+playback.settings.pause_rules.bypass_devices: "Bypass devices"
+playback.settings.pause_rules.bypass_devices_placeholder: "Living Room, Bedroom TV"
+playback.settings.pause_rules.bypass_players: "Bypass players / clients"
+playback.settings.pause_rules.bypass_players_placeholder: "Infuse, Apple TV"
+playback.settings.capacity.heading: "Capacity thresholds"
+playback.settings.capacity.help: "GPU warn/critical levels used by stream and capacity insights."
+playback.settings.capacity.help_detail: "Warn highlights elevated GPU load; critical marks saturation in Live capacity and stream insights. Open Live to see the last-hour HW/SW sparkline."
+playback.settings.capacity.open_live: "Open Live capacity"
+playback.settings.capacity.gpu_warn: "GPU warn %"
+playback.settings.capacity.gpu_critical: "GPU critical %"
+playback.settings.capacity.hw_slot_warn: "HW transcoder slot capacity"
+playback.history.continuity_tip: "Tip: Continuity can recommend a better copy when a stream is transcoding."
+playback.mirror.error.mirror_invalid: "Mirror request was invalid."
+playback.mirror.error.mirror_upstream: "Upstream media server rejected the mirror."
+playback.mirror.error.mirror_plex_pass: "Plex Pass is required for this mirror."
+playback.mirror.error.mirror_transcoder_busy: "Transcoder is busy; try again shortly."
+playback.mirror.error.mirror_timeout: "Mirror timed out talking to the media server."
+playback.portal.remote_play_idle: "idle"
+playback.tuners.zap: "Zap"
+playback.tuners.zap_next: "Next stream"
+playback.tuners.zap_pick: "Channel…"
+playback.tuners.zap_failed: "Could not change channel."
+playback.tuners.clients: "{count} client(s)"
+playback.livetv.sources.heading: "Live TV sources"
+playback.livetv.sources.help: "Label Emby/Jellyfin tuner hosts so live TV sessions show a colored source badge."
+playback.livetv.sources.label: "Source label"
+playback.livetv.sources.add: "Add source"
+playback.livetv.sources.edit: Edit
+playback.livetv.sources.save: "Save source"
+playback.livetv.sources.hosts_placeholder: "Tuner host IDs (comma-separated)"
+playback.livetv.sources.server_jellyfin: "Jellyfin"
+playback.livetv.sources.server_emby: "Emby"
+playback.livetv.sources.empty: "No Live TV sources configured."
+playback.livetv.sources.delete: "Remove"
+playback.livetv.sources.saved: "Live TV source saved."
+playback.livetv.sources.failed: "Could not save Live TV source."
+playback.livetv.epg.heading: "EPG"
+playback.livetv.epg.now: "Now: {title}"
+playback.livetv.epg.next: "Next: {title}"
+playback.livetv.epg.upcoming: "Upcoming"
+playback.livetv.epg.empty: "No guide data for this channel."
+playback.livetv.epg.show: "Guide"
+playback.livetv.source_badge: "Live TV source: {label}"
+playback.livetv.source_badge_orphan: "Unmapped: {label}"
+playback.livetv.source_badge_orphan_help: "Unmapped tuner host {label}. Create a Live TV source to name it."
+playback.livetv.emby_hosts.heading: "Emby / Jellyfin tuner hosts"
+playback.livetv.emby_hosts.orphan: "Orphan"
+playback.livetv.emby_hosts.mapped: "Mapped"
+playback.livetv.emby_hosts.host_id: "Host id {id}"
+playback.livetv.emby_hosts.orphan_hint: "Map this host id in Live TV sources for a named badge."
+playback.livetv.emby_hosts.create_source: "Create source"
+playback.livetv.plex.heading: "Plex tuners"
+playback.livetv.plex.usage: "{used}/{total} in use"
+playback.livetv.plex.state.active: "Active"
+playback.livetv.plex.state.staged: "Staged"
+playback.livetv.plex.state.orphan: "Orphan"
+playback.livetv.plex.rename: "Rename"
+playback.livetv.plex.enable: "Enable"
+playback.livetv.plex.disable: "Disable"
+playback.livetv.plex.remove: "Remove"
+playback.livetv.plex.action_failed: "Plex tuner action failed."
+playback.portal.rail.because: "Because you watched"
+playback.portal.rail.for_you: "For you"
+playback.portal.rail.right_now: "Right now"
+playback.portal.rail.right_now.morning: "This morning"
+playback.portal.rail.right_now.daytime: "This afternoon"
+playback.portal.rail.right_now.evening: "Tonight"
+playback.portal.rail.right_now.late: "Late night"
+playback.portal.rail.theme.evening: "{genre} night"
+playback.portal.rail.theme.default: "{genre} picks"
+playback.portal.feedback.hide: "Hide"
+playback.portal.feedback.more: "More like this"
+playback.portal.feedback.hide_done: "Hidden from recommendations"
+playback.portal.feedback.more_done: "We’ll show more titles like this"
+playback.portal.feedback.failed: "Could not save recommendation feedback"
+playback.portal.because_watched: "Because you watched {title}"
+playback.portal.more_like_this: "More like this"
+playback.portal.more_like_empty: "No similar titles found on this server."
+playback.portal.cast_search: "Search titles with {name}"
+playback.requests.status.denied: denied
+playback.host_badge.playing: "{count} playing"
+playback.host_badge.transcoding: "{count} transcoding"
+playback.host_badge.throttle: Throttle ON
+playback.host_badge.help: Open Playback Studio (Live or throttle settings)
+security.2fa.title: "Two-factor authentication"
+security.2fa.subtitle: "Enter the 6-digit code for {username}"
+security.2fa.code_label: "Authenticator code"
+security.2fa.verify: "Verify"
+security.2fa.error_not_enabled: "Two-factor authentication is not enabled."
+security.2fa.recovery_login_hint: "Or enter a recovery code (XXXX-XXXX) if you lost your authenticator."
+security.2fa.or_passkey: "Or verify with a passkey registered on this account."
+security.2fa.recovery_regenerated: "New recovery codes generated."
+security.2fa.recovery_regen_help: "Confirm with an authenticator code to replace all recovery codes."
+security.2fa.recovery_regen: "Generate new recovery codes"
+security.2fa.recovery_remaining: "{count, plural, =0 {No recovery codes left} one {# recovery code left} other {# recovery codes left}}"
+security.2fa.recovery_copy_failed: "Could not copy the recovery codes."
+security.2fa.recovery_copied: "Recovery codes copied."
+security.2fa.recovery_copy: "Copy codes"
+security.2fa.recovery_once: "These codes are shown once. Store them offline — each code works a single time if you lose your authenticator."
+security.2fa.recovery_heading: "Save your recovery codes"
+security.2fa.code_or_recovery: "Authenticator or recovery code"
+security.2fa.back_to_login: "Back to login"
+security.2fa.session_expired: "Your login session expired. Sign in again."
+security.2fa.invalid_csrf: "Invalid security token. Try again."
+security.2fa.invalid_code: "Invalid authenticator code."
+security.2fa.profile_heading: "Two-factor authentication (TOTP)"
+security.2fa.profile_help: "Protect your account with an authenticator app (Authy, Google Authenticator, Aegis…)."
+security.2fa.status_on: "Enabled"
+security.2fa.status_off: "Not enabled"
+security.2fa.scan_help: "Scan the QR code, then enter a code to confirm."
+security.2fa.manual_secret: "Manual secret"
+security.2fa.setup: "Set up 2FA"
+security.2fa.enable: "Confirm and enable"
+security.2fa.disable: "Disable 2FA"
+security.2fa.enabled: "Two-factor authentication enabled."
+security.2fa.disabled: "Two-factor authentication disabled."
+security.2fa.error_setup: "Could not start 2FA setup."
+security.2fa.error_setup_first: "Start setup before confirming a code."
+security.2fa.qr_alt: "Authenticator QR code"
+security.passkey.login: "Sign in with a passkey"
+security.passkey.invalid: "Passkey authentication failed."
+security.passkey.options_failed: "Could not start passkey login."
+security.passkey.cancelled: "Passkey ceremony was cancelled."
+security.passkey.unsupported: "Passkeys are not supported in this browser."
+security.passkey.profile_heading: "Passkeys"
+security.passkey.profile_help: "Use Face ID, Touch ID, iCloud Passwords, Bitwarden, or a security key to sign in without a password."
+security.passkey.empty: "No passkeys yet — create one with the button below."
+security.passkey.name_placeholder: "Name (optional)"
+security.passkey.add: "Create a passkey on this device"
+security.passkey.rename: "Rename"
+security.passkey.delete: "Remove"
+security.passkey.delete_confirm: "Remove this passkey?"
+security.passkey.renamed: "Passkey renamed."
+security.passkey.deleted: "Passkey removed."
+security.passkey.registered: "Passkey registered."
+security.passkey.error_name: "Enter a valid passkey name."
+security.passkey.error_delete: "Could not remove the passkey."
+security.passkey.error_register: "Could not register the passkey."
+security.passkey.last_used: "Last used {date}"
+security.passkey.never_used: "Never used"
+security.profile_heading: "Account security"
+security.passkey.step_1: "Tap “Create a passkey on this device”."
+security.passkey.step_2: "Confirm with Face ID / Touch ID, or choose Passwords or Bitwarden in the system sheet."
+security.passkey.step_3: "When it succeeds, the passkey appears in the list below — you can rename it later."
+security.passkey.ios_tip: "On iPhone, use Safari over HTTPS with your domain name — not an IP, and not “Non sécurisé”."
+security.passkey.status_preparing: "Preparing…"
+security.passkey.status_waiting_device: "Waiting for Face ID, Passwords, or Bitwarden…"
+security.passkey.status_saving: "Saving your passkey…"
+security.passkey.error_already_registered: "A passkey for this account already exists on this device."
+security.passkey.error_origin: "This browser refused the passkey. Use HTTPS and the exact site domain (not an IP address)."
+security.passkey.error_insecure: "Passkeys need HTTPS. This page is not secure (HTTP) — open the site with https:// and a domain name."
+security.passkey.error_ip: "Passkeys cannot use a raw IP address. Open the site with its HTTPS domain name (not 37.x.x.x)."
+security.passkey.error_domain_required: "Passkeys require a configured public domain name (HTTPS). Configure DNS/certificates first."
+monitoring.health.label: "Host health"
+monitoring.health.grade_healthy: "Healthy"
+monitoring.health.grade_degraded: "Degraded"
+monitoring.health.grade_critical: "Critical"
+monitoring.health.grade_unknown: "Unknown"
+monitoring.health.detail: "CPU {cpu}% · RAM {ram}% · Disk {disk}% · {alerts, plural, =0 {no alerts} one {# alert} other {# alerts}}"
+monitoring.health.fetch_failed: "Could not load host health score."
+settings.notifications: "Notifications"
+settings.notifications.purpose: "Host notification rules for CPU, disk, and SMART via email or Discord."
+settings.notifications.intro: "When enabled, the host timer evaluates rules about every minute and notifies configured channels (with cooldown). Requires advanced metrics."
+settings.notifications.section.general: "Delivery"
+settings.notifications.section.channels: "Channels"
+settings.notifications.section.rules: "Rules"
+settings.notifications.enabled: "Enable notifications"
+settings.notifications.cooldown: "Cooldown (minutes)"
+settings.notifications.channel_email: "Email"
+settings.notifications.channel_discord: "Discord webhook"
+settings.notifications.email_recipients: "Email recipients (one per line)"
+settings.notifications.discord_webhook: "Discord webhook URL"
+settings.notifications.cpu_enabled: "CPU usage"
+settings.notifications.cpu_warn: "Warn %"
+settings.notifications.cpu_crit: "Critical %"
+settings.notifications.disk_enabled: "Root disk usage"
+settings.notifications.disk_warn: "Warn %"
+settings.notifications.disk_crit: "Critical %"
+settings.notifications.smart_enabled: "SMART health"
+settings.notifications.smart_failed: "Notify on SMART failed"
+settings.notifications.smart_unknown: "Notify on SMART unknown"
+settings.notifications.flash.saved: "Notification rules saved."
+troubleshooting.section.diagnostics: "Diagnostics bundle"
+troubleshooting.section.diagnostics_help: "Download a zip with license overview, support status, readable logs, and Caddy snippets (secrets redacted) for support tickets."
+troubleshooting.diagnostics.download: "Download diagnostics zip"
+troubleshooting.audit_diagnostics_bundle: "Downloaded diagnostics bundle"
+settings.notifications.certificates_enabled: "TLS certificates"
+settings.notifications.certificates_days: "Days before expiry"
+settings.notifications.certificates_expired: "Notify when expired"
+settings.notifications.fail2ban_ban_enabled: "Fail2ban new bans"
+app.store.job.hide: "Hide"
+app.store.job.cancel: "Cancel"
+app.store.job.view_log: "View log"
+app.store.job.running_banner: "Job still running: {title}"
+app.store.job.reattached: "↻ Reattached to job…"
+app.store.job.cancel_requested: "Cancel requested…"
+app.store.job.cancel_failed: "Could not cancel the job."
+app.store.job.cancelled: "Job cancelled."
+app.store.job.already_running: "A job is already running for this app."
+command_palette.placeholder: "Type a command or search…"
+command_palette.hint: "↑↓ navigate · Enter open · Esc close"
+command_palette.empty: "No matches"
+command_palette.group.navigation: "Navigation"
+command_palette.group.apps: "Apps"
+command_palette.group.actions: "Actions"
+command_palette.home: "Dashboard"
+command_palette.open_modal: "Open"
+downloads.title: "Downloads"
+downloads.section: "Activity"
+downloads.purpose: "Live speeds and active transfers from your torrent and NZB clients."
+downloads.intro: "Activity from installed download clients (qBittorrent, SABnzbd, NZBGet, and more)."
+downloads.summary.download: "Download"
+downloads.summary.upload: "Upload"
+downloads.summary.active: "Active"
+downloads.summary.errors: "Errors"
+downloads.summary.downloading: "Downloading"
+downloads.summary.seeding: "Seeding"
+downloads.summary.paused: "Paused"
+downloads.summary.stopped: "Stopped"
+downloads.summary.errors_suffix: "unreachable client(s)"
+downloads.state.loaded: "loaded"
+downloads.state.downloading: "downloading"
+downloads.state.seeding: "seeding"
+downloads.state.paused: "paused"
+downloads.state.stopped: "stopped"
+downloads.empty: "No download clients installed for your account."
+downloads.empty_filtered: "No clients match this filter."
+downloads.status.unreachable: "Unreachable"
+downloads.status.unreachable_hint: "Could not reach this client."
+downloads.status.why: "Why?"
+downloads.status.why_hide: "Hide"
+downloads.error.no_port: "No local port is configured for this app (check its .env / service ports)."
+downloads.error.no_password: "No password was found in the vault for this app (or your account)."
+downloads.error.auth_failed: "Login was rejected — the stored password may not match the app."
+downloads.error.connection: "The app did not answer on localhost (is the service running?)."
+downloads.error.bad_response: "The app answered but the API response was unexpected."
+downloads.error.daemon: "The download daemon socket or process is unavailable."
+downloads.error.exception: "The probe crashed unexpectedly while contacting the app."
+downloads.error.unsupported: "This app is installed but Activity does not know how to probe it yet."
+downloads.error.probe_failed: "The live status request failed (network or server error)."
+downloads.error.unreachable: "Could not reach this client. Check that the app is running."
+downloads.status.active: "Active"
+downloads.status.idle: "Idle"
+downloads.kind.torrent: "Torrent"
+downloads.kind.nzb: "NZB"
+downloads.kind.hoster: "Direct Download"
+downloads.status.loading: "Loading…"
+downloads.client_idle: "No active transfers."
+downloads.more_transfers: "+{count} more"
+downloads.filters.label: "Filter clients"
+downloads.filters.all: "All"
+downloads.filters.active: "Active"
+downloads.filters.idle: "Idle"
+downloads.filters.error: "Errors"
+downloads.updated.just_now: "Updated just now"
+downloads.updated.seconds: "Updated {count}s ago"
+downloads.updated.minutes: "Updated {count}m ago"
+downloads.updated.refreshing: "Refreshing…"

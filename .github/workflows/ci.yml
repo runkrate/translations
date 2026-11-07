@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PyYAML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends python3-yaml
+
+      - name: Validate translation catalogs
+        run: |
+          python3 - <<'PY'
+          import pathlib
+          import sys
+          import yaml
+
+          root = pathlib.Path(".")
+          required = [
+              pathlib.Path("en/cli/messages.yaml"),
+              pathlib.Path("en/web/messages+intl-icu.yaml"),
+              pathlib.Path("fr/cli/messages.yaml"),
+              pathlib.Path("fr/web/messages+intl-icu.yaml"),
+          ]
+          missing = [p for p in required if not p.is_file()]
+          if missing:
+              print("Missing required catalogs:", file=sys.stderr)
+              for p in missing:
+                  print(f"  {p}", file=sys.stderr)
+              sys.exit(1)
+
+          errors = 0
+          for path in sorted(root.glob("*/*/*.yaml")):
+              try:
+                  with path.open(encoding="utf-8") as fh:
+                      yaml.safe_load(fh)
+                  print(f"OK {path}")
+              except Exception as exc:  # noqa: BLE001 — surface parse errors in CI
+                  print(f"FAIL {path}: {exc}", file=sys.stderr)
+                  errors += 1
+          if errors:
+              sys.exit(1)
+          PY
