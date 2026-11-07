@@ -2179,6 +2179,7 @@ user.password: "User Password"
 user.preferences: Preferences
 user.preferences.flash.saved: "Your preferences have been updated successfully."
 user.preferences.flash.validation_error: "Some preferences could not be saved. Please fix the errors below."
+user.preferences.flash.zen_language_override_failed: "Your interface language was saved, but the CLI language override could not be updated."
 user.profile.my: "My Profile"
 user.profile.change_password: "Change your password"
 user.registered_at: "Registered At"

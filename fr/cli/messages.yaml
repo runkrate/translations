@@ -588,6 +588,12 @@ errors.set.invalid_apt_auto_upgrade: "Valeur apt-auto-upgrade invalide : {arg0}.
 errors.set.update_channel_not_licensed: "Le canal beta nécessite une licence beta ou développeur."
 errors.set.missing_value: "Missing value for setting: {arg0}"
 errors.set.update_failed: "Failed to update setting {arg0}: {arg1}"
+errors.set.invalid_language: "Langue invalide : {arg0}. Utilisez un code de locale UI installé (ex. en, fr)."
+errors.set.language_target_required: "Indiquez zen set language <code> --global ou zen set language <code> <username>."
+errors.set.invalid_language_user: "Utilisateur inconnu ou répertoire home manquant : {arg0}."
+errors.set.language_override_write_failed: "Échec de l'écriture du override de langue pour {arg0}."
+success.set.language_global: "Langue UI globale définie sur {arg0}."
+success.set.language_user: "Langue UI de {arg1} définie sur {arg0}."
 errors.domain.empty_apex: Apex domain cannot be empty.
 errors.domain.invalid_apex: "Invalid apex domain: {arg0}"
 errors.domain.invalid_subdomain_label: "Invalid subdomain label: {arg0}"
