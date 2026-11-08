@@ -2179,6 +2179,7 @@ user.password: "Mot de passe de l'utilisateur"
 user.preferences: Préférences
 user.preferences.flash.saved: "Vos préférences ont été enregistrées."
 user.preferences.flash.validation_error: "Certaines préférences n'ont pas pu être enregistrées. Corrigez les erreurs ci-dessous."
+user.preferences.flash.zen_language_override_failed: "Votre langue d'interface a été enregistrée, mais le override de langue CLI n'a pas pu être mis à jour."
 user.profile.my: "Mon profil"
 user.profile.change_password: "Changer votre mot de passe"
 user.registered_at: "Enregistré à"

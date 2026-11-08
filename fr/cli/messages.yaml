@@ -588,6 +588,12 @@ errors.set.invalid_apt_auto_upgrade: "Valeur apt-auto-upgrade invalide : {arg0}.
 errors.set.update_channel_not_licensed: "Le canal beta nécessite une licence beta ou développeur."
 errors.set.missing_value: "Missing value for setting: {arg0}"
 errors.set.update_failed: "Failed to update setting {arg0}: {arg1}"
+errors.set.invalid_language: "Langue invalide : {arg0}. Utilisez un code de locale UI installé (ex. en, fr)."
+errors.set.language_target_required: "Indiquez zen set language <code> --global ou zen set language <code> <username>."
+errors.set.invalid_language_user: "Utilisateur inconnu ou répertoire home manquant : {arg0}."
+errors.set.language_override_write_failed: "Échec de l'écriture du override de langue pour {arg0}."
+success.set.language_global: "Langue UI globale définie sur {arg0}."
+success.set.language_user: "Langue UI de {arg1} définie sur {arg0}."
 errors.domain.empty_apex: Apex domain cannot be empty.
 errors.domain.invalid_apex: "Invalid apex domain: {arg0}"
 errors.domain.invalid_subdomain_label: "Invalid subdomain label: {arg0}"
@@ -599,7 +605,7 @@ errors.domain.user_site_write_failed: "Failed to write Caddy site block for user
 errors.domain.user_subdomain_persist_failed: "Failed to persist subdomain for user {arg0}"
 errors.domain.proxy_regenerate_failed: "Failed to regenerate proxy snippets for user {arg0}"
 errors.domain.apex_not_configured: Configure the apex domain before assigning user subdomains.
-errors.domain.caddy_reload_failed: Caddy reload failed after domain update.
+errors.domain.caddy_reload_failed: "Échec de la validation/rechargement Caddy."
 errors.domain.vsftpd_openssl_missing: OpenSSL is required to regenerate the VSFTPD TLS certificate.
 errors.domain.vsftpd_cert_generate_failed: Failed to regenerate the VSFTPD TLS certificate.
 errors.domain.vsftpd_restart_failed: VSFTPD TLS certificate was updated but the service restart failed.
