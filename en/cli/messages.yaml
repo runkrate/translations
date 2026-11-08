@@ -605,7 +605,7 @@ errors.domain.user_site_write_failed: "Failed to write Caddy site block for user
 errors.domain.user_subdomain_persist_failed: "Failed to persist subdomain for user {arg0}"
 errors.domain.proxy_regenerate_failed: "Failed to regenerate proxy snippets for user {arg0}"
 errors.domain.apex_not_configured: Configure the apex domain before assigning user subdomains.
-errors.domain.caddy_reload_failed: Caddy reload failed after domain update.
+errors.domain.caddy_reload_failed: Caddy validate/reload failed.
 errors.domain.vsftpd_openssl_missing: OpenSSL is required to regenerate the VSFTPD TLS certificate.
 errors.domain.vsftpd_cert_generate_failed: Failed to regenerate the VSFTPD TLS certificate.
 errors.domain.vsftpd_restart_failed: VSFTPD TLS certificate was updated but the service restart failed.
