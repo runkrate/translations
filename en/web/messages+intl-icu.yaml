@@ -1034,11 +1034,16 @@ firewall.infobox.title: "Declared firewall openings (read-only)"
 firewall.purpose: "Read-only list of ports Krate opened in nftables (not editable here)."
 firewall.title: Firewall
 firewall.fail2ban.title: Fail2ban
-firewall.fail2ban.help: "Jails and currently banned IPs on this host. Unban when a legitimate client is blocked."
+firewall.fail2ban.help: "Jails and currently banned IPs on this host. Ban or unban IPs without SSH."
 firewall.fail2ban.banned_ips: Banned IPs
 firewall.fail2ban.unban: Unban
 firewall.fail2ban.unban_ok: IP unbanned.
 firewall.fail2ban.unban_failed: "Could not unban IP."
+firewall.fail2ban.ban: Ban IP
+firewall.fail2ban.ban_ok: IP banned.
+firewall.fail2ban.ban_failed: "Could not ban IP."
+firewall.fail2ban.ip: IP address
+firewall.fail2ban.select_jail: Select a jail
 vpn.title: VPN Control
 vpn.purpose: "Manage WireGuard system peers, gateway enrollment, and app-scoped routes."
 vpn.error.heading: "VPN status unavailable"
@@ -1368,6 +1373,8 @@ general.access_url: "Access URL"
 general.api_key: "Api Key"
 general.api_key.optional: "API Key is optional."
 general.api_key_or_socket: "API Key / URL"
+general.api_docs: "API documentation"
+general.api_docs.try: "Open Swagger / Try it out"
 general.available: Available
 general.back_to_list: "Back to list"
 general.ban: Ban
@@ -1701,6 +1708,11 @@ network.subdomains: Subdomains
 network.upload_speed: "Upload Speed"
 notification.center.empty: "No new notifications."
 notification.center.title: "Notification Center"
+notification.center.open: Open
+notification.center.pending_users.title: "Pending account activations"
+notification.center.pending_users.body: "{count} user(s) waiting for validation in Users."
+notification.center.announcements.title: "Compose announcement"
+notification.center.announcements.body: "Publish a banner for users from Announcements."
 registration.confirm_email_subject: "Please confirm your email address"
 service.child: "Child Service"
 service.name: "Service Name"
@@ -2159,6 +2171,9 @@ user.account.not_verified: "Account not verified"
 user.account.verified: "Account verified"
 user.activated_at: "Activated At"
 user.activations.pending: "Pending Activations"
+user.activations.approve: Approve
+user.activations.reject: Reject
+user.activations.reject_help: "Reject and delete this pending registration."
 user.auth.back_to_login: "Back to login"
 user.auth.forgot_password: "Forgot Password ?"
 user.auth.login: Login
@@ -3002,6 +3017,14 @@ settings.notifications.intro: "When enabled, the host timer evaluates rules abou
 settings.notifications.section.general: "Delivery"
 settings.notifications.section.channels: "Channels"
 settings.notifications.section.rules: "Rules"
+settings.notifications.section.test: "Test delivery"
+settings.notifications.last_run: "Last run"
+settings.notifications.last_run.none: "No dispatch yet."
+settings.notifications.test.email: "Test email"
+settings.notifications.test.discord: "Test Discord"
+settings.notifications.test.all: "Test enabled channels"
+settings.notifications.test.ok: "Test notification sent."
+settings.notifications.test.failed: "Test notification failed."
 settings.notifications.enabled: "Enable notifications"
 settings.notifications.cooldown: "Cooldown (minutes)"
 settings.notifications.channel_email: "Email"
@@ -3047,7 +3070,22 @@ downloads.title: "Downloads"
 downloads.section: "Activity"
 downloads.purpose: "Live speeds and active transfers from your torrent and NZB clients."
 downloads.intro: "Activity from installed download clients (qBittorrent, SABnzbd, NZBGet, and more)."
+downloads.open_fleet: "Open Fleet"
+downloads.torrents.title: "Torrents"
+downloads.torrents.pause: "Pause"
+downloads.torrents.resume: "Resume"
+downloads.torrents.stop: "Stop"
+downloads.torrents.empty: "No torrents yet."
+downloads.torrents.col.name: "Name"
+downloads.torrents.col.state: "State"
+downloads.torrents.col.size: "Size"
+downloads.torrents.col.ratio: "Ratio"
+downloads.torrents.col.peers: "Peers"
+downloads.torrents.col.seeds: "Seeds"
+downloads.torrents.col.client: "Client"
 downloads.summary.download: "Download"
+downloads.summary.rec: "Rec"
+downloads.summary.env: "Env"
 downloads.summary.upload: "Upload"
 downloads.summary.active: "Active"
 downloads.summary.errors: "Errors"
@@ -3094,3 +3132,105 @@ downloads.updated.just_now: "Updated just now"
 downloads.updated.seconds: "Updated {count}s ago"
 downloads.updated.minutes: "Updated {count}m ago"
 downloads.updated.refreshing: "Refreshing…"
+settings.notifications.quiet_hours: Quiet hours
+settings.notifications.quiet_hours_start: Quiet hours start (hour 0–23)
+settings.notifications.quiet_hours_end: Quiet hours end (hour 0–23)
+security.impersonation.switch: Impersonate
+security.impersonation.banner: "You are impersonating {user}."
+security.impersonation.exit: Exit impersonation
+security.delete_protection.title: Delete Protection
+security.delete_protection.help: Block destructive app removals and large media deletes when enabled.
+security.delete_protection.enabled: Enable Delete Protection
+security.delete_protection.block_app_remove: Block application remove
+security.delete_protection.block_media_delete: Block media library deletes
+security.delete_protection.max_bulk: Max bulk delete items
+security.delete_protection.saved: Delete Protection settings saved.
+security.delete_protection.blocked_media: Delete Protection blocked this media delete.
+security.delete_protection.blocked_app: Delete Protection blocked this application remove.
+logs.admin_audit.title: Admin audit
+logs.admin_audit.purpose: Recent privileged admin actions recorded on this host.
+logs.admin_audit.help: Tail of admin-audit.jsonl (newest first).
+logs.admin_audit.col.ts: Time
+logs.admin_audit.col.action: Action
+logs.admin_audit.col.actor: Actor
+logs.admin_audit.col.ip: IP
+logs.admin_audit.col.context: Context
+logs.admin_audit.empty: No audit events yet.
+command_palette.playback_sessions: Playback · Live sessions
+command_palette.host_health: Host health / Delete Protection
+backups.restore.action: Restore
+backups.restore.confirm: Restore this archive over the live application data? The service may restart.
+backups.restore.done: Application backup restored.
+backups.create.action: Backup now
+backups.create.running: Creating application backup…
+backups.create.done: Application backup created.
+backups.error.restore_failed: Could not restore the backup.
+backups.error.create_failed: Could not create the backup.
+notification.center.disk_quota.title: Disk quota nearly full
+notification.center.disk_quota.body: "You are using {percent}% of your disk quota."
+downloads.torrents.col.path: Path
+downloads.torrents.open_folder: Open folder
+security.geo_lock.title: Login geo-lock
+security.geo_lock.help: Restrict interactive login (password, passkey, TOTP) to allowed countries. API keys and JWT login are not affected. Empty allowlist with geo-lock enabled blocks all public IPs.
+security.geo_lock.enabled: Enable login geo-lock
+security.geo_lock.allow_private: Always allow private / LAN addresses
+security.geo_lock.countries: Allowed countries (ISO 3166-1 alpha-2, comma-separated)
+security.geo_lock.unknown: When country cannot be resolved
+security.geo_lock.unknown_allow: Allow (fail-open)
+security.geo_lock.unknown_deny: Deny (fail-closed)
+security.geo_lock.saved: Login geo-lock settings saved.
+security.geo_lock.blocked: Sign-in from your location is not allowed on this host.
+settings.notifications.channel_webhook: Generic HTTPS webhook
+settings.notifications.webhook_url: Webhook URL (HTTPS JSON POST)
+settings.notifications.test.webhook: Test webhook
+troubleshooting.storage_cockpit.title: Storage health (SMART / RAID)
+troubleshooting.storage_cockpit.help: Read-only view from the host telemetry snapshot. No mdadm management from this panel.
+troubleshooting.storage_cockpit.smart: SMART disks
+troubleshooting.storage_cockpit.pools: RAID / ZFS / Btrfs
+troubleshooting.storage_cockpit.loading: Loading snapshot…
+troubleshooting.storage_cockpit.updated: Updated from telemetry snapshot.
+troubleshooting.storage_cockpit.empty_smart: No SMART disks in snapshot.
+troubleshooting.storage_cockpit.empty_pools: No RAID/ZFS/Btrfs pools in snapshot.
+troubleshooting.hardware_lite.thermals: Thermals
+troubleshooting.hardware_lite.help: Read-only sensors from the telemetry snapshot (no fan RPM inventory yet).
+troubleshooting.hardware_lite.sensor: Sensor
+troubleshooting.hardware_lite.kind: Kind
+troubleshooting.hardware_lite.temp: Temp
+troubleshooting.hardware_lite.empty_thermals: No thermal sensors in snapshot.
+troubleshooting.bandwidth_history.title: Bandwidth history (24h)
+troubleshooting.bandwidth_history.help: Rolling totals from persisted NIC samples (vnStat-lite).
+troubleshooting.bandwidth_history.loading: Loading bandwidth history…
+troubleshooting.bandwidth_history.updated: Updated from persisted samples.
+troubleshooting.bandwidth_history.summary: "{interface}: ↓ {rx} · ↑ {tx} ({hours}h window)"
+monitoring.bandwidth_history.fetch_failed: Failed to load bandwidth history.
+firewall.quick_harden.apply: Quick Harden
+firewall.quick_harden.help: "Re-apply declared firewall rules (zen firewall::apply). One-shot; no interactive conflict resolver."
+firewall.quick_harden.running: Applying firewall rules…
+firewall.quick_harden.ok: Firewall rules applied.
+firewall.quick_harden.failed: Firewall apply failed.
+settings.notifications.webhook_urls: HTTPS webhook URLs (one per line)
+settings.notifications.section.compose: Compose test message
+settings.notifications.compose.title: Title
+settings.notifications.compose.title_placeholder: Optional custom title
+settings.notifications.compose.detail: Detail
+settings.notifications.compose.detail_placeholder: Optional custom detail for the next test send
+downloads.browse_files: Browse files
+app.settings.file.proxy_caddy: Edit Caddy proxy
+app.settings.proxy_auth.toggle: Toggle Caddy web-login
+app.settings.proxy_auth.enable: Enable Caddy web-login
+app.settings.proxy_auth.disable: Disable Caddy web-login
+playback.maintain.run_now: Run maintenance now
+playback.maintain.help: Runs pause rules, transcode cleanup, and activity purge in the background.
+playback.maintain.running: Starting maintenance…
+playback.maintain.started: Maintenance started.
+playback.maintain.error: Failed to start maintenance.
+playback.settings.geoip.lock_enabled: Enforce country allowlist on sessions
+playback.settings.geoip.lock_help: Marks (or stops) live sessions outside the allowlist. Login geo-lock is separate (Firewall).
+playback.settings.geoip.countries: Allowed countries (ISO alpha-2)
+playback.settings.geoip.allow_private: Always allow private / LAN addresses
+playback.settings.geoip.unknown: When country cannot be resolved
+playback.settings.geoip.unknown_allow: Allow (fail-open)
+playback.settings.geoip.unknown_deny: Deny (fail-closed)
+playback.settings.geoip.action: Blocked session action
+playback.settings.geoip.action_flag: Flag only
+playback.settings.geoip.action_stop: Stop session
