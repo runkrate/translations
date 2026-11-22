@@ -1959,6 +1959,15 @@ system.update.changelog_subtitle: "Notes de version de la version actuellement i
 system.update.changelog_view_next: "Voir le changelog de la mise à jour ({version})"
 system.update.changelog_when_available: "Vérifiez les mises à jour pour afficher le changelog lorsqu'une nouvelle version est disponible."
 system.update.channel: Canal
+system.update.channel_heading: Canal de mise à jour
+system.update.channel_help: "Choisissez les versions stables (main) ou bêta. La bêta peut exiger une licence adaptée."
+system.update.channel_main: Main (stable)
+system.update.channel_beta: Bêta
+system.update.channel_save: Enregistrer le canal
+system.update.channel_saving: Enregistrement du canal…
+system.update.channel_saved: Canal de mise à jour enregistré.
+system.update.channel_failed: Échec de l’enregistrement du canal.
+system.update.channel_invalid: Choisissez main ou bêta.
 system.update.check_error_title: "Échec de la vérification des mises à jour KRATE"
 system.update.checking: "Vérification des mises à jour…"
 system.update.confirm: "Mettre à jour"

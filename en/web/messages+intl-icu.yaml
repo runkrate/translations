@@ -1959,6 +1959,15 @@ system.update.changelog_subtitle: "Release notes for the version currently runni
 system.update.changelog_view_next: "View update changelog ({version})"
 system.update.changelog_when_available: "Check for updates to see the changelog when a new version is available."
 system.update.channel: Channel
+system.update.channel_heading: Update channel
+system.update.channel_help: "Choose stable (main) or beta releases. Beta may require a matching license."
+system.update.channel_main: Main (stable)
+system.update.channel_beta: Beta
+system.update.channel_save: Save channel
+system.update.channel_saving: Saving channel…
+system.update.channel_saved: Update channel saved.
+system.update.channel_failed: Failed to save update channel.
+system.update.channel_invalid: Choose main or beta.
 system.update.check_error_title: "KRATE update check failed"
 system.update.checking: "Checking for updates…"
 system.update.confirm: "Update now"
