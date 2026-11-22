@@ -3332,8 +3332,8 @@ troubleshooting.bandwidth_history.summary_period: "{interface} : ↓ {rx} · ↑
 troubleshooting.bandwidth_history.period_day: Jour
 troubleshooting.bandwidth_history.period_month: Mois
 troubleshooting.bandwidth_history.month_unavailable: Les totaux mensuels nécessitent vnStat sur l’hôte.
-troubleshooting.bandwidth_history.source_vnstat: Source : JSON vnStat.
-troubleshooting.bandwidth_history.source_samples: Source : échantillons NIC persistés (24 h).
+troubleshooting.bandwidth_history.source_vnstat: "Source : JSON vnStat."
+troubleshooting.bandwidth_history.source_samples: "Source : échantillons NIC persistés (24 h)."
 troubleshooting.raid_manage.title: RAID logiciel
 troubleshooting.raid_manage.help: Détecter les disques candidats, créer un volume mdadm, puis formater et monter. Les actions destructives sont auditées.
 troubleshooting.raid_manage.detect: Détecter les disques
