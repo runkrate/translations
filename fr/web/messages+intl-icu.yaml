@@ -1034,11 +1034,16 @@ firewall.infobox.title: "Ouvertures pare-feu déclarées (lecture seule)"
 firewall.purpose: "Liste en lecture seule des ports ouverts par Krate dans nftables (non modifiable ici)."
 firewall.title: Pare-feu
 firewall.fail2ban.title: Fail2ban
-firewall.fail2ban.help: "Jails et adresses IP actuellement bannies sur cet hôte. Débannez un client légitime bloqué."
+firewall.fail2ban.help: "Jails et adresses IP actuellement bannies sur cet hôte. Bannissez ou débannez sans SSH."
 firewall.fail2ban.banned_ips: IP bannies
 firewall.fail2ban.unban: Débannir
 firewall.fail2ban.unban_ok: IP débannie.
 firewall.fail2ban.unban_failed: "Impossible de débannir l’IP."
+firewall.fail2ban.ban: Bannir l’IP
+firewall.fail2ban.ban_ok: IP bannie.
+firewall.fail2ban.ban_failed: "Impossible de bannir l’IP."
+firewall.fail2ban.ip: Adresse IP
+firewall.fail2ban.select_jail: Choisir une jail
 vpn.title: Contrôle VPN
 vpn.purpose: "Gérer les peers WireGuard système, l’enrollment gateway et les routes par application."
 vpn.error.heading: "Statut VPN indisponible"
@@ -1366,6 +1371,8 @@ general.actions: Actions
 general.adjustments_performance: "Les ajustements ici peuvent affecter considérablement les performances et le comportement de vos applications."
 general.access_url: "URL d'accès"
 general.api_key: "Clé API"
+general.api_docs: "Documentation API"
+general.api_docs.try: "Ouvrir Swagger / Essayer"
 general.api_key.optional: "La clé API est facultative."
 general.api_key_or_socket: "Clé API / URL"
 general.available: Disponible
@@ -1701,6 +1708,11 @@ network.subdomains: Sous-domaines
 network.upload_speed: "Vitesse de téléversement"
 notification.center.empty: "Aucune nouvelle notification."
 notification.center.title: "Centre de notifications"
+notification.center.open: Ouvrir
+notification.center.pending_users.title: "Activations de comptes en attente"
+notification.center.pending_users.body: "{count} utilisateur(s) en attente de validation dans Utilisateurs."
+notification.center.announcements.title: "Rédiger une annonce"
+notification.center.announcements.body: "Publier une bannière depuis Annonces."
 registration.confirm_email_subject: "Veuillez confirmer votre adresse email"
 service.child: "Service enfant"
 service.name: "Nom du service"
@@ -2159,6 +2171,9 @@ user.account.not_verified: "Compte non vérifié"
 user.account.verified: "Compte vérifié"
 user.activated_at: "Activé à"
 user.activations.pending: "Activations en attente"
+user.activations.approve: Approuver
+user.activations.reject: Rejeter
+user.activations.reject_help: "Rejeter et supprimer cette inscription en attente."
 user.auth.back_to_login: "Retour à la connexion"
 user.auth.forgot_password: "Mot de passe oublié ?"
 user.auth.login: Connexion
@@ -3002,6 +3017,14 @@ settings.notifications.intro: "Quand c’est activé, le timer hôte évalue les
 settings.notifications.section.general: "Envoi"
 settings.notifications.section.channels: "Canaux"
 settings.notifications.section.rules: "Règles"
+settings.notifications.section.test: "Test d’envoi"
+settings.notifications.last_run: "Dernière exécution"
+settings.notifications.last_run.none: "Aucune exécution pour l’instant."
+settings.notifications.test.email: "Tester l’e-mail"
+settings.notifications.test.discord: "Tester Discord"
+settings.notifications.test.all: "Tester les canaux activés"
+settings.notifications.test.ok: "Notification de test envoyée."
+settings.notifications.test.failed: "Échec de la notification de test."
 settings.notifications.enabled: "Activer les notifications"
 settings.notifications.cooldown: "Cooldown (minutes)"
 settings.notifications.channel_email: "E-mail"
@@ -3047,6 +3070,21 @@ downloads.title: "Téléchargements"
 downloads.section: "Activité"
 downloads.purpose: "Débits et transferts actifs de vos clients torrent et NZB."
 downloads.intro: "Activité des clients de téléchargement installés (qBittorrent, SABnzbd, NZBGet, etc.)."
+downloads.open_fleet: "Ouvrir Fleet"
+downloads.torrents.title: "Torrents"
+downloads.torrents.stop: "Arrêter"
+downloads.torrents.col.size: "Taille"
+downloads.torrents.col.seeds: "Seeds"
+downloads.summary.rec: "Rec"
+downloads.summary.env: "Env"
+downloads.torrents.pause: "Pause"
+downloads.torrents.resume: "Reprendre"
+downloads.torrents.empty: "Aucun torrent pour le moment."
+downloads.torrents.col.name: "Nom"
+downloads.torrents.col.state: "État"
+downloads.torrents.col.ratio: "Ratio"
+downloads.torrents.col.peers: "Pairs"
+downloads.torrents.col.client: "Client"
 downloads.summary.download: "Téléchargement"
 downloads.summary.upload: "Envoi"
 downloads.summary.active: "Actifs"
@@ -3094,3 +3132,39 @@ downloads.updated.just_now: "Mis à jour à l’instant"
 downloads.updated.seconds: "Mis à jour il y a {count} s"
 downloads.updated.minutes: "Mis à jour il y a {count} min"
 downloads.updated.refreshing: "Actualisation…"
+settings.notifications.quiet_hours: Heures calmes
+settings.notifications.quiet_hours_start: Début heures calmes (heure 0–23)
+settings.notifications.quiet_hours_end: Fin heures calmes (heure 0–23)
+security.impersonation.switch: Usurper
+security.impersonation.banner: "Vous usurpez {user}."
+security.impersonation.exit: Quitter l’usurpation
+security.delete_protection.title: Delete Protection
+security.delete_protection.help: Bloque les suppressions d’apps et les grosses suppressions média lorsque activé.
+security.delete_protection.enabled: Activer Delete Protection
+security.delete_protection.block_app_remove: Bloquer la désinstallation d’applications
+security.delete_protection.block_media_delete: Bloquer les suppressions média
+security.delete_protection.max_bulk: Seuil de suppression en masse
+security.delete_protection.saved: Réglages Delete Protection enregistrés.
+security.delete_protection.blocked_media: Delete Protection a bloqué cette suppression média.
+security.delete_protection.blocked_app: Delete Protection a bloqué cette désinstallation.
+logs.admin_audit.title: Audit admin
+logs.admin_audit.purpose: Actions admin privilégiées récentes sur cet hôte.
+logs.admin_audit.help: Fin de admin-audit.jsonl (plus récent en premier).
+logs.admin_audit.col.ts: Heure
+logs.admin_audit.col.action: Action
+logs.admin_audit.col.actor: Acteur
+logs.admin_audit.col.ip: IP
+logs.admin_audit.col.context: Contexte
+logs.admin_audit.empty: Aucun événement d’audit pour l’instant.
+command_palette.playback_sessions: Playback · Sessions live
+command_palette.host_health: Santé hôte / Delete Protection
+backups.restore.action: Restaurer
+backups.restore.confirm: Restaurer cette archive sur les données live ? Le service peut redémarrer.
+backups.restore.done: Sauvegarde d’application restaurée.
+backups.create.action: Sauvegarder
+backups.create.running: Création de la sauvegarde…
+backups.create.done: Sauvegarde d’application créée.
+backups.error.restore_failed: Impossible de restaurer la sauvegarde.
+backups.error.create_failed: Impossible de créer la sauvegarde.
+notification.center.disk_quota.title: Quota disque presque plein
+notification.center.disk_quota.body: "Vous utilisez {percent}% de votre quota disque."
