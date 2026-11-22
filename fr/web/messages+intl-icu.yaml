@@ -3389,6 +3389,7 @@ settings.notifications.compose.title_placeholder: Titre personnalisé (optionnel
 settings.notifications.compose.detail: Détail
 settings.notifications.compose.detail_placeholder: Détail personnalisé pour le prochain envoi test
 downloads.browse_files: Parcourir les fichiers
+downloads.open_browse_index: Ouvrir l’index de téléchargement
 downloads.files: Fichiers
 dashboard.fleet.files: Fichiers
 app.settings.file.proxy_caddy: Éditer le proxy Caddy
