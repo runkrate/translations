@@ -3246,7 +3246,10 @@ logs.admin_audit.col.ip: IP
 logs.admin_audit.col.context: Contexte
 logs.admin_audit.empty: Aucun événement d’audit pour l’instant.
 command_palette.playback_sessions: Playback · Sessions live
+command_palette.playback_intelligence: Playback · Intelligence
 command_palette.host_health: Santé hôte / Delete Protection
+command_palette.raid_storage: Stockage RAID
+command_palette.bandwidth: Bande passante / vnStat
 backups.restore.action: Restaurer
 backups.restore.confirm: Restaurer cette archive sur les données live ? Le service peut redémarrer.
 backups.restore.done: Sauvegarde d’application restaurée.
