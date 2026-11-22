@@ -154,6 +154,14 @@ app.settings.file.systemd_unit: "Fichier unité systemd"
 app.settings.load_failed: "Impossible de charger le fichier."
 app.settings.loading: Chargement…
 app.settings.no_targets: "Aucun fichier modifiable pour ce service."
+app.settings.database.open: Parcourir la base
+app.settings.database.title: Base de données de l’app
+app.settings.database.database: Base
+app.settings.database.table: Table
+app.settings.database.empty: Aucune ligne.
+app.settings.database.none: Aucune base SQLite trouvée pour cette app.
+app.settings.database.no_tables: Aucune table dans cette base.
+app.settings.database.failed: Impossible de charger l’aperçu de la base.
 app.socket_path: "Chemin du socket"
 app.sonarr-naacky.description: "Fork de Sonarr v4 develop orienté anime pour les médias CJK."
 app.sonarr.description: "Sonarr est un PVR pour les utilisateurs Usenet et BitTorrent. Il peut surveiller plusieurs flux RSS pour les nouveaux épisodes de vos émissions préférées et les récupérera, les triera et les renommera. Il peut également être configuré pour mettre à niveau automatiquement la qualité des fichiers déjà téléchargés lorsqu'un format de meilleure qualité devient disponible."
