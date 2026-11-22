@@ -3205,7 +3205,8 @@ settings.notifications.channel_webhook: Generic HTTPS webhook
 settings.notifications.webhook_url: Webhook URL (HTTPS JSON POST)
 settings.notifications.test.webhook: Test webhook
 troubleshooting.storage_cockpit.title: Storage health (SMART / RAID)
-troubleshooting.storage_cockpit.help: Read-only view from the host telemetry snapshot. No mdadm management from this panel.
+troubleshooting.storage_cockpit.help: Live view from the host telemetry snapshot, including RAID rebuild progress when available.
+troubleshooting.storage_cockpit.help_manage: Licensed hosts can also create and format software RAID arrays below.
 troubleshooting.storage_cockpit.smart: SMART disks
 troubleshooting.storage_cockpit.pools: RAID / ZFS / Btrfs
 troubleshooting.storage_cockpit.loading: Loading snapshot…
@@ -3218,11 +3219,50 @@ troubleshooting.hardware_lite.sensor: Sensor
 troubleshooting.hardware_lite.kind: Kind
 troubleshooting.hardware_lite.temp: Temp
 troubleshooting.hardware_lite.empty_thermals: No thermal sensors in snapshot.
-troubleshooting.bandwidth_history.title: Bandwidth history (24h)
-troubleshooting.bandwidth_history.help: Rolling totals from persisted NIC samples (vnStat-lite).
+troubleshooting.bandwidth_history.title: Bandwidth history
+troubleshooting.bandwidth_history.help: Prefers vnStat day/month totals when installed; otherwise rolling 24h NIC samples.
 troubleshooting.bandwidth_history.loading: Loading bandwidth history…
 troubleshooting.bandwidth_history.updated: Updated from persisted samples.
 troubleshooting.bandwidth_history.summary: "{interface}: ↓ {rx} · ↑ {tx} ({hours}h window)"
+troubleshooting.bandwidth_history.summary_period: "{interface}: ↓ {rx} · ↑ {tx} ({period})"
+troubleshooting.bandwidth_history.period_day: Day
+troubleshooting.bandwidth_history.period_month: Month
+troubleshooting.bandwidth_history.month_unavailable: Month totals need vnStat on the host.
+troubleshooting.bandwidth_history.source_vnstat: Source: vnStat JSON.
+troubleshooting.bandwidth_history.source_samples: Source: persisted 24h NIC samples.
+troubleshooting.raid_manage.title: Software RAID
+troubleshooting.raid_manage.help: Detect candidate disks, create an mdadm array, then format and mount it. Destructive actions are audited.
+troubleshooting.raid_manage.detect: Detect disks
+troubleshooting.raid_manage.create: Create array
+troubleshooting.raid_manage.format: Format & mount
+troubleshooting.raid_manage.level: Level
+troubleshooting.raid_manage.name: Array name
+troubleshooting.raid_manage.filesystem: Filesystem
+troubleshooting.raid_manage.mount_point: Mount point
+troubleshooting.raid_manage.device: Device
+troubleshooting.raid_manage.empty_devices: No candidate disks.
+troubleshooting.raid_manage.detecting: Detecting disks…
+troubleshooting.raid_manage.detect_ok: "{count} candidate disk(s)."
+troubleshooting.raid_manage.creating: Creating array…
+troubleshooting.raid_manage.formatting: Formatting…
+troubleshooting.raid_manage.confirm_create: Create RAID array? Member disks will be wiped.
+troubleshooting.raid_manage.confirm_format: Format and mount the RAID device? Existing data on the array will be erased.
+troubleshooting.raid_manage.job_started: "Job {id} started…"
+troubleshooting.raid_manage.job_done: RAID job finished.
+troubleshooting.raid_manage.job_failed: RAID job failed.
+troubleshooting.quick_actions.title: Quick actions
+troubleshooting.quick_actions.help: Free page cache and optionally reboot the host. Both actions are audited.
+troubleshooting.quick_actions.optimize: Free memory caches
+troubleshooting.quick_actions.reboot: Reboot host
+troubleshooting.confirm.host_optimize: Drop filesystem caches (sync + drop_caches)? Running workloads keep their memory.
+troubleshooting.confirm.host_reboot: Reboot this host now? Active sessions will be interrupted.
+troubleshooting.modal.host_optimize_title: Free memory caches
+troubleshooting.modal.host_reboot_title: Reboot host
+troubleshooting.running.host_optimize: Freeing memory caches…
+troubleshooting.running.host_reboot: Scheduling host reboot…
+monitoring.mounts_sync_mounted: Mounted
+monitoring.mounts_sync_online: Online
+monitoring.mounts_sync_help: Remote mount visible in telemetry (no live rclone transfer stats).
 monitoring.bandwidth_history.fetch_failed: Failed to load bandwidth history.
 firewall.quick_harden.apply: Quick Harden
 firewall.quick_harden.help: "Re-apply declared firewall rules (zen firewall::apply). Overlapping ports across instances are highlighted below."

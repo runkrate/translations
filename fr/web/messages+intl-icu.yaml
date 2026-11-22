@@ -3205,7 +3205,8 @@ settings.notifications.channel_webhook: Webhook HTTPS générique
 settings.notifications.webhook_url: URL du webhook (POST JSON HTTPS)
 settings.notifications.test.webhook: Tester le webhook
 troubleshooting.storage_cockpit.title: Santé stockage (SMART / RAID)
-troubleshooting.storage_cockpit.help: Vue en lecture seule depuis le snapshot télémétrie. Pas de gestion mdadm depuis ce panneau.
+troubleshooting.storage_cockpit.help: Vue live depuis le snapshot télémétrie, avec progression de rebuild RAID si disponible.
+troubleshooting.storage_cockpit.help_manage: Les hôtes licenciés peuvent aussi créer et formater des volumes RAID logiciels ci-dessous.
 troubleshooting.storage_cockpit.smart: Disques SMART
 troubleshooting.storage_cockpit.pools: RAID / ZFS / Btrfs
 troubleshooting.storage_cockpit.loading: Chargement du snapshot…
@@ -3218,11 +3219,50 @@ troubleshooting.hardware_lite.sensor: Capteur
 troubleshooting.hardware_lite.kind: Type
 troubleshooting.hardware_lite.temp: Temp.
 troubleshooting.hardware_lite.empty_thermals: Aucun capteur thermique dans le snapshot.
-troubleshooting.bandwidth_history.title: Historique bande passante (24 h)
-troubleshooting.bandwidth_history.help: Totaux glissants depuis des échantillons NIC persistés (vnStat-lite).
+troubleshooting.bandwidth_history.title: Historique bande passante
+troubleshooting.bandwidth_history.help: Préfère les totaux jour/mois vnStat si installé ; sinon échantillons NIC sur 24 h.
 troubleshooting.bandwidth_history.loading: Chargement de l’historique…
 troubleshooting.bandwidth_history.updated: Mis à jour depuis les échantillons persistés.
 troubleshooting.bandwidth_history.summary: "{interface} : ↓ {rx} · ↑ {tx} (fenêtre {hours} h)"
+troubleshooting.bandwidth_history.summary_period: "{interface} : ↓ {rx} · ↑ {tx} ({period})"
+troubleshooting.bandwidth_history.period_day: Jour
+troubleshooting.bandwidth_history.period_month: Mois
+troubleshooting.bandwidth_history.month_unavailable: Les totaux mensuels nécessitent vnStat sur l’hôte.
+troubleshooting.bandwidth_history.source_vnstat: Source : JSON vnStat.
+troubleshooting.bandwidth_history.source_samples: Source : échantillons NIC persistés (24 h).
+troubleshooting.raid_manage.title: RAID logiciel
+troubleshooting.raid_manage.help: Détecter les disques candidats, créer un volume mdadm, puis formater et monter. Les actions destructives sont auditées.
+troubleshooting.raid_manage.detect: Détecter les disques
+troubleshooting.raid_manage.create: Créer le volume
+troubleshooting.raid_manage.format: Formater et monter
+troubleshooting.raid_manage.level: Niveau
+troubleshooting.raid_manage.name: Nom du volume
+troubleshooting.raid_manage.filesystem: Système de fichiers
+troubleshooting.raid_manage.mount_point: Point de montage
+troubleshooting.raid_manage.device: Périphérique
+troubleshooting.raid_manage.empty_devices: Aucun disque candidat.
+troubleshooting.raid_manage.detecting: Détection des disques…
+troubleshooting.raid_manage.detect_ok: "{count} disque(s) candidat(s)."
+troubleshooting.raid_manage.creating: Création du volume…
+troubleshooting.raid_manage.formatting: Formatage…
+troubleshooting.raid_manage.confirm_create: Créer le volume RAID ? Les disques membres seront effacés.
+troubleshooting.raid_manage.confirm_format: Formater et monter le périphérique RAID ? Les données existantes sur le volume seront effacées.
+troubleshooting.raid_manage.job_started: "Tâche {id} démarrée…"
+troubleshooting.raid_manage.job_done: Tâche RAID terminée.
+troubleshooting.raid_manage.job_failed: Tâche RAID en échec.
+troubleshooting.quick_actions.title: Actions rapides
+troubleshooting.quick_actions.help: Libérer le cache pages et éventuellement redémarrer l’hôte. Les deux actions sont auditées.
+troubleshooting.quick_actions.optimize: Libérer les caches mémoire
+troubleshooting.quick_actions.reboot: Redémarrer l’hôte
+troubleshooting.confirm.host_optimize: Vider les caches filesystem (sync + drop_caches) ? Les charges en cours conservent leur mémoire.
+troubleshooting.confirm.host_reboot: Redémarrer cet hôte maintenant ? Les sessions actives seront interrompues.
+troubleshooting.modal.host_optimize_title: Libérer les caches mémoire
+troubleshooting.modal.host_reboot_title: Redémarrer l’hôte
+troubleshooting.running.host_optimize: Libération des caches mémoire…
+troubleshooting.running.host_reboot: Planification du redémarrage…
+monitoring.mounts_sync_mounted: Monté
+monitoring.mounts_sync_online: En ligne
+monitoring.mounts_sync_help: Montage distant visible dans la télémétrie (pas de stats de transfert rclone live).
 monitoring.bandwidth_history.fetch_failed: Impossible de charger l’historique de bande passante.
 firewall.quick_harden.apply: Quick Harden
 firewall.quick_harden.help: "Réapplique les règles firewall déclarées (zen firewall::apply). Les ports qui se chevauchent entre instances sont signalés ci-dessous."
