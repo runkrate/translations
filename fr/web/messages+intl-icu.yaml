@@ -1632,6 +1632,12 @@ monitoring.mounts_details: Taille
 monitoring.mounts_kind_physical: "Disque physique"
 monitoring.mounts_kind_virtual: "Disque virtuel"
 monitoring.mounts_kind_remote: "Montage distant"
+monitoring.mounts_manage_cloud: "Gérer le cloud"
+monitoring.mounts_manage_cloud_help: "Ouvrir les réglages cloud rclone pour ce montage distant."
+monitoring.mounts_open_app_store: "App Store"
+monitoring.mounts_open_app_store_help: "Trouver rclone dans l’App Store pour gérer les montages cloud."
+monitoring.mounts_open_downloads: Téléchargements
+monitoring.mounts_open_downloads_help: "Ouvrir Téléchargements."
 monitoring.processes: Processus
 monitoring.processes_cpu: CPU%
 monitoring.processes_empty: "Aucune donnée de processus."
@@ -1818,11 +1824,17 @@ settings.assets.backups.column.restore: Restaurer
 settings.assets.backups.empty: "Aucune archive de sauvegarde d’application trouvée."
 settings.assets.share.heading: "Liens de partage"
 settings.assets.share.help: "Créez une URL de téléchargement signée et limitée dans le temps pour une ressource marque, bibliothèque ou locale. Utilisez Partager sur une ressource ci-dessus."
+settings.assets.share.note: "Les liens de partage sont des URL de téléchargement uniquement pour cette instance. Ils ne déplacent pas de paquets entre hôtes."
 settings.assets.share.action: Partager
 settings.assets.share.ttl: "Durée du lien"
 settings.assets.share.copied: "Lien de partage copié dans le presse-papiers."
 settings.assets.share.created: "Lien de partage créé."
 settings.assets.share.failed: "Échec de la création du lien de partage."
+settings.assets.hub_heading: "Liens utiles"
+settings.assets.hub_help: "Accédez aux Téléchargements, à la marque dans Général, ou aux chemins de montage du profil."
+settings.assets.hub_downloads: Téléchargements
+settings.assets.hub_branding: "Général · Marque"
+settings.assets.hub_mounts: "Profil · Montages"
 settings.brand_identity: "Identité de marque"
 settings.datacap.cycle_day_label: "Jour de cycle (1–28)"
 settings.datacap.direction_both: "Les deux (RX + TX)"
@@ -2413,6 +2425,8 @@ user.vault.copy: Copier
 user.vault.entry.master: "Mot de passe principal KRATE"
 user.vault.error_password_required: "Le mot de passe est requis."
 user.vault.heading: Coffre-fort
+user.vault.hint_app_settings: "Réglages de l’app sur le tableau de bord"
+user.vault.hint_downloads: "Utilisé pour Téléchargements"
 user.vault.infobox_body: "Consultez les mots de passe enregistrés pour votre compte et vos applications installées. Les valeurs restent masquées tant que vous n'avez pas confirmé avec votre mot de passe HarmonyUI."
 user.vault.infobox_title: "Identifiants enregistrés"
 user.vault.intro: "Consultez les mots de passe enregistrés pour votre compte et vos applications installées. Les valeurs restent masquées tant que vous n'avez pas confirmé avec votre mot de passe de connexion."

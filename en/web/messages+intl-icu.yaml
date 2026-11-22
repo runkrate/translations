@@ -1632,6 +1632,12 @@ monitoring.mounts_details: Size
 monitoring.mounts_kind_physical: "Physical disk"
 monitoring.mounts_kind_virtual: "Virtual disk"
 monitoring.mounts_kind_remote: "Remote mount"
+monitoring.mounts_manage_cloud: "Manage cloud"
+monitoring.mounts_manage_cloud_help: "Open rclone cloud settings for this remote mount."
+monitoring.mounts_open_app_store: "App Store"
+monitoring.mounts_open_app_store_help: "Find rclone in the App Store to manage cloud mounts."
+monitoring.mounts_open_downloads: Downloads
+monitoring.mounts_open_downloads_help: "Open Downloads."
 monitoring.processes: Processes
 monitoring.processes_cpu: CPU%
 monitoring.processes_empty: "No process data."
@@ -1818,11 +1824,17 @@ settings.assets.backups.column.restore: Restore
 settings.assets.backups.empty: "No application backup archives found."
 settings.assets.share.heading: "Share links"
 settings.assets.share.help: "Create a signed, time-limited download URL for a brand, library, or local asset. Use Share on any asset above."
+settings.assets.share.note: "Share links are download-only URLs for this instance. They do not move packages between hosts."
 settings.assets.share.action: Share
 settings.assets.share.ttl: "Link lifetime"
 settings.assets.share.copied: "Share link copied to clipboard."
 settings.assets.share.created: "Share link created."
 settings.assets.share.failed: "Failed to create share link."
+settings.assets.hub_heading: "Related"
+settings.assets.hub_help: "Jump to Downloads, branding in General settings, or profile mount paths."
+settings.assets.hub_downloads: Downloads
+settings.assets.hub_branding: "General · Branding"
+settings.assets.hub_mounts: "Profile · Mounts"
 settings.brand_identity: "Brand Identity"
 settings.datacap.cycle_day_label: "Billing day (1–28)"
 settings.datacap.direction_both: "Both (RX + TX)"
@@ -2413,6 +2425,8 @@ user.vault.copy: Copy
 user.vault.entry.master: "KRATE master password"
 user.vault.error_password_required: "Password is required."
 user.vault.heading: "Password vault"
+user.vault.hint_app_settings: "App settings on the dashboard"
+user.vault.hint_downloads: "Used for Downloads"
 user.vault.infobox_body: "View passwords stored for your account and installed applications. Values stay hidden until you confirm with your HarmonyUI login password."
 user.vault.infobox_title: "Saved credentials"
 user.vault.intro: "View passwords stored for your account and installed applications. Values stay hidden until you confirm with your login password."
