@@ -2042,7 +2042,9 @@ system.update.channel: Canal
 system.update.channel_heading: Canal de mise à jour
 system.update.channel_help: "Choisissez les versions stables (main) ou bêta. La bêta peut exiger une licence adaptée."
 system.update.channel_main: Main (stable)
+system.update.channel_main_note: "Main suit les versions stables recommandées pour les hôtes en production."
 system.update.channel_beta: Bêta
+system.update.channel_beta_note: "La bêta reçoit des builds plus tôt ; attendez-vous à des changements plus rapides et à quelques aspérités."
 system.update.channel_save: Enregistrer le canal
 system.update.channel_saving: Enregistrement du canal…
 system.update.channel_saved: Canal de mise à jour enregistré.

@@ -2042,7 +2042,9 @@ system.update.channel: Channel
 system.update.channel_heading: Update channel
 system.update.channel_help: "Choose stable (main) or beta releases. Beta may require a matching license."
 system.update.channel_main: Main (stable)
+system.update.channel_main_note: "Main tracks stable releases recommended for production hosts."
 system.update.channel_beta: Beta
+system.update.channel_beta_note: "Beta receives earlier builds; expect faster change and occasional rough edges."
 system.update.channel_save: Save channel
 system.update.channel_saving: Saving channel…
 system.update.channel_saved: Update channel saved.
