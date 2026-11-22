@@ -176,6 +176,9 @@ app.store.actions_menu_aria: "More actions"
 app.store.banner: "Appstore Banner"
 app.store.community.infobox_body: "This app is published in the community catalog, not the official Krate set. Bugs may still be present, and some platform features may be missing or unsupported."
 app.store.community.infobox_title: "Community catalog"
+app.store.shared_client.badge: "Shared client"
+app.store.shared_client.infobox_title: "Shared rTorrent client."
+app.store.shared_client.infobox_body: "rTorrent, ruTorrent, and Flood share one daemon per user. Install the Web UI you want; the daemon is provisioned with it. Ask an administrator if you need this client on another account."
 app.store.entitlement.action_blocked: "Action not included in your license"
 app.store.entitlement.install_blocked: "Installation requires {feature}"
 app.store.entitlement.license_expired: "License has expired"
@@ -1740,6 +1743,15 @@ settings.app_listing.enable: "Show apps outside my access group (preview)"
 settings.app_listing.enable_hint: "When enabled, unauthorized categories appear blurred. When disabled, they are hidden."
 settings.available_mounts: "Available mounts"
 settings.backdrop.use_blur: "Use blur backdrop"
+settings.appearance: Appearance
+settings.appearance.intro: "Choose light or dark theme and how dense app cards look on the dashboard. Changes apply to your account immediately."
+settings.appearance.theme: Theme
+settings.appearance.theme.light: Light
+settings.appearance.theme.dark: Dark
+settings.appearance.density: App card density
+settings.appearance.density_help: "Compact packs more apps into the dashboard grid."
+settings.appearance.density.comfortable: Comfortable
+settings.appearance.density.compact: Compact
 settings.brand_identity: "Brand Identity"
 settings.datacap.cycle_day_label: "Billing day (1–28)"
 settings.datacap.direction_both: "Both (RX + TX)"

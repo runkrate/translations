@@ -176,6 +176,9 @@ app.store.actions_menu_aria: "Autres actions"
 app.store.banner: "Bannière Appstore"
 app.store.community.infobox_body: "Cette application est publiée dans le catalogue communauté, pas dans le catalogue officiel Krate. Des anomalies peuvent encore être présentes, et certaines fonctionnalités de la plateforme peuvent manquer ou ne pas être prises en charge."
 app.store.community.infobox_title: "Catalogue communauté"
+app.store.shared_client.badge: "Client partagé"
+app.store.shared_client.infobox_title: "Client rTorrent partagé."
+app.store.shared_client.infobox_body: "rTorrent, ruTorrent et Flood partagent un démon par utilisateur. Installez l’interface Web souhaitée ; le démon est provisionné avec elle. Demandez à un administrateur si ce client doit aussi être disponible sur un autre compte."
 app.store.entitlement.action_blocked: "Action non incluse dans votre licence"
 app.store.entitlement.install_blocked: "L'installation nécessite {feature}"
 app.store.entitlement.license_expired: "La licence a expiré"
@@ -1740,6 +1743,15 @@ settings.app_listing.enable: "Afficher les apps hors de mon groupe (aperçu)"
 settings.app_listing.enable_hint: "Si activé, les catégories non autorisées apparaissent floutées. Sinon, elles sont masquées."
 settings.available_mounts: "Montages disponibles"
 settings.backdrop.use_blur: "Utiliser le fond flouté"
+settings.appearance: Apparence
+settings.appearance.intro: "Choisissez le thème clair ou sombre et la densité des cartes d’applications sur le tableau de bord. Les changements s’appliquent immédiatement à votre compte."
+settings.appearance.theme: Thème
+settings.appearance.theme.light: Clair
+settings.appearance.theme.dark: Sombre
+settings.appearance.density: Densité des cartes d’apps
+settings.appearance.density_help: "Le mode compact affiche plus d’applications dans la grille."
+settings.appearance.density.comfortable: Confortable
+settings.appearance.density.compact: Compact
 settings.brand_identity: "Identité de marque"
 settings.datacap.cycle_day_label: "Jour de cycle (1–28)"
 settings.datacap.direction_both: "Les deux (RX + TX)"
