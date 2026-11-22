@@ -3287,6 +3287,14 @@ notification.center.disk_quota.title: Disk quota nearly full
 notification.center.disk_quota.body: "You are using {percent}% of your disk quota."
 downloads.torrents.col.path: Path
 downloads.torrents.open_folder: Open folder
+downloads.nzb.title: NZB queue
+downloads.nzb.empty: No NZB downloads in the queue.
+downloads.nzb.col.name: Name
+downloads.nzb.col.client: Client
+downloads.nzb.col.state: State
+downloads.nzb.col.percent: "%"
+downloads.nzb.col.rate: Rate
+downloads.nzb.dashboard: "{count, plural, =0 {No NZB} one {# NZB} other {# NZB}}"
 security.geo_lock.title: Login geo-lock
 security.geo_lock.help: Restrict interactive login (password, passkey, TOTP) to allowed countries. API keys and JWT login are not affected. Empty allowlist with geo-lock enabled blocks all public IPs.
 security.geo_lock.enabled: Enable login geo-lock
