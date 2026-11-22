@@ -3230,10 +3230,14 @@ firewall.quick_harden.running: Application des règles firewall…
 firewall.quick_harden.ok: Règles firewall appliquées.
 firewall.quick_harden.failed: "Échec de firewall::apply."
 firewall.conflicts.heading: Conflits de ports détectés
-firewall.conflicts.help: "Plusieurs instances déclarent des ports qui se chevauchent sur le même protocole. Vérifiez les lignes surlignées avant d’appliquer les règles."
+firewall.conflicts.help: "Plusieurs instances déclarent des ports qui se chevauchent sur le même protocole. Ouvrez l’éditeur de proxy Caddy ou les réglages d’apps pour chaque instance, puis vérifiez les lignes surlignées avant d’appliquer les règles."
 firewall.conflicts.badge: Conflit
 firewall.conflicts.item: "{port}/{proto} — {instances}"
 firewall.conflicts.item_range: "{port}-{port_end}/{proto} — {instances}"
+firewall.conflicts.item_prefix: "{port}/{proto} —"
+firewall.conflicts.item_range_prefix: "{port}-{port_end}/{proto} —"
+firewall.conflicts.open_proxy: Modifier le proxy Caddy
+firewall.conflicts.open_apps: Ouvrir les réglages d’apps
 settings.notifications.webhook_urls: URL de webhooks HTTPS (une par ligne)
 settings.notifications.section.compose: Composer le message de test
 settings.notifications.compose.title: Titre
