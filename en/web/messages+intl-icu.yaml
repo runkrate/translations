@@ -1760,6 +1760,66 @@ settings.appearance.density: App card density
 settings.appearance.density_help: "Compact packs more apps into the dashboard grid."
 settings.appearance.density.comfortable: Comfortable
 settings.appearance.density.compact: Compact
+settings.assets.title: Assets
+settings.assets.purpose: "Manage brand images, logos, avatars, local files, app backup archives, and time-limited share links."
+settings.assets.error.generic: "Asset request failed."
+settings.assets.brand.heading: Brand
+settings.assets.brand.help: "Active logo, favicon, splash, store banner, and backdrop. Change them in General settings."
+settings.assets.brand.manage: "Edit in General"
+settings.assets.brand.slot.logo: Logo
+settings.assets.brand.slot.favicon: Favicon
+settings.assets.brand.slot.splash: Splash
+settings.assets.brand.slot.store_banner: "Store banner"
+settings.assets.brand.slot.backdrop: Backdrop
+settings.assets.library.heading: "Logos & avatars"
+settings.assets.library.help: "Instance image library under uploads/custom. Upload, preview, delete, or create a share link."
+settings.assets.library.category: Category
+settings.assets.library.category.brand: Logos
+settings.assets.library.category.avatar: Avatars
+settings.assets.library.category.appstore: "Store banners"
+settings.assets.library.category.splashscreen: Splashscreens
+settings.assets.library.category.background: Backdrops
+settings.assets.library.file: Image
+settings.assets.library.empty: "No custom library images yet."
+settings.assets.library.file_required: "Choose an image to upload."
+settings.assets.library.upload_failed: "Failed to upload library image."
+settings.assets.library.uploaded: "Library image uploaded."
+settings.assets.library.delete_confirm: "Delete this library image?"
+settings.assets.library.delete_failed: "Failed to delete library image."
+settings.assets.library.deleted: "Library image deleted."
+settings.assets.avatars.heading: "User avatars"
+settings.assets.avatars.help: "Current avatar assignment for each account."
+settings.assets.avatars.user: User
+settings.assets.avatars.preview: Preview
+settings.assets.avatars.filename: File
+settings.assets.avatars.default: Default
+settings.assets.avatars.empty: "No user avatars found."
+settings.assets.local.heading: "Local files"
+settings.assets.local.help: "Controlled instance asset store for downloadable files (not a general file manager)."
+settings.assets.local.file: File
+settings.assets.local.empty: "No local assets stored yet."
+settings.assets.local.file_required: "Choose a file to upload."
+settings.assets.local.upload_failed: "Failed to upload local asset."
+settings.assets.local.uploaded: "Local asset uploaded."
+settings.assets.local.delete_confirm: "Delete this local asset?"
+settings.assets.local.delete_failed: "Failed to delete local asset."
+settings.assets.local.deleted: "Local asset deleted."
+settings.assets.local.column.name: Name
+settings.assets.local.column.size: Size
+settings.assets.local.column.actions: Actions
+settings.assets.backups.heading: "App backups"
+settings.assets.backups.help: "Unified list of application backup archives. Restore from the Backups page."
+settings.assets.backups.open_restore: "Open Backups"
+settings.assets.backups.restore_link: Restore
+settings.assets.backups.column.restore: Restore
+settings.assets.backups.empty: "No application backup archives found."
+settings.assets.share.heading: "Share links"
+settings.assets.share.help: "Create a signed, time-limited download URL for a brand, library, or local asset. Use Share on any asset above."
+settings.assets.share.action: Share
+settings.assets.share.ttl: "Link lifetime"
+settings.assets.share.copied: "Share link copied to clipboard."
+settings.assets.share.created: "Share link created."
+settings.assets.share.failed: "Failed to create share link."
 settings.brand_identity: "Brand Identity"
 settings.datacap.cycle_day_label: "Billing day (1–28)"
 settings.datacap.direction_both: "Both (RX + TX)"

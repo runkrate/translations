@@ -1760,6 +1760,66 @@ settings.appearance.density: Densité des cartes d’apps
 settings.appearance.density_help: "Le mode compact affiche plus d’applications dans la grille."
 settings.appearance.density.comfortable: Confortable
 settings.appearance.density.compact: Compact
+settings.assets.title: Ressources
+settings.assets.purpose: "Gérez les images de marque, logos, avatars, fichiers locaux, archives de sauvegarde d’apps et liens de partage à durée limitée."
+settings.assets.error.generic: "La requête de ressource a échoué."
+settings.assets.brand.heading: Marque
+settings.assets.brand.help: "Logo, favicon, splash, bannière boutique et fond actifs. Modifiez-les dans les réglages Généraux."
+settings.assets.brand.manage: "Modifier dans Général"
+settings.assets.brand.slot.logo: Logo
+settings.assets.brand.slot.favicon: Favicon
+settings.assets.brand.slot.splash: Splash
+settings.assets.brand.slot.store_banner: "Bannière boutique"
+settings.assets.brand.slot.backdrop: Fond
+settings.assets.library.heading: "Logos et avatars"
+settings.assets.library.help: "Bibliothèque d’images de l’instance sous uploads/custom. Téléversez, prévisualisez, supprimez ou créez un lien de partage."
+settings.assets.library.category: Catégorie
+settings.assets.library.category.brand: Logos
+settings.assets.library.category.avatar: Avatars
+settings.assets.library.category.appstore: "Bannières boutique"
+settings.assets.library.category.splashscreen: Splashscreens
+settings.assets.library.category.background: Fonds
+settings.assets.library.file: Image
+settings.assets.library.empty: "Aucune image personnalisée dans la bibliothèque."
+settings.assets.library.file_required: "Choisissez une image à téléverser."
+settings.assets.library.upload_failed: "Échec du téléversement de l’image."
+settings.assets.library.uploaded: "Image ajoutée à la bibliothèque."
+settings.assets.library.delete_confirm: "Supprimer cette image de la bibliothèque ?"
+settings.assets.library.delete_failed: "Échec de la suppression de l’image."
+settings.assets.library.deleted: "Image de bibliothèque supprimée."
+settings.assets.avatars.heading: "Avatars utilisateurs"
+settings.assets.avatars.help: "Avatar actuellement assigné à chaque compte."
+settings.assets.avatars.user: Utilisateur
+settings.assets.avatars.preview: Aperçu
+settings.assets.avatars.filename: Fichier
+settings.assets.avatars.default: Défaut
+settings.assets.avatars.empty: "Aucun avatar utilisateur trouvé."
+settings.assets.local.heading: "Fichiers locaux"
+settings.assets.local.help: "Dépôt contrôlé de ressources de l’instance pour téléchargement (pas un gestionnaire de fichiers général)."
+settings.assets.local.file: Fichier
+settings.assets.local.empty: "Aucune ressource locale stockée."
+settings.assets.local.file_required: "Choisissez un fichier à téléverser."
+settings.assets.local.upload_failed: "Échec du téléversement de la ressource locale."
+settings.assets.local.uploaded: "Ressource locale téléversée."
+settings.assets.local.delete_confirm: "Supprimer cette ressource locale ?"
+settings.assets.local.delete_failed: "Échec de la suppression de la ressource locale."
+settings.assets.local.deleted: "Ressource locale supprimée."
+settings.assets.local.column.name: Nom
+settings.assets.local.column.size: Taille
+settings.assets.local.column.actions: Actions
+settings.assets.backups.heading: "Sauvegardes d’apps"
+settings.assets.backups.help: "Liste unifiée des archives de sauvegarde d’applications. Restaurez depuis la page Sauvegardes."
+settings.assets.backups.open_restore: "Ouvrir Sauvegardes"
+settings.assets.backups.restore_link: Restaurer
+settings.assets.backups.column.restore: Restaurer
+settings.assets.backups.empty: "Aucune archive de sauvegarde d’application trouvée."
+settings.assets.share.heading: "Liens de partage"
+settings.assets.share.help: "Créez une URL de téléchargement signée et limitée dans le temps pour une ressource marque, bibliothèque ou locale. Utilisez Partager sur une ressource ci-dessus."
+settings.assets.share.action: Partager
+settings.assets.share.ttl: "Durée du lien"
+settings.assets.share.copied: "Lien de partage copié dans le presse-papiers."
+settings.assets.share.created: "Lien de partage créé."
+settings.assets.share.failed: "Échec de la création du lien de partage."
 settings.brand_identity: "Identité de marque"
 settings.datacap.cycle_day_label: "Jour de cycle (1–28)"
 settings.datacap.direction_both: "Les deux (RX + TX)"
