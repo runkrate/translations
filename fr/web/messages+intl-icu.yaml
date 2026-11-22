@@ -3191,3 +3191,46 @@ troubleshooting.storage_cockpit.loading: Chargement du snapshot…
 troubleshooting.storage_cockpit.updated: Mis à jour depuis le snapshot télémétrie.
 troubleshooting.storage_cockpit.empty_smart: Aucun disque SMART dans le snapshot.
 troubleshooting.storage_cockpit.empty_pools: Aucun pool RAID/ZFS/Btrfs dans le snapshot.
+troubleshooting.hardware_lite.thermals: Capteurs thermiques
+troubleshooting.hardware_lite.help: Capteurs en lecture seule depuis le snapshot télémétrie (pas encore de RPM ventilateurs).
+troubleshooting.hardware_lite.sensor: Capteur
+troubleshooting.hardware_lite.kind: Type
+troubleshooting.hardware_lite.temp: Temp.
+troubleshooting.hardware_lite.empty_thermals: Aucun capteur thermique dans le snapshot.
+troubleshooting.bandwidth_history.title: Historique bande passante (24 h)
+troubleshooting.bandwidth_history.help: Totaux glissants depuis des échantillons NIC persistés (vnStat-lite).
+troubleshooting.bandwidth_history.loading: Chargement de l’historique…
+troubleshooting.bandwidth_history.updated: Mis à jour depuis les échantillons persistés.
+troubleshooting.bandwidth_history.summary: "{interface} : ↓ {rx} · ↑ {tx} (fenêtre {hours} h)"
+monitoring.bandwidth_history.fetch_failed: Impossible de charger l’historique de bande passante.
+firewall.quick_harden.apply: Quick Harden
+firewall.quick_harden.help: "Réapplique les règles firewall déclarées (zen firewall::apply). One-shot ; pas de resolveur de conflits interactif."
+firewall.quick_harden.running: Application des règles firewall…
+firewall.quick_harden.ok: Règles firewall appliquées.
+firewall.quick_harden.failed: "Échec de firewall::apply."
+settings.notifications.webhook_urls: URL de webhooks HTTPS (une par ligne)
+settings.notifications.section.compose: Composer le message de test
+settings.notifications.compose.title: Titre
+settings.notifications.compose.title_placeholder: Titre personnalisé (optionnel)
+settings.notifications.compose.detail: Détail
+settings.notifications.compose.detail_placeholder: Détail personnalisé pour le prochain envoi test
+downloads.browse_files: Parcourir les fichiers
+app.settings.file.proxy_caddy: Éditer le proxy Caddy
+app.settings.proxy_auth.toggle: Basculer le web-login Caddy
+app.settings.proxy_auth.enable: Activer le web-login Caddy
+app.settings.proxy_auth.disable: Désactiver le web-login Caddy
+playback.maintain.run_now: Lancer la maintenance
+playback.maintain.help: Exécute règles de pause, nettoyage transcode et purge d’activité en arrière-plan.
+playback.maintain.running: Démarrage de la maintenance…
+playback.maintain.started: Maintenance démarrée.
+playback.maintain.error: Impossible de démarrer la maintenance.
+playback.settings.geoip.lock_enabled: Appliquer l’allowlist pays sur les sessions
+playback.settings.geoip.lock_help: Marque (ou arrête) les sessions hors allowlist. Le geo-lock login est séparé (Firewall).
+playback.settings.geoip.countries: Pays autorisés (ISO alpha-2)
+playback.settings.geoip.allow_private: Toujours autoriser les adresses privées / LAN
+playback.settings.geoip.unknown: Quand le pays ne peut pas être résolu
+playback.settings.geoip.unknown_allow: Autoriser (fail-open)
+playback.settings.geoip.unknown_deny: Refuser (fail-closed)
+playback.settings.geoip.action: Action si session bloquée
+playback.settings.geoip.action_flag: Marquer seulement
+playback.settings.geoip.action_stop: Arrêter la session

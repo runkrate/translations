@@ -3191,3 +3191,46 @@ troubleshooting.storage_cockpit.loading: Loading snapshot…
 troubleshooting.storage_cockpit.updated: Updated from telemetry snapshot.
 troubleshooting.storage_cockpit.empty_smart: No SMART disks in snapshot.
 troubleshooting.storage_cockpit.empty_pools: No RAID/ZFS/Btrfs pools in snapshot.
+troubleshooting.hardware_lite.thermals: Thermals
+troubleshooting.hardware_lite.help: Read-only sensors from the telemetry snapshot (no fan RPM inventory yet).
+troubleshooting.hardware_lite.sensor: Sensor
+troubleshooting.hardware_lite.kind: Kind
+troubleshooting.hardware_lite.temp: Temp
+troubleshooting.hardware_lite.empty_thermals: No thermal sensors in snapshot.
+troubleshooting.bandwidth_history.title: Bandwidth history (24h)
+troubleshooting.bandwidth_history.help: Rolling totals from persisted NIC samples (vnStat-lite).
+troubleshooting.bandwidth_history.loading: Loading bandwidth history…
+troubleshooting.bandwidth_history.updated: Updated from persisted samples.
+troubleshooting.bandwidth_history.summary: "{interface}: ↓ {rx} · ↑ {tx} ({hours}h window)"
+monitoring.bandwidth_history.fetch_failed: Failed to load bandwidth history.
+firewall.quick_harden.apply: Quick Harden
+firewall.quick_harden.help: "Re-apply declared firewall rules (zen firewall::apply). One-shot; no interactive conflict resolver."
+firewall.quick_harden.running: Applying firewall rules…
+firewall.quick_harden.ok: Firewall rules applied.
+firewall.quick_harden.failed: Firewall apply failed.
+settings.notifications.webhook_urls: HTTPS webhook URLs (one per line)
+settings.notifications.section.compose: Compose test message
+settings.notifications.compose.title: Title
+settings.notifications.compose.title_placeholder: Optional custom title
+settings.notifications.compose.detail: Detail
+settings.notifications.compose.detail_placeholder: Optional custom detail for the next test send
+downloads.browse_files: Browse files
+app.settings.file.proxy_caddy: Edit Caddy proxy
+app.settings.proxy_auth.toggle: Toggle Caddy web-login
+app.settings.proxy_auth.enable: Enable Caddy web-login
+app.settings.proxy_auth.disable: Disable Caddy web-login
+playback.maintain.run_now: Run maintenance now
+playback.maintain.help: Runs pause rules, transcode cleanup, and activity purge in the background.
+playback.maintain.running: Starting maintenance…
+playback.maintain.started: Maintenance started.
+playback.maintain.error: Failed to start maintenance.
+playback.settings.geoip.lock_enabled: Enforce country allowlist on sessions
+playback.settings.geoip.lock_help: Marks (or stops) live sessions outside the allowlist. Login geo-lock is separate (Firewall).
+playback.settings.geoip.countries: Allowed countries (ISO alpha-2)
+playback.settings.geoip.allow_private: Always allow private / LAN addresses
+playback.settings.geoip.unknown: When country cannot be resolved
+playback.settings.geoip.unknown_allow: Allow (fail-open)
+playback.settings.geoip.unknown_deny: Deny (fail-closed)
+playback.settings.geoip.action: Blocked session action
+playback.settings.geoip.action_flag: Flag only
+playback.settings.geoip.action_stop: Stop session
