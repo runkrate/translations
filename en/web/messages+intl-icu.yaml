@@ -1761,7 +1761,7 @@ settings.app_listing.enable_hint: "When enabled, unauthorized categories appear 
 settings.available_mounts: "Available mounts"
 settings.backdrop.use_blur: "Use blur backdrop"
 settings.appearance: Appearance
-settings.appearance.intro: "Choose light or dark theme and how dense app cards look on the dashboard. Changes apply to your account immediately."
+settings.appearance.intro: "Theme, card density, and seasonal logo overlays for your account. Changes apply immediately."
 settings.appearance.theme: Theme
 settings.appearance.theme.light: Light
 settings.appearance.theme.dark: Dark
@@ -1769,6 +1769,11 @@ settings.appearance.density: App card density
 settings.appearance.density_help: "Compact packs more apps into the dashboard grid."
 settings.appearance.density.comfortable: Comfortable
 settings.appearance.density.compact: Compact
+settings.appearance.seasonal.christmas: Christmas
+settings.appearance.seasonal.halloween: Halloween
+settings.appearance.seasonal.none: Off
+settings.appearance.seasonal_help: "Adds a light overlay (hat, spider web) on app icons for your account without changing the logo files."
+settings.appearance.seasonal: "Seasonal logos"
 settings.assets.title: Assets
 settings.assets.purpose: "Manage brand images, logos, avatars, local files, app backup archives, and time-limited share links."
 settings.assets.error.generic: "Asset request failed."

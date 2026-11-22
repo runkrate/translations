@@ -1761,7 +1761,7 @@ settings.app_listing.enable_hint: "Si activé, les catégories non autorisées a
 settings.available_mounts: "Montages disponibles"
 settings.backdrop.use_blur: "Utiliser le fond flouté"
 settings.appearance: Apparence
-settings.appearance.intro: "Choisissez le thème clair ou sombre et la densité des cartes d’applications sur le tableau de bord. Les changements s’appliquent immédiatement à votre compte."
+settings.appearance.intro: "Thème, densité des cartes et overlays saisonniers sur les logos pour votre compte. Les changements s’appliquent immédiatement."
 settings.appearance.theme: Thème
 settings.appearance.theme.light: Clair
 settings.appearance.theme.dark: Sombre
@@ -1769,6 +1769,11 @@ settings.appearance.density: Densité des cartes d’apps
 settings.appearance.density_help: "Le mode compact affiche plus d’applications dans la grille."
 settings.appearance.density.comfortable: Confortable
 settings.appearance.density.compact: Compact
+settings.appearance.seasonal.christmas: Noël
+settings.appearance.seasonal.halloween: Halloween
+settings.appearance.seasonal.none: Désactivé
+settings.appearance.seasonal_help: "Ajoute un décor léger (bonnet, toile d’araignée) sur les icônes d’apps de votre compte sans modifier les fichiers logo."
+settings.appearance.seasonal: "Logos saisonniers"
 settings.assets.title: Ressources
 settings.assets.purpose: "Gérez les images de marque, logos, avatars, fichiers locaux, archives de sauvegarde d’apps et liens de partage à durée limitée."
 settings.assets.error.generic: "La requête de ressource a échoué."
