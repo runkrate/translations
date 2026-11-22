@@ -3168,3 +3168,26 @@ backups.error.restore_failed: Impossible de restaurer la sauvegarde.
 backups.error.create_failed: Impossible de créer la sauvegarde.
 notification.center.disk_quota.title: Quota disque presque plein
 notification.center.disk_quota.body: "Vous utilisez {percent}% de votre quota disque."
+downloads.torrents.col.path: Chemin
+downloads.torrents.open_folder: Ouvrir le dossier
+security.geo_lock.title: Geo-lock de connexion
+security.geo_lock.help: Restreint la connexion interactive (mot de passe, passkey, TOTP) aux pays autorisés. Les clés API et le login JWT ne sont pas concernés. Liste vide + activé = tous les IP publics refusés.
+security.geo_lock.enabled: Activer le geo-lock de connexion
+security.geo_lock.allow_private: Toujours autoriser les adresses privées / LAN
+security.geo_lock.countries: Pays autorisés (ISO 3166-1 alpha-2, séparés par des virgules)
+security.geo_lock.unknown: Quand le pays ne peut pas être résolu
+security.geo_lock.unknown_allow: Autoriser (fail-open)
+security.geo_lock.unknown_deny: Refuser (fail-closed)
+security.geo_lock.saved: Réglages geo-lock enregistrés.
+security.geo_lock.blocked: La connexion depuis votre localisation n’est pas autorisée sur cet hôte.
+settings.notifications.channel_webhook: Webhook HTTPS générique
+settings.notifications.webhook_url: URL du webhook (POST JSON HTTPS)
+settings.notifications.test.webhook: Tester le webhook
+troubleshooting.storage_cockpit.title: Santé stockage (SMART / RAID)
+troubleshooting.storage_cockpit.help: Vue en lecture seule depuis le snapshot télémétrie. Pas de gestion mdadm depuis ce panneau.
+troubleshooting.storage_cockpit.smart: Disques SMART
+troubleshooting.storage_cockpit.pools: RAID / ZFS / Btrfs
+troubleshooting.storage_cockpit.loading: Chargement du snapshot…
+troubleshooting.storage_cockpit.updated: Mis à jour depuis le snapshot télémétrie.
+troubleshooting.storage_cockpit.empty_smart: Aucun disque SMART dans le snapshot.
+troubleshooting.storage_cockpit.empty_pools: Aucun pool RAID/ZFS/Btrfs dans le snapshot.

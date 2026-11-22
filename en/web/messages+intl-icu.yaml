@@ -3168,3 +3168,26 @@ backups.error.restore_failed: Could not restore the backup.
 backups.error.create_failed: Could not create the backup.
 notification.center.disk_quota.title: Disk quota nearly full
 notification.center.disk_quota.body: "You are using {percent}% of your disk quota."
+downloads.torrents.col.path: Path
+downloads.torrents.open_folder: Open folder
+security.geo_lock.title: Login geo-lock
+security.geo_lock.help: Restrict interactive login (password, passkey, TOTP) to allowed countries. API keys and JWT login are not affected. Empty allowlist with geo-lock enabled blocks all public IPs.
+security.geo_lock.enabled: Enable login geo-lock
+security.geo_lock.allow_private: Always allow private / LAN addresses
+security.geo_lock.countries: Allowed countries (ISO 3166-1 alpha-2, comma-separated)
+security.geo_lock.unknown: When country cannot be resolved
+security.geo_lock.unknown_allow: Allow (fail-open)
+security.geo_lock.unknown_deny: Deny (fail-closed)
+security.geo_lock.saved: Login geo-lock settings saved.
+security.geo_lock.blocked: Sign-in from your location is not allowed on this host.
+settings.notifications.channel_webhook: Generic HTTPS webhook
+settings.notifications.webhook_url: Webhook URL (HTTPS JSON POST)
+settings.notifications.test.webhook: Test webhook
+troubleshooting.storage_cockpit.title: Storage health (SMART / RAID)
+troubleshooting.storage_cockpit.help: Read-only view from the host telemetry snapshot. No mdadm management from this panel.
+troubleshooting.storage_cockpit.smart: SMART disks
+troubleshooting.storage_cockpit.pools: RAID / ZFS / Btrfs
+troubleshooting.storage_cockpit.loading: Loading snapshot…
+troubleshooting.storage_cockpit.updated: Updated from telemetry snapshot.
+troubleshooting.storage_cockpit.empty_smart: No SMART disks in snapshot.
+troubleshooting.storage_cockpit.empty_pools: No RAID/ZFS/Btrfs pools in snapshot.
