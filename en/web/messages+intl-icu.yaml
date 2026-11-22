@@ -3204,10 +3204,15 @@ troubleshooting.bandwidth_history.updated: Updated from persisted samples.
 troubleshooting.bandwidth_history.summary: "{interface}: ↓ {rx} · ↑ {tx} ({hours}h window)"
 monitoring.bandwidth_history.fetch_failed: Failed to load bandwidth history.
 firewall.quick_harden.apply: Quick Harden
-firewall.quick_harden.help: "Re-apply declared firewall rules (zen firewall::apply). One-shot; no interactive conflict resolver."
+firewall.quick_harden.help: "Re-apply declared firewall rules (zen firewall::apply). Overlapping ports across instances are highlighted below."
 firewall.quick_harden.running: Applying firewall rules…
 firewall.quick_harden.ok: Firewall rules applied.
 firewall.quick_harden.failed: Firewall apply failed.
+firewall.conflicts.heading: Port conflicts detected
+firewall.conflicts.help: "Several instances declare overlapping ports on the same protocol. Review the highlighted rows before applying rules."
+firewall.conflicts.badge: Conflict
+firewall.conflicts.item: "{port}/{proto} — {instances}"
+firewall.conflicts.item_range: "{port}-{port_end}/{proto} — {instances}"
 settings.notifications.webhook_urls: HTTPS webhook URLs (one per line)
 settings.notifications.section.compose: Compose test message
 settings.notifications.compose.title: Title

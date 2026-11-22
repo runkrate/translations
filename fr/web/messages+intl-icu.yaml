@@ -3204,10 +3204,15 @@ troubleshooting.bandwidth_history.updated: Mis à jour depuis les échantillons 
 troubleshooting.bandwidth_history.summary: "{interface} : ↓ {rx} · ↑ {tx} (fenêtre {hours} h)"
 monitoring.bandwidth_history.fetch_failed: Impossible de charger l’historique de bande passante.
 firewall.quick_harden.apply: Quick Harden
-firewall.quick_harden.help: "Réapplique les règles firewall déclarées (zen firewall::apply). One-shot ; pas de resolveur de conflits interactif."
+firewall.quick_harden.help: "Réapplique les règles firewall déclarées (zen firewall::apply). Les ports qui se chevauchent entre instances sont signalés ci-dessous."
 firewall.quick_harden.running: Application des règles firewall…
 firewall.quick_harden.ok: Règles firewall appliquées.
 firewall.quick_harden.failed: "Échec de firewall::apply."
+firewall.conflicts.heading: Conflits de ports détectés
+firewall.conflicts.help: "Plusieurs instances déclarent des ports qui se chevauchent sur le même protocole. Vérifiez les lignes surlignées avant d’appliquer les règles."
+firewall.conflicts.badge: Conflit
+firewall.conflicts.item: "{port}/{proto} — {instances}"
+firewall.conflicts.item_range: "{port}-{port_end}/{proto} — {instances}"
 settings.notifications.webhook_urls: URL de webhooks HTTPS (une par ligne)
 settings.notifications.section.compose: Composer le message de test
 settings.notifications.compose.title: Titre
