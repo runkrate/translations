@@ -1976,6 +1976,56 @@ settings.shell.user_title: "Politique shell — {username}"
 settings.shell.user_warning_not_writable: "/etc/lshell.d/ n’est pas modifiable par l’utilisateur web. Relancez setup ou appliquez le mode root:www-data 2775."
 settings.shell.warning_not_writable: "/etc/lshell.conf n’est pas modifiable par l’utilisateur web. Relancez setup ou appliquez le mode root:www-data 660."
 settings.shell.warning_template_only: "/etc/lshell.conf n’est pas lisible par l’utilisateur web. L’éditeur affiche le modèle d’installation tant que les permissions ne sont pas corrigées."
+settings.services.action.reload: Recharger
+settings.services.action.restart: Redémarrer
+settings.services.action.start: Démarrer
+settings.services.action.stop: Arrêter
+settings.services.col.actions: Actions
+settings.services.col.enabled: Activé
+settings.services.col.name: Service
+settings.services.col.state: État
+settings.services.enabled.no: Non
+settings.services.enabled.yes: Oui
+settings.services.group.core: Services Krate principaux
+settings.services.group.extended: Timers et assistance
+settings.services.heading: Services HarmonyUI / Krate
+settings.services.help: "Démarrez, arrêtez, redémarrez ou rechargez les unités de la plateforme. Les applications du catalogue restent sur leurs propres commandes. Après une mise à jour système, les unités cassées sont réparées automatiquement et les workers PHP déjà actifs sont rafraîchis."
+settings.services.purpose: "État et contrôle des unités et timers de la plateforme Krate."
+settings.services.restart_core: Redémarrer les services Krate principaux
+settings.services.restart_core_confirm: "Redémarrer maintenant tous les services Krate principaux ? Le hub Mercure redémarrera en premier."
+settings.services.state.active: Actif
+settings.services.state.failed: En échec
+settings.services.state.inactive: Inactif
+settings.services.status.action_failed: L’action sur le service a échoué.
+settings.services.status.action_ok: "{action} terminé pour {id}."
+settings.services.status.load_failed: Impossible de charger les services de la plateforme.
+settings.services.status.loading: Chargement des services de la plateforme…
+settings.services.status.ready: État actualisé.
+settings.services.status.restart_core_failed: Impossible de redémarrer les services Krate principaux.
+settings.services.status.restart_core_ok: Services Krate principaux redémarrés.
+settings.services.status.restarting_core: Redémarrage des services Krate principaux…
+settings.services.status.working: "Exécution de {action} sur {id}…"
+settings.services.title: Services Krate
+settings.services.unit.app_status_mercure: Éditeur Mercure d’état des apps
+settings.services.unit.app_status_mercure_help: Publie les topics d’état des apps par utilisateur via Mercure.
+settings.services.unit.app_statusd: Démon d’état des apps
+settings.services.unit.app_statusd_help: Écrit l’instantané d’état des apps utilisé par Fleet et le tableau de bord.
+settings.services.unit.harmony_worker: Worker Harmony
+settings.services.unit.harmony_worker_help: Consommateur Messenger pour l’App Store et les tâches zen détachées.
+settings.services.unit.mercure: Hub Mercure
+settings.services.unit.mercure_help: Hub temps réel pour la télémétrie et l’état des apps.
+settings.services.unit.playback_history: Timer d’historique Playback
+settings.services.unit.playback_history_help: Collecte périodique de l’historique Playback lorsqu’elle est activée dans les réglages Playback.
+settings.services.unit.playback_maintain: Timer de maintenance Playback
+settings.services.unit.playback_maintain_help: Tâches périodiques de maintenance Playback.
+settings.services.unit.playback_throttle: Timer de limitation Playback
+settings.services.unit.playback_throttle_help: Allocateur périodique de limitation Playback.
+settings.services.unit.support: Assistance à distance
+settings.services.unit.support_help: Démon de session d’assistance audité (démarrage/arrêt uniquement depuis cette page).
+settings.services.unit.telemetry_mercure: Éditeur Mercure de télémétrie
+settings.services.unit.telemetry_mercure_help: Publie les instantanés de télémétrie des widgets via Mercure.
+settings.services.unit.widget_monitord: Démon de télémétrie des widgets
+settings.services.unit.widget_monitord_help: Écrit l’instantané de télémétrie des widgets pour le tableau de bord.
 settings.smtp: "Email"
 settings.smtp.flash.saved: "Paramètres email enregistrés."
 settings.smtp.flash.save_failed: "Impossible d’enregistrer les paramètres email. Vérifiez que krate-harmony-worker tourne, puis réessayez."

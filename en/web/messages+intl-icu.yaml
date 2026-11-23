@@ -1976,6 +1976,56 @@ settings.shell.user_title: "Shell policy — {username}"
 settings.shell.user_warning_not_writable: "/etc/lshell.d/ is not writable by the web user. Re-run setup or set root:www-data mode 2775."
 settings.shell.warning_not_writable: "/etc/lshell.conf is not writable by the web user. Re-run setup or set root:www-data mode 660."
 settings.shell.warning_template_only: "/etc/lshell.conf is not readable by the web user. The editor shows the install template until permissions are fixed."
+settings.services.action.reload: Reload
+settings.services.action.restart: Restart
+settings.services.action.start: Start
+settings.services.action.stop: Stop
+settings.services.col.actions: Actions
+settings.services.col.enabled: Enabled
+settings.services.col.name: Service
+settings.services.col.state: State
+settings.services.enabled.no: No
+settings.services.enabled.yes: Yes
+settings.services.group.core: Core Krate services
+settings.services.group.extended: Timers and support
+settings.services.heading: HarmonyUI / Krate services
+settings.services.help: "Start, stop, restart, or reload platform units. Catalog apps stay on their own controls. After a system update, broken units are healed automatically and previously active PHP workers are refreshed."
+settings.services.purpose: "Status and control for Krate platform units and timers."
+settings.services.restart_core: Restart core Krate services
+settings.services.restart_core_confirm: "Restart all core Krate services now? The Mercure hub will restart first."
+settings.services.state.active: Active
+settings.services.state.failed: Failed
+settings.services.state.inactive: Inactive
+settings.services.status.action_failed: Service action failed.
+settings.services.status.action_ok: "{action} completed for {id}."
+settings.services.status.load_failed: Could not load platform services.
+settings.services.status.loading: Loading platform services…
+settings.services.status.ready: Status refreshed.
+settings.services.status.restart_core_failed: Could not restart core Krate services.
+settings.services.status.restart_core_ok: Core Krate services restarted.
+settings.services.status.restarting_core: Restarting core Krate services…
+settings.services.status.working: "Running {action} on {id}…"
+settings.services.title: Krate services
+settings.services.unit.app_status_mercure: App status Mercure publisher
+settings.services.unit.app_status_mercure_help: Publishes per-user app status topics over Mercure.
+settings.services.unit.app_statusd: App status daemon
+settings.services.unit.app_statusd_help: Writes the app-status snapshot used by Fleet and the dashboard.
+settings.services.unit.harmony_worker: Harmony worker
+settings.services.unit.harmony_worker_help: Messenger consumer for App Store and detached zen jobs.
+settings.services.unit.mercure: Mercure hub
+settings.services.unit.mercure_help: Real-time hub for telemetry and app-status topics.
+settings.services.unit.playback_history: Playback history timer
+settings.services.unit.playback_history_help: Periodic playback history collection when enabled in Playback settings.
+settings.services.unit.playback_maintain: Playback maintain timer
+settings.services.unit.playback_maintain_help: Periodic playback maintenance jobs.
+settings.services.unit.playback_throttle: Playback throttle timer
+settings.services.unit.playback_throttle_help: Periodic playback throttle allocator.
+settings.services.unit.support: Remote support
+settings.services.unit.support_help: Audited support session daemon (start/stop only from this page).
+settings.services.unit.telemetry_mercure: Telemetry Mercure publisher
+settings.services.unit.telemetry_mercure_help: Publishes widget telemetry snapshots over Mercure.
+settings.services.unit.widget_monitord: Widget telemetry daemon
+settings.services.unit.widget_monitord_help: Writes the widget telemetry snapshot for the dashboard.
 settings.smtp: "Email"
 settings.smtp.flash.saved: "Email settings were saved successfully."
 settings.smtp.flash.save_failed: "Could not save email settings. Check that krate-harmony-worker is running, then retry."
