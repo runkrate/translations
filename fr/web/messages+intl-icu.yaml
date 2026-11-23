@@ -1906,17 +1906,20 @@ settings.pin.error.updating: "Erreur lors de la mise à jour des applications é
 settings.pin.no_apps: "Aucune application épinglée disponible."
 settings.platform.flash_apply_error: "Les paramètres du site ont été enregistrés mais les options plateforme n’ont pas pu être appliquées. Vérifiez que krate-harmony-worker tourne et que le NOPASSWD zen est en place, puis réessayez."
 settings.platform.apt_auto_upgrade: "MàJ auto des paquets des apps"
-settings.platform.apt_auto_upgrade_help: "Lors de l’installation ou de la mise à jour d’une app, actualise les index APT et met à niveau les paquets déjà installés de l’app (zenfw.apt.auto_upgrade dans zenfw.conf.local)."
-settings.platform.intro: "Règle la verbosité de zen, la mise à jour automatique des paquets des apps, la langue du CLI zenfw et le fuseau horaire du serveur (également synchronisé avec PHP date.timezone)."
+settings.platform.apt_auto_upgrade_help: "Actualise les index et met à niveau les paquets déjà installés d’une app lors de son installation ou de sa mise à jour."
+settings.platform.intro: "Options hôte et unités d’arrière-plan qui font tourner ce tableau de bord."
 settings.platform.locale_region: "Région / fuseau horaire"
 settings.platform.locale_region_help: "Un seul réglage synchronise le fuseau de la machine (timedatectl) et PHP date.timezone dans 99-krate.ini."
+settings.platform.options: Options hôte
+settings.platform.options_help: "Journalisation, langue, fuseau horaire et comportement des mises à jour de paquets."
+settings.platform.purpose: "Options hôte et unités d’arrière-plan du tableau de bord."
 settings.platform.timezone: "Fuseau horaire"
-settings.platform.timezone_help: "Un seul réglage synchronise le fuseau de la machine (timedatectl) et PHP date.timezone dans 99-krate.ini."
-settings.platform.title: "Plateforme (zen / système)"
-settings.platform.zen_language: "Langue zenfw"
-settings.platform.zen_language_help: "Langue des messages zen et zenfw. Les nouvelles langues apparaissent lorsqu’un fichier {lang}/cli/messages.yaml est installé dans share/translations."
+settings.platform.timezone_help: "S’applique à l’horloge du serveur et à la date/heure PHP."
+settings.platform.title: Plateforme
+settings.platform.zen_language: Langue
+settings.platform.zen_language_help: "Langue des messages CLI zen et zenfw."
 settings.platform.zen_verbose_log: "Logs zen détaillés"
-settings.platform.zen_verbose_log_help: "Affiche davantage de sortie zen/zenfw lorsqu’activé (zenfw.log.level=verbose dans zenfw.conf.local)."
+settings.platform.zen_verbose_log_help: "Affiche une sortie zen/zenfw plus détaillée dans les journaux."
 settings.rclone.used: "Rclone est-il utilisé ?"
 settings.security: "Paramètres de sécurité"
 settings.shell: Shell
@@ -1984,28 +1987,42 @@ settings.services.col.actions: Actions
 settings.services.col.enabled: Activé
 settings.services.col.name: Service
 settings.services.col.state: État
+settings.services.column.services: Services
+settings.services.column.services_help: Workers persistants, jobs oneshot et démon d’assistance. Les pastilles ouvrent le timer ou le pair lié.
+settings.services.column.timers: Timers
+settings.services.column.timers_help: Planificateurs qui déclenchent le job oneshot correspondant. Utilisez les pastilles pour ouvrir le service lié.
 settings.services.enabled.no: Non
 settings.services.enabled.yes: Oui
-settings.services.group.core: Services Krate principaux
-settings.services.group.extended: Timers et assistance
-settings.services.heading: Services HarmonyUI / Krate
-settings.services.help: "Démarrez, arrêtez, redémarrez ou rechargez les unités de la plateforme. Les applications du catalogue restent sur leurs propres commandes. Après une mise à jour système, les unités cassées sont réparées automatiquement et les workers PHP déjà actifs sont rafraîchis."
-settings.services.purpose: "État et contrôle des unités et timers de la plateforme Krate."
-settings.services.restart_core: Redémarrer les services Krate principaux
-settings.services.restart_core_confirm: "Redémarrer maintenant tous les services Krate principaux ? Le hub Mercure redémarrera en premier."
+settings.services.empty_group: Aucune unité dans cette colonne.
+settings.services.heading: Unités d’arrière-plan
+settings.services.help: "Gérez les services et timers d’arrière-plan qui font tourner ce tableau de bord."
+settings.services.kind.oneshot: Job
+settings.services.kind.service: Service
+settings.services.kind.timer: Timer
+settings.services.purpose: "Services et timers d’arrière-plan du tableau de bord."
+settings.services.relation.feeds: Alimente {name}
+settings.services.relation.needs: Nécessite {name}
+settings.services.relation.reads_from: Lit depuis {name}
+settings.services.relation.triggered_by: Déclenché par {name}
+settings.services.relation.triggers: Déclenche {name}
+settings.services.restart_core: Redémarrer les workers essentiels
+settings.services.restart_core_confirm: "Redémarrer maintenant tous les workers essentiels ? Le hub Mercure redémarrera en premier."
 settings.services.state.active: Actif
 settings.services.state.failed: En échec
 settings.services.state.inactive: Inactif
 settings.services.status.action_failed: L’action sur le service a échoué.
 settings.services.status.action_ok: "{action} terminé pour {id}."
-settings.services.status.load_failed: Impossible de charger les services de la plateforme.
-settings.services.status.loading: Chargement des services de la plateforme…
+settings.services.status.load_failed: Impossible de charger les services d’arrière-plan.
+settings.services.status.loading: Chargement des services d’arrière-plan…
 settings.services.status.ready: État actualisé.
-settings.services.status.restart_core_failed: Impossible de redémarrer les services Krate principaux.
-settings.services.status.restart_core_ok: Services Krate principaux redémarrés.
-settings.services.status.restarting_core: Redémarrage des services Krate principaux…
+settings.services.status.restart_core_failed: Impossible de redémarrer les workers essentiels.
+settings.services.status.restart_core_ok: Workers essentiels redémarrés.
+settings.services.status.restarting_core: Redémarrage des workers essentiels…
 settings.services.status.working: "Exécution de {action} sur {id}…"
-settings.services.title: Services Krate
+settings.services.summary.active: Actifs
+settings.services.summary.failed: En échec
+settings.services.summary.inactive: Inactifs
+settings.services.title: Unités d’arrière-plan
 settings.services.unit.app_status_mercure: Éditeur Mercure d’état des apps
 settings.services.unit.app_status_mercure_help: Publie les topics d’état des apps par utilisateur via Mercure.
 settings.services.unit.app_statusd: Démon d’état des apps
@@ -2015,11 +2032,17 @@ settings.services.unit.harmony_worker_help: Consommateur Messenger pour l’App 
 settings.services.unit.mercure: Hub Mercure
 settings.services.unit.mercure_help: Hub temps réel pour la télémétrie et l’état des apps.
 settings.services.unit.playback_history: Timer d’historique Playback
-settings.services.unit.playback_history_help: Collecte périodique de l’historique Playback lorsqu’elle est activée dans les réglages Playback.
+settings.services.unit.playback_history_help: Planifie le job d’historique Playback lorsqu’il est activé dans les réglages Playback.
+settings.services.unit.playback_history_job: Job d’historique Playback
+settings.services.unit.playback_history_job_help: Oneshot lancé par le timer d’historique (harmony:playback:history).
 settings.services.unit.playback_maintain: Timer de maintenance Playback
-settings.services.unit.playback_maintain_help: Tâches périodiques de maintenance Playback.
+settings.services.unit.playback_maintain_help: Planifie le job de maintenance Playback.
+settings.services.unit.playback_maintain_job: Job de maintenance Playback
+settings.services.unit.playback_maintain_job_help: Oneshot lancé par le timer de maintenance (harmony:playback:maintain).
 settings.services.unit.playback_throttle: Timer de limitation Playback
-settings.services.unit.playback_throttle_help: Allocateur périodique de limitation Playback.
+settings.services.unit.playback_throttle_help: Planifie le job de limitation Playback.
+settings.services.unit.playback_throttle_job: Job de limitation Playback
+settings.services.unit.playback_throttle_job_help: Oneshot lancé par le timer de limitation (harmony:playback:throttle).
 settings.services.unit.support: Assistance à distance
 settings.services.unit.support_help: Démon de session d’assistance audité (démarrage/arrêt uniquement depuis cette page).
 settings.services.unit.telemetry_mercure: Éditeur Mercure de télémétrie

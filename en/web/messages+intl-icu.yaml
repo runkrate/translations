@@ -1906,17 +1906,20 @@ settings.pin.error.updating: "Error updating pinned apps."
 settings.pin.no_apps: "No pinned apps available."
 settings.platform.flash_apply_error: "Site settings were saved but platform options could not be applied. Ensure krate-harmony-worker is running and zen NOPASSWD is installed, then try again."
 settings.platform.apt_auto_upgrade: "Auto-upgrade app packages"
-settings.platform.apt_auto_upgrade_help: "When installing or updating apps, refresh APT indexes and upgrade the app’s already-installed packages (zenfw.apt.auto_upgrade in zenfw.conf.local)."
-settings.platform.intro: "Controls zenfw console verbosity, automatic app package upgrades, CLI language, and server timezone (also synced to PHP date.timezone)."
+settings.platform.apt_auto_upgrade_help: "Refresh package indexes and upgrade an app’s installed packages when that app is installed or updated."
+settings.platform.intro: "Host options and the background units that keep this dashboard running."
 settings.platform.locale_region: "Region / timezone"
 settings.platform.locale_region_help: "One setting syncs the machine timezone (timedatectl) and PHP date.timezone in 99-krate.ini."
+settings.platform.options: Host options
+settings.platform.options_help: "Logging, language, timezone, and package upgrade behavior."
+settings.platform.purpose: "Host options and background units for this dashboard."
 settings.platform.timezone: Timezone
-settings.platform.timezone_help: "One setting syncs the machine timezone (timedatectl) and PHP date.timezone in 99-krate.ini."
-settings.platform.title: "Platform (zen / system)"
-settings.platform.zen_language: "zenfw language"
-settings.platform.zen_language_help: "Language for zen and zenfw CLI messages. New languages appear when {lang}/cli/messages.yaml is installed under share/translations."
+settings.platform.timezone_help: "Applies to the server clock and PHP date/time."
+settings.platform.title: Platform
+settings.platform.zen_language: Language
+settings.platform.zen_language_help: "Language used by zen and zenfw CLI messages."
 settings.platform.zen_verbose_log: "Verbose zen logging"
-settings.platform.zen_verbose_log_help: "Writes detailed zen/zenfw output when enabled (zenfw.log.level=verbose in zenfw.conf.local)."
+settings.platform.zen_verbose_log_help: "Show detailed zen/zenfw output in logs."
 settings.rclone.used: "Is Rclone Used ?"
 settings.security: "Security Settings"
 settings.shell: Shell
@@ -1984,28 +1987,43 @@ settings.services.col.actions: Actions
 settings.services.col.enabled: Enabled
 settings.services.col.name: Service
 settings.services.col.state: State
+settings.services.column.services: Services
+settings.services.column.services_help: Long-running workers, oneshot jobs, and the support daemon. Linked chips jump to the related timer or peer.
+settings.services.column.timers: Timers
+settings.services.column.timers_help: Schedulers that trigger matching oneshot jobs. Use the chips to open the paired service.
 settings.services.enabled.no: No
 settings.services.enabled.yes: Yes
-settings.services.group.core: Core Krate services
-settings.services.group.extended: Timers and support
-settings.services.heading: HarmonyUI / Krate services
-settings.services.help: "Start, stop, restart, or reload platform units. Catalog apps stay on their own controls. After a system update, broken units are healed automatically and previously active PHP workers are refreshed."
-settings.services.purpose: "Status and control for Krate platform units and timers."
-settings.services.restart_core: Restart core Krate services
-settings.services.restart_core_confirm: "Restart all core Krate services now? The Mercure hub will restart first."
+settings.services.empty_group: No units in this column.
+settings.services.heading: Background units
+settings.services.help: "Manage the background services and timers that keep this dashboard running."
+settings.services.kind.oneshot: Job
+settings.services.kind.service: Service
+settings.services.kind.timer: Timer
+settings.services.purpose: "Background services and timers for this dashboard."
+
+settings.services.relation.feeds: Feeds {name}
+settings.services.relation.needs: Needs {name}
+settings.services.relation.reads_from: Reads from {name}
+settings.services.relation.triggered_by: Run by {name}
+settings.services.relation.triggers: Triggers {name}
+settings.services.restart_core: Restart essential workers
+settings.services.restart_core_confirm: "Restart all essential workers now? The Mercure hub will restart first."
 settings.services.state.active: Active
 settings.services.state.failed: Failed
 settings.services.state.inactive: Inactive
 settings.services.status.action_failed: Service action failed.
 settings.services.status.action_ok: "{action} completed for {id}."
-settings.services.status.load_failed: Could not load platform services.
-settings.services.status.loading: Loading platform services…
+settings.services.status.load_failed: Could not load background services.
+settings.services.status.loading: Loading background services…
 settings.services.status.ready: Status refreshed.
-settings.services.status.restart_core_failed: Could not restart core Krate services.
-settings.services.status.restart_core_ok: Core Krate services restarted.
-settings.services.status.restarting_core: Restarting core Krate services…
+settings.services.status.restart_core_failed: Could not restart essential workers.
+settings.services.status.restart_core_ok: Essential workers restarted.
+settings.services.status.restarting_core: Restarting essential workers…
 settings.services.status.working: "Running {action} on {id}…"
-settings.services.title: Krate services
+settings.services.summary.active: Active
+settings.services.summary.failed: Failed
+settings.services.summary.inactive: Inactive
+settings.services.title: Background units
 settings.services.unit.app_status_mercure: App status Mercure publisher
 settings.services.unit.app_status_mercure_help: Publishes per-user app status topics over Mercure.
 settings.services.unit.app_statusd: App status daemon
@@ -2015,11 +2033,17 @@ settings.services.unit.harmony_worker_help: Messenger consumer for App Store and
 settings.services.unit.mercure: Mercure hub
 settings.services.unit.mercure_help: Real-time hub for telemetry and app-status topics.
 settings.services.unit.playback_history: Playback history timer
-settings.services.unit.playback_history_help: Periodic playback history collection when enabled in Playback settings.
+settings.services.unit.playback_history_help: Schedules the playback history oneshot when enabled in Playback settings.
+settings.services.unit.playback_history_job: Playback history job
+settings.services.unit.playback_history_job_help: Oneshot run by the history timer (harmony:playback:history).
 settings.services.unit.playback_maintain: Playback maintain timer
-settings.services.unit.playback_maintain_help: Periodic playback maintenance jobs.
+settings.services.unit.playback_maintain_help: Schedules the playback maintain oneshot.
+settings.services.unit.playback_maintain_job: Playback maintain job
+settings.services.unit.playback_maintain_job_help: Oneshot run by the maintain timer (harmony:playback:maintain).
 settings.services.unit.playback_throttle: Playback throttle timer
-settings.services.unit.playback_throttle_help: Periodic playback throttle allocator.
+settings.services.unit.playback_throttle_help: Schedules the playback throttle oneshot.
+settings.services.unit.playback_throttle_job: Playback throttle job
+settings.services.unit.playback_throttle_job_help: Oneshot run by the throttle timer (harmony:playback:throttle).
 settings.services.unit.support: Remote support
 settings.services.unit.support_help: Audited support session daemon (start/stop only from this page).
 settings.services.unit.telemetry_mercure: Telemetry Mercure publisher
