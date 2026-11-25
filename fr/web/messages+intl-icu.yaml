@@ -1058,6 +1058,13 @@ firewall.fail2ban.ban_ok: IP bannie.
 firewall.fail2ban.ban_failed: "Impossible de bannir l’IP."
 firewall.fail2ban.ip: Adresse IP
 firewall.fail2ban.select_jail: Choisir une jail
+firewall.fail2ban.detail: Paramètres du jail
+firewall.fail2ban.recommendations: Recommandations
+firewall.fail2ban.offenders: Contrevenants (multi-jails)
+firewall.fail2ban.ledger: Historique des bans
+firewall.fail2ban.ledger_unavailable: Le journal Fail2ban n’est pas lisible sur cet hôte.
+firewall.fail2ban.ledger_at: Quand
+firewall.fail2ban.ledger_action: Action
 vpn.title: Contrôle VPN
 vpn.purpose: "Gérer les peers WireGuard système, l’enrollment gateway et les routes par application."
 vpn.error.heading: "Statut VPN indisponible"
