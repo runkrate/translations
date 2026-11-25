@@ -2027,6 +2027,8 @@ settings.services.unit.app_status_mercure: Éditeur Mercure d’état des apps
 settings.services.unit.app_status_mercure_help: Publie les topics d’état des apps par utilisateur via Mercure.
 settings.services.unit.app_statusd: Démon d’état des apps
 settings.services.unit.app_statusd_help: Écrit l’instantané d’état des apps utilisé par Fleet et le tableau de bord.
+settings.services.unit.downloads_mercure: Éditeur Mercure des téléchargements
+settings.services.unit.downloads_mercure_help: Publie les instantanés de téléchargements par utilisateur via Mercure pour le widget du tableau de bord.
 settings.services.unit.harmony_worker: Worker Harmony
 settings.services.unit.harmony_worker_help: Consommateur Messenger pour l’App Store et les tâches zen détachées.
 settings.services.unit.mercure: Hub Mercure

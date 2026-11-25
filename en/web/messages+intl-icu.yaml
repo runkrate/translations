@@ -2028,6 +2028,8 @@ settings.services.unit.app_status_mercure: App status Mercure publisher
 settings.services.unit.app_status_mercure_help: Publishes per-user app status topics over Mercure.
 settings.services.unit.app_statusd: App status daemon
 settings.services.unit.app_statusd_help: Writes the app-status snapshot used by Fleet and the dashboard.
+settings.services.unit.downloads_mercure: Downloads Mercure publisher
+settings.services.unit.downloads_mercure_help: Publishes per-user downloads snapshots over Mercure for the dashboard widget.
 settings.services.unit.harmony_worker: Harmony worker
 settings.services.unit.harmony_worker_help: Messenger consumer for App Store and detached zen jobs.
 settings.services.unit.mercure: Mercure hub
