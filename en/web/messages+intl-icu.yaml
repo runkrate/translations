@@ -2065,6 +2065,18 @@ settings.smtp.flash.save_failed: "Could not save email settings. Check that krat
 settings.smtp.flash.test_failed: "Could not send the test email. Check the transport settings and try again."
 settings.smtp.flash.test_sendmail_timeout: "Local sendmail timed out (often blocked outbound TCP/25). Switch to SMTP/SMTPS with a relay, or ensure the MTA can deliver."
 settings.smtp.flash.test_sent: "Test email sent successfully. Check the inbox for the signed-in account."
+settings.smtp.templates.title: Email templates
+settings.smtp.templates.help: Preview placeholder rendering or send a test copy to your admin email (separate from the transport test above).
+settings.smtp.templates.welcome: Welcome
+settings.smtp.templates.password_reset: Password reset
+settings.smtp.templates.preview: Preview
+settings.smtp.templates.send_test: Send test template
+settings.smtp.delivery_log: Delivery log
+settings.smtp.delivery_at: When
+settings.smtp.delivery_kind: Kind
+settings.smtp.delivery_to: To
+settings.smtp.delivery_subject: Subject
+settings.smtp.delivery_status: Status
 settings.smtp.flash.test_sent_local: "Test message accepted by local sendmail (queued). Actual delivery still needs outbound port 25 or an SMTP relay."
 settings.smtp.infobox_body: "Configure the mailer HarmonyUI uses for account verification, password reset, and notifications. Save transport settings, then send a test email to confirm authentication and delivery."
 settings.smtp.infobox_title: "Outgoing email"
