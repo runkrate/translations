@@ -3516,3 +3516,69 @@ playback.settings.geoip.unknown_deny: Refuser (fail-closed)
 playback.settings.geoip.action: Action si session bloquée
 playback.settings.geoip.action_flag: Marquer seulement
 playback.settings.geoip.action_stop: Arrêter la session
+api_control.title: Contrôle API
+api_control.purpose: "Gérer les clés API instance Lecture/Écriture et tester les endpoints dans un playground isolé."
+api_control.intro: "Les clés instance s’authentifient comme l’admin qui les a fait tourner en dernier. Les clés API par utilisateur (Profil) restent inchangées. Le playground exerce l’API locale sans quitter le tableau de bord."
+api_control.keys.title: Clés API instance
+api_control.keys.help: "Les clés Lecture n’autorisent que GET/HEAD. Les clés Écriture peuvent appeler toute méthode API autorisée. La clé en clair n’est montrée qu’à la rotation."
+api_control.keys.bound_admin: "Compte admin lié : {username}."
+api_control.keys.read: Clé Lecture
+api_control.keys.write: Clé Écriture
+api_control.keys.configured: Configurée
+api_control.keys.missing: Absente
+api_control.keys.created: "Créée {date}"
+api_control.keys.never: Jamais créée
+api_control.keys.rotate: Faire tourner
+api_control.keys.clear: Effacer
+api_control.keys.reveal_once: "Copiez la clé en clair immédiatement après la rotation — elle n’est pas stockée en clair."
+api_control.playground.title: Playground API
+api_control.playground.help: "Envoyez des requêtes à cette instance depuis un panneau isolé (session admin ou clé tournée dans cet onglet)."
+api_control.playground.method: Méthode
+api_control.playground.path: Chemin
+api_control.playground.body: Corps JSON
+api_control.playground.auth: Authentification
+api_control.playground.auth_session: Session admin courante
+api_control.playground.auth_read: Clé Lecture instance
+api_control.playground.auth_write: Clé Écriture instance
+api_control.playground.auth_hint: "Lecture/Écriture utilise le texte en clair de la dernière rotation dans cet onglet (sessionStorage)."
+api_control.playground.send: Envoyer
+api_control.playground.save: Sauver le favori
+api_control.playground.response: Réponse
+api_control.playground.empty: "La réponse apparaîtra ici."
+settings.logs.installed_app: Application installée
+settings.logs.installed_app_placeholder: "Choisir une app installée (remplit l’unité systemd)…"
+settings.logs.live_stream_start: Flux live
+settings.logs.live_stream_stop: Arrêter le flux
+features.cockpit.title: Indicateurs de fonctions
+features.cockpit.purpose: "Voir quels interrupteurs produit sont actifs et ouvrir la page qui les gère."
+features.cockpit.intro: "Ce cockpit liste les vrais interrupteurs déjà branchés (Flagception, création de compte, Delete Protection). Les flags YAML seuls restent en lecture ici."
+features.cockpit.col_flag: Indicateur
+features.cockpit.col_state: État
+features.cockpit.col_manage: Gérer
+features.cockpit.on: Activé
+features.cockpit.off: Désactivé
+features.cockpit.open: Ouvrir
+features.cockpit.registration: Inscription utilisateur
+features.cockpit.registration_help: "L’inscription publique suit Paramètres → Général (mode de création) et le switch Flagception registration."
+features.cockpit.forgot_password: Mot de passe oublié
+features.cockpit.forgot_password_help: "Kill-switch Flagception pour /reset-password."
+features.cockpit.playback: Playback
+features.cockpit.playback_help: "Kill-switch hôte pour le tableau Playback (licence toujours requise)."
+features.cockpit.terminal: Console web
+features.cockpit.terminal_help: "Terminal navigateur sous Système → Terminal (permission)."
+features.cockpit.delete_protection: Delete Protection
+features.cockpit.delete_protection_help: "Bloque les suppressions destructives apps/médias. Modifiable ci-dessous."
+features.cockpit.community_apps: Apps communauté
+features.cockpit.community_apps_help: "Afficher la source catalogue communauté dans l’App Store."
+features.cockpit.custom_apps: Apps personnalisées
+features.cockpit.custom_apps_help: "Afficher la source catalogue custom dans l’App Store."
+features.cockpit.subdomains: Sous-domaines apps
+features.cockpit.subdomains_help: "Autoriser le routage sous-domaine à l’installation."
+settings.email_templates.heading: Modèles d’e-mail
+settings.email_templates.help: "Personnalisez bienvenue, reset mot de passe et confirmation d’inscription. Placeholders : {username}, {email}, {site_name}, {root_url}, et {reset_url} pour le reset."
+settings.password_reset_email.subject: Objet reset mot de passe
+settings.password_reset_email.subject_help: "Laisser vide pour l’objet par défaut."
+settings.password_reset_email.body: Corps reset mot de passe
+settings.password_reset_email.body_help: "Optionnel. Remplace le modèle HTML par défaut. Inclure {reset_url}."
+settings.registration_confirm_email.subject: Objet confirmation d’inscription
+settings.registration_confirm_email.subject_help: "Objet du message de confirmation (activation e-mail). Vide = traduction par défaut."

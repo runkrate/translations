@@ -3517,3 +3517,69 @@ playback.settings.geoip.unknown_deny: Deny (fail-closed)
 playback.settings.geoip.action: Blocked session action
 playback.settings.geoip.action_flag: Flag only
 playback.settings.geoip.action_stop: Stop session
+api_control.title: API Control
+api_control.purpose: "Manage instance Read/Write API keys and test endpoints in an isolated playground."
+api_control.intro: "Instance keys authenticate as the admin who last rotated them. Per-user API keys in Profile still work unchanged. Use the playground to exercise the local API without leaving the dashboard."
+api_control.keys.title: Instance API keys
+api_control.keys.help: "Read keys may only call GET/HEAD. Write keys can call any allowed API method. Keys are shown once at rotate time."
+api_control.keys.bound_admin: "Bound admin account: {username}."
+api_control.keys.read: Read key
+api_control.keys.write: Write key
+api_control.keys.configured: Configured
+api_control.keys.missing: Not set
+api_control.keys.created: "Created {date}"
+api_control.keys.never: Never created
+api_control.keys.rotate: Rotate
+api_control.keys.clear: Clear
+api_control.keys.reveal_once: "Copy the plaintext key immediately after rotate — it is not stored in clear text."
+api_control.playground.title: API Playground
+api_control.playground.help: "Send requests to this instance from an isolated panel (session cookie or a key rotated in this browser session)."
+api_control.playground.method: Method
+api_control.playground.path: Path
+api_control.playground.body: JSON body
+api_control.playground.auth: Authentication
+api_control.playground.auth_session: Current admin session
+api_control.playground.auth_read: Instance Read key
+api_control.playground.auth_write: Instance Write key
+api_control.playground.auth_hint: "Read/Write auth uses the plaintext from the last rotate in this browser tab (sessionStorage)."
+api_control.playground.send: Send request
+api_control.playground.save: Save favorite
+api_control.playground.response: Response
+api_control.playground.empty: "Response will appear here."
+settings.logs.installed_app: Installed application
+settings.logs.installed_app_placeholder: "Select an installed app (fills systemd unit)…"
+settings.logs.live_stream_start: Live stream
+settings.logs.live_stream_stop: Stop stream
+features.cockpit.title: Feature flags
+features.cockpit.purpose: "See which product switches are active and jump to the page that manages them."
+features.cockpit.intro: "This cockpit lists real product toggles already wired in Krate (Flagception, account creation, Delete Protection). Flags configured only in YAML stay read-only here."
+features.cockpit.col_flag: Flag
+features.cockpit.col_state: State
+features.cockpit.col_manage: Manage
+features.cockpit.on: On
+features.cockpit.off: Off
+features.cockpit.open: Open
+features.cockpit.registration: User registration
+features.cockpit.registration_help: "Public signup follows Settings → General (account creation mode) and the registration Flagception switch."
+features.cockpit.forgot_password: Forgot password
+features.cockpit.forgot_password_help: "Flagception kill-switch for /reset-password."
+features.cockpit.playback: Playback
+features.cockpit.playback_help: "Host kill-switch for the Playback dashboard (license still required)."
+features.cockpit.terminal: Web console
+features.cockpit.terminal_help: "Browser terminal under System → Terminal (permission-gated)."
+features.cockpit.delete_protection: Delete Protection
+features.cockpit.delete_protection_help: "Block destructive app/media deletes when enabled. Editable below."
+features.cockpit.community_apps: Community apps
+features.cockpit.community_apps_help: "Show community catalog source in the App Store."
+features.cockpit.custom_apps: Custom apps
+features.cockpit.custom_apps_help: "Show custom catalog source in the App Store."
+features.cockpit.subdomains: App subdomains
+features.cockpit.subdomains_help: "Allow subdomain routing options when installing apps."
+settings.email_templates.heading: Email templates
+settings.email_templates.help: "Customize welcome, password-reset, and registration-confirm subjects/bodies. Placeholders: {username}, {email}, {site_name}, {root_url}, and {reset_url} for password reset."
+settings.password_reset_email.subject: Password reset subject
+settings.password_reset_email.subject_help: "Leave empty to use the default subject."
+settings.password_reset_email.body: Password reset body
+settings.password_reset_email.body_help: "Optional. When set, replaces the default HTML template. Include {reset_url}."
+settings.registration_confirm_email.subject: Registration confirm subject
+settings.registration_confirm_email.subject_help: "Subject for the email-activation confirmation message. Leave empty for the translated default."
