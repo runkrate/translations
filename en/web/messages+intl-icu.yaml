@@ -3557,6 +3557,13 @@ settings.logs.installed_app: Installed application
 settings.logs.installed_app_placeholder: "Select an installed app (fills systemd unit)…"
 settings.logs.live_stream_start: Live stream
 settings.logs.live_stream_stop: Stop stream
+settings.logs.export: Export
+settings.logs.purge: Purge file
+settings.logs.purge_confirm: Truncate this log file? This cannot be undone.
+settings.logs.timeline: Timeline
+settings.logs.timeline_all: All sources
+settings.logs.timeline_audit: Admin audit
+settings.logs.timeline_app: App log
 features.cockpit.title: Feature flags
 features.cockpit.purpose: "See which product switches are active and jump to the page that manages them."
 features.cockpit.intro: "This cockpit lists real product toggles already wired in Krate (Flagception, account creation, Delete Protection). Flags configured only in YAML stay read-only here."

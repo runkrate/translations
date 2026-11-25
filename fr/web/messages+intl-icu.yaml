@@ -3556,6 +3556,13 @@ settings.logs.installed_app: Application installée
 settings.logs.installed_app_placeholder: "Choisir une app installée (remplit l’unité systemd)…"
 settings.logs.live_stream_start: Flux live
 settings.logs.live_stream_stop: Arrêter le flux
+settings.logs.export: Exporter
+settings.logs.purge: Purger le fichier
+settings.logs.purge_confirm: Tronquer ce fichier journal ? Action irréversible.
+settings.logs.timeline: Chronologie
+settings.logs.timeline_all: Toutes les sources
+settings.logs.timeline_audit: Audit admin
+settings.logs.timeline_app: Journal app
 features.cockpit.title: Indicateurs de fonctions
 features.cockpit.purpose: "Voir quels interrupteurs produit sont actifs et ouvrir la page qui les gère."
 features.cockpit.intro: "Ce cockpit liste les vrais interrupteurs déjà branchés (Flagception, création de compte, Delete Protection). Les flags YAML seuls restent en lecture ici."
