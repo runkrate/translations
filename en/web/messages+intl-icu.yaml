@@ -3234,6 +3234,12 @@ settings.notifications.last_run.none: "No dispatch yet."
 settings.notifications.test.email: "Test email"
 settings.notifications.test.discord: "Test Discord"
 settings.notifications.test.all: "Test enabled channels"
+settings.notifications.broadcast: Broadcast to all channels
+settings.notifications.broadcast_force: Bypass quiet hours
+settings.notifications.broadcast.empty: Enter a title or detail before broadcasting.
+settings.notifications.broadcast.confirm: Send this message to all enabled channels?
+settings.notifications.broadcast.ok: Broadcast sent to enabled channels.
+settings.notifications.broadcast.failed: Broadcast failed.
 settings.notifications.test.ok: "Test notification sent."
 settings.notifications.test.failed: "Test notification failed."
 settings.notifications.enabled: "Enable notifications"

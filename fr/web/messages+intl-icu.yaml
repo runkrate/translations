@@ -3233,6 +3233,12 @@ settings.notifications.last_run.none: "Aucune exécution pour l’instant."
 settings.notifications.test.email: "Tester l’e-mail"
 settings.notifications.test.discord: "Tester Discord"
 settings.notifications.test.all: "Tester les canaux activés"
+settings.notifications.broadcast: Diffuser sur tous les canaux
+settings.notifications.broadcast_force: Ignorer les heures calmes
+settings.notifications.broadcast.empty: Saisissez un titre ou un détail avant de diffuser.
+settings.notifications.broadcast.confirm: Envoyer ce message sur tous les canaux activés ?
+settings.notifications.broadcast.ok: Diffusion envoyée sur les canaux activés.
+settings.notifications.broadcast.failed: Échec de la diffusion.
 settings.notifications.test.ok: "Notification de test envoyée."
 settings.notifications.test.failed: "Échec de la notification de test."
 settings.notifications.enabled: "Activer les notifications"
