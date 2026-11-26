@@ -3484,7 +3484,15 @@ command_palette.raid_storage: Stockage RAID
 command_palette.bandwidth: Bande passante / vnStat
 backups.restore.action: Restaurer
 backups.restore.confirm: Restaurer cette archive sur les données live ? Le service peut redémarrer.
+backups.restore.preview_intro: Aperçu de restauration (rien n’a encore été écrit).
+backups.restore.preview_wipe: Les données live de l’application seront remplacées par cette archive.
+backups.restore.preview_caddyfrag: Un fragment proxy sera restauré avec l’archive.
+backups.restore.preview_no_caddyfrag: Aucun fragment proxy n’a été trouvé à côté de cette archive.
+backups.restore.preview_manifest: Un manifeste de sauvegarde est présent.
 backups.restore.done: Sauvegarde d’application restaurée.
+backups.sidecar.caddyfrag: Fragment proxy
+backups.sidecar.manifest: Manifeste
+backups.error.preview_failed: Impossible d’apercevoir cette restauration.
 backups.create.action: Sauvegarder
 backups.create.running: Création de la sauvegarde…
 backups.create.done: Sauvegarde d’application créée.
