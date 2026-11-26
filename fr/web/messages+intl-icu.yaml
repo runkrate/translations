@@ -745,6 +745,13 @@ users.playback_roles.admin_implied: Les administrateurs ont déjà un accès Pla
 users.permission_roles.heading: Permissions fonctionnelles
 users.manage.open: Gérer
 users.manage.title: Gérer l’utilisateur
+users.manage.profiles: Profils d’accès
+users.manage.profiles_help: Appliquer un préréglage pour le groupe d’accès, les permissions, les rôles Playback et le quota disque.
+users.manage.profile.seedbox: Seedbox
+users.manage.profile.media: Media
+users.manage.profile.admin_lite: Admin léger
+users.manage.profiles_applying: Application du profil…
+users.manage.profiles_applied: Profil d’accès appliqué
 users.manage.permissions: Permissions
 users.manage.permissions_help: Les changements s’enregistrent automatiquement.
 users.manage.admin_implied: Les admins héritent de toutes les permissions.

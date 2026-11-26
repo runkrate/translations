@@ -745,6 +745,13 @@ users.playback_roles.admin_implied: Admins already have full Playback access.
 users.permission_roles.heading: Feature permissions
 users.manage.open: Manage
 users.manage.title: Manage user
+users.manage.profiles: Access profiles
+users.manage.profiles_help: Apply a preset for access group, permissions, Playback roles, and disk quota.
+users.manage.profile.seedbox: Seedbox
+users.manage.profile.media: Media
+users.manage.profile.admin_lite: Admin lite
+users.manage.profiles_applying: Applying profile…
+users.manage.profiles_applied: Access profile applied
 users.manage.permissions: Permissions
 users.manage.permissions_help: Changes save automatically.
 users.manage.admin_implied: Admins inherit every permission.
