@@ -3448,6 +3448,25 @@ logs.admin_audit.col.actor: Actor
 logs.admin_audit.col.ip: IP
 logs.admin_audit.col.context: Context
 logs.admin_audit.empty: No audit events yet.
+logs.timeline.title: Activity timeline
+logs.timeline.purpose: Merged host activity from audit, access, firewall, and notifications.
+logs.timeline.help: Newest events first. Open jumps to the source page for that event.
+logs.timeline.filter: Source
+logs.timeline.source.all: All sources
+logs.timeline.source.audit: Admin audit
+logs.timeline.source.access: Access logs
+logs.timeline.source.fail2ban: Firewall ledger
+logs.timeline.source.notifications: Notifications
+logs.timeline.col.at: Time
+logs.timeline.col.source: Source
+logs.timeline.col.severity: Severity
+logs.timeline.col.summary: Summary
+logs.timeline.col.detail: Detail
+logs.timeline.col.link: Link
+logs.timeline.loading: Loading…
+logs.timeline.empty: No events yet.
+command_palette.firewall_ledger: Firewall ledger
+command_palette.notifications_history: Notifications history
 command_palette.playback_sessions: Playback · Live sessions
 command_palette.playback_intelligence: Playback · Intelligence
 command_palette.host_health: Host health / Delete Protection

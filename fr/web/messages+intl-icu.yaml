@@ -3447,6 +3447,25 @@ logs.admin_audit.col.actor: Acteur
 logs.admin_audit.col.ip: IP
 logs.admin_audit.col.context: Contexte
 logs.admin_audit.empty: Aucun événement d’audit pour l’instant.
+logs.timeline.title: Chronologie d’activité
+logs.timeline.purpose: Activité hôte fusionnée depuis l’audit, les accès, le pare-feu et les notifications.
+logs.timeline.help: Plus récent en premier. Ouvrir mène à la page source de l’événement.
+logs.timeline.filter: Source
+logs.timeline.source.all: Toutes les sources
+logs.timeline.source.audit: Audit admin
+logs.timeline.source.access: Journaux d’accès
+logs.timeline.source.fail2ban: Journal pare-feu
+logs.timeline.source.notifications: Notifications
+logs.timeline.col.at: Heure
+logs.timeline.col.source: Source
+logs.timeline.col.severity: Sévérité
+logs.timeline.col.summary: Résumé
+logs.timeline.col.detail: Détail
+logs.timeline.col.link: Lien
+logs.timeline.loading: Chargement…
+logs.timeline.empty: Aucun événement pour l’instant.
+command_palette.firewall_ledger: Journal pare-feu
+command_palette.notifications_history: Historique des notifications
 command_palette.playback_sessions: Playback · Sessions live
 command_palette.playback_intelligence: Playback · Intelligence
 command_palette.host_health: Santé hôte / Delete Protection
