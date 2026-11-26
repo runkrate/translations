@@ -1118,6 +1118,18 @@ vpn.job.queued: "Queued…"
 vpn.job.done: "VPN job finished"
 vpn.job.failed: "VPN job failed"
 vpn.peers.col.traffic: Traffic
+vpn.peers.col.handshake: Handshake
+vpn.peers.col.allowed_ips: Allowed IPs
+vpn.peers.handshake_never: Never
+vpn.peers.handshake_just_now: Just now
+vpn.peers.selected_prefix: "Selected peer:"
+vpn.peers.select_hint: Click a peer to focus its traffic sparkline and map pin.
+vpn.geo.legend: Handshake freshness
+vpn.geo.legend_fresh: Fresh (≤3m)
+vpn.geo.legend_aging: Aging
+vpn.geo.legend_stale: Stale
+vpn.geo.legend_never: Never / unknown
+vpn.geo.map_empty: Peer endpoints appear here after geo lookup.
 vpn.routes.stage: "Stage only"
 vpn.routes.stage_hint: "Prepare the tunnel before the app is installed (useful for Plex)."
 vpn.routes.stage_candidate: "stage before install"

@@ -1118,6 +1118,18 @@ vpn.job.queued: "En file…"
 vpn.job.done: "Job VPN terminé"
 vpn.job.failed: "Job VPN échoué"
 vpn.peers.col.traffic: Trafic
+vpn.peers.col.handshake: Handshake
+vpn.peers.col.allowed_ips: Allowed IPs
+vpn.peers.handshake_never: Jamais
+vpn.peers.handshake_just_now: À l’instant
+vpn.peers.selected_prefix: "Pair sélectionné :"
+vpn.peers.select_hint: Cliquez un pair pour cibler sa sparkline et son pin carte.
+vpn.geo.legend: Fraîcheur du handshake
+vpn.geo.legend_fresh: Frais (≤3 min)
+vpn.geo.legend_aging: Vieillissant
+vpn.geo.legend_stale: Périmé
+vpn.geo.legend_never: Jamais / inconnu
+vpn.geo.map_empty: Les endpoints des pairs apparaissent ici après géolocalisation.
 vpn.routes.stage: "Staging seulement"
 vpn.routes.stage_hint: "Prépare le tunnel avant l’installation de l’app (utile pour Plex)."
 vpn.routes.stage_candidate: "staging avant install"
