@@ -1544,7 +1544,10 @@ license.feature.custom_access_groups: Custom access groups
 license.feature.backups: Backups
 license.feature.certificates: Certificates
 license.feature.advanced_metrics: Advanced metrics
+license.feature.api_control: API Control
+license.feature.assets: Assets
 license.feature.mfa: "MFA (TOTP & passkeys)"
+license.feature.delete_protection: Delete Protection
 license.features_heading: "Activated Features"
 license.flash.api_unreachable: "The license API is unreachable from this host. Check outbound HTTPS to api.runkrate.com, then retry."
 license.flash.change_failed: "License change failed."
