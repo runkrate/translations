@@ -739,6 +739,21 @@ users.playback_roles.approve: Approve / deny
 users.playback_roles.saved: Playback request roles updated.
 users.playback_roles.admin_implied: Admins already have full Playback access.
 users.permission_roles.heading: Feature permissions
+users.permission_matrix.title: Permission matrix
+users.permission_matrix.nav: Permissions
+users.permission_matrix.link: Open permission matrix
+users.permission_matrix.purpose: See and edit assignable permission roles across all users.
+users.permission_matrix.help: Toggle cells to grant or revoke assignable roles. Admins inherit every permission.
+users.permission_matrix.filter: Filter users
+users.permission_matrix.filter_placeholder: Username…
+users.permission_matrix.back: Back to users
+users.permission_matrix.col_user: User
+users.permission_matrix.col_actions: Actions
+users.permission_matrix.save_row: Save row
+users.permission_matrix.admin: Admin
+users.permission_matrix.empty: No users found.
+users.permission_matrix.saving: Saving…
+users.permission_matrix.saved: Row saved.
 users.permission_roles.users_manage: Manage users
 users.permission_roles.settings_system: System settings
 users.permission_roles.firewall_view: View firewall
