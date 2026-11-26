@@ -3449,6 +3449,18 @@ troubleshooting.storage_cockpit.updated: Updated from telemetry snapshot.
 troubleshooting.storage_cockpit.empty_smart: No SMART disks in snapshot.
 troubleshooting.storage_cockpit.empty_pools: No RAID/ZFS/Btrfs pools in snapshot.
 troubleshooting.hardware_lite.thermals: Thermals
+troubleshooting.hardware_inventory.title: Hardware inventory
+troubleshooting.hardware_inventory.help: Board, BIOS, CPU, fans, and CPU vulnerability mitigations from sysfs (read-only).
+troubleshooting.hardware_inventory.fetch_failed: Could not load hardware inventory.
+troubleshooting.hardware_inventory.product: Product
+troubleshooting.hardware_inventory.cpu_mem: CPU / memory
+troubleshooting.hardware_inventory.fans: Fans
+troubleshooting.hardware_inventory.vuln_name: Vulnerability
+troubleshooting.hardware_inventory.vuln_state: State
+troubleshooting.hardware_inventory.vulns_empty: No vulnerability sysfs entries.
+troubleshooting.hardware_inventory.throttle_events: Throttle events
+troubleshooting.hardware_inventory.rapl_yes: RAPL present
+troubleshooting.hardware_inventory.rapl_no: RAPL absent
 troubleshooting.hardware_lite.help: Read-only sensors from the telemetry snapshot (no fan RPM inventory yet).
 troubleshooting.hardware_lite.sensor: Sensor
 troubleshooting.hardware_lite.kind: Kind

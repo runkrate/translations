@@ -3448,6 +3448,18 @@ troubleshooting.storage_cockpit.updated: Mis à jour depuis le snapshot télém�
 troubleshooting.storage_cockpit.empty_smart: Aucun disque SMART dans le snapshot.
 troubleshooting.storage_cockpit.empty_pools: Aucun pool RAID/ZFS/Btrfs dans le snapshot.
 troubleshooting.hardware_lite.thermals: Capteurs thermiques
+troubleshooting.hardware_inventory.title: Inventaire matériel
+troubleshooting.hardware_inventory.help: Carte, BIOS, CPU, ventilateurs et mitigations CPU depuis sysfs (lecture seule).
+troubleshooting.hardware_inventory.fetch_failed: Impossible de charger l’inventaire matériel.
+troubleshooting.hardware_inventory.product: Produit
+troubleshooting.hardware_inventory.cpu_mem: CPU / mémoire
+troubleshooting.hardware_inventory.fans: Ventilateurs
+troubleshooting.hardware_inventory.vuln_name: Vulnérabilité
+troubleshooting.hardware_inventory.vuln_state: État
+troubleshooting.hardware_inventory.vulns_empty: Aucune entrée sysfs de vulnérabilité.
+troubleshooting.hardware_inventory.throttle_events: Événements de throttling
+troubleshooting.hardware_inventory.rapl_yes: RAPL présent
+troubleshooting.hardware_inventory.rapl_no: RAPL absent
 troubleshooting.hardware_lite.help: Capteurs en lecture seule depuis le snapshot télémétrie (pas encore de RPM ventilateurs).
 troubleshooting.hardware_lite.sensor: Capteur
 troubleshooting.hardware_lite.kind: Type
