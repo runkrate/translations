@@ -1095,6 +1095,8 @@ firewall.fail2ban.ledger: Ban history
 firewall.fail2ban.ledger_unavailable: Fail2ban log is not readable on this host.
 firewall.fail2ban.ledger_at: When
 firewall.fail2ban.ledger_action: Action
+firewall.fail2ban.actions: Actions
+firewall.fail2ban.reco_open: Open
 vpn.title: VPN Control
 vpn.purpose: "Manage WireGuard system peers, gateway enrollment, and app-scoped routes."
 vpn.error.heading: "VPN status unavailable"
@@ -3471,6 +3473,9 @@ downloads.nzb.col.state: State
 downloads.nzb.col.percent: "%"
 downloads.nzb.col.rate: Rate
 downloads.nzb.dashboard: "{count, plural, =0 {No NZB} one {# NZB} other {# NZB}}"
+downloads.nzb.strip: "{count, plural, =0 {NZB / hoster · idle} one {NZB / hoster · # active} other {NZB / hoster · # active}}"
+downloads.torrents.bulk_hint: Select torrents to enable bulk actions.
+downloads.torrents.select_all: Select all
 security.geo_lock.title: Login geo-lock
 security.geo_lock.help: Restrict interactive login (password, passkey, TOTP) to allowed countries. API keys and JWT login are not affected. Empty allowlist with geo-lock enabled blocks all public IPs.
 security.geo_lock.enabled: Enable login geo-lock
@@ -3481,6 +3486,27 @@ security.geo_lock.unknown_allow: Allow (fail-open)
 security.geo_lock.unknown_deny: Deny (fail-closed)
 security.geo_lock.saved: Login geo-lock settings saved.
 security.geo_lock.blocked: Sign-in from your location is not allowed on this host.
+security.geo_lock.summary.countries: Countries
+security.geo_lock.summary.unknown: Unknown
+security.geo_lock.summary.private: Private
+security.geo_lock.summary.denials: Denied logins
+security.sessions.title: Active sessions
+security.sessions.help: Devices signed in to the web panel. Revoke a session to sign it out immediately.
+security.sessions.empty: No sessions recorded yet.
+security.sessions.loading: Loading…
+security.sessions.current: Current
+security.sessions.last_seen: Last seen
+security.sessions.revoke: Revoke
+security.sessions.revoke_confirm: Revoke this session?
+security.sessions.revoke_others: Revoke other sessions
+security.sessions.revoke_others_confirm: Revoke all other sessions? You will stay signed in on this device.
+users.force_logout.confirm: Force logout this user on all devices?
+settings.notifications.history.title: Recent notifications
+settings.notifications.history.empty: No notification history yet.
+settings.notifications.history.loading: Loading…
+settings.notifications.history.force: force quiet
+command_palette.open_downloads_nzb: Downloads · NZB
+playback.settings.geoip.blocked_live: "{count, plural, one {# live session outside allowlist} other {# live sessions outside allowlist}}"
 settings.notifications.channel_webhook: Generic HTTPS webhook
 settings.notifications.webhook_url: Webhook URL (HTTPS JSON POST)
 settings.notifications.test.webhook: Test webhook

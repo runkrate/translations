@@ -1095,6 +1095,8 @@ firewall.fail2ban.ledger: Historique des bans
 firewall.fail2ban.ledger_unavailable: Le journal Fail2ban n’est pas lisible sur cet hôte.
 firewall.fail2ban.ledger_at: Quand
 firewall.fail2ban.ledger_action: Action
+firewall.fail2ban.actions: Actions
+firewall.fail2ban.reco_open: Ouvrir
 vpn.title: Contrôle VPN
 vpn.purpose: "Gérer les peers WireGuard système, l’enrollment gateway et les routes par application."
 vpn.error.heading: "Statut VPN indisponible"
@@ -3470,6 +3472,9 @@ downloads.nzb.col.state: État
 downloads.nzb.col.percent: "%"
 downloads.nzb.col.rate: Débit
 downloads.nzb.dashboard: "{count, plural, =0 {Aucun NZB} one {# NZB} other {# NZB}}"
+downloads.nzb.strip: "{count, plural, =0 {NZB / hoster · inactif} one {NZB / hoster · # actif} other {NZB / hoster · # actifs}}"
+downloads.torrents.bulk_hint: Sélectionnez des torrents pour activer les actions groupées.
+downloads.torrents.select_all: Tout sélectionner
 security.geo_lock.title: Geo-lock de connexion
 security.geo_lock.help: Restreint la connexion interactive (mot de passe, passkey, TOTP) aux pays autorisés. Les clés API et le login JWT ne sont pas concernés. Liste vide + activé = tous les IP publics refusés.
 security.geo_lock.enabled: Activer le geo-lock de connexion
@@ -3480,6 +3485,27 @@ security.geo_lock.unknown_allow: Autoriser (fail-open)
 security.geo_lock.unknown_deny: Refuser (fail-closed)
 security.geo_lock.saved: Réglages geo-lock enregistrés.
 security.geo_lock.blocked: La connexion depuis votre localisation n’est pas autorisée sur cet hôte.
+security.geo_lock.summary.countries: Pays
+security.geo_lock.summary.unknown: Inconnu
+security.geo_lock.summary.private: Privé
+security.geo_lock.summary.denials: Connexions refusées
+security.sessions.title: Sessions actives
+security.sessions.help: Appareils connectés au panneau web. Révoquer une session la déconnecte immédiatement.
+security.sessions.empty: Aucune session enregistrée pour le moment.
+security.sessions.loading: Chargement…
+security.sessions.current: Actuelle
+security.sessions.last_seen: Dernière activité
+security.sessions.revoke: Révoquer
+security.sessions.revoke_confirm: Révoquer cette session ?
+security.sessions.revoke_others: Révoquer les autres sessions
+security.sessions.revoke_others_confirm: Révoquer toutes les autres sessions ? Vous restez connecté sur cet appareil.
+users.force_logout.confirm: Forcer la déconnexion de cet utilisateur sur tous les appareils ?
+settings.notifications.history.title: Notifications récentes
+settings.notifications.history.empty: Aucun historique de notification pour le moment.
+settings.notifications.history.loading: Chargement…
+settings.notifications.history.force: forcer quiet
+command_palette.open_downloads_nzb: Téléchargements · NZB
+playback.settings.geoip.blocked_live: "{count, plural, one {# session live hors allowlist} other {# sessions live hors allowlist}}"
 settings.notifications.channel_webhook: Webhook HTTPS générique
 settings.notifications.webhook_url: URL du webhook (POST JSON HTTPS)
 settings.notifications.test.webhook: Tester le webhook
