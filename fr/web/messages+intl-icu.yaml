@@ -3580,6 +3580,24 @@ api_control.playground.auth_write: Clé Écriture instance
 api_control.playground.auth_hint: "Lecture/Écriture utilise le texte en clair de la dernière rotation dans cet onglet (sessionStorage)."
 api_control.playground.send: Envoyer
 api_control.playground.save: Sauver le favori
+api_control.keys.copy: Copier la clé
+api_control.keys.copy_missing: Faites d’abord tourner la clé dans cette session.
+api_control.keys.session_plaintext: La clé en clair est disponible dans cette session navigateur.
+api_control.playground.tag: Tag OpenAPI
+api_control.playground.endpoint: Opération
+api_control.playground.endpoint_placeholder: Choisir une opération OpenAPI…
+api_control.playground.tag_all: Tous les tags
+api_control.playground.scope_read: Auth suggérée — clé Read (GET/HEAD/OPTIONS).
+api_control.playground.scope_write: Auth suggérée — clé Write (méthode mutante).
+api_control.playground.copy_curl: Copier en curl
+api_control.playground.curl_empty: Envoyez d’abord une requête.
+api_control.playground.favorites: Favoris
+api_control.playground.history: Appels récents
+api_control.playground.history_empty: Aucun appel récent.
+api_control.playground.fav_remove: Retirer le favori
+api_control.playground.need_rotate: Faites d’abord tourner cette clé (clair conservé dans la session).
+api_control.playground.err_read_only: La clé Read ne peut pas muter — passez en Write.
+api_control.playground.err_forbidden: Route interdite pour les clés d’instance.
 api_control.playground.response: Réponse
 api_control.playground.empty: "La réponse apparaîtra ici."
 settings.logs.installed_app: Application installée
