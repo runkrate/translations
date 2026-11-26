@@ -739,11 +739,23 @@ users.playback_roles.approve: Approuver / refuser
 users.playback_roles.saved: Rôles Playback mis à jour.
 users.playback_roles.admin_implied: Les administrateurs ont déjà un accès Playback complet.
 users.permission_roles.heading: Permissions fonctionnelles
+users.manage.open: Gérer
+users.manage.title: Gérer l’utilisateur
+users.manage.permissions: Permissions
+users.manage.permissions_help: Les changements s’enregistrent automatiquement.
+users.manage.admin_implied: Les admins héritent de toutes les permissions.
+users.manage.quota: Quota disque
+users.manage.quota_limit: Limite de quota
+users.manage.quota_save: Enregistrer le quota
+users.manage.playback: Rôles playback
+users.manage.simulate: Simuler la vue
+users.manage.simulate_help: Ouvrir le tableau de bord en tant que cet utilisateur. Quittez via la bannière.
+users.manage.simulate_unavailable: La simulation n’est pas disponible pour ce compte.
 users.permission_matrix.title: Matrice des permissions
 users.permission_matrix.nav: Permissions
 users.permission_matrix.link: Ouvrir la matrice des permissions
 users.permission_matrix.purpose: Voir et modifier les rôles assignables pour tous les utilisateurs.
-users.permission_matrix.help: Cochez les cellules pour accorder ou retirer des rôles. Les admins héritent de toutes les permissions.
+users.permission_matrix.help: Activez les permissions par utilisateur. Les changements s’enregistrent automatiquement. Les admins héritent de toutes les permissions.
 users.permission_matrix.filter: Filtrer
 users.permission_matrix.filter_placeholder: Nom d’utilisateur…
 users.permission_matrix.back: Retour aux utilisateurs
@@ -751,9 +763,12 @@ users.permission_matrix.col_user: Utilisateur
 users.permission_matrix.col_actions: Actions
 users.permission_matrix.save_row: Enregistrer
 users.permission_matrix.admin: Admin
+users.permission_matrix.admin_locked: Toutes les permissions sont implicites
+users.permission_matrix.autosave: Enregistrement automatique
+users.permission_matrix.save_failed: Échec de l’enregistrement
 users.permission_matrix.empty: Aucun utilisateur.
 users.permission_matrix.saving: Enregistrement…
-users.permission_matrix.saved: Ligne enregistrée.
+users.permission_matrix.saved: Enregistré
 users.permission_roles.users_manage: Gérer les utilisateurs
 users.permission_roles.settings_system: Paramètres système
 users.permission_roles.firewall_view: Voir le pare-feu
@@ -3584,8 +3599,8 @@ playback.settings.geoip.action: Action si session bloquée
 playback.settings.geoip.action_flag: Marquer seulement
 playback.settings.geoip.action_stop: Arrêter la session
 api_control.title: Contrôle API
-api_control.purpose: "Gérer les clés API instance Lecture/Écriture et tester les endpoints dans un playground isolé."
-api_control.intro: "Les clés instance s’authentifient comme l’admin qui les a fait tourner en dernier. Les clés API par utilisateur (Profil) restent inchangées. Le playground exerce l’API locale sans quitter le tableau de bord."
+api_control.purpose: "Clés API instance et espace pour tester des requêtes en toute sécurité."
+api_control.intro: "Faites tourner les clés Lecture et Écriture pour l’automatisation. Le Sandbox ci-dessous permet d’essayer des appels sur une copie de la base ; les actions hôte (VPN, mises à jour système, etc.) y restent bloquées."
 api_control.keys.title: Clés API instance
 api_control.keys.help: "Les clés Lecture n’autorisent que GET/HEAD. Les clés Écriture peuvent appeler toute méthode API autorisée. La clé en clair n’est montrée qu’à la rotation."
 api_control.keys.bound_admin: "Compte admin lié : {username}."
@@ -3598,38 +3613,45 @@ api_control.keys.never: Jamais créée
 api_control.keys.rotate: Faire tourner
 api_control.keys.clear: Effacer
 api_control.keys.reveal_once: "Copiez la clé en clair immédiatement après la rotation — elle n’est pas stockée en clair."
-api_control.playground.title: Playground API
-api_control.playground.help: "Envoyez des requêtes à cette instance depuis un panneau isolé (session admin ou clé tournée dans cet onglet)."
-api_control.playground.method: Méthode
-api_control.playground.path: Chemin
-api_control.playground.body: Corps JSON
-api_control.playground.auth: Authentification
-api_control.playground.auth_session: Session admin courante
-api_control.playground.auth_read: Clé Lecture instance
-api_control.playground.auth_write: Clé Écriture instance
-api_control.playground.auth_hint: "Lecture/Écriture utilise le texte en clair de la dernière rotation dans cet onglet (sessionStorage)."
-api_control.playground.send: Envoyer
-api_control.playground.save: Sauver le favori
 api_control.keys.copy: Copier la clé
 api_control.keys.copy_missing: Faites d’abord tourner la clé dans cette session.
 api_control.keys.session_plaintext: La clé en clair est disponible dans cette session navigateur.
-api_control.playground.tag: Tag OpenAPI
-api_control.playground.endpoint: Opération
-api_control.playground.endpoint_placeholder: Choisir une opération OpenAPI…
-api_control.playground.tag_all: Tous les tags
-api_control.playground.scope_read: Auth suggérée — clé Read (GET/HEAD/OPTIONS).
-api_control.playground.scope_write: Auth suggérée — clé Write (méthode mutante).
-api_control.playground.copy_curl: Copier en curl
-api_control.playground.curl_empty: Envoyez d’abord une requête.
-api_control.playground.favorites: Favoris
-api_control.playground.history: Appels récents
-api_control.playground.history_empty: Aucun appel récent.
-api_control.playground.fav_remove: Retirer le favori
-api_control.playground.need_rotate: Faites d’abord tourner cette clé (clair conservé dans la session).
-api_control.playground.err_read_only: La clé Read ne peut pas muter — passez en Write.
-api_control.playground.err_forbidden: Route interdite pour les clés d’instance.
-api_control.playground.response: Réponse
-api_control.playground.empty: "La réponse apparaîtra ici."
+api_control.sandbox.title: API Sandbox
+api_control.sandbox.help: "Les requêtes incluent X-Krate-Sandbox et s’exécutent sur une base sandbox clonée. Les API qui mutent l’hôte sont bloquées."
+api_control.sandbox.status_ready: Base sandbox prête (clonée depuis la live).
+api_control.sandbox.status_missing: Base sandbox absente — réinitialisez pour cloner depuis la live.
+api_control.sandbox.reset: Réinit. BDD sandbox
+api_control.sandbox.reset_confirm: "Réinitialiser la base API Sandbox ? Elle sera remplacée par un clone frais de la base live."
+api_control.sandbox.reset_ok: Base sandbox réinitialisée depuis la live.
+api_control.sandbox.method: Méthode
+api_control.sandbox.path: Chemin
+api_control.sandbox.body: Corps JSON
+api_control.sandbox.auth: Authentification
+api_control.sandbox.auth_session: Session admin courante
+api_control.sandbox.auth_read: Clé Lecture instance
+api_control.sandbox.auth_write: Clé Écriture instance
+api_control.sandbox.auth_hint: "Lecture/Écriture utilise le texte en clair de la dernière rotation dans cet onglet (sessionStorage). Tous les appels sandbox utilisent la base clonée."
+api_control.sandbox.send: Envoyer
+api_control.sandbox.save: Sauver le favori
+api_control.sandbox.tag: Tag OpenAPI
+api_control.sandbox.endpoint: Opération
+api_control.sandbox.endpoint_placeholder: Choisir une opération OpenAPI…
+api_control.sandbox.tag_all: Tous les tags
+api_control.sandbox.scope_read: Auth suggérée — clé Read (GET/HEAD/OPTIONS).
+api_control.sandbox.scope_write: Auth suggérée — clé Write (méthode mutante).
+api_control.sandbox.copy_curl: Copier en curl
+api_control.sandbox.curl_empty: Envoyez d’abord une requête.
+api_control.sandbox.favorites: Favoris
+api_control.sandbox.history: Appels récents
+api_control.sandbox.history_empty: Aucun appel récent.
+api_control.sandbox.fav_remove: Retirer le favori
+api_control.sandbox.need_rotate: Faites d’abord tourner cette clé (clair conservé dans la session).
+api_control.sandbox.err_read_only: La clé Read ne peut pas muter — passez en Write.
+api_control.sandbox.err_forbidden: Route interdite pour les clés d’instance.
+api_control.sandbox.err_host_blocked: Endpoint qui mute l’hôte — bloqué dans l’API Sandbox.
+api_control.sandbox.openapi_unavailable: Catalogue OpenAPI indisponible — liste de secours courte.
+api_control.sandbox.response: Réponse
+api_control.sandbox.empty: "La réponse apparaîtra ici."
 settings.logs.installed_app: Application installée
 settings.logs.installed_app_placeholder: "Choisir une app installée (remplit l’unité systemd)…"
 settings.logs.live_stream_start: Flux live
@@ -3641,31 +3663,6 @@ settings.logs.timeline: Chronologie
 settings.logs.timeline_all: Toutes les sources
 settings.logs.timeline_audit: Audit admin
 settings.logs.timeline_app: Journal app
-features.cockpit.title: Indicateurs de fonctions
-features.cockpit.purpose: "Voir quels interrupteurs produit sont actifs et ouvrir la page qui les gère."
-features.cockpit.intro: "Ce cockpit liste les vrais interrupteurs déjà branchés (Flagception, création de compte, Delete Protection). Les flags YAML seuls restent en lecture ici."
-features.cockpit.col_flag: Indicateur
-features.cockpit.col_state: État
-features.cockpit.col_manage: Gérer
-features.cockpit.on: Activé
-features.cockpit.off: Désactivé
-features.cockpit.open: Ouvrir
-features.cockpit.registration: Inscription utilisateur
-features.cockpit.registration_help: "L’inscription publique suit Paramètres → Général (mode de création) et le switch Flagception registration."
-features.cockpit.forgot_password: Mot de passe oublié
-features.cockpit.forgot_password_help: "Kill-switch Flagception pour /reset-password."
-features.cockpit.playback: Playback
-features.cockpit.playback_help: "Kill-switch hôte pour le tableau Playback (licence toujours requise)."
-features.cockpit.terminal: Console web
-features.cockpit.terminal_help: "Terminal navigateur sous Système → Terminal (permission)."
-features.cockpit.delete_protection: Delete Protection
-features.cockpit.delete_protection_help: "Bloque les suppressions destructives apps/médias. Modifiable ci-dessous."
-features.cockpit.community_apps: Apps communauté
-features.cockpit.community_apps_help: "Afficher la source catalogue communauté dans l’App Store."
-features.cockpit.custom_apps: Apps personnalisées
-features.cockpit.custom_apps_help: "Afficher la source catalogue custom dans l’App Store."
-features.cockpit.subdomains: Sous-domaines apps
-features.cockpit.subdomains_help: "Autoriser le routage sous-domaine à l’installation."
 settings.email_templates.heading: Modèles d’e-mail
 settings.email_templates.help: "Personnalisez bienvenue, reset mot de passe et confirmation d’inscription. Placeholders : {username}, {email}, {site_name}, {root_url}, et {reset_url} pour le reset."
 settings.password_reset_email.subject: Objet reset mot de passe

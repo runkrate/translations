@@ -739,11 +739,23 @@ users.playback_roles.approve: Approve / deny
 users.playback_roles.saved: Playback request roles updated.
 users.playback_roles.admin_implied: Admins already have full Playback access.
 users.permission_roles.heading: Feature permissions
+users.manage.open: Manage
+users.manage.title: Manage user
+users.manage.permissions: Permissions
+users.manage.permissions_help: Changes save automatically.
+users.manage.admin_implied: Admins inherit every permission.
+users.manage.quota: Disk quota
+users.manage.quota_limit: Quota limit
+users.manage.quota_save: Save quota
+users.manage.playback: Playback roles
+users.manage.simulate: Simulate view
+users.manage.simulate_help: Open the dashboard as this user (switch user). Exit from the banner.
+users.manage.simulate_unavailable: Simulation is not available for this account.
 users.permission_matrix.title: Permission matrix
 users.permission_matrix.nav: Permissions
 users.permission_matrix.link: Open permission matrix
 users.permission_matrix.purpose: See and edit assignable permission roles across all users.
-users.permission_matrix.help: Toggle cells to grant or revoke assignable roles. Admins inherit every permission.
+users.permission_matrix.help: Toggle permissions per user. Changes save automatically. Admins inherit every permission.
 users.permission_matrix.filter: Filter users
 users.permission_matrix.filter_placeholder: Username…
 users.permission_matrix.back: Back to users
@@ -751,9 +763,12 @@ users.permission_matrix.col_user: User
 users.permission_matrix.col_actions: Actions
 users.permission_matrix.save_row: Save row
 users.permission_matrix.admin: Admin
+users.permission_matrix.admin_locked: All permissions implied
+users.permission_matrix.autosave: Changes save automatically
+users.permission_matrix.save_failed: Save failed
 users.permission_matrix.empty: No users found.
 users.permission_matrix.saving: Saving…
-users.permission_matrix.saved: Row saved.
+users.permission_matrix.saved: Saved
 users.permission_roles.users_manage: Manage users
 users.permission_roles.settings_system: System settings
 users.permission_roles.firewall_view: View firewall
@@ -3585,8 +3600,8 @@ playback.settings.geoip.action: Blocked session action
 playback.settings.geoip.action_flag: Flag only
 playback.settings.geoip.action_stop: Stop session
 api_control.title: API Control
-api_control.purpose: "Manage instance Read/Write API keys and test endpoints in an isolated playground."
-api_control.intro: "Instance keys authenticate as the admin who last rotated them. Per-user API keys in Profile still work unchanged. Use the playground to exercise the local API without leaving the dashboard."
+api_control.purpose: "Instance API keys and a safe place to try requests."
+api_control.intro: "Rotate Read and Write keys for automation. Use the Sandbox below to try calls against a copy of the database; host actions like VPN or system updates stay blocked there."
 api_control.keys.title: Instance API keys
 api_control.keys.help: "Read keys may only call GET/HEAD. Write keys can call any allowed API method. Keys are shown once at rotate time."
 api_control.keys.bound_admin: "Bound admin account: {username}."
@@ -3599,38 +3614,45 @@ api_control.keys.never: Never created
 api_control.keys.rotate: Rotate
 api_control.keys.clear: Clear
 api_control.keys.reveal_once: "Copy the plaintext key immediately after rotate — it is not stored in clear text."
-api_control.playground.title: API Playground
-api_control.playground.help: "Send requests to this instance from an isolated panel (session cookie or a key rotated in this browser session)."
-api_control.playground.method: Method
-api_control.playground.path: Path
-api_control.playground.body: JSON body
-api_control.playground.auth: Authentication
-api_control.playground.auth_session: Current admin session
-api_control.playground.auth_read: Instance Read key
-api_control.playground.auth_write: Instance Write key
-api_control.playground.auth_hint: "Read/Write auth uses the plaintext from the last rotate in this browser tab (sessionStorage)."
-api_control.playground.send: Send request
-api_control.playground.save: Save favorite
 api_control.keys.copy: Copy key
 api_control.keys.copy_missing: Rotate the key in this session first.
 api_control.keys.session_plaintext: Plaintext key is available in this browser session.
-api_control.playground.tag: OpenAPI tag
-api_control.playground.endpoint: Operation
-api_control.playground.endpoint_placeholder: Pick OpenAPI operation…
-api_control.playground.tag_all: All tags
-api_control.playground.scope_read: Suggested auth — Read key (GET/HEAD/OPTIONS).
-api_control.playground.scope_write: Suggested auth — Write key (mutating method).
-api_control.playground.copy_curl: Copy as curl
-api_control.playground.curl_empty: Send a request first.
-api_control.playground.favorites: Favorites
-api_control.playground.history: Recent calls
-api_control.playground.history_empty: No recent calls.
-api_control.playground.fav_remove: Remove favorite
-api_control.playground.need_rotate: Rotate that key first (plaintext stays in this browser session).
-api_control.playground.err_read_only: Read key cannot call mutating methods — switch to Write key.
-api_control.playground.err_forbidden: This route is forbidden for instance API keys.
-api_control.playground.response: Response
-api_control.playground.empty: "Response will appear here."
+api_control.sandbox.title: API Sandbox
+api_control.sandbox.help: "Requests include X-Krate-Sandbox and run against a cloned sandbox database. Host-mutating APIs are blocked."
+api_control.sandbox.status_ready: Sandbox database is ready (cloned from live).
+api_control.sandbox.status_missing: Sandbox database missing — reset to clone from live.
+api_control.sandbox.reset: Reset sandbox DB
+api_control.sandbox.reset_confirm: "Reset the API Sandbox database? This replaces it with a fresh clone of the live database."
+api_control.sandbox.reset_ok: Sandbox database reset from live.
+api_control.sandbox.method: Method
+api_control.sandbox.path: Path
+api_control.sandbox.body: JSON body
+api_control.sandbox.auth: Authentication
+api_control.sandbox.auth_session: Current admin session
+api_control.sandbox.auth_read: Instance Read key
+api_control.sandbox.auth_write: Instance Write key
+api_control.sandbox.auth_hint: "Read/Write auth uses the plaintext from the last rotate in this browser tab (sessionStorage). All sandbox calls still use the cloned database."
+api_control.sandbox.send: Send request
+api_control.sandbox.save: Save favorite
+api_control.sandbox.tag: OpenAPI tag
+api_control.sandbox.endpoint: Operation
+api_control.sandbox.endpoint_placeholder: Pick OpenAPI operation…
+api_control.sandbox.tag_all: All tags
+api_control.sandbox.scope_read: Suggested auth — Read key (GET/HEAD/OPTIONS).
+api_control.sandbox.scope_write: Suggested auth — Write key (mutating method).
+api_control.sandbox.copy_curl: Copy as curl
+api_control.sandbox.curl_empty: Send a request first.
+api_control.sandbox.favorites: Favorites
+api_control.sandbox.history: Recent calls
+api_control.sandbox.history_empty: No recent calls.
+api_control.sandbox.fav_remove: Remove favorite
+api_control.sandbox.need_rotate: Rotate that key first (plaintext stays in this browser session).
+api_control.sandbox.err_read_only: Read key cannot call mutating methods — switch to Write key.
+api_control.sandbox.err_forbidden: This route is forbidden for instance API keys.
+api_control.sandbox.err_host_blocked: Host-mutating endpoint — blocked in API Sandbox.
+api_control.sandbox.openapi_unavailable: OpenAPI catalog unavailable — using a short fallback list.
+api_control.sandbox.response: Response
+api_control.sandbox.empty: "Response will appear here."
 settings.logs.installed_app: Installed application
 settings.logs.installed_app_placeholder: "Select an installed app (fills systemd unit)…"
 settings.logs.live_stream_start: Live stream
@@ -3642,31 +3664,6 @@ settings.logs.timeline: Timeline
 settings.logs.timeline_all: All sources
 settings.logs.timeline_audit: Admin audit
 settings.logs.timeline_app: App log
-features.cockpit.title: Feature flags
-features.cockpit.purpose: "See which product switches are active and jump to the page that manages them."
-features.cockpit.intro: "This cockpit lists real product toggles already wired in Krate (Flagception, account creation, Delete Protection). Flags configured only in YAML stay read-only here."
-features.cockpit.col_flag: Flag
-features.cockpit.col_state: State
-features.cockpit.col_manage: Manage
-features.cockpit.on: On
-features.cockpit.off: Off
-features.cockpit.open: Open
-features.cockpit.registration: User registration
-features.cockpit.registration_help: "Public signup follows Settings → General (account creation mode) and the registration Flagception switch."
-features.cockpit.forgot_password: Forgot password
-features.cockpit.forgot_password_help: "Flagception kill-switch for /reset-password."
-features.cockpit.playback: Playback
-features.cockpit.playback_help: "Host kill-switch for the Playback dashboard (license still required)."
-features.cockpit.terminal: Web console
-features.cockpit.terminal_help: "Browser terminal under System → Terminal (permission-gated)."
-features.cockpit.delete_protection: Delete Protection
-features.cockpit.delete_protection_help: "Block destructive app/media deletes when enabled. Editable below."
-features.cockpit.community_apps: Community apps
-features.cockpit.community_apps_help: "Show community catalog source in the App Store."
-features.cockpit.custom_apps: Custom apps
-features.cockpit.custom_apps_help: "Show custom catalog source in the App Store."
-features.cockpit.subdomains: App subdomains
-features.cockpit.subdomains_help: "Allow subdomain routing options when installing apps."
 settings.email_templates.heading: Email templates
 settings.email_templates.help: "Customize welcome, password-reset, and registration-confirm subjects/bodies. Placeholders: {username}, {email}, {site_name}, {root_url}, and {reset_url} for password reset."
 settings.password_reset_email.subject: Password reset subject
