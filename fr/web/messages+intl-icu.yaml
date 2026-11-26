@@ -3484,6 +3484,9 @@ troubleshooting.bandwidth_history.updated: Mis à jour depuis les échantillons 
 troubleshooting.bandwidth_history.summary: "{interface} : ↓ {rx} · ↑ {tx} (fenêtre {hours} h)"
 troubleshooting.bandwidth_history.summary_period: "{interface} : ↓ {rx} · ↑ {tx} ({period})"
 troubleshooting.bandwidth_history.period_day: Jour
+troubleshooting.bandwidth_history.period_hour: Heure
+troubleshooting.bandwidth_history.chart: Série bande passante
+troubleshooting.bandwidth_history.scrub: Curseur
 troubleshooting.bandwidth_history.period_month: Mois
 troubleshooting.bandwidth_history.month_unavailable: Les totaux mensuels nécessitent vnStat sur l’hôte.
 troubleshooting.bandwidth_history.source_vnstat: "Source : JSON vnStat."
