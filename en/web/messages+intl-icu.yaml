@@ -2772,6 +2772,13 @@ playback.throttle.include_lan: "Also reserve bandwidth for LAN streams"
 playback.throttle.clients: "Clients to manage"
 playback.throttle.weight: Weight
 playback.throttle.client_weights_help: "Optional priority between selected clients (default 1). Higher weight gets a larger share of the remaining budget."
+playback.throttle.quiet_hours.enabled: Quiet hours
+playback.throttle.quiet_hours.help: "During this window, use quieter upload and download budgets while throttle is on. Does not block remote sessions."
+playback.throttle.quiet_hours.start: Start hour (0–23)
+playback.throttle.quiet_hours.end: End hour (0–23)
+playback.throttle.quiet_hours.uploadMbps: Quiet upload budget (Mbps)
+playback.throttle.quiet_hours.downloadMbps: Quiet download budget (Mbps)
+playback.automation.reason.quiet_hours: Quiet-hours budgets active
 playback.throttle.status.disabled: Throttle off
 playback.throttle.status.disabled_help: Intelligent throttling is disabled.
 playback.throttle.status.active: Throttle active
