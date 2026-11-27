@@ -1807,6 +1807,12 @@ network.upload_speed: "Upload Speed"
 notification.center.empty: "No new notifications."
 notification.center.title: "Notification Center"
 notification.center.open: Open
+notification.center.dismiss: Dismiss
+notification.center.mark_all_read: Mark all read
+notification.center.dispatches: Recent alert dispatches
+notification.center.dispatches_loading: Loading…
+notification.center.dispatches_empty: No alert dispatches yet.
+notification.center.view_history: View delivery history
 notification.center.pending_users.title: "Pending account activations"
 notification.center.pending_users.body: "{count} user(s) waiting for validation in Users."
 notification.center.announcements.title: "Compose announcement"

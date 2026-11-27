@@ -1807,6 +1807,12 @@ network.upload_speed: "Vitesse de téléversement"
 notification.center.empty: "Aucune nouvelle notification."
 notification.center.title: "Centre de notifications"
 notification.center.open: Ouvrir
+notification.center.dismiss: Ignorer
+notification.center.mark_all_read: Tout marquer lu
+notification.center.dispatches: Derniers envois d'alertes
+notification.center.dispatches_loading: Chargement…
+notification.center.dispatches_empty: Aucun envoi d'alerte pour l'instant.
+notification.center.view_history: Voir l'historique de livraison
 notification.center.pending_users.title: "Activations de comptes en attente"
 notification.center.pending_users.body: "{count} utilisateur(s) en attente de validation dans Utilisateurs."
 notification.center.announcements.title: "Rédiger une annonce"
