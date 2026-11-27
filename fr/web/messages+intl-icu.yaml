@@ -762,6 +762,18 @@ users.manage.playback: Rôles playback
 users.manage.simulate: Simuler la vue
 users.manage.simulate_help: Ouvrir le tableau de bord en tant que cet utilisateur. Quittez via la bannière.
 users.manage.simulate_unavailable: La simulation n’est pas disponible pour ce compte.
+users.manage.access: Accès
+users.manage.access_help: La suspension bloque la connexion et révoque les sessions. Une date de fin bloque la connexion après cette heure UTC.
+users.manage.access_valid_until: Accès valable jusqu’au (UTC)
+users.manage.access_save: Enregistrer la date de fin
+users.manage.access_clear: Effacer la date de fin
+users.manage.suspend: Suspendre
+users.manage.unsuspend: Lever la suspension
+users.suspend.success: Utilisateur suspendu ; sessions révoquées.
+users.unsuspend.success: Suspension levée.
+users.expiry.saved: Date de fin d’accès enregistrée.
+users.expiry.cleared: Date de fin d’accès effacée.
+users.expiry.invalid: Date de fin d’accès invalide.
 users.permission_matrix.title: Matrice des permissions
 users.permission_matrix.nav: Permissions
 users.permission_matrix.link: Ouvrir la matrice des permissions

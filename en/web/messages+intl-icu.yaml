@@ -762,6 +762,18 @@ users.manage.playback: Playback roles
 users.manage.simulate: Simulate view
 users.manage.simulate_help: Open the dashboard as this user (switch user). Exit from the banner.
 users.manage.simulate_unavailable: Simulation is not available for this account.
+users.manage.access: Access
+users.manage.access_help: Suspend blocks login and revokes sessions. An end date blocks login after that UTC time.
+users.manage.access_valid_until: Access valid until (UTC)
+users.manage.access_save: Save end date
+users.manage.access_clear: Clear end date
+users.manage.suspend: Suspend
+users.manage.unsuspend: Unsuspend
+users.suspend.success: User suspended; sessions revoked.
+users.unsuspend.success: User unsuspended.
+users.expiry.saved: Access end date saved.
+users.expiry.cleared: Access end date cleared.
+users.expiry.invalid: Invalid access end date.
 users.permission_matrix.title: Permission matrix
 users.permission_matrix.nav: Permissions
 users.permission_matrix.link: Open permission matrix

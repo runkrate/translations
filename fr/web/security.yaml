@@ -17,3 +17,5 @@
 'Invalid or expired login link.': 'Lien de connexion invalide ou expiré.'
 'Too many failed login attempts, please try again in %minutes% minute.': 'Plusieurs tentatives de connexion ont échoué, veuillez réessayer dans %minutes% minute.'
 'Too many failed login attempts, please try again in %minutes% minutes.': 'Trop de tentatives de connexion échouées, veuillez réessayer dans %minutes% minutes.'
+auth.account.suspended: 'Ce compte est suspendu. Contactez un administrateur de l’instance pour rétablir l’accès.'
+auth.account.expired: 'L’accès de ce compte a expiré. Contactez un administrateur de l’instance pour une nouvelle date de fin.'
