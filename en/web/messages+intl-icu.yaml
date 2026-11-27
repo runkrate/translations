@@ -770,6 +770,7 @@ users.manage.access_clear: Clear end date
 users.manage.suspend: Suspend
 users.manage.unsuspend: Unsuspend
 users.suspend.success: User suspended; sessions revoked.
+users.create.max_users_reached: "Licensed user limit reached. New accounts cannot be created."
 users.unsuspend.success: User unsuspended.
 users.expiry.saved: Access end date saved.
 users.expiry.cleared: Access end date cleared.
@@ -1811,6 +1812,7 @@ notification.center.pending_users.body: "{count} user(s) waiting for validation 
 notification.center.announcements.title: "Compose announcement"
 notification.center.announcements.body: "Publish a banner for users from Announcements."
 registration.confirm_email_subject: "Please confirm your email address"
+registration.max_users_reached: "This instance has reached its licensed user limit. New accounts cannot be created."
 service.child: "Child Service"
 service.name: "Service Name"
 service.parent: "Parent Service"

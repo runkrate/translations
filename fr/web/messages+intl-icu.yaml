@@ -770,6 +770,7 @@ users.manage.access_clear: Effacer la date de fin
 users.manage.suspend: Suspendre
 users.manage.unsuspend: Lever la suspension
 users.suspend.success: Utilisateur suspendu ; sessions révoquées.
+users.create.max_users_reached: "Limite d’utilisateurs de la licence atteinte. Impossible de créer de nouveaux comptes."
 users.unsuspend.success: Suspension levée.
 users.expiry.saved: Date de fin d’accès enregistrée.
 users.expiry.cleared: Date de fin d’accès effacée.
@@ -1811,6 +1812,7 @@ notification.center.pending_users.body: "{count} utilisateur(s) en attente de va
 notification.center.announcements.title: "Rédiger une annonce"
 notification.center.announcements.body: "Publier une bannière depuis Annonces."
 registration.confirm_email_subject: "Veuillez confirmer votre adresse email"
+registration.max_users_reached: "Cette instance a atteint la limite d’utilisateurs de la licence. Impossible de créer de nouveaux comptes."
 service.child: "Service enfant"
 service.name: "Nom du service"
 service.parent: "Service parent"
