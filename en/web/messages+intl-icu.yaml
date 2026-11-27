@@ -586,8 +586,8 @@ playback.settings.cover_art.preview_empty: "No poster resolved for this id."
 playback.settings.cover_art.preview_error: "Preview failed."
 playback.stremio.unsupported: "Stremio: not supported"
 playback.stremio.unsupported_help: "Stremio does not expose a usable sessions/libraries API for Playback."
-playback.control_center.heading: "Server status"
-playback.control_center.help: "Health and load for discovered media servers."
+playback.control_center.heading: "Control Center"
+playback.control_center.help: "Cockpit for multi-server health, live capacity, broadcast, and stop-all — without opening Plex or Jellyfin."
 playback.control_center.link_users: Users
 playback.control_center.link_devices: Devices
 playback.control_center.link_live_capacity: Live capacity
@@ -1231,8 +1231,8 @@ vpn.gateway.enrolled: "User enrolled"
 vpn.gateway.revoke: Revoke
 vpn.gateway.mode: Mode
 vpn.gateway.empty: "No enrolled users."
-vpn.routes.title: "App-scoped routing"
-vpn.routes.hint: "Bind any installed app instance to a VPN peer independently (e.g. rtorrent under VPN, jellyfin not). Uses a network namespace + optional kill switch. The active system peer cannot be reused for a route."
+vpn.routes.title: "App VPN"
+vpn.routes.hint: "Bind each installed app instance to its own WireGuard peer (stage before install, enable/disable, optional kill switch and port-forward). Not a host-wide on/off."
 vpn.routes.app: App
 vpn.routes.user: User
 vpn.routes.instance: "App instance"
@@ -3636,11 +3636,11 @@ troubleshooting.storage_cockpit.updated: Updated from telemetry snapshot.
 troubleshooting.storage_cockpit.empty_smart: No SMART disks in snapshot.
 troubleshooting.storage_cockpit.empty_pools: No RAID/ZFS/Btrfs pools in snapshot.
 troubleshooting.hardware_lite.thermals: Thermals
-troubleshooting.hardware_inventory.title: Hardware inventory
-troubleshooting.hardware_inventory.help: Board, BIOS, CPU, fans, and CPU vulnerability mitigations from sysfs (read-only).
+troubleshooting.hardware_inventory.title: "Hardware health"
+troubleshooting.hardware_inventory.help: "Platform, CPU, memory, fans, ECC, and writeback signals from sysfs/proc (read-only)."
 troubleshooting.hardware_inventory.fetch_failed: Could not load hardware inventory.
 troubleshooting.hardware_inventory.product: Product
-troubleshooting.hardware_inventory.cpu_mem: CPU / memory
+troubleshooting.hardware_inventory.cpu_mem: "CPU / memory"
 troubleshooting.hardware_inventory.fans: Fans
 troubleshooting.hardware_inventory.vuln_name: Vulnerability
 troubleshooting.hardware_inventory.vuln_state: State
@@ -3745,8 +3745,8 @@ playback.settings.geoip.action: Blocked session action
 playback.settings.geoip.action_flag: Flag only
 playback.settings.geoip.action_stop: Stop session
 api_control.title: API Control
-api_control.purpose: "Instance API keys and a safe place to try requests."
-api_control.intro: "Rotate Read and Write keys for automation. Use the Sandbox below to try calls against a copy of the database; host actions like VPN or system updates stay blocked there."
+api_control.purpose: "Instance API keys, Sandbox recipes, and a safe place to automate without touching production."
+api_control.intro: "Rotate Read and Write keys for automation. Use Sandbox recipes below (health, Playback sessions, App VPN routes) with copy-as-curl against a cloned database — host-mutating calls stay blocked there."
 api_control.keys.title: Instance API keys
 api_control.keys.help: "Read keys may only call GET/HEAD. Write keys can call any allowed API method. Keys are shown once at rotate time."
 api_control.keys.bound_admin: "Bound admin account: {username}."
@@ -3817,3 +3817,99 @@ settings.password_reset_email.body: Password reset body
 settings.password_reset_email.body_help: "Optional. When set, replaces the default HTML template. Include {reset_url}."
 settings.registration_confirm_email.subject: Registration confirm subject
 settings.registration_confirm_email.subject_help: "Subject for the email-activation confirmation message. Leave empty for the translated default."
+troubleshooting.health_hub.title: "Host health hub"
+troubleshooting.health_hub.help: "One story from score to factors to timeline to a diagnostics zip — without leaving Troubleshooting."
+troubleshooting.health_hub.loading: Loading…
+troubleshooting.health_hub.factors: "Score factors"
+troubleshooting.health_hub.open_timeline: "Open timeline"
+troubleshooting.health_hub.download_diagnostics: "Download diagnostics"
+troubleshooting.health_hub.factor_timeline: Timeline
+troubleshooting.health_hub.diagnostics_guided: "Highlighted inclusions match the factors dragging the score down."
+command_palette.why_score_low: "Why is my score low?"
+command_palette.playback_control_center: "Playback · Control Center"
+command_palette.app_vpn: "App VPN · Routes"
+command_palette.api_recipes: "API Sandbox · Recipes"
+playback.control_center.demo_title: "60-second demo"
+playback.control_center.demo_step_servers: "Review multi-server health and capacity here."
+playback.control_center.demo_step_live: "Jump to Live sessions — stop or message viewers without opening Plex/Jellyfin."
+playback.control_center.demo_step_policy: "Geo allowlist blocks show as badges on Live sessions; broadcast and stop-all sit above."
+vpn.routes.badge: "App VPN"
+vpn.routes.product_callout: "Each row is a user app egress tunnel — stage before install, enable, then confirm peer handshake and geo without SSH. Playback discovery already reads vpn::route."
+vpn.routes.via_geo: via
+api_control.sandbox.badge: Sandbox
+api_control.sandbox.vs_live: "not Live"
+api_control.sandbox.recipes_title: Recipes
+api_control.sandbox.recipes_help: "Load a documented call, then Send in Sandbox or Copy as curl for automation."
+api_control.sandbox.recipe.health: "Host health score"
+api_control.sandbox.recipe.playback: "Playback live sessions"
+api_control.sandbox.recipe.vpn: "App VPN route status"
+api_control.sandbox.recipe.firewall: "Firewall apply (worker)"
+api_control.sandbox.recipe.me: "Who am I (session)"
+api_control.sandbox.recipe.loaded: "Recipe loaded — Send to try in Sandbox, or Copy as curl."
+api_control.sandbox.recipe.firewall_note: "Host-mutating — Sandbox will block the send; copy-as-curl still works for Live with a write key."
+troubleshooting.hardware_inventory.platform: Platform
+troubleshooting.hardware_inventory.cpu: CPU
+troubleshooting.hardware_inventory.memory: Memory
+troubleshooting.hardware_inventory.temps: Temperature
+troubleshooting.hardware_inventory.dimm_temps: DIMM temperatures
+troubleshooting.hardware_inventory.vulns_detail: Vulnerability detail
+troubleshooting.hardware_inventory.writeback: Writeback cleanup
+troubleshooting.hardware_inventory.sampled_now: Sampled
+troubleshooting.hardware_inventory.type: Type
+troubleshooting.hardware_inventory.type_virtual: Virtual guest
+troubleshooting.hardware_inventory.type_bare_metal: Physical server
+troubleshooting.hardware_inventory.type_unknown: Unknown
+troubleshooting.hardware_inventory.system_vendor: System vendor
+troubleshooting.hardware_inventory.family_chassis: Family / chassis
+troubleshooting.hardware_inventory.board_vendor: Board vendor
+troubleshooting.hardware_inventory.board: Motherboard
+troubleshooting.hardware_inventory.board_rev: Board revision
+troubleshooting.hardware_inventory.bios: BIOS
+troubleshooting.hardware_inventory.bios_date: BIOS date
+troubleshooting.hardware_inventory.firmware: Firmware release
+troubleshooting.hardware_inventory.model: Model
+troubleshooting.hardware_inventory.microcode: Microcode
+troubleshooting.hardware_inventory.microcode_early: early-loaded
+troubleshooting.hardware_inventory.energy_profile: Power profile
+troubleshooting.hardware_inventory.profile: Profile
+troubleshooting.hardware_inventory.turbo_on: Turbo on
+troubleshooting.hardware_inventory.turbo_off: Turbo off
+troubleshooting.hardware_inventory.cores: Cores
+troubleshooting.hardware_inventory.cores_online: online
+troubleshooting.hardware_inventory.throttle_core: Core
+troubleshooting.hardware_inventory.throttle_package: Package
+troubleshooting.hardware_inventory.throttle_not_exposed: Not exposed
+troubleshooting.hardware_inventory.throttle_window: Active window
+troubleshooting.hardware_inventory.vulns_summary: Vulnerabilities
+troubleshooting.hardware_inventory.vuln_mitigated: mitigated
+troubleshooting.hardware_inventory.vuln_vulnerable: vulnerable
+troubleshooting.hardware_inventory.vuln_unknown: unknown
+troubleshooting.hardware_inventory.kernel_dumps: Kernel dumps
+troubleshooting.hardware_inventory.since_boot: since boot
+troubleshooting.hardware_inventory.mem_visible: Visible total
+troubleshooting.hardware_inventory.mem_installed: Installed
+troubleshooting.hardware_inventory.mem_corrupted: Corrupted
+troubleshooting.hardware_inventory.ecc_firmware: ECC (firmware)
+troubleshooting.hardware_inventory.ecc_counters: ECC counters
+troubleshooting.hardware_inventory.ecc_ce: CE
+troubleshooting.hardware_inventory.ecc_ue: UE
+troubleshooting.hardware_inventory.ecc_not_exposed: Not exposed
+troubleshooting.hardware_inventory.modules: Modules
+troubleshooting.hardware_inventory.modules_populated: Populated
+troubleshooting.hardware_inventory.none: None
+troubleshooting.hardware_inventory.unknown: unknown
+troubleshooting.hardware_inventory.writeback_clear: Clear
+troubleshooting.hardware_inventory.writeback_drained: Drained
+troubleshooting.hardware_inventory.writeback_livelock: Livelock
+troubleshooting.hardware_inventory.writeback_busy: Busy
+troubleshooting.hardware_inventory.writeback_unsupported: Unsupported
+troubleshooting.hardware_inventory.writeback_unknown: Unknown
+troubleshooting.hardware_inventory.wb_dying: Dying cgroups
+troubleshooting.hardware_inventory.wb_inodes: Cached inodes
+troubleshooting.hardware_inventory.wb_ext4: ext4 inode cache
+troubleshooting.hardware_inventory.wb_cached_mem: Cached memory
+troubleshooting.hardware_inventory.gap.virtual_guest: Virtual guest
+troubleshooting.hardware_inventory.gap.no_temp_sensors: No temperature sensors
+troubleshooting.hardware_inventory.gap.ecc_not_exposed: ECC counters not exposed
+troubleshooting.hardware_inventory.gap.no_throttle_counters: No throttle counters
+troubleshooting.hardware_inventory.gap.dmi_limited: DMI detail limited

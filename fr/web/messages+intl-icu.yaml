@@ -586,11 +586,11 @@ playback.settings.cover_art.preview_empty: "Aucune affiche résolue pour cet ide
 playback.settings.cover_art.preview_error: "Échec de l’aperçu."
 playback.stremio.unsupported: "Stremio : non pris en charge"
 playback.stremio.unsupported_help: "Stremio n’expose pas d’API sessions/bibliothèques utilisable pour Playback."
-playback.control_center.heading: "État des serveurs"
+playback.control_center.heading: "Control Center"
 playback.control_center.link_users: Utilisateurs
 playback.control_center.link_devices: Appareils
 playback.control_center.link_live_capacity: Capacité live
-playback.control_center.help: "Santé et charge des serveurs média découverts."
+playback.control_center.help: "Cockpit multi-serveurs : santé, capacité live, broadcast et stop-all — sans ouvrir Plex ou Jellyfin."
 playback.control_center.refresh: Actualiser
 playback.control_center.loading: Chargement…
 playback.control_center.empty: "Aucun serveur média découvert."
@@ -1231,8 +1231,8 @@ vpn.gateway.enrolled: "Utilisateur inscrit"
 vpn.gateway.revoke: Révoquer
 vpn.gateway.mode: Mode
 vpn.gateway.empty: "Aucun utilisateur inscrit."
-vpn.routes.title: "Routage par application"
-vpn.routes.hint: "Associez n’importe quelle instance installée à un peer VPN indépendamment (ex. rtorrent sous VPN, jellyfin non). Namespace réseau + kill switch optionnel. Le peer système actif ne peut pas être réutilisé pour une route."
+vpn.routes.title: "VPN par application"
+vpn.routes.hint: "Associez chaque instance installée à son propre peer WireGuard (stage avant install, activation, kill switch et port-forward optionnels). Pas un simple on/off hôte."
 vpn.routes.app: App
 vpn.routes.user: Utilisateur
 vpn.routes.instance: "Instance d’app"
@@ -3635,11 +3635,11 @@ troubleshooting.storage_cockpit.updated: Mis à jour depuis le snapshot télém�
 troubleshooting.storage_cockpit.empty_smart: Aucun disque SMART dans le snapshot.
 troubleshooting.storage_cockpit.empty_pools: Aucun pool RAID/ZFS/Btrfs dans le snapshot.
 troubleshooting.hardware_lite.thermals: Capteurs thermiques
-troubleshooting.hardware_inventory.title: Inventaire matériel
-troubleshooting.hardware_inventory.help: Carte, BIOS, CPU, ventilateurs et mitigations CPU depuis sysfs (lecture seule).
+troubleshooting.hardware_inventory.title: "État du matériel"
+troubleshooting.hardware_inventory.help: "Plateforme, CPU, mémoire, ventilateurs, ECC et writeback depuis sysfs/proc (lecture seule)."
 troubleshooting.hardware_inventory.fetch_failed: Impossible de charger l’inventaire matériel.
 troubleshooting.hardware_inventory.product: Produit
-troubleshooting.hardware_inventory.cpu_mem: CPU / mémoire
+troubleshooting.hardware_inventory.cpu_mem: "CPU / mémoire"
 troubleshooting.hardware_inventory.fans: Ventilateurs
 troubleshooting.hardware_inventory.vuln_name: Vulnérabilité
 troubleshooting.hardware_inventory.vuln_state: État
@@ -3744,8 +3744,8 @@ playback.settings.geoip.action: Action si session bloquée
 playback.settings.geoip.action_flag: Marquer seulement
 playback.settings.geoip.action_stop: Arrêter la session
 api_control.title: Contrôle API
-api_control.purpose: "Clés API instance et espace pour tester des requêtes en toute sécurité."
-api_control.intro: "Faites tourner les clés Lecture et Écriture pour l’automatisation. Le Sandbox ci-dessous permet d’essayer des appels sur une copie de la base ; les actions hôte (VPN, mises à jour système, etc.) y restent bloquées."
+api_control.purpose: "Clés d’API d’instance, recettes Sandbox, et un espace sûr pour automatiser sans toucher la production."
+api_control.intro: "Faites tourner les clés Read/Write pour l’automatisation. Les recettes Sandbox (santé, sessions Playback, routes VPN app) offrent un copy-as-curl sur une base clonée — les appels qui mutent l’hôte restent bloqués."
 api_control.keys.title: Clés API instance
 api_control.keys.help: "Les clés Lecture n’autorisent que GET/HEAD. Les clés Écriture peuvent appeler toute méthode API autorisée. La clé en clair n’est montrée qu’à la rotation."
 api_control.keys.bound_admin: "Compte admin lié : {username}."
@@ -3816,3 +3816,99 @@ settings.password_reset_email.body: Corps reset mot de passe
 settings.password_reset_email.body_help: "Optionnel. Remplace le modèle HTML par défaut. Inclure {reset_url}."
 settings.registration_confirm_email.subject: Objet confirmation d’inscription
 settings.registration_confirm_email.subject_help: "Objet du message de confirmation (activation e-mail). Vide = traduction par défaut."
+troubleshooting.health_hub.title: "Hub santé hôte"
+troubleshooting.health_hub.help: "Une seule histoire : score → facteurs → chronologie → zip diagnostics, sans quitter le dépannage."
+troubleshooting.health_hub.loading: Chargement…
+troubleshooting.health_hub.factors: "Facteurs du score"
+troubleshooting.health_hub.open_timeline: "Ouvrir la chronologie"
+troubleshooting.health_hub.download_diagnostics: "Télécharger les diagnostics"
+troubleshooting.health_hub.factor_timeline: Chronologie
+troubleshooting.health_hub.diagnostics_guided: "Les inclusions surlignées correspondent aux facteurs qui tirent le score vers le bas."
+command_palette.why_score_low: "Pourquoi mon score est bas ?"
+command_palette.playback_control_center: "Playback · Control Center"
+command_palette.app_vpn: "VPN app · Routes"
+command_palette.api_recipes: "API Sandbox · Recettes"
+playback.control_center.demo_title: "Démo 60 secondes"
+playback.control_center.demo_step_servers: "Vérifiez ici la santé et la capacité multi-serveurs."
+playback.control_center.demo_step_live: "Passez aux sessions live — stoppez ou messagez sans ouvrir Plex/Jellyfin."
+playback.control_center.demo_step_policy: "Les blocages geo apparaissent en badges sur Live ; broadcast et stop-all sont juste au-dessus."
+vpn.routes.badge: "VPN app"
+vpn.routes.product_callout: "Chaque ligne = tunnel de sortie d’une app utilisateur — stage avant install, activation, puis handshake/geo du peer sans SSH. Playback lit déjà vpn::route."
+vpn.routes.via_geo: via
+api_control.sandbox.badge: Sandbox
+api_control.sandbox.vs_live: "pas Live"
+api_control.sandbox.recipes_title: Recettes
+api_control.sandbox.recipes_help: "Chargez un appel documenté, puis Envoyer dans le Sandbox ou Copier en curl pour automatiser."
+api_control.sandbox.recipe.health: "Score santé hôte"
+api_control.sandbox.recipe.playback: "Sessions Playback live"
+api_control.sandbox.recipe.vpn: "Statut routes VPN app"
+api_control.sandbox.recipe.firewall: "Appliquer le pare-feu (worker)"
+api_control.sandbox.recipe.me: "Qui suis-je (session)"
+api_control.sandbox.recipe.loaded: "Recette chargée — Envoyer dans le Sandbox, ou Copier en curl."
+api_control.sandbox.recipe.firewall_note: "Mute l’hôte — le Sandbox bloquera l’envoi ; le curl reste utile en Live avec une clé write."
+troubleshooting.hardware_inventory.platform: Plateforme
+troubleshooting.hardware_inventory.cpu: CPU
+troubleshooting.hardware_inventory.memory: Mémoire
+troubleshooting.hardware_inventory.temps: Température
+troubleshooting.hardware_inventory.dimm_temps: Températures DIMM
+troubleshooting.hardware_inventory.vulns_detail: Détail des vulnérabilités
+troubleshooting.hardware_inventory.writeback: Nettoyage writeback
+troubleshooting.hardware_inventory.sampled_now: Relevé
+troubleshooting.hardware_inventory.type: Type
+troubleshooting.hardware_inventory.type_virtual: Invité virtuel
+troubleshooting.hardware_inventory.type_bare_metal: Serveur physique
+troubleshooting.hardware_inventory.type_unknown: Inconnu
+troubleshooting.hardware_inventory.system_vendor: Fabricant du système
+troubleshooting.hardware_inventory.family_chassis: Famille / châssis
+troubleshooting.hardware_inventory.board_vendor: Fabricant de la carte
+troubleshooting.hardware_inventory.board: Carte mère
+troubleshooting.hardware_inventory.board_rev: Révision carte mère
+troubleshooting.hardware_inventory.bios: BIOS
+troubleshooting.hardware_inventory.bios_date: Date du BIOS
+troubleshooting.hardware_inventory.firmware: Version du micrologiciel
+troubleshooting.hardware_inventory.model: Modèle
+troubleshooting.hardware_inventory.microcode: Microcode
+troubleshooting.hardware_inventory.microcode_early: chargée tôt
+troubleshooting.hardware_inventory.energy_profile: Profil énergétique
+troubleshooting.hardware_inventory.profile: Profil
+troubleshooting.hardware_inventory.turbo_on: Turbo activé
+troubleshooting.hardware_inventory.turbo_off: Turbo désactivé
+troubleshooting.hardware_inventory.cores: Cœurs
+troubleshooting.hardware_inventory.cores_online: en ligne
+troubleshooting.hardware_inventory.throttle_core: Cœur
+troubleshooting.hardware_inventory.throttle_package: Package
+troubleshooting.hardware_inventory.throttle_not_exposed: Non exposé
+troubleshooting.hardware_inventory.throttle_window: Fenêtre active
+troubleshooting.hardware_inventory.vulns_summary: Vulnérabilités
+troubleshooting.hardware_inventory.vuln_mitigated: atténuées
+troubleshooting.hardware_inventory.vuln_vulnerable: vulnérables
+troubleshooting.hardware_inventory.vuln_unknown: inconnues
+troubleshooting.hardware_inventory.kernel_dumps: Vidages du noyau
+troubleshooting.hardware_inventory.since_boot: depuis le boot
+troubleshooting.hardware_inventory.mem_visible: Total visible
+troubleshooting.hardware_inventory.mem_installed: Installée
+troubleshooting.hardware_inventory.mem_corrupted: Corrompue
+troubleshooting.hardware_inventory.ecc_firmware: ECC (micrologiciel)
+troubleshooting.hardware_inventory.ecc_counters: Compteurs ECC
+troubleshooting.hardware_inventory.ecc_ce: CE
+troubleshooting.hardware_inventory.ecc_ue: UE
+troubleshooting.hardware_inventory.ecc_not_exposed: Non exposé
+troubleshooting.hardware_inventory.modules: Modules
+troubleshooting.hardware_inventory.modules_populated: Occupés
+troubleshooting.hardware_inventory.none: Aucun
+troubleshooting.hardware_inventory.unknown: inconnues
+troubleshooting.hardware_inventory.writeback_clear: Aucun problème
+troubleshooting.hardware_inventory.writeback_drained: Drainé
+troubleshooting.hardware_inventory.writeback_livelock: Livelock
+troubleshooting.hardware_inventory.writeback_busy: Occupé
+troubleshooting.hardware_inventory.writeback_unsupported: Non pris en charge
+troubleshooting.hardware_inventory.writeback_unknown: Inconnu
+troubleshooting.hardware_inventory.wb_dying: Cgroups en cours de suppression
+troubleshooting.hardware_inventory.wb_inodes: Inodes en cache
+troubleshooting.hardware_inventory.wb_ext4: Cache d’inodes ext4
+troubleshooting.hardware_inventory.wb_cached_mem: Mémoire en cache
+troubleshooting.hardware_inventory.gap.virtual_guest: Invité virtuel
+troubleshooting.hardware_inventory.gap.no_temp_sensors: Pas de capteurs de température
+troubleshooting.hardware_inventory.gap.ecc_not_exposed: Compteurs ECC non exposés
+troubleshooting.hardware_inventory.gap.no_throttle_counters: Pas de compteurs de limitation
+troubleshooting.hardware_inventory.gap.dmi_limited: Détail DMI limité
