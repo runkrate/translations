@@ -3468,6 +3468,7 @@ logs.timeline.source.audit: Admin audit
 logs.timeline.source.access: Access logs
 logs.timeline.source.fail2ban: Firewall ledger
 logs.timeline.source.notifications: Notifications
+logs.timeline.source.mail: Mail delivery
 logs.timeline.col.at: Time
 logs.timeline.col.source: Source
 logs.timeline.col.severity: Severity

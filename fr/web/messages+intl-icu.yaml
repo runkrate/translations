@@ -3467,6 +3467,7 @@ logs.timeline.source.audit: Audit admin
 logs.timeline.source.access: Journaux d’accès
 logs.timeline.source.fail2ban: Journal pare-feu
 logs.timeline.source.notifications: Notifications
+logs.timeline.source.mail: Livraison mail
 logs.timeline.col.at: Heure
 logs.timeline.col.source: Source
 logs.timeline.col.severity: Sévérité
