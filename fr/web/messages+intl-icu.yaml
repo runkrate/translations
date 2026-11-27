@@ -3504,10 +3504,19 @@ backups.restore.action: Restaurer
 backups.restore.confirm: Restaurer cette archive sur les données live ? Le service peut redémarrer.
 backups.restore.preview_intro: Aperçu de restauration (rien n’a encore été écrit).
 backups.restore.preview_wipe: Les données live de l’application seront remplacées par cette archive.
+backups.restore.preview_restart: Le service de l’application redémarrera pendant la restauration.
 backups.restore.preview_caddyfrag: Un fragment proxy sera restauré avec l’archive.
 backups.restore.preview_no_caddyfrag: Aucun fragment proxy n’a été trouvé à côté de cette archive.
 backups.restore.preview_manifest: Un manifeste de sauvegarde est présent.
 backups.restore.done: Sauvegarde d’application restaurée.
+backups.restore.done_stages: "Restauration terminée : {stages}"
+backups.restore.failed_stages: "Restauration échouée ({stages}) : {detail}"
+backups.restore.stage.stop: Arrêt du service
+backups.restore.stage.wipe: Remplacement des données live
+backups.restore.stage.extract: Extraction de l’archive
+backups.restore.stage.caddyfrag: Restauration du fragment proxy
+backups.restore.stage.start: Démarrage du service
+backups.restore.stage.restore: Restauration
 backups.sidecar.caddyfrag: Fragment proxy
 backups.sidecar.manifest: Manifeste
 backups.error.preview_failed: Impossible d’apercevoir cette restauration.

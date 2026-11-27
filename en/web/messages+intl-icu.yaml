@@ -3505,10 +3505,19 @@ backups.restore.action: Restore
 backups.restore.confirm: Restore this archive over the live application data? The service may restart.
 backups.restore.preview_intro: Restore preview (nothing has been written yet).
 backups.restore.preview_wipe: Live application data will be replaced by this archive.
+backups.restore.preview_restart: The application service will restart as part of restore.
 backups.restore.preview_caddyfrag: A proxy fragment sidecar will be restored with the archive.
 backups.restore.preview_no_caddyfrag: No proxy fragment sidecar was found next to this archive.
 backups.restore.preview_manifest: A backup manifest sidecar is present.
 backups.restore.done: Application backup restored.
+backups.restore.done_stages: "Restore finished: {stages}"
+backups.restore.failed_stages: "Restore failed ({stages}): {detail}"
+backups.restore.stage.stop: Stop service
+backups.restore.stage.wipe: Replace live data
+backups.restore.stage.extract: Extract archive
+backups.restore.stage.caddyfrag: Restore proxy fragment
+backups.restore.stage.start: Start service
+backups.restore.stage.restore: Restore
 backups.sidecar.caddyfrag: Proxy fragment
 backups.sidecar.manifest: Manifest
 backups.error.preview_failed: Could not preview this restore.
