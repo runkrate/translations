@@ -3520,6 +3520,8 @@ backups.restore.preview_caddyfrag: Un fragment proxy sera restauré avec l’arc
 backups.restore.preview_no_caddyfrag: Aucun fragment proxy n’a été trouvé à côté de cette archive.
 backups.restore.preview_manifest: Un manifeste de sauvegarde est présent.
 backups.restore.done: Sauvegarde d’application restaurée.
+backups.restore.system_done: Sauvegarde système restaurée. Les services peuvent nécessiter un redémarrage.
+backups.restore.confirm_system: "Restaurer cette archive système sur les chemins hôtes actifs (config, état, données web, proxy) ? Les services peuvent nécessiter un redémarrage ensuite."
 backups.restore.done_stages: "Restauration terminée : {stages}"
 backups.restore.failed_stages: "Restauration échouée ({stages}) : {detail}"
 backups.restore.stage.stop: Arrêt du service

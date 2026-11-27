@@ -3521,6 +3521,8 @@ backups.restore.preview_caddyfrag: A proxy fragment sidecar will be restored wit
 backups.restore.preview_no_caddyfrag: No proxy fragment sidecar was found next to this archive.
 backups.restore.preview_manifest: A backup manifest sidecar is present.
 backups.restore.done: Application backup restored.
+backups.restore.system_done: System backup restored. Services may need a restart.
+backups.restore.confirm_system: "Restore this system archive over live host paths (config, state, web data, proxy)? Services may need a restart afterward."
 backups.restore.done_stages: "Restore finished: {stages}"
 backups.restore.failed_stages: "Restore failed ({stages}): {detail}"
 backups.restore.stage.stop: Stop service
