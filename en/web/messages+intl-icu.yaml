@@ -2771,6 +2771,9 @@ playback.throttle.overheadPercent: "Stream safety margin (%)"
 playback.throttle.fallbackStreamMbps: "Unknown stream bitrate (Mbps)"
 playback.throttle.restoreDelaySeconds: "Hold after playback ends (seconds)"
 playback.throttle.include_lan: "Also reserve bandwidth for LAN streams"
+playback.throttle.session_weights_help: "Optional multipliers on reserved stream bitrate by locality (default 1). Higher WAN weight reserves more upload for remote viewers."
+playback.throttle.session_weight_lan: LAN reservation weight
+playback.throttle.session_weight_wan: WAN reservation weight
 playback.throttle.clients: "Clients to manage"
 playback.throttle.weight: Weight
 playback.throttle.client_weights_help: "Optional priority between selected clients (default 1). Higher weight gets a larger share of the remaining budget."

@@ -2770,6 +2770,9 @@ playback.throttle.overheadPercent: "Marge pour les lectures (%)"
 playback.throttle.fallbackStreamMbps: "Débit de lecture inconnu (Mbps)"
 playback.throttle.restoreDelaySeconds: "Maintien après la lecture (secondes)"
 playback.throttle.include_lan: "Réserver aussi du débit pour les lectures LAN"
+playback.throttle.session_weights_help: "Multiplicateurs optionnels sur le débit réservé par localité (défaut 1). Un poids WAN plus élevé réserve plus de montant pour les lecteurs distants."
+playback.throttle.session_weight_lan: Poids de réservation LAN
+playback.throttle.session_weight_wan: Poids de réservation WAN
 playback.throttle.clients: "Clients à réguler"
 playback.throttle.weight: Poids
 playback.throttle.client_weights_help: "Priorité optionnelle entre les clients sélectionnés (défaut 1). Un poids plus élevé reçoit une plus grande part du budget restant."
