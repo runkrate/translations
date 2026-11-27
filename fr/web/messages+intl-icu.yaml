@@ -2769,6 +2769,8 @@ playback.throttle.fallbackStreamMbps: "Débit de lecture inconnu (Mbps)"
 playback.throttle.restoreDelaySeconds: "Maintien après la lecture (secondes)"
 playback.throttle.include_lan: "Réserver aussi du débit pour les lectures LAN"
 playback.throttle.clients: "Clients à réguler"
+playback.throttle.weight: Poids
+playback.throttle.client_weights_help: "Priorité optionnelle entre les clients sélectionnés (défaut 1). Un poids plus élevé reçoit une plus grande part du budget restant."
 playback.throttle.status.disabled: Throttle désactivé
 playback.throttle.status.disabled_help: Le throttling intelligent est désactivé.
 playback.throttle.status.active: Throttle actif

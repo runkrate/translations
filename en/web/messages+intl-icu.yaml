@@ -2770,6 +2770,8 @@ playback.throttle.fallbackStreamMbps: "Unknown stream bitrate (Mbps)"
 playback.throttle.restoreDelaySeconds: "Hold after playback ends (seconds)"
 playback.throttle.include_lan: "Also reserve bandwidth for LAN streams"
 playback.throttle.clients: "Clients to manage"
+playback.throttle.weight: Weight
+playback.throttle.client_weights_help: "Optional priority between selected clients (default 1). Higher weight gets a larger share of the remaining budget."
 playback.throttle.status.disabled: Throttle off
 playback.throttle.status.disabled_help: Intelligent throttling is disabled.
 playback.throttle.status.active: Throttle active
