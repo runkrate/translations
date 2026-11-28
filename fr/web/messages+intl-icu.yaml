@@ -769,6 +769,15 @@ users.manage.access_save: Enregistrer la date de fin
 users.manage.access_clear: Effacer la date de fin
 users.manage.suspend: Suspendre
 users.manage.unsuspend: Lever la suspension
+users.quick_actions: Actions rapides
+users.quick_actions.expiry: Date de fin d’accès
+users.status.suspended: Suspendu
+users.status.expires: "Expire le {date} UTC"
+users.list.empty_title: Aucun utilisateur pour l’instant
+users.list.empty_help: Créez un compte pour gérer les accès, quotas et sessions.
+users.list.empty_cta: Créer un utilisateur
+users.list.error_title: La dernière action n’a pas pu être terminée
+users.disk_quota.load_failed: Quota indisponible
 users.suspend.success: Utilisateur suspendu ; sessions révoquées.
 users.create.max_users_reached: "Limite d’utilisateurs de la licence atteinte. Impossible de créer de nouveaux comptes."
 users.unsuspend.success: Suspension levée.
@@ -1121,6 +1130,20 @@ firewall.fail2ban.ledger_at: Quand
 firewall.fail2ban.ledger_action: Action
 firewall.fail2ban.actions: Actions
 firewall.fail2ban.reco_open: Ouvrir
+firewall.fail2ban.matrix: Matrice des jails
+firewall.fail2ban.matrix_status: État
+firewall.fail2ban.matrix_last_ban: Dernier ban
+firewall.fail2ban.matrix_active: Actif
+firewall.fail2ban.matrix_inactive: Inactif
+firewall.fail2ban.allowlist: Liste d’exclusion (ignoreip)
+firewall.fail2ban.allowlist_help: "IP et CIDR que Fail2ban ne bannit jamais (ignoreip). Mise à jour runtime via fail2ban-client ; persistance via jail.local ou zen fail2ban::ignoreip."
+firewall.fail2ban.allowlist_cidrs: Liste IP / CIDR
+firewall.fail2ban.allowlist_save: Enregistrer la liste
+firewall.fail2ban.allowlist_ok: Liste d’exclusion mise à jour.
+firewall.fail2ban.allowlist_failed: "Impossible de mettre à jour la liste d’exclusion."
+firewall.fail2ban.allowlist_saving: Enregistrement…
+firewall.fail2ban.allowlist_source: Source
+firewall.fail2ban.allowlist_readonly: "Liste en lecture seule sur cet hôte (éditer jail.local / zen)."
 vpn.title: Contrôle VPN
 vpn.purpose: "Gérer les peers WireGuard système, l’enrollment gateway et les routes par application."
 vpn.error.heading: "Statut VPN indisponible"
@@ -2305,9 +2328,29 @@ terminal.unlock.expires: "Déverrouillé · ~{minutes} min restantes"
 terminal.unlock.reconnect: Reconnecter
 terminal.unlock.required: "Terminal verrouillé. Déverrouillez d’abord avec votre mot de passe."
 terminal.unlock.locked_idle: "Terminal verrouillé après inactivité."
-
+terminal.unlock.reattach_hint: "Le déverrouillage est encore valide — connectez-vous pour ouvrir un shell, ou reconnectez après une coupure sans ressaisir le mot de passe."
+terminal.unlock.reconnect_banner: "Shell déconnecté. Reconnectez tant que le déverrouillage est actif, ou terminez la session pour verrouiller à nouveau."
+terminal.users_link: Utilisateurs
+terminal.sessions.title: Shells actifs
+terminal.sessions.help: Vos sessions terminal web sur cet hôte (utilisateur, répertoire de départ, inactivité).
+terminal.sessions.empty: Aucune session terminal pour le moment.
+terminal.sessions.loading: Chargement des sessions…
+terminal.sessions.user: Utilisateur
+terminal.sessions.cwd: cwd
+terminal.sessions.idle: "Inactif {seconds}"
+terminal.sessions.idle_active: Actif
+terminal.sessions.alive: Vivant
+terminal.sessions.dead: Arrêté
+terminal.sessions.attach: Reconnecter
+terminal.sessions.signal: SIGTERM
+terminal.sessions.kill: Tuer
 terminal.kill: Terminer la session
 terminal.kill.done: "Session terminal terminée."
+terminal.kill.confirm: "Terminer cette session terminal et verrouiller la console ?"
+terminal.signal.term: SIGTERM
+terminal.signal.term_help: Envoyer SIGTERM au helper du shell (arrêt doux).
+terminal.signal.term_done: "SIGTERM envoyé à la session terminal."
+terminal.signal.kill: Tuer
 terminal.clipboard.toolbar: Presse-papiers
 terminal.clipboard.copy: Copier
 terminal.clipboard.cut: Couper
@@ -3309,9 +3352,16 @@ security.passkey.error_origin: "Le navigateur a refusé la passkey. Utilisez le 
 security.passkey.error_insecure: "Les passkeys exigent le HTTPS. Cette page n’est pas sécurisée (HTTP) — ouvrez le site en https:// avec un nom de domaine."
 security.passkey.error_ip: "Les passkeys ne fonctionnent pas avec une adresse IP. Ouvrez le site avec son nom de domaine en HTTPS (pas 37.x.x.x)."
 security.passkey.error_domain_required: "Les passkeys exigent un nom de domaine public configuré (HTTPS). Configurez d’abord le DNS / les certificats."
+security.passkey.inventory_title: Appareils enregistrés
+security.passkey.inventory_help: Nom, dernière utilisation et révocation pour chaque passkey.
+security.passkey.gate_title: Les passkeys exigent un domaine HTTPS public
+security.passkey.gate_help: Les passkeys restent indisponibles tant que cet hôte n’utilise pas un vrai nom de domaine avec TLS (pas une IP brute ni localhost).
+security.passkey.gate_cta: Ouvrir les certificats
+security.passkey.gate_admin: Demandez à un admin ayant accès aux certificats de configurer d’abord le DNS et le TLS.
 monitoring.health.label: "Santé hôte"
 monitoring.health.grade_healthy: "Saine"
 monitoring.health.grade_degraded: "Dégradée"
+monitoring.health.grade_warning: "Attention"
 monitoring.health.grade_critical: "Critique"
 monitoring.health.grade_unknown: "Inconnue"
 monitoring.health.detail: "CPU {cpu}% · RAM {ram}% · Disque {disk}% · {alerts, plural, =0 {aucune alerte} one {# alerte} other {# alertes}}"
@@ -3360,13 +3410,21 @@ settings.notifications.smart_failed: "Notifier si SMART échoué"
 settings.notifications.smart_unknown: "Notifier si SMART inconnu"
 settings.notifications.flash.saved: "Règles de notification enregistrées."
 troubleshooting.section.diagnostics: "Bundle de diagnostics"
-troubleshooting.section.diagnostics_help: "Téléchargez un zip avec l’aperçu licence, le statut support, la santé hôte, le dernier envoi d’alertes, l’état des unités systemd, les logs lisibles et des extraits Caddy (secrets masqués) pour les tickets support."
+troubleshooting.section.diagnostics_help: "Choisissez ce qui entre dans le zip (tout activé par défaut), puis téléchargez-le pour un ticket support. Les secrets Caddy sont masqués."
+troubleshooting.diagnostics.switches_help: "Activez les sections à inclure dans le zip. Les suggestions liées à la santé hôte restent cochées à l’ouverture."
+troubleshooting.diagnostics.select_suggested: "Sélectionner les suggestions"
+troubleshooting.diagnostics.select_all: "Tout sélectionner"
 troubleshooting.diagnostics.download: "Télécharger le zip de diagnostics"
 troubleshooting.diagnostics.busy: "Création du zip de diagnostics…"
 troubleshooting.diagnostics.inclusion.manifest: "Manifeste du bundle"
 troubleshooting.diagnostics.inclusion.license_overview: "Aperçu licence (sanitisé)"
 troubleshooting.diagnostics.inclusion.support_status: "Statut de session support"
 troubleshooting.diagnostics.inclusion.host_health: "Instantané du score de santé hôte"
+troubleshooting.diagnostics.inclusion.hardware_inventory: "Inventaire matériel (snapshot)"
+troubleshooting.diagnostics.inclusion.fail2ban_status: "Statut Fail2ban + ledger"
+troubleshooting.diagnostics.copy_blurb: "Copier le blurb support"
+troubleshooting.diagnostics.blurb_copied: "Blurb support copié"
+troubleshooting.diagnostics.blurb_failed: "Impossible de copier le blurb support"
 troubleshooting.diagnostics.inclusion.alert_last_run: "Dernier envoi d’alertes"
 troubleshooting.diagnostics.inclusion.systemd_units: "État des unités systemd pertinentes"
 troubleshooting.diagnostics.inclusion.application_logs: "Queues de logs application / jobs"
@@ -3504,7 +3562,9 @@ settings.notifications.quiet_hours: Heures calmes
 settings.notifications.quiet_hours_start: Début heures calmes (heure 0–23)
 settings.notifications.quiet_hours_end: Fin heures calmes (heure 0–23)
 security.impersonation.switch: Usurper
-security.impersonation.banner: "Vous usurpez {user}."
+security.impersonation.badge: Usurpation
+security.impersonation.banner: "Vous consultez le tableau de bord en tant que {user}."
+security.impersonation.as_admin: "Session admin : {admin}"
 security.impersonation.exit: Quitter l’usurpation
 security.delete_protection.title: Delete Protection
 security.delete_protection.help: Bloque les suppressions d’apps et les grosses suppressions média lorsque activé.
@@ -3542,7 +3602,11 @@ logs.timeline.col.detail: Détail
 logs.timeline.col.link: Lien
 logs.timeline.loading: Chargement…
 logs.timeline.empty: Aucun événement pour l’instant.
+logs.timeline.export_jsonl: "Exporter JSONL"
+logs.timeline.export_csv: "Exporter CSV"
 command_palette.firewall_ledger: Journal pare-feu
+command_palette.firewall_jail_matrix: Matrice des jails Fail2ban
+command_palette.firewall_allowlist: Liste d’exclusion Fail2ban
 command_palette.notifications_history: Historique des notifications
 command_palette.playback_sessions: Playback · Sessions live
 command_palette.playback_intelligence: Playback · Intelligence
@@ -3613,8 +3677,11 @@ security.sessions.current: Actuelle
 security.sessions.last_seen: Dernière activité
 security.sessions.revoke: Révoquer
 security.sessions.revoke_confirm: Révoquer cette session ?
-security.sessions.revoke_others: Révoquer les autres sessions
+security.sessions.revoke_others: Déconnecter les autres appareils
 security.sessions.revoke_others_confirm: Révoquer toutes les autres sessions ? Vous restez connecté sur cet appareil.
+security.sessions.revoke_others_done: "{count} autre(s) session(s) déconnectée(s)."
+security.sessions.force_logout_title: Forcer la déconnexion des autres sessions
+security.sessions.force_logout_help: Révoque immédiatement tous les autres appareils connectés tout en gardant ce navigateur actif. L’action est auditée.
 users.force_logout.confirm: Forcer la déconnexion de cet utilisateur sur tous les appareils ?
 settings.notifications.history.title: Notifications récentes
 settings.notifications.history.empty: Aucun historique de notification pour le moment.
@@ -3636,7 +3703,7 @@ troubleshooting.storage_cockpit.empty_smart: Aucun disque SMART dans le snapshot
 troubleshooting.storage_cockpit.empty_pools: Aucun pool RAID/ZFS/Btrfs dans le snapshot.
 troubleshooting.hardware_lite.thermals: Capteurs thermiques
 troubleshooting.hardware_inventory.title: "État du matériel"
-troubleshooting.hardware_inventory.help: "Plateforme, CPU, mémoire, ventilateurs, ECC et writeback depuis sysfs/proc (lecture seule)."
+troubleshooting.hardware_inventory.help: "Plateforme, CPU, mémoire, ventilateurs, tensions, températures disque, ECC et writeback depuis sysfs/proc (lecture seule)."
 troubleshooting.hardware_inventory.fetch_failed: Impossible de charger l’inventaire matériel.
 troubleshooting.hardware_inventory.product: Produit
 troubleshooting.hardware_inventory.cpu_mem: "CPU / mémoire"
@@ -3823,7 +3890,7 @@ troubleshooting.health_hub.factors: "Facteurs du score"
 troubleshooting.health_hub.open_timeline: "Ouvrir la chronologie"
 troubleshooting.health_hub.download_diagnostics: "Télécharger les diagnostics"
 troubleshooting.health_hub.factor_timeline: Chronologie
-troubleshooting.health_hub.diagnostics_guided: "Les inclusions surlignées correspondent aux facteurs qui tirent le score vers le bas."
+troubleshooting.health_hub.diagnostics_guided: "Les sections zip suggérées correspondent aux facteurs qui tirent le score vers le bas."
 command_palette.why_score_low: "Pourquoi mon score est bas ?"
 command_palette.playback_control_center: "Playback · Control Center"
 command_palette.app_vpn: "VPN app · Routes"
@@ -3912,3 +3979,16 @@ troubleshooting.hardware_inventory.gap.no_temp_sensors: Pas de capteurs de temp�
 troubleshooting.hardware_inventory.gap.ecc_not_exposed: Compteurs ECC non exposés
 troubleshooting.hardware_inventory.gap.no_throttle_counters: Pas de compteurs de limitation
 troubleshooting.hardware_inventory.gap.dmi_limited: Détail DMI limité
+troubleshooting.hardware_inventory.disk_temps: Températures disque
+troubleshooting.hardware_inventory.sensors: Capteurs
+troubleshooting.hardware_inventory.sensors_help: "Table hwmon triable (température / ventilateur / tension) avec libellés de puce, max et seuils critiques."
+troubleshooting.hardware_inventory.sensors_empty: Aucun capteur hwmon exposé sur cet hôte.
+troubleshooting.hardware_inventory.sensor_kind: Type
+troubleshooting.hardware_inventory.sensor_chip: Puce
+troubleshooting.hardware_inventory.sensor_label: Libellé
+troubleshooting.hardware_inventory.sensor_value: Valeur
+troubleshooting.hardware_inventory.sensor_max: Max
+troubleshooting.hardware_inventory.sensor_crit: Crit
+troubleshooting.hardware_inventory.kind_temp: Temp
+troubleshooting.hardware_inventory.kind_fan: Ventilateur
+troubleshooting.hardware_inventory.kind_voltage: Tension

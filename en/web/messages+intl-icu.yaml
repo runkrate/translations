@@ -769,6 +769,15 @@ users.manage.access_save: Save end date
 users.manage.access_clear: Clear end date
 users.manage.suspend: Suspend
 users.manage.unsuspend: Unsuspend
+users.quick_actions: Quick actions
+users.quick_actions.expiry: Access end date
+users.status.suspended: Suspended
+users.status.expires: "Expires {date} UTC"
+users.list.empty_title: No users yet
+users.list.empty_help: Create an account to start managing access, quotas, and sessions.
+users.list.empty_cta: Create user
+users.list.error_title: Could not complete the last action
+users.disk_quota.load_failed: Quota unavailable
 users.suspend.success: User suspended; sessions revoked.
 users.create.max_users_reached: "Licensed user limit reached. New accounts cannot be created."
 users.unsuspend.success: User unsuspended.
@@ -1121,6 +1130,20 @@ firewall.fail2ban.ledger_at: When
 firewall.fail2ban.ledger_action: Action
 firewall.fail2ban.actions: Actions
 firewall.fail2ban.reco_open: Open
+firewall.fail2ban.matrix: Jail matrix
+firewall.fail2ban.matrix_status: Status
+firewall.fail2ban.matrix_last_ban: Last ban
+firewall.fail2ban.matrix_active: Active
+firewall.fail2ban.matrix_inactive: Inactive
+firewall.fail2ban.allowlist: Ignoreip allowlist
+firewall.fail2ban.allowlist_help: "IPs and CIDRs that Fail2ban never bans (ignoreip). Runtime update via fail2ban-client; persist with jail.local or zen fail2ban::ignoreip."
+firewall.fail2ban.allowlist_cidrs: IP / CIDR list
+firewall.fail2ban.allowlist_save: Save allowlist
+firewall.fail2ban.allowlist_ok: Allowlist updated.
+firewall.fail2ban.allowlist_failed: "Could not update allowlist."
+firewall.fail2ban.allowlist_saving: Saving…
+firewall.fail2ban.allowlist_source: Source
+firewall.fail2ban.allowlist_readonly: "Allowlist is read-only on this host (edit jail.local / zen)."
 vpn.title: VPN Control
 vpn.purpose: "Manage WireGuard system peers, gateway enrollment, and app-scoped routes."
 vpn.error.heading: "VPN status unavailable"
@@ -2306,9 +2329,29 @@ terminal.unlock.expires: "Unlocked · ~{minutes} min left"
 terminal.unlock.reconnect: Reconnect
 terminal.unlock.required: "Terminal is locked. Unlock with your password first."
 terminal.unlock.locked_idle: "Terminal locked after inactivity."
-
+terminal.unlock.reattach_hint: "Unlock is still valid — connect to open a fresh shell, or reconnect after a disconnect without entering your password again."
+terminal.unlock.reconnect_banner: "Shell disconnected. Reconnect while unlock is active, or end the session to lock again."
+terminal.users_link: Users
+terminal.sessions.title: Active shells
+terminal.sessions.help: Your web terminal sessions on this host (user, start directory, idle time).
+terminal.sessions.empty: No terminal sessions right now.
+terminal.sessions.loading: Loading sessions…
+terminal.sessions.user: User
+terminal.sessions.cwd: cwd
+terminal.sessions.idle: "Idle {seconds}"
+terminal.sessions.idle_active: Active
+terminal.sessions.alive: Alive
+terminal.sessions.dead: Stopped
+terminal.sessions.attach: Reconnect
+terminal.sessions.signal: SIGTERM
+terminal.sessions.kill: Kill
 terminal.kill: End session
 terminal.kill.done: "Terminal session ended."
+terminal.kill.confirm: "End this terminal session and lock the console?"
+terminal.signal.term: SIGTERM
+terminal.signal.term_help: Send SIGTERM to the shell helper (gentle stop).
+terminal.signal.term_done: "SIGTERM sent to the terminal session."
+terminal.signal.kill: Kill
 terminal.clipboard.toolbar: Clipboard
 terminal.clipboard.copy: Copy
 terminal.clipboard.cut: Cut
@@ -3310,9 +3353,16 @@ security.passkey.error_origin: "This browser refused the passkey. Use HTTPS and 
 security.passkey.error_insecure: "Passkeys need HTTPS. This page is not secure (HTTP) — open the site with https:// and a domain name."
 security.passkey.error_ip: "Passkeys cannot use a raw IP address. Open the site with its HTTPS domain name (not 37.x.x.x)."
 security.passkey.error_domain_required: "Passkeys require a configured public domain name (HTTPS). Configure DNS/certificates first."
+security.passkey.inventory_title: Registered devices
+security.passkey.inventory_help: Name, last used, and revoke for each passkey.
+security.passkey.gate_title: Passkeys need a public HTTPS domain
+security.passkey.gate_help: Passkeys stay unavailable until this host uses a real domain name with TLS (not a raw IP or localhost).
+security.passkey.gate_cta: Open certificates
+security.passkey.gate_admin: Ask an admin with certificate access to configure DNS and TLS first.
 monitoring.health.label: "Host health"
 monitoring.health.grade_healthy: "Healthy"
 monitoring.health.grade_degraded: "Degraded"
+monitoring.health.grade_warning: "Warning"
 monitoring.health.grade_critical: "Critical"
 monitoring.health.grade_unknown: "Unknown"
 monitoring.health.detail: "CPU {cpu}% · RAM {ram}% · Disk {disk}% · {alerts, plural, =0 {no alerts} one {# alert} other {# alerts}}"
@@ -3361,13 +3411,21 @@ settings.notifications.smart_failed: "Notify on SMART failed"
 settings.notifications.smart_unknown: "Notify on SMART unknown"
 settings.notifications.flash.saved: "Notification rules saved."
 troubleshooting.section.diagnostics: "Diagnostics bundle"
-troubleshooting.section.diagnostics_help: "Download a zip with license overview, support status, host health, alert last-run, systemd unit status, readable logs, and Caddy snippets (secrets redacted) for support tickets."
+troubleshooting.section.diagnostics_help: "Choose what to pack (all on by default), then download a zip for support tickets. Secrets in Caddy env are redacted."
+troubleshooting.diagnostics.switches_help: "Toggle sections to include in the zip. Suggested items for the current host health stay checked when you open this page."
+troubleshooting.diagnostics.select_suggested: "Select suggested"
+troubleshooting.diagnostics.select_all: "Select all"
 troubleshooting.diagnostics.download: "Download diagnostics zip"
 troubleshooting.diagnostics.busy: "Building diagnostics zip…"
 troubleshooting.diagnostics.inclusion.manifest: "Bundle manifest"
 troubleshooting.diagnostics.inclusion.license_overview: "License overview (sanitized)"
 troubleshooting.diagnostics.inclusion.support_status: "Support session status"
 troubleshooting.diagnostics.inclusion.host_health: "Host health score snapshot"
+troubleshooting.diagnostics.inclusion.hardware_inventory: "Hardware inventory snapshot"
+troubleshooting.diagnostics.inclusion.fail2ban_status: "Fail2ban status + ledger"
+troubleshooting.diagnostics.copy_blurb: "Copy support blurb"
+troubleshooting.diagnostics.blurb_copied: "Support blurb copied"
+troubleshooting.diagnostics.blurb_failed: "Could not copy support blurb"
 troubleshooting.diagnostics.inclusion.alert_last_run: "Alert dispatch last-run"
 troubleshooting.diagnostics.inclusion.systemd_units: "Relevant systemd unit status"
 troubleshooting.diagnostics.inclusion.application_logs: "Application / job log tails"
@@ -3505,7 +3563,9 @@ settings.notifications.quiet_hours: Quiet hours
 settings.notifications.quiet_hours_start: Quiet hours start (hour 0–23)
 settings.notifications.quiet_hours_end: Quiet hours end (hour 0–23)
 security.impersonation.switch: Impersonate
-security.impersonation.banner: "You are impersonating {user}."
+security.impersonation.badge: Impersonating
+security.impersonation.banner: "You are viewing the dashboard as {user}."
+security.impersonation.as_admin: "Admin session: {admin}"
 security.impersonation.exit: Exit impersonation
 security.delete_protection.title: Delete Protection
 security.delete_protection.help: Block destructive app removals and large media deletes when enabled.
@@ -3543,7 +3603,11 @@ logs.timeline.col.detail: Detail
 logs.timeline.col.link: Link
 logs.timeline.loading: Loading…
 logs.timeline.empty: No events yet.
+logs.timeline.export_jsonl: "Export JSONL"
+logs.timeline.export_csv: "Export CSV"
 command_palette.firewall_ledger: Firewall ledger
+command_palette.firewall_jail_matrix: Fail2ban jail matrix
+command_palette.firewall_allowlist: Fail2ban allowlist
 command_palette.notifications_history: Notifications history
 command_palette.playback_sessions: Playback · Live sessions
 command_palette.playback_intelligence: Playback · Intelligence
@@ -3614,8 +3678,11 @@ security.sessions.current: Current
 security.sessions.last_seen: Last seen
 security.sessions.revoke: Revoke
 security.sessions.revoke_confirm: Revoke this session?
-security.sessions.revoke_others: Revoke other sessions
+security.sessions.revoke_others: Sign out other devices
 security.sessions.revoke_others_confirm: Revoke all other sessions? You will stay signed in on this device.
+security.sessions.revoke_others_done: "Signed out {count} other session(s)."
+security.sessions.force_logout_title: Force logout other sessions
+security.sessions.force_logout_help: Immediately revoke every other signed-in device while keeping this browser active. The action is audited.
 users.force_logout.confirm: Force logout this user on all devices?
 settings.notifications.history.title: Recent notifications
 settings.notifications.history.empty: No notification history yet.
@@ -3637,7 +3704,7 @@ troubleshooting.storage_cockpit.empty_smart: No SMART disks in snapshot.
 troubleshooting.storage_cockpit.empty_pools: No RAID/ZFS/Btrfs pools in snapshot.
 troubleshooting.hardware_lite.thermals: Thermals
 troubleshooting.hardware_inventory.title: "Hardware health"
-troubleshooting.hardware_inventory.help: "Platform, CPU, memory, fans, ECC, and writeback signals from sysfs/proc (read-only)."
+troubleshooting.hardware_inventory.help: "Platform, CPU, memory, fans, voltages, disk temps, ECC, and writeback from sysfs/proc (read-only)."
 troubleshooting.hardware_inventory.fetch_failed: Could not load hardware inventory.
 troubleshooting.hardware_inventory.product: Product
 troubleshooting.hardware_inventory.cpu_mem: "CPU / memory"
@@ -3824,7 +3891,7 @@ troubleshooting.health_hub.factors: "Score factors"
 troubleshooting.health_hub.open_timeline: "Open timeline"
 troubleshooting.health_hub.download_diagnostics: "Download diagnostics"
 troubleshooting.health_hub.factor_timeline: Timeline
-troubleshooting.health_hub.diagnostics_guided: "Highlighted inclusions match the factors dragging the score down."
+troubleshooting.health_hub.diagnostics_guided: "Suggested zip sections match the factors dragging the score down."
 command_palette.why_score_low: "Why is my score low?"
 command_palette.playback_control_center: "Playback · Control Center"
 command_palette.app_vpn: "App VPN · Routes"
@@ -3913,3 +3980,16 @@ troubleshooting.hardware_inventory.gap.no_temp_sensors: No temperature sensors
 troubleshooting.hardware_inventory.gap.ecc_not_exposed: ECC counters not exposed
 troubleshooting.hardware_inventory.gap.no_throttle_counters: No throttle counters
 troubleshooting.hardware_inventory.gap.dmi_limited: DMI detail limited
+troubleshooting.hardware_inventory.disk_temps: Disk temperatures
+troubleshooting.hardware_inventory.sensors: Sensors
+troubleshooting.hardware_inventory.sensors_help: "Sortable hwmon table (temp / fan / voltage) with chip labels, max, and critical thresholds."
+troubleshooting.hardware_inventory.sensors_empty: No hwmon sensors exposed on this host.
+troubleshooting.hardware_inventory.sensor_kind: Kind
+troubleshooting.hardware_inventory.sensor_chip: Chip
+troubleshooting.hardware_inventory.sensor_label: Label
+troubleshooting.hardware_inventory.sensor_value: Value
+troubleshooting.hardware_inventory.sensor_max: Max
+troubleshooting.hardware_inventory.sensor_crit: Crit
+troubleshooting.hardware_inventory.kind_temp: Temp
+troubleshooting.hardware_inventory.kind_fan: Fan
+troubleshooting.hardware_inventory.kind_voltage: Voltage
